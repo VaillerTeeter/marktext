@@ -72,9 +72,7 @@ mac:
   darkModeSupport: true
   target:
     - target: dmg
-      arch: [x64, arm64]
-    - target: zip
-      arch: [x64, arm64]
+      arch: [arm64]
 dmg:
   artifactName: "marktext-${arch}.${ext}"
   contents:
@@ -90,9 +88,7 @@ win:
   icon: "resources/icons/icon.ico"
   target:
   - target: "nsis"
-    arch: [ia32, x64]
-  - target: "zip"
-    arch: [ia32, x64]
+    arch: [x64]
   requestedExecutionLevel: "asInvoker"
 nsis:
   artifactName: "marktext-setup.${ext}"
@@ -113,10 +109,7 @@ linux:
     StartupWMClass: "marktext"
     Keywords: "marktext;"
   target:
-  - target: "AppImage"
   - target: "deb"
-  - target: "rpm"
-  - target: "tar.gz"
   # Workaround because file association array doesn't work.
   fileAssociations:
   - ext: "md"
@@ -150,13 +143,3 @@ deb:
   fpm:
   # Expat := MIT like
   - "--license=Expat"
-rpm:
-  # Custom dependencies:
-  depends:
-  # keytar
-  - "libsecret"
-  # keyboard-layout
-  - "libX11-xcb"
-  - "libxkbfile"
-  # fontmanager
-  - "fontconfig"
