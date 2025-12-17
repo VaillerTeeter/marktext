@@ -4,6 +4,8 @@
   - New:
     - electron-builder-squirrel-windows: 25.1.8
     - @babel/helper-environment-visitor: 7.24.7
+    - canvas: 3.2.0
+    - typescript: 5.9.3
   - Delete:
   - Change:
     - mermaid: 10.0.0 --> 11.12.2
@@ -67,6 +69,38 @@
     - webpack-dev-server: 4.8.1 --> 5.2.2
     - webpack-hot-middleware: 2.25.1 --> 2.26.1
     - webpack-merge: 5.8.0 --> 6.0.1
+    - @octokit/rest: 18.12.0 --> 22.0.1
+    - arg: 5.0.1 --> 5.0.2
+    - axios: 0.26.1 --> 0.30.2
+    - chokidar: 3.5.3 --> 3.6.0
+    - codemirror: 5.65.2 --> 5.65.20
+    - dayjs: 1.11.0 --> 1.11.19
+    - dompurify: 2.3.6 --> 2.5.8
+    - execall: 2.0.0 --> 3.0.0
+    - fs-extra: 10.0.1 --> 11.3.2
+    - html-tags: 3.2.0 --> 3.3.1
+    - iconv-lite: 0.6.3 --> 0.7.1
+    - iso-639-1: 2.1.13 --> 3.1.5
+    - minizlib: 2.1.2 --> 3.1.0
+    - native-keymap: 3.3.0 --> 3.3.7
+    - plist: 3.0.5 --> 3.1.0
+    - prismjs: 1.27.0 --> 1.30.0
+    - snabbdom: 3.4.0 --> 3.6.3
+    - snabbdom-to-html: 7.0.0 --> 7.1.0
+    - underscore: 1.13.2 --> 1.13.7
+    - unsplash-js: 7.0.15 --> 7.0.20
+    - vscode-ripgrep: 1.12.1 --> 1.13.2
+    - cfonts: 2.10.1 --> 3.3.1
+    - chalk: 4.1.2 --> 4.1.2
+    - cheerio: 1.0.0-rc.10 --> 1.1.2
+    - cross-env: 7.0.3 --> 10.1.0
+    - del: 6.0.0 --> 6.1.1
+    - dotenv: 16.0.0 --> 17.2.3
+    - node-fetch: 2.6.7 --> 3.3.2
+    - postcss: 8.4.12 --> 8.5.6
+    - postcss-preset-env: 7.4.3 --> 10.5.0
+    - stacktrace-parser: 0.1.10 --> 0.1.11
+    - svgo: 2.8.0 --> 4.0.0
 
 ## 25.12.1
 
