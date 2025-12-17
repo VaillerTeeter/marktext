@@ -8,6 +8,12 @@
     - vega: 5.22.1 --> 6.2.0
     - vega-embed: 6.20.8 --> 7.1.0
     - vega-lite: 5.2.0 --> 6.4.1
+    - flowchart.js: 1.17.1 --> 1.18.0
+    - github-markdown-css: 3.0.1 --> 5.8.1
+    - katex: 0.15.3 --> 0.16.27
+    - turndown: 7.1.1 --> 7.2.2
+    - @markedjs/html-differ: 3.0.4 --> 5.0.3
+    - marked: 1.2.9 --> 17.0.1
 
 ## 25.12.1
 
