@@ -3,6 +3,7 @@
 - 最大化的升级依赖
   - New:
     - electron-builder-squirrel-windows: 25.1.8
+    - @babel/helper-environment-visitor: 7.24.7
   - Delete:
   - Change:
     - mermaid: 10.0.0 --> 11.12.2
@@ -38,6 +39,17 @@
     - electron-builder: 23.0.6 --> 25.1.8
     - electron-devtools-installer: 3.2.0 --> 4.0.0
     - electron-updater: 5.0.2 --> 6.6.2
+    - @babel/core: 7.17.9 --> 7.28.5
+    - @babel/eslint-parser: 7.17.0 --> 7.28.5
+    - @babel/plugin-proposal-class-properties: 7.16.7 --> 7.18.6
+    - @babel/plugin-proposal-export-default-from: 7.16.7 --> 7.27.1
+    - @babel/plugin-proposal-function-bind: 7.16.7 --> 7.27.1
+    - @babel/plugin-transform-runtime: 7.17.0 --> 7.28.5
+    - @babel/preset-env: 7.16.11 --> 7.28.5
+    - @babel/register: 7.17.7 --> 7.28.3
+    - @babel/runtime: 7.17.9 --> 7.28.4
+    - babel-loader: 8.2.4 --> 10.0.0
+    - babel-plugin-istanbul: 6.1.1 --> 6.1.1
 
 ## 25.12.1
 
