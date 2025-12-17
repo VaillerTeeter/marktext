@@ -186,7 +186,7 @@
   },
   "resolutions": {
     "node-abi": "^4",
-    "node-addon-api": "^4.3.0"
+    "node-addon-api": "^8"
   },
   "repository": {
     "type": "git",

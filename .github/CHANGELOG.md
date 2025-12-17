@@ -101,6 +101,7 @@
     - postcss-preset-env: 7.4.3 --> 10.5.0
     - stacktrace-parser: 0.1.10 --> 0.1.11
     - svgo: 2.8.0 --> 4.0.0
+    - node-addon-api: 4.3.0 --> 8.5.0
 
 ## 25.12.1
 

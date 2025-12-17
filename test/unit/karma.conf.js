@@ -36,6 +36,7 @@ let webpackConfig = merge(baseConfig, {
 delete webpackConfig.entry
 delete webpackConfig.externals
 delete webpackConfig.output.libraryTarget
+delete webpackConfig.optimization
 
 // BUG: TypeError: Cannot read property 'loaders' of undefined
 // // apply vue option to apply isparta-loader on js
