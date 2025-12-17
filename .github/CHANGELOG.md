@@ -27,6 +27,11 @@
     - karma-sourcemap-loader: 0.3.8 --> 0.4.0
     - karma-spec-reporter: 0.0.34 --> 0.0.36
     - mocha: 9.2.2 --> 11.7.5
+    - element-ui: 2.15.8 --> 2.15.14
+    - vue: 2.6.14 --> 2.7.16
+    - vuex: 3.6.2 --> 3.6.2
+    - vue-loader: 15.9.8 --> 15.11.1
+    - vue-template-compiler: 2.6.14 --> 2.7.16
 
 ## 25.12.1
 
