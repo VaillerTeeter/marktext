@@ -1,6 +1,6 @@
 {
   "name": "marktext",
-  "version": "0.17.1",
+  "version": "25.12.17",
   "homepage": "https://github.com/marktext/marktext/",
   "description": "Next generation markdown editor",
   "license": "MIT",
@@ -182,7 +182,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:marktext/marktext.git"
+    "url": "git@github.com:VaillerTeeter/marktext.git"
   },
   "bugs": {
     "url": "https://github.com/marktext/marktext/issues"
