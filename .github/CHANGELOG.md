@@ -2,6 +2,7 @@
 
 - 最大化的升级依赖
   - New:
+    - electron-builder-squirrel-windows: 25.1.8
   - Delete:
   - Change:
     - mermaid: 10.0.0 --> 11.12.2
@@ -32,6 +33,11 @@
     - vuex: 3.6.2 --> 3.6.2
     - vue-loader: 15.9.8 --> 15.11.1
     - vue-template-compiler: 2.6.14 --> 2.7.16
+    - electron-log: 4.4.6 --> 4.4.8
+    - electron-store: 8.0.1 --> 11.0.2
+    - electron-builder: 23.0.6 --> 25.1.8
+    - electron-devtools-installer: 3.2.0 --> 4.0.0
+    - electron-updater: 5.0.2 --> 6.6.2
 
 ## 25.12.1
 
@@ -44,21 +50,21 @@
   - macos-11 --> macos-latest
 - 最小化的升级依赖
   - New:
-    - @electron/rebuild: 3
+    - @electron/rebuild: 3.7.2
     - baseline-browser-mapping: 2.9.8
     - browserslist: 4.28.1
     - caniuse-lite: 1.0.30001760
-    - eslint-plugin-n: 16
+    - eslint-plugin-n: 16.6.2
   - Delete:
     - electron-rebuild: 3.2.7
   - Change:
-    - Node: 16 --> 22
-    - @electron/remote: 2.0.8 --> 2
+    - Node: 16 --> 22.16.0
+    - @electron/remote: 2.0.8 --> 2.1.3
     - @playwright/test: 1.21.0 --> 1.57.0
     - electron: 18.0.4 --> 39.2.7
-    - eslint-config-standard: 16.0.3 --> 17
+    - eslint-config-standard: 16.0.3 --> 17.1.0
     - playwright: 1.21.0 --> 1.57.0
-    - node-abi: 3.8.0 --> 4
+    - node-abi: 3.8.0 --> 4.24.0
 
 ## 0.17.1
 
