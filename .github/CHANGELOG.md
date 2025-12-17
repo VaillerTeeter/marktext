@@ -50,6 +50,23 @@
     - @babel/runtime: 7.17.9 --> 7.28.4
     - babel-loader: 8.2.4 --> 10.0.0
     - babel-plugin-istanbul: 6.1.1 --> 6.1.1
+    - copy-webpack-plugin: 10.2.4 --> 13.0.1
+    - css-loader: 6.7.1 --> 7.1.2
+    - eslint-webpack-plugin: 3.1.1 --> 4.2.0
+    - html-webpack-plugin: 5.5.0 --> 5.6.5
+    - imports-loader: 0.8.0 --> 0.8.0
+    - karma-webpack: 5.0.0 --> 5.0.1
+    - mini-css-extract-plugin: 2.6.0 --> 2.9.4
+    - node-loader: 2.0.0 --> 2.1.0
+    - postcss-loader: 6.2.1 --> 8.2.0
+    - style-loader: 3.3.1 --> 4.0.0
+    - svgo-loader: 3.0.0 --> 4.0.0
+    - webpack: 5.72.0 --> 5.104.0
+    - webpack-bundle-analyzer: 4.5.0 --> 5.1.0
+    - webpack-cli: 4.9.2 --> 6.0.1
+    - webpack-dev-server: 4.8.1 --> 5.2.2
+    - webpack-hot-middleware: 2.25.1 --> 2.26.1
+    - webpack-merge: 5.8.0 --> 6.0.1
 
 ## 25.12.1
 
