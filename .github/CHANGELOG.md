@@ -20,6 +20,13 @@
     - eslint-plugin-promise: 6.0.0 --> 6.6.0
     - eslint-plugin-standard: 4.1.0 --> 5.0.0
     - eslint-plugin-vue: 8.6.0 --> 9.33.0
+    - chai: 4.3.6 --> 4.5.0
+    - karma: 6.3.18 --> 6.4.4
+    - karma-coverage: 2.2.0 --> 2.2.1
+    - karma-electron: 7.1.0 --> 7.3.0
+    - karma-sourcemap-loader: 0.3.8 --> 0.4.0
+    - karma-spec-reporter: 0.0.34 --> 0.0.36
+    - mocha: 9.2.2 --> 11.7.5
 
 ## 25.12.1
 
