@@ -14,6 +14,12 @@
     - turndown: 7.1.1 --> 7.2.2
     - @markedjs/html-differ: 3.0.4 --> 5.0.3
     - marked: 1.2.9 --> 17.0.1
+    - eslint: 8.13.0 --> 8.57.1
+    - eslint-plugin-html: 6.2.0 --> 8.1.3
+    - eslint-plugin-import: 2.26.0 --> 2.32.0
+    - eslint-plugin-promise: 6.0.0 --> 6.6.0
+    - eslint-plugin-standard: 4.1.0 --> 5.0.0
+    - eslint-plugin-vue: 8.6.0 --> 9.33.0
 
 ## 25.12.1
 
