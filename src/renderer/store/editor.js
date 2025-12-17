@@ -329,7 +329,7 @@ const mutations = {
       showConfirm,
       style,
       exclusiveType,
-      action: action
+      action
     })
   }
 }

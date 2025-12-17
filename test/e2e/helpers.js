@@ -1,6 +1,6 @@
 const os = require('os')
 const path = require('path')
-const { _electron } = require('playwright')
+const { _electron } = require('@playwright/test')
 
 const mainEntrypoint = 'dist/electron/main.js'
 

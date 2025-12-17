@@ -1,3 +1,30 @@
+## 25.12.1
+
+- 删除不必要的产物，只保留：
+  - win: exe
+  - Linux: deb
+  - MAC: dmg
+- 修复 github 上的工作流
+  - v2 --> v4
+  - macos-11 --> macos-latest
+- 最小化的升级依赖
+  - New:
+    - @electron/rebuild: 3
+    - baseline-browser-mapping: 2.9.8
+    - browserslist: 4.28.1
+    - caniuse-lite: 1.0.30001760
+    - eslint-plugin-n: 16
+  - Delete:
+    - electron-rebuild: 3.2.7
+  - Change:
+    - Node: 16 --> 22
+    - @electron/remote: 2.0.8 --> 2
+    - @playwright/test: 1.21.0 --> 1.57.0
+    - electron: 18.0.4 --> 39.2.7
+    - eslint-config-standard: 16.0.3 --> 17
+    - playwright: 1.21.0 --> 1.57.0
+    - node-abi: 3.8.0 --> 4
+
 ## 0.17.1
 
 - Added experimental native support for Apple M1 (see #2983 if you have issues).
