@@ -131,6 +131,7 @@ linux:
     name: "Markdown"
     description: "Markdown document"
 deb:
+  afterInstall: ./tools/after-install.sh
   # Custom dependencies:
   depends:
   # keytar
