@@ -1,0 +1,129 @@
+&Edit|編輯
+Undo|撤銷
+Redo|重做
+Cut|剪切
+Copy|複製
+Paste|粘貼
+Copy as Markdown|複製為 Markdown 格式
+Copy as HTML|複製為 Html 格式
+Paste as Plain Text|粘貼為純文本
+Select All|全選
+Duplicate|複寫到新段落
+Create Paragraph|新建段落
+Delete Paragraph|刪除段落
+Find|查找
+Find Next|查找下一個
+Find Previous|查找上一個
+Replace|替換
+Find in Folder|在文件夾中查找
+Screenshot|截屏
+Line Ending|行結束符號
+Carriage return and line feed (CRLF)|回車換行 (CRLF)
+Line feed (LF)|換行 (LF)
+Edit|編輯
+&File|文件
+New Tab|新建標籤頁
+New Window|新建窗口
+Open File...|打開文件 ...
+Open Folder...|打開文件夾 ...
+Open Recent|最近使用的文件
+Clear Recently Used|清空最近文件列表
+Save|保存
+Save As...|另存為 ...
+Auto Save|自動保存
+Move To...|移動到 ...
+Rename...|重命名 ...
+Import...|導入 ...
+Export|導出
+HTML|HTML
+PDF|PDF
+Print|打印
+Preferences...|偏好設置 ...
+Close Tab|關閉標籤頁
+Close Window|關閉窗口
+Quit|退出
+&Help|幫助
+Quick Start...|快速入門 ...
+Markdown Reference...|Markdown 參考指南 ...
+Changelog...|更新日誌 ...
+Donate via Open Collective...|通過 Open Collective 捐助我們 ...
+Feedback via Twitter...|在 Twitter 上和我們反饋 ...
+Report Issue or Request Feature...|反饋問題或功能建議 ...
+Website...|訪問官網 ...
+Watch on GitHub...|在 GitHub 關注 MarkText ...
+Follow us on Github...|在 Github 上關注我們 ...
+Follow us on Twitter...|在 Twitter 上關注我們 ...
+License...|許可協議 ...
+Check for updates...|檢查更新 ...
+About MarkText...|關於 MarkText ...
+MarkText|MarkText
+About MarkText|關於 MarkText
+Preferences|偏好設置
+Services|服務
+Hide MarkText|隱藏 MarkText
+Hide Others|隱藏其它
+Show All|顯示全部
+Quit MarkText|退出 MarkText
+&View|視圖
+Command Palette...|命令面板 ...
+Source Code Mode|源代碼模式
+Typewriter Mode|打字機模式
+Focus Mode|專注模式
+Show Sidebar|顯示側邊欄
+Show Tab Bar|顯示標籤欄
+Toggle Table of Contents|顯示/隱藏目錄
+Reload Images|重新加載圖像
+Show Developer Tools|顯示開發者工具
+Reload window|重新加載窗口
+&Window|窗口
+Minimize|最小化
+Always on Top|總在最前面
+Zoom In|放大
+Zoom Out|縮小
+Show in Full Screen|全屏顯示
+Bring All to Front|前置全部窗口
+&Paragraph|段落
+Heading 1|標題 1
+Heading 2|標題 2
+Heading 3|標題 3
+Heading 4|標題 4
+Heading 5|標題 5
+Heading 6|標題 6
+Promote Heading|提升標題級別
+Demote Heading|降低標題級別
+Table|表格
+Code Fences|代碼塊
+Quote Block|引用塊
+Math Block|數學公式塊
+Html Block|Html 塊
+Ordered List|有序列表
+Bullet List|無序列表
+Task List|任務列表
+Loose List Item|鬆散列表項
+Paragraph|段落
+Horizo​​ntal Rule|水平線
+Front Matter|前文(Front Matter)
+F&ormat|格式
+Bold|粗體
+Italic|斜體
+Underline|下劃線
+Superscript|上標
+Subscript|下標
+Highlight|高亮
+Inline Code|行內代碼
+Inline Math|行內數學公式
+Strikethrough|刪除線
+Hyperlink|超鏈接
+Image|圖片
+Clear Formatting|清除格式
+&Theme|主題
+Open...|打開...
+Clear Recent|清空最近文件列表
+Copy As Markdown|複製為 Markdown 格式
+Copy As Html|複製為 Html 格式
+Insert Paragraph Before|在前面插入段落
+Insert Paragraph After|在後面插入段落
+Change Language...|更改語言 ...
+Add to Dictionary|添加到字典
+Edit Dictionary...|編輯字典 ...
+Spelling...|拼寫檢查 ...

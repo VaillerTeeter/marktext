@@ -18,12 +18,39 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest]
-
+        include:
+          - os: macos-latest
+            lang: ''
+            scriptSuffix: ''
+            artifactSuffix: 'en'
+          - os: macos-latest
+            lang: zh-Hans
+            scriptSuffix: ':zh-Hans'
+            artifactSuffix: 'zh-Hans'
+          - os: macos-latest
+            lang: zh-Hant
+            scriptSuffix: ':zh-Hant'
+            artifactSuffix: 'zh-Hant'
+          - os: ubuntu-latest
+            lang: ''
+            scriptSuffix: ''
+            artifactSuffix: 'en'
+          - os: ubuntu-latest
+            lang: zh-Hans
+            scriptSuffix: ':zh-Hans'
+            artifactSuffix: 'zh-Hans'
+          - os: ubuntu-latest
+            lang: zh-Hant
+            scriptSuffix: ':zh-Hant'
+            artifactSuffix: 'zh-Hant'
     env:
       DISPLAY: ":99.0"
       # MARKTEXT_IS_STABLE: 1
       MARKTEXT_EXIT_ON_ERROR: 1
+      # Build translation is enabled when `lang` is non-empty.
+      lang: ${{ matrix.lang }}
+      # Used by electron-builder artifactName to avoid overwriting outputs.
+      ARTIFACT_SUFFIX: ${{ matrix.artifactSuffix }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
@@ -83,16 +110,33 @@ jobs:
           ELECTRON_DISABLE_SANDBOX: 1
 
       - name: Build
-        run: yarn build:bin
+        run: yarn build:bin${{ matrix.scriptSuffix }}
 
   windows:
     runs-on: windows-latest
     continue-on-error: false
     timeout-minutes: 45
 
+    strategy:
+      matrix:
+        include:
+          - lang: ''
+            scriptSuffix: ''
+            artifactSuffix: 'en'
+          - lang: zh-Hans
+            scriptSuffix: ':zh-Hans'
+            artifactSuffix: 'zh-Hans'
+          - lang: zh-Hant
+            scriptSuffix: ':zh-Hant'
+            artifactSuffix: 'zh-Hant'
+
     env:
       # MARKTEXT_IS_STABLE: 1
       MARKTEXT_EXIT_ON_ERROR: 1
+      # Build translation is enabled when `lang` is non-empty.
+      lang: ${{ matrix.lang }}
+      # Used by electron-builder artifactName to avoid overwriting outputs.
+      ARTIFACT_SUFFIX: ${{ matrix.artifactSuffix }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
@@ -152,4 +196,4 @@ jobs:
           ELECTRON_DISABLE_SANDBOX: 1
 
       - name: Build
-        run: yarn build:bin
+        run: yarn build:bin${{ matrix.scriptSuffix }}

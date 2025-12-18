@@ -1,0 +1,338 @@
+("Preferences")|("偏好設置")
+placeholder:"Search preferences"|placeholder:"搜索設置項"
+
+name:"General",label:"general"|name:"常規設置",label:"general"
+name:"Editor",label:"editor"|name:"編輯器",label:"editor"
+name:"Spelling",label:"spelling"|name:"拼寫檢查",label:"spelling"
+name:"Theme",label:"theme"|name:"主題",label:"theme"
+name:"Image",label:"image"|name:"圖片",label:"image"
+name:"Key Bindings",label:"keybindings"|name:"熱鍵設置",label:"keybindings"
+
+("General")|("常規設置")
+("Editor")|("編輯器")
+("Spelling")|("拼寫檢查")
+("Theme")|("主題")
+("Image")|("圖片")
+("Key Bindings")|("熱鍵設置")
+
+("Auto Save:")|("自動保存:")
+"Automatically save document changes"|"自動保存文檔更改"
+"Delay following document edit before automatically saving"|"在自動保存前延遲編輯文件的時間"
+
+("Window:")|("窗口:")
+"Title bar style"|"標題欄樣式"
+"Hide scrollbars"|"隱藏滾動條"
+"Open files in new window"|"在新窗口中打開文件"
+"Open folders in new window"|"在新窗口中打開文件夾"
+"Zoom"|"縮放"
+label:"Custom",value:"custom"|label:"自定義",value:"custom"
+label:"Native",value:"native"|label:"系統默認",value:"native"
+notes:"Requires restart."|notes:"需要重新啟動。"
+
+("Sidebar:")|("側邊欄:")
+"Wrap text in table of contents"|"在目錄中換行"
+"Sort field for files in open folders"|"打開文件夾時文件的排序字段"
+
+("Action on startup:")|("啟動時的動作:")
+("Open the default directory")|("打開默認目錄")
+("Open a blank page")|("打開一個空白頁")
+("Select Folder")|("選擇文件夾")
+
+("Misc:")|("雜項:")
+"User interface language"|"用戶界面語言"
+
+("Text editor settings:")|("文本編輯器設置:")
+"Font size"|"字體大小"
+"Line height"|"行高"
+"Font family"|"字體"
+"Maximum width of text editor"|"文本編輯器的最大寬度"
+notes:"Leave empty for theme default, otherwise use number with unit suffix, which is one of 'ch' for characters, 'px' for pixels, or '%' for percentage."|notes:"默認留空，否則使用帶單位後綴的數字，後綴單位可以是'ch'、'px'、'%'。"
+
+("Code block settings:")|("代碼塊設置:")
+"Remove leading and trailing empty lines"|"刪除前面和後面的空行"
+("Writing behavior:")|("寫作行為:")
+"Automatically close brackets when writing"|"書寫時自動關閉括號"
+"Automatically complete markdown syntax"|"自動完成markdown語法"
+"Automatically close quotation marks"|"自動關閉引號"
+
+("File representation:")|("文件表示:")
+"Preferred tab width"|"首選製表符寬度"
+"Line separator type"|"行分隔符類型"
+"Default encoding"|"默認字符編碼"
+label:"Default",value:"default"|label:"默認",value:"default"
+label:"Carriage return and line feed (CRLF)",value:"crlf"|label:"回車換行 (CRLF)",value:"crlf"
+label:"Line feed (LF)",value:"lf"|label:"換行 (LF)",value:"lf"
+"Automatically detect file encoding"|"自動檢測文件編碼"
+"Handling of trailing newline characters"|"處理尾部換行符"
+label:"Trim all tr​​ailing",value:0|label:"修剪所有尾部",value:0
+label:"Ensure exactly one trailing",value:1|label:"確保正好有一個尾部",value:1
+label:"Preserve style of original document",value:2|label:"保留原始文件的樣式",value:2
+label:"Do nothing",value:3|label:"什麼都不做",value:3
+
+"Text direction"|"文本方向"
+label:"Left to Right",value:"ltr"|label:"從左到右",value:"ltr"
+label:"Right to Left",value:"rtl"|label:"從右到左",value:"rtl"
+"Hide hint for selecting type of new paragraph"|"隱藏選擇新段落類型的提示"
+"Hide popup when cursor is over link"|"當光標在鏈接上時隱藏彈出窗口"
+"Whether to automatically check any related tasks"|"是否自動檢查任何相關任務"
+
+("Lists:")|("列表:")
+"Prefer loose list items"|"更喜歡鬆散的清單項目"
+"Preferred marker for bullet lists"|"項目列表的首選標記"
+"Preferred marker for ordered lists"|"有序列表的首選標記"
+"Preferred list indentation"|"首選的列表縮進"
+label:"DocFX style",value:"dfm"|label:"DocFX 風格",value:"dfm"
+label:"True tab character",value:"tab"|label:"製表符",value:"tab"
+label:"Single space character",value:1|label:"1個空格字符",value:1
+label:"Two space characters",value:2|label:"2個空格字符",value:2
+label:"Three space characters",value:3|label:"3個空格字符",value:3
+label:"Four space characters",value:4|label:"4個空格字符",value:4
+
+("Markdown extensions:")|("Markdown擴展:")
+"Front matter format"|"前文(Front matter)格式"
+"Enable Pandoc-style superscript and subscript"|"啟用 Pandoc 樣式的上標和下標"
+"Enable Pandoc-style footnotes"|"啟用 Pandoc 風格的腳註"
+
+("Compatibility:")|("兼容性:")
+"Enable HTML rendering"|"啟用HTML渲染"
+"Enable GitLab compatibility mode"|"啟用GitLab兼容模式"
+
+("Diagrams:")|("圖表:")
+"Sequence diagram theme"|"序列圖主題"
+label:"Hand drawn",value:"hand"|label:"手繪",value:"hand"
+label:"Simple",value:"simple"|label:"簡單",value:"simple"
+
+("Misc:")|("雜項:")
+"Preferred heading style"|"首選標題樣式"
+label:"ATX heading",value:"atx"|label:"ATX 標題",value:"atx"
+label:"Setext heading",value:"setext"}|label:"Setext 標題",value:"setext"}
+
+"Enable spell checker"|"啟用拼寫檢查"
+"Use Hunspell instead of system spell checker on macOS and Windows 10"|"在 macOS 和 Windows 10 上使用 Hunspell 代替系統拼寫檢查器"
+"Automatically detect document language (requires showing marks for spelling errors)"|"自動檢測文檔語言（需要顯示拼寫錯誤標記）"
+"Hide marks for spelling errors"|"隱藏拼寫錯誤的標記"
+"Default language for spell checker"|"拼寫檢查器的默認語言"
+('\n    Additional languages may be added through "Language & Region" in your system preferences pane.\n  ')|('\n    可以通過系統首選項窗格中的“語言和地區”添加其他語言。\n  ')
+
+"Automatically adjust application theme according to system settings"|"根據系統設置自動調整應用主題"
+label:"Adjust theme at startup",value:0|label:"啟動時調整主題",value:0
+label:"Never",value:2|label:"絕不",value:2
+
+("Default action after an image is inserted from local folder or clipboard\n      ")|("從本地文件夾或剪貼板插入圖像後的默認操作\n      ")
+"Clipboard handling is only fully supported on macOS and Windows."|"只有 macOS 和 Windows 完全支持剪貼板處理。"
+label:"Upload image to cloud using selected uploader (must be configured below)",value:"upload"|label:"使用選定的上傳器將圖像上傳到雲端（必須在下面進行配置）",value:"upload"
+label:"Copy image to designated relative assets or global local folder",value:"folder"|label:"將圖片複製到指定的相對資源或全局本地文件夾",value:"folder"
+label:"Keep original location",value:"path"|label:"保留原位置",value:"path"
+
+("Uploader")]|("圖片上傳器")]
+("Global or relative image folder")|("全局或相對圖像文件夾")
+"Global image folder"|"全局圖像文件夾"
+("Open...")|("打開...")
+("Show in Folder")|("展現在系統文件夾中")
+"Prefer relative assets folder"|"首選相對資源文件夾"
+"Relative image folder name"|"相對圖像文件夾名稱"
+("\n        Include ")|("\n        使用宏變量 ")
+(" in the text-box above to automatically insert the document file name.\n      ")|(" 在上面的文本框中自動插入文檔文件名。\n      ")
+
+name:"Command line script"|name:"命令行腳本"
+("The current image uploader is\n|("當前的圖片上傳器是\n
+("Currently no uploader is selected. Please select an uploader and config\n      it.")|("目前沒有選擇圖片上傳器。 請選擇一個上傳器並進行配置。")
+("\n        Your system does not have ")|("\n        你的系統沒有將")
+(" installed, please\n        install it before use.\n      ")|(" 安裝成功, 請\n        先安裝後使用.\n      ")
+("Github will be removed in a future version, please use picgo")|("Github 將在以後的版本中被移除，請使用 picgo")
+{title:"Save Config",message:"github"===e?"The Github configration has been saved.":"The command line script configuration has been saved",type:"primary"}|{title:"保存配置",message:"github"===e?"Github 配置已保存。":"命令行腳本配置已保存。",type:"primary"}
+("\n          GitHub token:\n          ")|("\n          GitHub 令牌:\n          ")
+"The token is saved by Keychain on macOS, Secret Service API/libsecret on Linux and Credential Vault on Windows"|"令牌由 macOS 上的 Keychain、Linux 上的 Secret Service API/libsecret 和 Windows 上的憑據庫保存"
+("Owner name:")|("所有者名稱:")
+("Repo name:")|("存儲庫名稱:")
+("Branch name (optional):")|("分支名稱(可選):")
+("Save\n        ")|("保存\n        ")
+"\n    By using "|"\n    使用 "
+", you agree to "|"即表示您同意 "
+"'s\n    "|"的\n    "
+("\n    and\n    ")|("\n    和\n    ")
+("Privacy Statement")|("隱私聲明")
+("Terms of Service")|("服務條款")
+
+("The script will be executed with the image file path as its only\n        argument and it should output any valid value for the ")|("該腳本將使用圖像文件路徑作為其唯一的參數執行，並且它應該為 HTMLImageElement 的 src 屬性輸出任何有效值。")
+(" attribute of a\n        ")|("")
+("HTMLImageElement")|("")
+("Shell script location:")|("Shell 腳本位置:")
+placeholder:"Script absolute path"|placeholder:"腳本絕對路徑"
+
+("\n      Customize MarkText shortcuts and click on the save button below to apply all changes (requires a restart).\n      All available and default key binding can be found ")|("\n      自定義 MarkText 快捷方式並單擊下面的保存按鈕以應用所有更改（需要重新啟動）。\n      從在線文檔中可以找到所有可用的默認鍵綁定 ")
+("Save")|("保存")
+("Restore default key bindings")|("恢復默認鍵綁定")
+label:"Description"|label:"描述"
+label:"Key Combination"|label:"組合鍵"
+label:"Options"|label:"選項"
+type:"text",size:"small",title:"Edit"|type:"text",size:"small",title:"編輯"
+type:"text",size:"small",title:"Reset"|type:"text",size:"small",title:"重置"
+type:"text",size:"small",title:"Unbind"|type:"text",size:"small",title:"解綁"
+"Press a key combination"|"按下一個組合鍵"
+("Press Enter to continue or ESC to exit.")|("按 Enter 繼續或按 ESC 退出。")
+title:"Shortcut already in use"|title:"快捷鍵已在使用"
+message:`The shortcut "${t}" is already in use. Please unset the shortcut and try again.`|message:`快捷鍵“${t}”已在使用中。 請取消設置快捷鍵並重試。 `
+
+("Export Options")|("導出選項")
+label:"Info",name:"info"|label:"提示信息",name:"info"
+label:"Page",name:"page"|label:"頁面",name:"page"
+label:"Style",name:"style"|label:"樣式",name:"style"
+label:"Theme",name:"theme"|label:"主題",name:"theme"
+label:"Header & Footer",name:"header"|label:"頁眉和頁腳",name:"header"
+
+('Please customize the page appearance and click on "export" to continue.')|('請自定義頁面外觀並點擊“導出”繼續。')
+"The page title:"|"頁面標題"
+"Page size:"|"頁面大小"
+label:'US Legal (8.5" x 13")',value:"Legal"|label:'美國法定用紙 (8.5" x 13")',value:"Legal"
+label:'US Letter (8.5" x 11")',value:"Letter"|label:'美國信紙 (8.5" x 11")',value:"Letter"
+label:'Tabloid (17" x 11")',value:"Tabloid"|label:'小報 (17" x 11")',value:"Tabloid"
+("Width/Height in mm:")|("寬高（單位:毫米）")
+"Landscape orientation:"|"橫向"
+("Page margin in mm:")|("頁邊距（單位:毫米）")
+("Top/Bottom:")|("上下")
+("Left/Right:")|("左右")
+"Overwrite theme font settings:"|"覆蓋主題字體設置"
+"Font family:"|"字體"
+"Auto numbering headings:"|"自動編號標題"
+"Show front matter:"|"顯示前文"
+("You can change the document appearance by choosing a theme or create a handcrafted one.")|("您可以通過選擇主題或創建手工製作的主題來更改文檔外觀。")
+description:"Theme:"|description:"主題"
+("The text appear on all pages if header and/or footer is defined.")|("如果定義了頁眉和或頁腳，則文本將出現在所有頁面上。")
+"Header type:"|"頁眉類型"
+label:"None",value:0|label:"空",value:0
+label:"Single cell",value:1|label:"單列",value:1
+label:"Three cells",value:2|label:"三列",value:2
+"The left header text:"|"左側標題文本"
+"The main header text:"|"主要標題文本"
+"The right header text:"|"右側標題文本"
+"Footer type:"|"頁腳類型"
+"Customize style:"|"自定義樣式"
+"Allow styled header and footer:"|"允許樣式應用在頁眉和頁腳"
+"Header and footer font size"|"頁眉和頁腳的字體大小"
+label:"Table of Contents"|label:"目錄"
+"Include top heading:"|"包含頂部標題"
+"Includes the first heading level too."|"也包括第一個標題級別。"
+"Title:"|"標題"
+("\n        Export...\n      ")|("\n        導出...\n      ")
+
+label:"Select",value:"select"|label:"選擇",value:"select"
+label:"Embed link",value:"link"|label:"嵌入鏈接",value:"link"
+"Choose an Image"|"選擇一張圖片"
+"Choose image from your computer."|"從您的計算機中選擇圖像。"
+placeholder:"Alt text"|placeholder:"替代文本"
+placeholder:"Image link or local path"|placeholder:"圖片鏈接或本地路徑"
+placeholder:"Image title"|placeholder:"圖片標題"
+
+"Embed Image"|"嵌入圖像"
+"Paste web image or local image path. Use "|"粘貼網頁圖片或本地圖片路徑. 使用"
+"simple mode":"full mode"|"簡單模式":"完整模式"
+type:"edit",tooltip:"Edit Image"|type:"edit",tooltip:"編輯圖片"
+type:"inline",tooltip:"Inline Image"|type:"inline",tooltip:"內聯圖片"
+type:"left",tooltip:"Align Left"|type:"left",tooltip:"左對齊"
+type:"center",tooltip:"Align Middle"|type:"center",tooltip:"居中對齊"
+type:"right",tooltip:"Align Right"|type:"right",tooltip:"右對齊"
+type:"delete",tooltip:"Remove Image"|type:"delete",tooltip:"刪除圖片"
+
+("\n      Insert Table\n    ")|("\n      插入表格\n    ")
+label:"Rows"|label:"行數"
+label:"Columns"|label:"列數"
+("\n        Cancel\n      ")|("\n        取消\n      ")
+("\n        OK\n      ")|("\n        確定\n      ")
+label:"table",title:"Resize Table"|label:"table",title:"重設表格大小"
+label:"left",title:"Align Left"|label:"left",title:"左對齊"
+label:"center",title:"Align Center"|label:"center",title:"居中對齊"
+label:"right",title:"Align Right"|label:"right",title:"右對齊"
+label:"delete",title:"Delete Table"|label:"delete",title:"刪除表格"
+label:"Insert Row Above"|label:"在上方插入行"
+label:"Insert Row Below"|label:"在下方插入行"
+label:"Remove Row"|label:"刪除行"
+label:"Insert Column Left"|label:"在左側插入列"
+label:"Insert Column Right"|label:"在右側插入列"
+label:"Remove Column"|label:"刪除列"
+
+
+label:"duplicate",text:"Duplicate"|label:"duplicate",text:"創建副本"
+label:"turnInto",text:"Turn Into"|label:"turnInto",text:"轉為"
+label:"new",text:"New Paragraph"|label:"new",text:"新段落"
+label:"delete",text:"Delete"|label:"delete",text:"刪除"
+
+title:"Paragraph"|title:"段落"
+title:"Horizo​​ntal Line"|title:"水平線"
+title:"Front Matter"|title:"前文（Front Matter）"
+title:"Header 1"|title:"標題 1"
+title:"Header 2"|title:"標題 2"
+title:"Header 3"|title:"標題 3"
+title:"Header 4"|title:"標題 4"
+title:"Header 5"|title:"標題 5"
+title:"Header 6"|title:"標題 6"
+title:"Table Block"|title:"表格"
+title:"Display Math"|title:"公式塊"
+title:"HTML Block"|title:"HTML塊"
+title:"Code Block"|title:"代碼塊"
+title:"Quote Block"|title:"引用塊"
+title:"Order List"|title:"有序列表"
+title:"Bullet List"|title:"項目列表"
+title:"To-do List"|title:"任務列表"
+
+label:"Cut",id:"cutMenuItem"|label:"剪切",id:"cutMenuItem"
+label:"Copy",id:"copyMenuItem"|label:"複製",id:"copyMenuItem"
+label:"Copy As Markdown",id:"copyAsMarkdownMenuItem"|label:"複製為Markdown",id:"copyAsMarkdownMenuItem"
+label:"Copy As Html",id:"copyAsHtmlMenuItem"|label:"複製為Html",id:"copyAsHtmlMenuItem"
+label:"Paste as Plain Text",id:"pasteAsPlainTextMenuItem"|label:"粘貼為純文本",id:"pasteAsPlainTextMenuItem"
+label:"Insert Paragraph Before",id:"insertParagraphBeforeMenuItem"|label:"在前面插入段落",id:"insertParagraphBeforeMenuItem"
+label:"Insert Paragraph After",id:"insertParagraphAfterMenuItem"|label:"在後面插入段落",id:"insertParagraphAfterMenuItem"
+
+tocTitle:"Table of Contents"|tocTitle:"目錄"
+title:"Save All"|title:"全部保存"
+title:"Close All"|title:"全部關閉"
+("\n      New File\n    ")|("\n      新文件\n    ")
+("Opened files")|("打開的文件")
+("\n        Open Folder\n      ")|("\n        打開文件夾\n      ")
+("No folder open")|("沒有文件夾打開")
+title:"Case Sensitive"|title:"區分大小寫"
+title:"Select whole word"|title:"全字匹配"
+title:"Use query as RegEx"|title:"使用正則表達式"
+placeholder:"Search in folder..."|placeholder:"在文件夾中搜索..."
+placeholder:"Search"|placeholder:"搜索"
+placeholder:"Replacement"|placeholder:"替換"
+content:"Replace All"|content:"全部替換"
+content:"Replace Single"|content:"替換單個"
+("Table Of Contents")|("目錄")
+("Empty project")|("空項目")
+("Create File")|("創建文件")
+
+label:"New File"|label:"新建文件"
+label:"New Directory"|label:"新建目錄"
+label:"Paste"|label:"粘貼"
+label:"Rename"|label:"重命名"
+label:"Move To Trash"|label:"移動到垃圾箱"
+label:"Show In Folder"|label:"定位到文件夾中"
+
+label:"Close",id:"closeThisTab"|label:"關閉標籤",id:"closeThisTab"
+label:"Close others",id:"closeOtherTabs"|label:"關閉其它標籤",id:"closeOtherTabs"
+label:"Close saved tabs",id:"closeSavedTabs"|label:"關閉已保存的標籤",id:"closeSavedTabs"
+label:"Close all tabs",id:"closeAllTabs"|label:"關閉所有標籤",id:"closeAllTabs"
+label:"Rename",id:"renameFile"|label:"重命名",id:"renameFile"
+label:"Copy path",id:"copyPath"|label:"複製路徑",id:"copyPath"
+label:"Show in folder",id:"showInFolder"|label:"定位到文件夾中",id:"showInFolder"
+
+("Words:")|("單詞數:")
+("Characters:")|("字符數:")
+("Paragraphs:")|("段落數:")
+
+{type:"strong",tooltip:"Bold",shortcut:|{type:"strong",tooltip:"粗體",shortcut:
+{type:"em",tooltip:"Italic",shortcut:|{type:"em",tooltip:"斜體",shortcut:
+{type:"u",tooltip:"Underline",shortcut:|{type:"u",tooltip:"下劃線",shortcut:
+{type:"del",tooltip:"Strikethrough",shortcut:|{type:"del",tooltip:"刪除線",shortcut:
+{type:"mark",tooltip:"Highlight",shortcut:|{type:"mark",tooltip:"高亮",shortcut:
+{type:"inline_code",tooltip:"Inline Code",shortcut:|{type:"inline_code",tooltip:"內聯代碼",shortcut:
+{type:"inline_math",tooltip:"Inline Math",shortcut:|{type:"inline_math",tooltip:"內斂Math",shortcut:
+{type:"link",tooltip:"Link",shortcut:|{type:"link",tooltip:"鏈接",shortcut:
+{type:"image",tooltip:"Image",shortcut:|{type:"image",tooltip:"圖片",shortcut:
+{type:"clear",tooltip:"Clear Formatting",shortcut:|{type:"clear",tooltip:"清除格式",shortcut:
+
+title:"Exported successfully"|title:"導出成功"
+message:`Exported "${ne().basename(i)}" successfully!`|message:`導出 "${ne().basename(i)}" 成功!`
+title:"Import Warning"|title:"導入警告"
+message:"Install pandoc before you want to import files."|message:"在導入文件之前先安裝 pandoc。"

@@ -1,3 +1,8 @@
+## 25.12.5
+
+- 合入 https://github.com/chinayangxiaowei/marktext-chinese-language-pack 的多语言版本修改
+- 增加繁体中文版本
+
 ## 25.12.4
 
 - 修复 Linux 版打开报 sandbox 相关的错误

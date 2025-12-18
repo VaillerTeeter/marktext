@@ -15,12 +15,40 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest]
+        include:
+          - os: macos-latest
+            lang: ''
+            scriptSuffix: ''
+            artifactSuffix: 'en'
+          - os: macos-latest
+            lang: zh-Hans
+            scriptSuffix: ':zh-Hans'
+            artifactSuffix: 'zh-Hans'
+          - os: macos-latest
+            lang: zh-Hant
+            scriptSuffix: ':zh-Hant'
+            artifactSuffix: 'zh-Hant'
+          - os: ubuntu-latest
+            lang: ''
+            scriptSuffix: ''
+            artifactSuffix: 'en'
+          - os: ubuntu-latest
+            lang: zh-Hans
+            scriptSuffix: ':zh-Hans'
+            artifactSuffix: 'zh-Hans'
+          - os: ubuntu-latest
+            lang: zh-Hant
+            scriptSuffix: ':zh-Hant'
+            artifactSuffix: 'zh-Hant'
 
     env:
       DISPLAY: ":99.0"
       MARKTEXT_IS_STABLE: 1
       MARKTEXT_EXIT_ON_ERROR: 1
+      # Release translation is enabled when `lang` is non-empty.
+      lang: ${{ matrix.lang }}
+      # Used by electron-builder artifactName to avoid overwriting outputs.
+      ARTIFACT_SUFFIX: ${{ matrix.artifactSuffix }}
       GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
     steps:
@@ -84,9 +112,9 @@ jobs:
       - name: Build and release
         run: |
               if [ "$RUNNER_OS" == "Linux" ]; then
-                yarn run release:linux --publish always
+                yarn run release:linux${{ matrix.scriptSuffix }} --publish always
               elif [ "$RUNNER_OS" == "macOS" ]; then
-                yarn run release:mac --publish always
+                yarn run release:mac${{ matrix.scriptSuffix }} --publish always
               else
                 echo "$RUNNER_OS not supported"
                 exit 1
@@ -101,7 +129,7 @@ jobs:
       - name: Calculate checksums
         if: runner.os == 'macOS'
         run: |
-          shasum -a 256 build/marktext-arm64.dmg
+          shasum -a 256 build/marktext*.dmg
         shell: bash
 
   windows:
@@ -109,9 +137,26 @@ jobs:
     continue-on-error: false
     timeout-minutes: 45
 
+    strategy:
+      matrix:
+        include:
+          - lang: ''
+            scriptSuffix: ''
+            artifactSuffix: 'en'
+          - lang: zh-Hans
+            scriptSuffix: ':zh-Hans'
+            artifactSuffix: 'zh-Hans'
+          - lang: zh-Hant
+            scriptSuffix: ':zh-Hant'
+            artifactSuffix: 'zh-Hant'
+
     env:
       MARKTEXT_IS_STABLE: 1
       MARKTEXT_EXIT_ON_ERROR: 1
+      # Release translation is enabled when `lang` is non-empty.
+      lang: ${{ matrix.lang }}
+      # Used by electron-builder artifactName to avoid overwriting outputs.
+      ARTIFACT_SUFFIX: ${{ matrix.artifactSuffix }}
       GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
     steps:
@@ -168,9 +213,9 @@ jobs:
           ELECTRON_DISABLE_SANDBOX: 1
 
       - name: Build and release
-        run: yarn run release:win --publish always
+        run: yarn run release:win${{ matrix.scriptSuffix }} --publish always
 
       - name: Calculate checksums
         run: |
-          get-filehash -Algorithm SHA256 "build\marktext-setup.exe"
+          get-filehash -Algorithm SHA256 "build\marktext-setup*.exe"
         shell: pwsh
