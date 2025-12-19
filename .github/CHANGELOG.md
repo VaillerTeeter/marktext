@@ -1,3 +1,7 @@
+## 25.12.6
+
+- 修改 README 等相关文件为自己
+
 ## 25.12.5
 
 - 合入 https://github.com/chinayangxiaowei/marktext-chinese-language-pack 的多语言版本修改

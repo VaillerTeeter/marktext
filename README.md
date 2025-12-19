@@ -3,64 +3,64 @@
 <h1 align="center">MarkText</h1>
 
 <div align="center">
-  <a href="https://twitter.com/intent/tweet?via=marktextme&url=https://github.com/marktext/marktext/&text=What%20do%20you%20want%20to%20say%20to%20app?&hashtags=happyMarkText">
-    <img src="https://img.shields.io/twitter/url/https/github.com/marktext/marktext.svg?style=for-the-badge" alt="twitter">
-  </a>
-</div>
-<div align="center">
-  <strong>:high_brightness: Next generation markdown editor :crescent_moon:</strong><br>
-  A simple and elegant open-source markdown editor that focused on speed and usability.<br>
-  <sub>Available for Linux, macOS and Windows.</sub>
+  <strong>:high_brightness: 下一代 Markdown 编辑器 :crescent_moon:</strong><br>
+  一个简单优雅的开源 Markdown 编辑器，专注于速度和可用性<br>
+  <sub>可用于 Linux、macOS 和 Windows</sub>
 </div>
 
 <br>
 
 <div align="center">
+  <!-- Version -->
+  <a href="https://github.com/VaillerTeeter/marktext-maintained/releases">
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/VaillerTeeter/marktext-maintained">
+  </a>
   <!-- License -->
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/marktext/marktext.svg" alt="LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/VaillerTeeter/marktext-maintained">
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/marktext/marktext/">
-    <img src="https://travis-ci.org/marktext/marktext.svg?branch=master" alt="build">
+  <a href="https://github.com/VaillerTeeter/marktext-maintained/actions/workflows/build.yml">
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/VaillerTeeter/marktext-maintained/build.yml?label=dev-build">
   </a>
-  <a href="https://ci.appveyor.com/project/marktext/marktext/branch/master">
-    <img src="https://ci.appveyor.com/api/projects/status/l4gxgydj0i95hmxg/branch/master?svg=true" alt="build">
+  <a href="https://github.com/VaillerTeeter/marktext-maintained/actions/workflows/release.yml">
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/VaillerTeeter/marktext-maintained/release.yml?label=dev-build">
   </a>
   <!-- Downloads total -->
-  <a href="https://github.com/marktext/marktext/releases">
-    <img src="https://img.shields.io/github/downloads/marktext/marktext/total.svg" alt="total download">
+  <a href="https://github.com/VaillerTeeter/marktext-maintained/releases">
+    <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/VaillerTeeter/marktext-maintained/total?label=downloads-all">
   </a>
   <!-- Downloads latest release -->
   <a href="https://github.com/marktext/marktext/releases/latest">
-    <img src="https://img.shields.io/github/downloads/marktext/marktext/v0.17.1/total.svg" alt="latest download">
+    <img alt="GitHub Downloads (all assets, latest release)" src="https://img.shields.io/github/downloads-pre/VaillerTeeter/marktext-maintained/latest/total">
   </a>
   <!-- sponsors -->
-  <a href="https://opencollective.com/marktext">
-    <img src="https://opencollective.com/marktext/tiers/silver-sponsors/badge.svg?label=SilverSponsors&color=brightgreen" alt="sponsors">
+  <!-- TODO: -->
+  <a href="https://opencollective.com/marktext-maintained">
+    <img alt="Open Collective sponsors" src="https://img.shields.io/opencollective/sponsors/marktext-maintained">
   </a>
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://github.com/marktext/marktext">
-      Website
+    <a href="https://github.com/VaillerTeeter/marktext-maintained">
+      网站
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#features">
-      Features
+    <a href="https://github.com/VaillerTeeter/marktext-maintained#features">
+      特性
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#download-and-installation">
-      Downloads
+    <a href="https://github.com/VaillerTeeter/marktext-maintained#download-and-installation">
+      下载
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#development">
-      Development
+    <a href="https://github.com/VaillerTeeter/marktext-maintained#development">
+      开发
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#contribution">
-      Contribution
+    <a href="https://github.com/VaillerTeeter/marktext-maintained#contribution">
+      贡献
     </a>
   </h3>
 </div>
@@ -198,8 +198,8 @@ Names and company logos of all sponsors (from both Patreon and Open Collective) 
 
 ![platform](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)
 
-| ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                  | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                          | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                        |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/mac-pass-sm.png)                                                                                         | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/windows-pass-sm.png)                                                                                         | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                       |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |
 
 Want to see new features of the latest version? Please refer to [CHANGELOG](.github/CHANGELOG.md).
@@ -252,7 +252,6 @@ If you have any questions regarding MarkText, you are welcome to write an issue.
 ## Contribution
 
 MarkText is in development, please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request. Want to add some features to MarkText? Refer to our [roadmap](https://github.com/marktext/marktext/projects?type=classic) and open issues.
-
 
 ## Contributors
 
