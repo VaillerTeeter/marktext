@@ -1,3 +1,8 @@
+## 25.12.6
+
+- 修改 MD 相关文件为本项目
+- 修改 MD 文件为中文
+
 ## 25.12.5
 
 - 合入 https://github.com/chinayangxiaowei/marktext-chinese-language-pack 的多语言版本修改

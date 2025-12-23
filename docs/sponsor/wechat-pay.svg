@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect x="0" y="0" width="800" height="800" fill="#ffffff"/>
+  <rect x="40" y="40" width="720" height="720" fill="#ffffff" stroke="#222222" stroke-width="6"/>
+  <text x="400" y="330" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="36" fill="#111111">微信赞赏码占位图</text>
+  <text x="400" y="390" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="20" fill="#444444">请将此文件替换为真实二维码</text>
+  <text x="400" y="430" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" fill="#666666">路径：docs/sponsor/wechat-pay.svg</text>
+</svg>
