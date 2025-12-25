@@ -1,5 +1,5 @@
 import { ipcMain, BrowserWindow } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { isOsx } from '../config'
 
 /**

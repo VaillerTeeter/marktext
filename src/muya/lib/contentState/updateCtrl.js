@@ -294,7 +294,7 @@ const updateCtrl = ContentState => {
       }
     }
     if (TASK_LIST_REG.test(listItemText)) {
-      const [, , tasklist, , , ,] = listItemText.match(INLINE_UPDATE_REG) || [] // eslint-disable-line comma-spacing
+      const [, , tasklist, , , ,] = listItemText.match(INLINE_UPDATE_REG) || []
       return this.updateTaskListItem(block, 'tasklist', tasklist)
     } else {
       return block

@@ -33,8 +33,6 @@
   - `settings.json`：工作区级别编辑器设置
 
 - `.editorconfig`：编辑器统一格式约定（缩进/换行等）
-- `.eslintignore`：ESLint 忽略规则
-- `.eslintrc.js`：ESLint 规则配置
 - `.gitignore`：Git 忽略规则
 - `.node-version`：建议的 Node.js 版本（供 nvm/asdf 等工具读取）
 
@@ -72,7 +70,6 @@
   - `preference.json`：默认偏好设置模板
 
 - `test/`：测试目录
-  - `.eslintrc`：测试目录专用 lint 配置
   - `e2e/`：端到端测试
   - `specs/`：规格/回归类测试（按项目约定）
   - `unit/`：单元测试
@@ -92,6 +89,7 @@
 - `README.md`：项目主页说明（用户入口/开发入口）
 - `babel.config.js`：Babel 配置
 - `electron-builder.yml`：electron-builder 打包配置
+- `eslint.config.cjs`：ESLint 规则配置
 - `package.json`：依赖与脚本入口（`yarn dev` / `yarn test` / `yarn release:*` 等）
 - `vetur.config.js`：Vetur（Vue 工具链）配置
 - `yarn.lock`：依赖锁文件（Yarn）

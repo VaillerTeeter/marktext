@@ -5,7 +5,7 @@ import { BrowserWindow, ipcMain, dialog } from 'electron'
 import keytar from 'keytar'
 import schema from './schema'
 import Store from 'electron-store'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { ensureDirSync } from 'common/filesystem'
 import { IMAGE_EXTENSIONS } from 'common/filesystem/paths'
 

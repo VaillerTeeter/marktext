@@ -1,5 +1,5 @@
 import { ipcMain, MenuItem } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { isOsx } from '../../config'
 import { addToDictionary } from '../../spellchecker'
 import { SEPARATOR } from './menuItems'

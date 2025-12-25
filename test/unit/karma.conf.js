@@ -38,6 +38,10 @@ delete webpackConfig.externals
 delete webpackConfig.output.libraryTarget
 delete webpackConfig.optimization
 
+webpackConfig.resolve = webpackConfig.resolve || {}
+webpackConfig.resolve.alias = webpackConfig.resolve.alias || {}
+webpackConfig.resolve.alias.axios = require.resolve('axios/dist/node/axios.cjs')
+
 // BUG: TypeError: Cannot read property 'loaders' of undefined
 // // apply vue option to apply isparta-loader on js
 // webpackConfig.module.rules
@@ -73,9 +77,10 @@ module.exports = config => {
         { type: 'text-summary' }
       ]
     },
-    frameworks: ['mocha', 'chai', 'webpack'],
-    files: ['./index.js'],
+    frameworks: ['mocha', 'webpack'],
+    files: ['./setup-chai.js', './index.js'],
     preprocessors: {
+      './setup-chai.js': ['webpack', 'sourcemap'],
       './index.js': ['webpack', 'sourcemap']
     },
     reporters: ['spec', 'coverage'],

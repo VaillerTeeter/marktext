@@ -88,7 +88,7 @@
 <script>
 import { mapState } from 'vuex'
 import bus from '../../bus'
-import log from 'electron-log'
+import log from 'electron-log/renderer'
 import SearchResultItem from './searchResultItem.vue'
 import RipgrepDirectorySearcher from '../../node/ripgrepSearcher'
 import EmptyIcon from '@/assets/icons/undraw_empty.svg'

@@ -1,5 +1,5 @@
 import { ipcMain, shell } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import EventEmitter from 'events'
 import fsPromises from 'fs/promises'
 import { getCurrentKeyboardLayout, getKeyMap, onDidChangeKeyboardLayout } from 'native-keymap'

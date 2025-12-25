@@ -106,8 +106,9 @@ linux:
   - "text/markdown"
   icon: "resources/icons"
   desktop:
-    StartupWMClass: "marktext"
-    Keywords: "marktext;"
+    entry:
+      StartupWMClass: "marktext"
+      Keywords: "marktext;"
   target:
   - target: "deb"
   # Workaround because file association array doesn't work.

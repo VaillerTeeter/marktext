@@ -4,7 +4,6 @@
  * but it can be used to extend your development environment.
  */
 
-/* eslint-disable */
 require('dotenv').config()
 
 // Install `vue-devtools`
@@ -16,8 +15,6 @@ require('electron').app.on('ready', () => {
       console.log('Unable to install `vue-devtools`: \n', err)
     })
 })
-
-/* eslint-enable */
 
 // Require `main` process to boot app
 require('./index')

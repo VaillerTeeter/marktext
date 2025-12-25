@@ -1,6 +1,6 @@
 import path from 'path'
 import { ipcMain, BrowserWindow } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { COMMANDS } from '../../commands'
 import { searchFilesAndDir } from '../../utils/imagePathAutoComplement'
 

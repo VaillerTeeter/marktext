@@ -64,9 +64,10 @@ const mainConfig = {
       failOnError: true,
       // NB: Threads must be disabled, otherwise no errors are emitted.
       threads: false,
-      formatter: require('eslint-friendly-formatter'),
+      formatter: 'stylish',
       context: path.resolve(__dirname, '../'),
-      overrideConfigFile: '.eslintrc.js'
+      eslintPath: 'eslint/use-at-your-own-risk', // 用 FlatESLint
+      configType: 'flat'                         // 明确走 flat config
     }),
     // Add global environment definitions.
     new webpack.DefinePlugin(getEnvironmentDefinitions())

@@ -50,7 +50,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import log from 'electron-log'
+import log from 'electron-log/renderer'
 import bus from '../../bus'
 import loading from '../loading'
 

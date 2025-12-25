@@ -1,19 +1,88 @@
 import './globalSetting'
 import path from 'path'
-import { app, dialog } from 'electron'
+import { app, dialog, ipcMain, BrowserWindow } from 'electron'
 import { initialize as remoteInitializeServer } from '@electron/remote/main'
 import cli from './cli'
 import setupExceptionHandler, { initExceptionLogger } from './exceptionHandler'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import App from './app'
 import Accessor from './app/accessor'
 import setupEnvironment from './app/env'
 import { getLogLevel } from './utils'
 
+const registerRendererLogForwarding = (logPath) => {
+  const rendererLoggers = new Map()
+
+  const getRendererLogger = (windowId, debug) => {
+    const key = String(windowId)
+    if (rendererLoggers.has(key)) return rendererLoggers.get(key)
+
+    const logger = typeof log.create === 'function'
+      ? log.create({ logId: `renderer-${key}` })
+      : log
+
+    if (logger?.transports?.console) {
+      logger.transports.console.level = false
+    }
+
+    if (logger?.transports?.file) {
+      const resolve = () => path.join(logPath, `editor-${key}.log`)
+      if (Object.prototype.hasOwnProperty.call(logger.transports.file, 'resolvePathFn')) {
+        logger.transports.file.resolvePathFn = resolve
+      } else {
+        logger.transports.file.resolvePath = resolve
+      }
+      logger.transports.file.level = debug ? 'debug' : 'info'
+      logger.transports.file.sync = false
+    }
+
+    rendererLoggers.set(key, logger)
+    return logger
+  }
+
+  ipcMain.on('mt::renderer-log', (event, payload) => {
+    try {
+      const safePayload = payload && typeof payload === 'object' ? payload : {}
+      const level = typeof safePayload.level === 'string' ? safePayload.level : 'info'
+      const args = Array.isArray(safePayload.args) ? safePayload.args : []
+      const debug = !!safePayload.debug
+
+      let windowId = safePayload.windowId
+      if (typeof windowId !== 'number' && typeof windowId !== 'string') {
+        const bw = BrowserWindow.fromWebContents(event.sender)
+        windowId = bw ? String(bw.id) : 'unknown'
+      }
+
+      const logger = getRendererLogger(windowId, debug)
+      const fn = typeof logger[level] === 'function' ? logger[level] : logger.info
+      fn.apply(logger, args)
+    } catch (err) {
+      // last-resort: do not crash the app because of logging
+      try {
+        log.warn('Failed to process renderer log IPC message', err)
+      } catch {
+        // ignore logging failures
+      }
+    }
+  })
+}
+
 const initializeLogger = appEnvironment => {
   log.transports.console.level = process.env.NODE_ENV === 'development' ? 'info' : 'error'
-  log.transports.rendererConsole = null
-  log.transports.file.resolvePath = () => path.join(appEnvironment.paths.logPath, 'main.log')
+
+  // electron-log@5 removed/changed some transports (e.g. rendererConsole) and made objects stricter.
+  // Keep backward compatibility without mutating missing properties.
+  if (log.transports && Object.prototype.hasOwnProperty.call(log.transports, 'rendererConsole')) {
+    log.transports.rendererConsole = null
+  }
+
+  if (log.transports?.file) {
+    if (Object.prototype.hasOwnProperty.call(log.transports.file, 'resolvePathFn')) {
+      log.transports.file.resolvePathFn = () => path.join(appEnvironment.paths.logPath, 'main.log')
+    } else {
+      log.transports.file.resolvePath = () => path.join(appEnvironment.paths.logPath, 'main.log')
+    }
+  }
   log.transports.file.level = getLogLevel()
   log.transports.file.sync = true
   initExceptionLogger()
@@ -32,6 +101,7 @@ setupExceptionHandler()
 const args = cli()
 const appEnvironment = setupEnvironment(args)
 initializeLogger(appEnvironment)
+registerRendererLogForwarding(appEnvironment.paths.logPath)
 
 if (args['--disable-gpu']) {
   app.disableHardwareAcceleration()

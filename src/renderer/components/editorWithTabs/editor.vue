@@ -75,7 +75,7 @@
 <script>
 import { shell } from 'electron'
 import path from 'path'
-import log from 'electron-log'
+import log from 'electron-log/renderer'
 import { mapState } from 'vuex'
 // import ViewImage from 'view-image'
 import { isChildOfDirectory } from 'common/filesystem/paths'

@@ -8,7 +8,7 @@
 
 import { app, clipboard, crashReporter, dialog, ipcMain } from 'electron'
 import os from 'os'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { createAndOpenGitHubIssueUrl } from './utils/createGitHubIssue'
 
 const EXIT_ON_ERROR = !!process.env.MARKTEXT_EXIT_ON_ERROR
@@ -41,10 +41,14 @@ const handleError = async (title, error, type) => {
   }
 
   if (EXIT_ON_ERROR) {
+    // In CI/e2e we need the stack trace even for renderer-originated crashes.
+    if (type !== 'main') {
+      console.error(exceptionToString(error, type))
+    }
     console.log('MarkText was terminated due to an unexpected error (MARKTEXT_EXIT_ON_ERROR variable was set)!')
     process.exit(1)
     // eslint, don't lie to me, the return statement is important!
-    return // eslint-disable-line no-unreachable
+    return
   } else if (!SHOW_ERROR_DIALOG || (global.MARKTEXT_IS_STABLE && type === 'renderer')) {
     return
   }

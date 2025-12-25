@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { filter } from 'fuzzaldrin'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { isDirectory, isFile } from 'common/filesystem'
 import { IMAGE_EXTENSIONS } from 'common/filesystem/paths'
 import { BLACK_LIST } from '../config'

@@ -1,6 +1,6 @@
 import fsPromises from 'fs/promises'
 import path from 'path'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import iconv from 'iconv-lite'
 import { LINE_ENDING_REG, LF_LINE_ENDING_REG, CRLF_LINE_ENDING_REG } from '../config'
 import { isDirectory2 } from 'common/filesystem'

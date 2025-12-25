@@ -2,6 +2,36 @@
 
 - 修改 MD 相关文件为本项目
 - 修改 MD 文件为中文
+- 升级依赖
+  - New:
+    - globals: 16.5.0
+    - rimraf: 6.1.2
+  - Delete:
+    - karma-chai: 0.1.0
+    - eslint-config-standard: 17.1.0
+    - @electron/rebuild: 4.0.2
+  - Change:
+    - axios: 0.30.2 --> 1.13.2
+    - chokidar: 3.6.0 --> 5.0.0
+    - dompurify: 2.5.8 --> 3.3.1
+    - electron-log: 4.4.8 --> 5.4.3
+    - fs-extra: 11.3.2 --> 11.3.3
+    - html-tags: 3.3.1 --> 5.1.0
+    - @electron/rebuild: 3.7.2 --> 4.0.2
+    - babel-plugin-istanbul: 6.1.1 --> 7.0.1
+    - baseline-browser-mapping: 2.9.8 --> 2.9.11
+    - caniuse-lite: 1.0.30001760 --> 1.0.30001761
+    - chai: 4.5.0 --> 6.2.2
+    - chalk: 4.1.2 --> 5.6.2
+    - del: 6.1.1 --> 8.0.1
+    - electron-builder: 25.1.8 --> 26.0.12
+    - electron-builder-squirrel-windows: 25.1.8 --> 26.0.12
+    - eslint: 8.57.1 --> 9.39.2
+    - eslint-plugin-n: 16.6.2 --> 17.23.1
+    - eslint-plugin-promise: 6.6.0 --> 7.2.1
+    - eslint-webpack-plugin: 4.2.0 --> 5.0.2
+    - imports-loader: 0.8.0 --> 5.0.0
+    - webpack: 5.104.0 --> 5.104.1
 
 ## 25.12.5
 

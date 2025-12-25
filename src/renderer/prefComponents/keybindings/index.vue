@@ -48,7 +48,7 @@
 
 <script>
 import { ipcRenderer, shell } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/renderer'
 import { setKeyboardLayout } from '@hfelix/electron-localshortcut'
 import Compound from '../common/compound'
 import Separator from '../common/separator'

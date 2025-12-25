@@ -100,7 +100,6 @@ const router = new VueRouter({
   routes: routes(global.marktext.env.type)
 })
 
-/* eslint-disable no-new */
 new Vue({
   store,
   router,

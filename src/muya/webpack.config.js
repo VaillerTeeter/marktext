@@ -21,7 +21,12 @@ module.exports = {
     rules: [
       {
         test: require.resolve(path.join(__dirname, './lib/assets/libs/snap.svg-min.js')),
-        use: 'imports-loader?this=>window,fix=>module.exports=0'
+        use: {
+          loader: 'imports-loader',
+          options: {
+            additionalCode: 'var window = this; var fix = module.exports = 0;'
+          }
+        }
       },
       {
         test: /(theme\-chalk(?:\/|\\)index|exportStyle|katex|github\-markdown|prism[\-a-z]*|\.theme|headerFooterStyle)\.css$/,

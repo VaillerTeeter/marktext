@@ -1,5 +1,5 @@
 import { ipcRenderer } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/renderer'
 import bus from '../bus'
 import staticCommands, { RootCommand } from '../commands'
 

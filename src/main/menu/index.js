@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { app, ipcMain, Menu } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { ensureDirSync, isDirectory2, isFile2 } from 'common/filesystem'
 import { isLinux, isOsx, isWindows } from '../config'
 import { updateSidebarMenu } from '../menu/actions/edit'

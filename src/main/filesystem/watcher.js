@@ -1,7 +1,7 @@
 import path from 'path'
 import fsPromises from 'fs/promises'
-import log from 'electron-log'
-import chokidar from 'chokidar'
+import log from 'electron-log/main'
+import { watch } from 'chokidar'
 import { exists } from 'common/filesystem'
 import { hasMarkdownExtension } from 'common/filesystem/paths'
 import { getUniqueId } from '../utils'
@@ -148,7 +148,7 @@ class Watcher {
     const usePolling = isOsx ? true : this._preferences.getItem('watcherUsePolling')
 
     const id = getUniqueId()
-    const watcher = chokidar.watch(watchPath, {
+    const watcher = watch(watchPath, {
       ignored: (pathname, fileInfo) => {
         // This function is called twice, once with a single argument (the path),
         // second time with two arguments (the path and the "fs.Stats" object of that path).

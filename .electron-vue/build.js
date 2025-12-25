@@ -4,8 +4,8 @@ process.env.NODE_ENV = 'production'
 
 const { say } = require('cfonts')
 const path = require('path')
-const chalk = require('chalk')
-const del = require('del')
+const chalk = require('chalk').default
+const { rimrafSync } = require('rimraf')
 const fs = require('fs-extra')
 const webpack = require('webpack')
 const Listr = require('listr')
@@ -41,7 +41,7 @@ else if (process.env.BUILD_TARGET === 'web') web()
 else build()
 
 function clean () {
-  del.sync(['build/*', '!build/icons', '!build/icons/icon.*'])
+  rimrafSync(['build/*', '!build/icons', '!build/icons/icon.*'], { glob: true })
   console.log(`\n${doneLog}\n`)
   process.exit()
 }
@@ -49,8 +49,8 @@ function clean () {
 async function build () {
   greeting()
 
-  del.sync(['dist/electron/*', '!.gitkeep'])
-  del.sync(['static/themes/*'])
+  rimrafSync(['dist/electron/*', '!.gitkeep'], { glob: true })
+  rimrafSync(['static/themes/*'], { glob: true })
 
   const from = path.resolve(__dirname, '../src/muya/themes')
   const to = path.resolve(__dirname, '../static/themes')

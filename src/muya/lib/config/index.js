@@ -1,5 +1,5 @@
 import htmlTags from 'html-tags'
-import voidHtmlTags from 'html-tags/void'
+const voidHtmlTags = htmlTags.voidTags
 import { generateKeyHash, genUpper2LowerKeyHash } from '../utils/hash'
 import { getLongUniqueId } from '../utils/random'
 

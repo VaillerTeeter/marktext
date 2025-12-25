@@ -1,7 +1,7 @@
 import fs from 'fs-extra'
 import path from 'path'
 import { BrowserWindow, app, dialog, ipcMain, shell } from 'electron'
-import log from 'electron-log'
+import log from 'electron-log/main'
 import { isDirectory, isFile, exists } from 'common/filesystem'
 import { MARKDOWN_EXTENSIONS, isMarkdownFile } from 'common/filesystem/paths'
 import { checkUpdates, userSetting } from './marktext'

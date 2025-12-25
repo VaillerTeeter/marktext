@@ -45,7 +45,12 @@ const rendererConfig = {
     rules: [
       {
         test: require.resolve(path.join(__dirname, '../src/muya/lib/assets/libs/snap.svg-min.js')),
-        use: 'imports-loader?this=>window,fix=>module.exports=0'
+        use: {
+          loader: 'imports-loader',
+          options: {
+            additionalCode: 'var window = this; var fix = module.exports = 0;'
+          }
+        }
       },
       {
         test: /\.vue$/,
@@ -166,9 +171,10 @@ const rendererConfig = {
       failOnError: true,
       // NB: Threads must be disabled, otherwise no errors are emitted.
       threads: false,
-      formatter: require('eslint-friendly-formatter'),
+      formatter: 'stylish',
       context: path.resolve(__dirname, '../'),
-      overrideConfigFile: '.eslintrc.js'
+      eslintPath: 'eslint/use-at-your-own-risk', // 用 FlatESLint
+      configType: 'flat'                         // 明确走 flat config
     }),
     new SpritePlugin(),
     new HtmlWebpackPlugin({
