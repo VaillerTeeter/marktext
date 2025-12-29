@@ -4,6 +4,33 @@
   overflow-y: auto;
 }
 
+.ag-emoji-picker .tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--floatBorderColor);
+  background: var(--itemBgColor);
+  position: sticky;
+  top: 0;
+  z-index: 1002;
+}
+
+.ag-emoji-picker .tab {
+  padding: 8px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--editorColor70);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid transparent;
+}
+
+.ag-emoji-picker .tab.active {
+  color: var(--editorColor);
+  border-color: var(--floatActiveColor);
+}
+
 .ag-emoji-picker .title {
   color: var(--editorColor80);
   line-height: 1.15;

@@ -12,6 +12,7 @@ class EmojiPicker extends BaseScrollFloat {
     this._renderObj = null
     this.renderArray = null
     this.activeItem = null
+    this.activeCategory = null
     this.oldVnode = null
     this.emoji = new Emoji()
     this.listen()
@@ -23,15 +24,28 @@ class EmojiPicker extends BaseScrollFloat {
 
   set renderObj (obj) {
     this._renderObj = obj
+    const categories = Object.keys(obj)
+    if (!categories.length) {
+      this.renderArray = []
+      this.activeItem = null
+      this.activeCategory = null
+      return
+    }
+    if (!this.activeCategory || !obj[this.activeCategory]) {
+      this.activeCategory = categories[0]
+    }
     const renderArray = []
-    Object.keys(obj).forEach(key => {
+    categories.forEach(key => {
       renderArray.push(...obj[key])
     })
     this.renderArray = renderArray
-    if (this.renderArray.length > 0) {
-      this.activeItem = this.renderArray[0]
+    const currentList = obj[this.activeCategory] || []
+    if (currentList.length) {
+      this.activeItem = currentList[0]
       const activeEle = this.getItemElement(this.activeItem)
       this.activeEleScrollIntoView(activeEle)
+    } else {
+      this.activeItem = this.renderArray[0] || null
     }
   }
 
@@ -63,25 +77,47 @@ class EmojiPicker extends BaseScrollFloat {
 
   render () {
     const { scrollElement, _renderObj, activeItem, oldVnode } = this
-    const children = Object.keys(_renderObj).map(category => {
-      const title = h('div.title', category)
-      const emojis = _renderObj[category].map(e => {
-        const selector = activeItem === e ? 'div.item.active' : 'div.item'
-        return h(selector, {
-          dataset: { label: e.aliases[0] },
-          props: { title: e.description },
-          on: {
-            click: () => {
-              this.selectItem(e)
-            }
-          }
-        }, h('span', e.emoji))
-      })
+    const categories = Object.keys(_renderObj)
+    const ensureActiveCategory = () => {
+      if (!this.activeCategory || !_renderObj[this.activeCategory]) {
+        this.activeCategory = categories[0]
+      }
+    }
+    ensureActiveCategory()
 
-      return h('section', [title, h('div.emoji-wrapper', emojis)])
+    const tabs = h('div.tabs', categories.map(cat => {
+      const selector = this.activeCategory === cat ? 'div.tab.active' : 'div.tab'
+      return h(selector, {
+        on: {
+          click: () => {
+            this.activeCategory = cat
+            // Reset active item to first in category for clarity.
+            const list = _renderObj[cat]
+            if (list && list.length) {
+              this.activeItem = list[0]
+            }
+            this.render()
+          }
+        }
+      }, cat)
+    }))
+
+    const list = _renderObj[this.activeCategory] || []
+    const title = h('div.title', this.activeCategory)
+    const emojis = list.map(e => {
+      const selector = activeItem === e ? 'div.item.active' : 'div.item'
+      return h(selector, {
+        dataset: { label: e.aliases[0] },
+        props: { title: e.description },
+        on: {
+          click: () => {
+            this.selectItem(e)
+          }
+        }
+      }, h('span', e.emoji))
     })
 
-    const vnode = h('div', children)
+    const vnode = h('div', [tabs, h('section', [title, h('div.emoji-wrapper', emojis)])])
 
     if (oldVnode) {
       patch(oldVnode, vnode)
