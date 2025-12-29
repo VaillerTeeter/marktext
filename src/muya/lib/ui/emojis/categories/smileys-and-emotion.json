@@ -1,0 +1,1662 @@
+[
+  {
+    "emoji": "😀",
+    "description": "grinning face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "grinning"
+    ],
+    "tags": [
+      "smile",
+      "happy"
+    ]
+  },
+  {
+    "emoji": "😃",
+    "description": "grinning face with big eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smiley"
+    ],
+    "tags": [
+      "happy",
+      "joy",
+      "haha"
+    ]
+  },
+  {
+    "emoji": "😄",
+    "description": "grinning face with smiling eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smile"
+    ],
+    "tags": [
+      "happy",
+      "joy",
+      "laugh",
+      "pleased"
+    ]
+  },
+  {
+    "emoji": "😁",
+    "description": "beaming face with smiling eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "grin"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😆",
+    "description": "grinning squinting face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "laughing",
+      "satisfied"
+    ],
+    "tags": [
+      "happy",
+      "haha"
+    ]
+  },
+  {
+    "emoji": "😅",
+    "description": "grinning face with sweat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sweat_smile"
+    ],
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "emoji": "🤣",
+    "description": "rolling on the floor laughing",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "rofl"
+    ],
+    "tags": [
+      "lol",
+      "laughing"
+    ]
+  },
+  {
+    "emoji": "😂",
+    "description": "face with tears of joy",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "joy"
+    ],
+    "tags": [
+      "tears"
+    ]
+  },
+  {
+    "emoji": "🙂",
+    "description": "slightly smiling face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "slightly_smiling_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙃",
+    "description": "upside-down face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "upside_down_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😉",
+    "description": "winking face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "wink"
+    ],
+    "tags": [
+      "flirt"
+    ]
+  },
+  {
+    "emoji": "😊",
+    "description": "smiling face with smiling eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "blush"
+    ],
+    "tags": [
+      "proud"
+    ]
+  },
+  {
+    "emoji": "😇",
+    "description": "smiling face with halo",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "innocent"
+    ],
+    "tags": [
+      "angel"
+    ]
+  },
+  {
+    "emoji": "🥰",
+    "description": "smiling face with hearts",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smiling_face_with_three_hearts"
+    ],
+    "tags": [
+      "love"
+    ]
+  },
+  {
+    "emoji": "😍",
+    "description": "smiling face with heart-eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heart_eyes"
+    ],
+    "tags": [
+      "love",
+      "crush"
+    ]
+  },
+  {
+    "emoji": "🤩",
+    "description": "star-struck",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "star_struck"
+    ],
+    "tags": [
+      "eyes"
+    ]
+  },
+  {
+    "emoji": "😘",
+    "description": "face blowing a kiss",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "kissing_heart"
+    ],
+    "tags": [
+      "flirt"
+    ]
+  },
+  {
+    "emoji": "😗",
+    "description": "kissing face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "kissing"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☺️",
+    "description": "smiling face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "relaxed"
+    ],
+    "tags": [
+      "blush",
+      "pleased"
+    ]
+  },
+  {
+    "emoji": "😚",
+    "description": "kissing face with closed eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "kissing_closed_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😙",
+    "description": "kissing face with smiling eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "kissing_smiling_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥲",
+    "description": "smiling face with tear",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smiling_face_with_tear"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😋",
+    "description": "face savoring food",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "yum"
+    ],
+    "tags": [
+      "tongue",
+      "lick"
+    ]
+  },
+  {
+    "emoji": "😛",
+    "description": "face with tongue",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "stuck_out_tongue"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😜",
+    "description": "winking face with tongue",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "stuck_out_tongue_winking_eye"
+    ],
+    "tags": [
+      "prank",
+      "silly"
+    ]
+  },
+  {
+    "emoji": "🤪",
+    "description": "zany face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "zany_face"
+    ],
+    "tags": [
+      "goofy",
+      "wacky"
+    ]
+  },
+  {
+    "emoji": "😝",
+    "description": "squinting face with tongue",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "stuck_out_tongue_closed_eyes"
+    ],
+    "tags": [
+      "prank"
+    ]
+  },
+  {
+    "emoji": "🤑",
+    "description": "money-mouth face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "money_mouth_face"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "emoji": "🤗",
+    "description": "hugging face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hugs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤭",
+    "description": "face with hand over mouth",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hand_over_mouth"
+    ],
+    "tags": [
+      "quiet",
+      "whoops"
+    ]
+  },
+  {
+    "emoji": "🤫",
+    "description": "shushing face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "shushing_face"
+    ],
+    "tags": [
+      "silence",
+      "quiet"
+    ]
+  },
+  {
+    "emoji": "🤔",
+    "description": "thinking face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "thinking"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤐",
+    "description": "zipper-mouth face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "zipper_mouth_face"
+    ],
+    "tags": [
+      "silence",
+      "hush"
+    ]
+  },
+  {
+    "emoji": "🤨",
+    "description": "face with raised eyebrow",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "raised_eyebrow"
+    ],
+    "tags": [
+      "suspicious"
+    ]
+  },
+  {
+    "emoji": "😐",
+    "description": "neutral face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "neutral_face"
+    ],
+    "tags": [
+      "meh"
+    ]
+  },
+  {
+    "emoji": "😑",
+    "description": "expressionless face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "expressionless"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😶",
+    "description": "face without mouth",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "no_mouth"
+    ],
+    "tags": [
+      "mute",
+      "silence"
+    ]
+  },
+  {
+    "emoji": "😶‍🌫️",
+    "description": "face in clouds",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "face_in_clouds"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😏",
+    "description": "smirking face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smirk"
+    ],
+    "tags": [
+      "smug"
+    ]
+  },
+  {
+    "emoji": "😒",
+    "description": "unamused face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "unamused"
+    ],
+    "tags": [
+      "meh"
+    ]
+  },
+  {
+    "emoji": "🙄",
+    "description": "face with rolling eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "roll_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😬",
+    "description": "grimacing face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "grimacing"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😮‍💨",
+    "description": "face exhaling",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "face_exhaling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤥",
+    "description": "lying face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "lying_face"
+    ],
+    "tags": [
+      "liar"
+    ]
+  },
+  {
+    "emoji": "😌",
+    "description": "relieved face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "relieved"
+    ],
+    "tags": [
+      "whew"
+    ]
+  },
+  {
+    "emoji": "😔",
+    "description": "pensive face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "pensive"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😪",
+    "description": "sleepy face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sleepy"
+    ],
+    "tags": [
+      "tired"
+    ]
+  },
+  {
+    "emoji": "🤤",
+    "description": "drooling face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "drooling_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😴",
+    "description": "sleeping face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sleeping"
+    ],
+    "tags": [
+      "zzz"
+    ]
+  },
+  {
+    "emoji": "😷",
+    "description": "face with medical mask",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "mask"
+    ],
+    "tags": [
+      "sick",
+      "ill"
+    ]
+  },
+  {
+    "emoji": "🤒",
+    "description": "face with thermometer",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "face_with_thermometer"
+    ],
+    "tags": [
+      "sick"
+    ]
+  },
+  {
+    "emoji": "🤕",
+    "description": "face with head-bandage",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "face_with_head_bandage"
+    ],
+    "tags": [
+      "hurt"
+    ]
+  },
+  {
+    "emoji": "🤢",
+    "description": "nauseated face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "nauseated_face"
+    ],
+    "tags": [
+      "sick",
+      "barf",
+      "disgusted"
+    ]
+  },
+  {
+    "emoji": "🤮",
+    "description": "face vomiting",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "vomiting_face"
+    ],
+    "tags": [
+      "barf",
+      "sick"
+    ]
+  },
+  {
+    "emoji": "🤧",
+    "description": "sneezing face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sneezing_face"
+    ],
+    "tags": [
+      "achoo",
+      "sick"
+    ]
+  },
+  {
+    "emoji": "🥵",
+    "description": "hot face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hot_face"
+    ],
+    "tags": [
+      "heat",
+      "sweating"
+    ]
+  },
+  {
+    "emoji": "🥶",
+    "description": "cold face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "cold_face"
+    ],
+    "tags": [
+      "freezing",
+      "ice"
+    ]
+  },
+  {
+    "emoji": "🥴",
+    "description": "woozy face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "woozy_face"
+    ],
+    "tags": [
+      "groggy"
+    ]
+  },
+  {
+    "emoji": "😵",
+    "description": "knocked-out face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "dizzy_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😵‍💫",
+    "description": "face with spiral eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "face_with_spiral_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤯",
+    "description": "exploding head",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "exploding_head"
+    ],
+    "tags": [
+      "mind",
+      "blown"
+    ]
+  },
+  {
+    "emoji": "🤠",
+    "description": "cowboy hat face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "cowboy_hat_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥳",
+    "description": "partying face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "partying_face"
+    ],
+    "tags": [
+      "celebration",
+      "birthday"
+    ]
+  },
+  {
+    "emoji": "🥸",
+    "description": "disguised face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "disguised_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😎",
+    "description": "smiling face with sunglasses",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sunglasses"
+    ],
+    "tags": [
+      "cool"
+    ]
+  },
+  {
+    "emoji": "🤓",
+    "description": "nerd face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "nerd_face"
+    ],
+    "tags": [
+      "geek",
+      "glasses"
+    ]
+  },
+  {
+    "emoji": "🧐",
+    "description": "face with monocle",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "monocle_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😕",
+    "description": "confused face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "confused"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😟",
+    "description": "worried face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "worried"
+    ],
+    "tags": [
+      "nervous"
+    ]
+  },
+  {
+    "emoji": "🙁",
+    "description": "slightly frowning face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "slightly_frowning_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☹️",
+    "description": "frowning face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "frowning_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😮",
+    "description": "face with open mouth",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "open_mouth"
+    ],
+    "tags": [
+      "surprise",
+      "impressed",
+      "wow"
+    ]
+  },
+  {
+    "emoji": "😯",
+    "description": "hushed face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hushed"
+    ],
+    "tags": [
+      "silence",
+      "speechless"
+    ]
+  },
+  {
+    "emoji": "😲",
+    "description": "astonished face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "astonished"
+    ],
+    "tags": [
+      "amazed",
+      "gasp"
+    ]
+  },
+  {
+    "emoji": "😳",
+    "description": "flushed face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "flushed"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥺",
+    "description": "pleading face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "pleading_face"
+    ],
+    "tags": [
+      "puppy",
+      "eyes"
+    ]
+  },
+  {
+    "emoji": "😦",
+    "description": "frowning face with open mouth",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "frowning"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😧",
+    "description": "anguished face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "anguished"
+    ],
+    "tags": [
+      "stunned"
+    ]
+  },
+  {
+    "emoji": "😨",
+    "description": "fearful face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "fearful"
+    ],
+    "tags": [
+      "scared",
+      "shocked",
+      "oops"
+    ]
+  },
+  {
+    "emoji": "😰",
+    "description": "anxious face with sweat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "cold_sweat"
+    ],
+    "tags": [
+      "nervous"
+    ]
+  },
+  {
+    "emoji": "😥",
+    "description": "sad but relieved face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "disappointed_relieved"
+    ],
+    "tags": [
+      "phew",
+      "sweat",
+      "nervous"
+    ]
+  },
+  {
+    "emoji": "😢",
+    "description": "crying face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "cry"
+    ],
+    "tags": [
+      "sad",
+      "tear"
+    ]
+  },
+  {
+    "emoji": "😭",
+    "description": "loudly crying face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sob"
+    ],
+    "tags": [
+      "sad",
+      "cry",
+      "bawling"
+    ]
+  },
+  {
+    "emoji": "😱",
+    "description": "face screaming in fear",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "scream"
+    ],
+    "tags": [
+      "horror",
+      "shocked"
+    ]
+  },
+  {
+    "emoji": "😖",
+    "description": "confounded face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "confounded"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😣",
+    "description": "persevering face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "persevere"
+    ],
+    "tags": [
+      "struggling"
+    ]
+  },
+  {
+    "emoji": "😞",
+    "description": "disappointed face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "disappointed"
+    ],
+    "tags": [
+      "sad"
+    ]
+  },
+  {
+    "emoji": "😓",
+    "description": "downcast face with sweat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sweat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😩",
+    "description": "weary face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "weary"
+    ],
+    "tags": [
+      "tired"
+    ]
+  },
+  {
+    "emoji": "😫",
+    "description": "tired face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "tired_face"
+    ],
+    "tags": [
+      "upset",
+      "whine"
+    ]
+  },
+  {
+    "emoji": "🥱",
+    "description": "yawning face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "yawning_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😤",
+    "description": "face with steam from nose",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "triumph"
+    ],
+    "tags": [
+      "smug"
+    ]
+  },
+  {
+    "emoji": "😡",
+    "description": "pouting face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "rage",
+      "pout"
+    ],
+    "tags": [
+      "angry"
+    ]
+  },
+  {
+    "emoji": "😠",
+    "description": "angry face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "angry"
+    ],
+    "tags": [
+      "mad",
+      "annoyed"
+    ]
+  },
+  {
+    "emoji": "🤬",
+    "description": "face with symbols on mouth",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "cursing_face"
+    ],
+    "tags": [
+      "foul"
+    ]
+  },
+  {
+    "emoji": "😈",
+    "description": "smiling face with horns",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smiling_imp"
+    ],
+    "tags": [
+      "devil",
+      "evil",
+      "horns"
+    ]
+  },
+  {
+    "emoji": "👿",
+    "description": "angry face with horns",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "imp"
+    ],
+    "tags": [
+      "angry",
+      "devil",
+      "evil",
+      "horns"
+    ]
+  },
+  {
+    "emoji": "💀",
+    "description": "skull",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "skull"
+    ],
+    "tags": [
+      "dead",
+      "danger",
+      "poison"
+    ]
+  },
+  {
+    "emoji": "☠️",
+    "description": "skull and crossbones",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "skull_and_crossbones"
+    ],
+    "tags": [
+      "danger",
+      "pirate"
+    ]
+  },
+  {
+    "emoji": "💩",
+    "description": "pile of poo",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hankey",
+      "poop",
+      "shit"
+    ],
+    "tags": [
+      "crap"
+    ]
+  },
+  {
+    "emoji": "🤡",
+    "description": "clown face",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "clown_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👹",
+    "description": "ogre",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "japanese_ogre"
+    ],
+    "tags": [
+      "monster"
+    ]
+  },
+  {
+    "emoji": "👺",
+    "description": "goblin",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "japanese_goblin"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👻",
+    "description": "ghost",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "ghost"
+    ],
+    "tags": [
+      "halloween"
+    ]
+  },
+  {
+    "emoji": "👽",
+    "description": "alien",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "alien"
+    ],
+    "tags": [
+      "ufo"
+    ]
+  },
+  {
+    "emoji": "👾",
+    "description": "alien monster",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "space_invader"
+    ],
+    "tags": [
+      "game",
+      "retro"
+    ]
+  },
+  {
+    "emoji": "🤖",
+    "description": "robot",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "robot"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😺",
+    "description": "grinning cat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smiley_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😸",
+    "description": "grinning cat with smiling eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smile_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😹",
+    "description": "cat with tears of joy",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "joy_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😻",
+    "description": "smiling cat with heart-eyes",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heart_eyes_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😼",
+    "description": "cat with wry smile",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "smirk_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "😽",
+    "description": "kissing cat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "kissing_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙀",
+    "description": "weary cat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "scream_cat"
+    ],
+    "tags": [
+      "horror"
+    ]
+  },
+  {
+    "emoji": "😿",
+    "description": "crying cat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "crying_cat_face"
+    ],
+    "tags": [
+      "sad",
+      "tear"
+    ]
+  },
+  {
+    "emoji": "😾",
+    "description": "pouting cat",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "pouting_cat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙈",
+    "description": "see-no-evil monkey",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "see_no_evil"
+    ],
+    "tags": [
+      "monkey",
+      "blind",
+      "ignore"
+    ]
+  },
+  {
+    "emoji": "🙉",
+    "description": "hear-no-evil monkey",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hear_no_evil"
+    ],
+    "tags": [
+      "monkey",
+      "deaf"
+    ]
+  },
+  {
+    "emoji": "🙊",
+    "description": "speak-no-evil monkey",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "speak_no_evil"
+    ],
+    "tags": [
+      "monkey",
+      "mute",
+      "hush"
+    ]
+  },
+  {
+    "emoji": "💋",
+    "description": "kiss mark",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "kiss"
+    ],
+    "tags": [
+      "lipstick"
+    ]
+  },
+  {
+    "emoji": "💌",
+    "description": "love letter",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "love_letter"
+    ],
+    "tags": [
+      "email",
+      "envelope"
+    ]
+  },
+  {
+    "emoji": "💘",
+    "description": "heart with arrow",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "cupid"
+    ],
+    "tags": [
+      "love",
+      "heart"
+    ]
+  },
+  {
+    "emoji": "💝",
+    "description": "heart with ribbon",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "gift_heart"
+    ],
+    "tags": [
+      "chocolates"
+    ]
+  },
+  {
+    "emoji": "💖",
+    "description": "sparkling heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sparkling_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💗",
+    "description": "growing heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heartpulse"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💓",
+    "description": "beating heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heartbeat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💞",
+    "description": "revolving hearts",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "revolving_hearts"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💕",
+    "description": "two hearts",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "two_hearts"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💟",
+    "description": "heart decoration",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heart_decoration"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "❣️",
+    "description": "heart exclamation",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heavy_heart_exclamation"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💔",
+    "description": "broken heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "broken_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "❤️‍🔥",
+    "description": "heart on fire",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heart_on_fire"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "❤️‍🩹",
+    "description": "mending heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "mending_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "❤️",
+    "description": "red heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "heart"
+    ],
+    "tags": [
+      "love"
+    ]
+  },
+  {
+    "emoji": "🧡",
+    "description": "orange heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "orange_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💛",
+    "description": "yellow heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "yellow_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💚",
+    "description": "green heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "green_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💙",
+    "description": "blue heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "blue_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💜",
+    "description": "purple heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "purple_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤎",
+    "description": "brown heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "brown_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖤",
+    "description": "black heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "black_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤍",
+    "description": "white heart",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "white_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💯",
+    "description": "hundred points",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "100"
+    ],
+    "tags": [
+      "score",
+      "perfect"
+    ]
+  },
+  {
+    "emoji": "💢",
+    "description": "anger symbol",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "anger"
+    ],
+    "tags": [
+      "angry"
+    ]
+  },
+  {
+    "emoji": "💥",
+    "description": "collision",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "boom",
+      "collision"
+    ],
+    "tags": [
+      "explode"
+    ]
+  },
+  {
+    "emoji": "💫",
+    "description": "dizzy",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "dizzy"
+    ],
+    "tags": [
+      "star"
+    ]
+  },
+  {
+    "emoji": "💦",
+    "description": "sweat droplets",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "sweat_drops"
+    ],
+    "tags": [
+      "water",
+      "workout"
+    ]
+  },
+  {
+    "emoji": "💨",
+    "description": "dashing away",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "dash"
+    ],
+    "tags": [
+      "wind",
+      "blow",
+      "fast"
+    ]
+  },
+  {
+    "emoji": "🕳️",
+    "description": "hole",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "hole"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💣",
+    "description": "bomb",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "bomb"
+    ],
+    "tags": [
+      "boom"
+    ]
+  },
+  {
+    "emoji": "💬",
+    "description": "speech balloon",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "speech_balloon"
+    ],
+    "tags": [
+      "comment"
+    ]
+  },
+  {
+    "emoji": "👁️‍🗨️",
+    "description": "eye in speech bubble",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "eye_speech_bubble"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗨️",
+    "description": "left speech bubble",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "left_speech_bubble"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗯️",
+    "description": "right anger bubble",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "right_anger_bubble"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💭",
+    "description": "thought balloon",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "thought_balloon"
+    ],
+    "tags": [
+      "thinking"
+    ]
+  },
+  {
+    "emoji": "💤",
+    "description": "zzz",
+    "category": "Smileys & Emotion",
+    "aliases": [
+      "zzz"
+    ],
+    "tags": [
+      "sleeping"
+    ]
+  }
+]

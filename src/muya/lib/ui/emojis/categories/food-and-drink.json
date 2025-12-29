@@ -1,0 +1,1236 @@
+[
+  {
+    "emoji": "🍇",
+    "description": "grapes",
+    "category": "Food & Drink",
+    "aliases": [
+      "grapes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍈",
+    "description": "melon",
+    "category": "Food & Drink",
+    "aliases": [
+      "melon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍉",
+    "description": "watermelon",
+    "category": "Food & Drink",
+    "aliases": [
+      "watermelon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍊",
+    "description": "tangerine",
+    "category": "Food & Drink",
+    "aliases": [
+      "tangerine",
+      "orange",
+      "mandarin"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍋",
+    "description": "lemon",
+    "category": "Food & Drink",
+    "aliases": [
+      "lemon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍌",
+    "description": "banana",
+    "category": "Food & Drink",
+    "aliases": [
+      "banana"
+    ],
+    "tags": [
+      "fruit"
+    ]
+  },
+  {
+    "emoji": "🍍",
+    "description": "pineapple",
+    "category": "Food & Drink",
+    "aliases": [
+      "pineapple"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥭",
+    "description": "mango",
+    "category": "Food & Drink",
+    "aliases": [
+      "mango"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍎",
+    "description": "red apple",
+    "category": "Food & Drink",
+    "aliases": [
+      "apple"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍏",
+    "description": "green apple",
+    "category": "Food & Drink",
+    "aliases": [
+      "green_apple"
+    ],
+    "tags": [
+      "fruit"
+    ]
+  },
+  {
+    "emoji": "🍐",
+    "description": "pear",
+    "category": "Food & Drink",
+    "aliases": [
+      "pear"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍑",
+    "description": "peach",
+    "category": "Food & Drink",
+    "aliases": [
+      "peach"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍒",
+    "description": "cherries",
+    "category": "Food & Drink",
+    "aliases": [
+      "cherries"
+    ],
+    "tags": [
+      "fruit"
+    ]
+  },
+  {
+    "emoji": "🍓",
+    "description": "strawberry",
+    "category": "Food & Drink",
+    "aliases": [
+      "strawberry"
+    ],
+    "tags": [
+      "fruit"
+    ]
+  },
+  {
+    "emoji": "🫐",
+    "description": "blueberries",
+    "category": "Food & Drink",
+    "aliases": [
+      "blueberries"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥝",
+    "description": "kiwi fruit",
+    "category": "Food & Drink",
+    "aliases": [
+      "kiwi_fruit"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍅",
+    "description": "tomato",
+    "category": "Food & Drink",
+    "aliases": [
+      "tomato"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🫒",
+    "description": "olive",
+    "category": "Food & Drink",
+    "aliases": [
+      "olive"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥥",
+    "description": "coconut",
+    "category": "Food & Drink",
+    "aliases": [
+      "coconut"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥑",
+    "description": "avocado",
+    "category": "Food & Drink",
+    "aliases": [
+      "avocado"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍆",
+    "description": "eggplant",
+    "category": "Food & Drink",
+    "aliases": [
+      "eggplant"
+    ],
+    "tags": [
+      "aubergine"
+    ]
+  },
+  {
+    "emoji": "🥔",
+    "description": "potato",
+    "category": "Food & Drink",
+    "aliases": [
+      "potato"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥕",
+    "description": "carrot",
+    "category": "Food & Drink",
+    "aliases": [
+      "carrot"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌽",
+    "description": "ear of corn",
+    "category": "Food & Drink",
+    "aliases": [
+      "corn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌶️",
+    "description": "hot pepper",
+    "category": "Food & Drink",
+    "aliases": [
+      "hot_pepper"
+    ],
+    "tags": [
+      "spicy"
+    ]
+  },
+  {
+    "emoji": "🫑",
+    "description": "bell pepper",
+    "category": "Food & Drink",
+    "aliases": [
+      "bell_pepper"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥒",
+    "description": "cucumber",
+    "category": "Food & Drink",
+    "aliases": [
+      "cucumber"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥬",
+    "description": "leafy green",
+    "category": "Food & Drink",
+    "aliases": [
+      "leafy_green"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥦",
+    "description": "broccoli",
+    "category": "Food & Drink",
+    "aliases": [
+      "broccoli"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧄",
+    "description": "garlic",
+    "category": "Food & Drink",
+    "aliases": [
+      "garlic"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧅",
+    "description": "onion",
+    "category": "Food & Drink",
+    "aliases": [
+      "onion"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍄",
+    "description": "mushroom",
+    "category": "Food & Drink",
+    "aliases": [
+      "mushroom"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥜",
+    "description": "peanuts",
+    "category": "Food & Drink",
+    "aliases": [
+      "peanuts"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌰",
+    "description": "chestnut",
+    "category": "Food & Drink",
+    "aliases": [
+      "chestnut"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍞",
+    "description": "bread",
+    "category": "Food & Drink",
+    "aliases": [
+      "bread"
+    ],
+    "tags": [
+      "toast"
+    ]
+  },
+  {
+    "emoji": "🥐",
+    "description": "croissant",
+    "category": "Food & Drink",
+    "aliases": [
+      "croissant"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥖",
+    "description": "baguette bread",
+    "category": "Food & Drink",
+    "aliases": [
+      "baguette_bread"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🫓",
+    "description": "flatbread",
+    "category": "Food & Drink",
+    "aliases": [
+      "flatbread"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥨",
+    "description": "pretzel",
+    "category": "Food & Drink",
+    "aliases": [
+      "pretzel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥯",
+    "description": "bagel",
+    "category": "Food & Drink",
+    "aliases": [
+      "bagel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥞",
+    "description": "pancakes",
+    "category": "Food & Drink",
+    "aliases": [
+      "pancakes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧇",
+    "description": "waffle",
+    "category": "Food & Drink",
+    "aliases": [
+      "waffle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧀",
+    "description": "cheese wedge",
+    "category": "Food & Drink",
+    "aliases": [
+      "cheese"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍖",
+    "description": "meat on bone",
+    "category": "Food & Drink",
+    "aliases": [
+      "meat_on_bone"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍗",
+    "description": "poultry leg",
+    "category": "Food & Drink",
+    "aliases": [
+      "poultry_leg"
+    ],
+    "tags": [
+      "meat",
+      "chicken"
+    ]
+  },
+  {
+    "emoji": "🥩",
+    "description": "cut of meat",
+    "category": "Food & Drink",
+    "aliases": [
+      "cut_of_meat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥓",
+    "description": "bacon",
+    "category": "Food & Drink",
+    "aliases": [
+      "bacon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍔",
+    "description": "hamburger",
+    "category": "Food & Drink",
+    "aliases": [
+      "hamburger"
+    ],
+    "tags": [
+      "burger"
+    ]
+  },
+  {
+    "emoji": "🍟",
+    "description": "french fries",
+    "category": "Food & Drink",
+    "aliases": [
+      "fries"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍕",
+    "description": "pizza",
+    "category": "Food & Drink",
+    "aliases": [
+      "pizza"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌭",
+    "description": "hot dog",
+    "category": "Food & Drink",
+    "aliases": [
+      "hotdog"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥪",
+    "description": "sandwich",
+    "category": "Food & Drink",
+    "aliases": [
+      "sandwich"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌮",
+    "description": "taco",
+    "category": "Food & Drink",
+    "aliases": [
+      "taco"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌯",
+    "description": "burrito",
+    "category": "Food & Drink",
+    "aliases": [
+      "burrito"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🫔",
+    "description": "tamale",
+    "category": "Food & Drink",
+    "aliases": [
+      "tamale"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥙",
+    "description": "stuffed flatbread",
+    "category": "Food & Drink",
+    "aliases": [
+      "stuffed_flatbread"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧆",
+    "description": "falafel",
+    "category": "Food & Drink",
+    "aliases": [
+      "falafel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥚",
+    "description": "egg",
+    "category": "Food & Drink",
+    "aliases": [
+      "egg"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍳",
+    "description": "cooking",
+    "category": "Food & Drink",
+    "aliases": [
+      "fried_egg"
+    ],
+    "tags": [
+      "breakfast"
+    ]
+  },
+  {
+    "emoji": "🥘",
+    "description": "shallow pan of food",
+    "category": "Food & Drink",
+    "aliases": [
+      "shallow_pan_of_food"
+    ],
+    "tags": [
+      "paella",
+      "curry"
+    ]
+  },
+  {
+    "emoji": "🍲",
+    "description": "pot of food",
+    "category": "Food & Drink",
+    "aliases": [
+      "stew"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🫕",
+    "description": "fondue",
+    "category": "Food & Drink",
+    "aliases": [
+      "fondue"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥣",
+    "description": "bowl with spoon",
+    "category": "Food & Drink",
+    "aliases": [
+      "bowl_with_spoon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥗",
+    "description": "green salad",
+    "category": "Food & Drink",
+    "aliases": [
+      "green_salad"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍿",
+    "description": "popcorn",
+    "category": "Food & Drink",
+    "aliases": [
+      "popcorn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧈",
+    "description": "butter",
+    "category": "Food & Drink",
+    "aliases": [
+      "butter"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧂",
+    "description": "salt",
+    "category": "Food & Drink",
+    "aliases": [
+      "salt"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥫",
+    "description": "canned food",
+    "category": "Food & Drink",
+    "aliases": [
+      "canned_food"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍱",
+    "description": "bento box",
+    "category": "Food & Drink",
+    "aliases": [
+      "bento"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍘",
+    "description": "rice cracker",
+    "category": "Food & Drink",
+    "aliases": [
+      "rice_cracker"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍙",
+    "description": "rice ball",
+    "category": "Food & Drink",
+    "aliases": [
+      "rice_ball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍚",
+    "description": "cooked rice",
+    "category": "Food & Drink",
+    "aliases": [
+      "rice"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍛",
+    "description": "curry rice",
+    "category": "Food & Drink",
+    "aliases": [
+      "curry"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍜",
+    "description": "steaming bowl",
+    "category": "Food & Drink",
+    "aliases": [
+      "ramen"
+    ],
+    "tags": [
+      "noodle"
+    ]
+  },
+  {
+    "emoji": "🍝",
+    "description": "spaghetti",
+    "category": "Food & Drink",
+    "aliases": [
+      "spaghetti"
+    ],
+    "tags": [
+      "pasta"
+    ]
+  },
+  {
+    "emoji": "🍠",
+    "description": "roasted sweet potato",
+    "category": "Food & Drink",
+    "aliases": [
+      "sweet_potato"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍢",
+    "description": "oden",
+    "category": "Food & Drink",
+    "aliases": [
+      "oden"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍣",
+    "description": "sushi",
+    "category": "Food & Drink",
+    "aliases": [
+      "sushi"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍤",
+    "description": "fried shrimp",
+    "category": "Food & Drink",
+    "aliases": [
+      "fried_shrimp"
+    ],
+    "tags": [
+      "tempura"
+    ]
+  },
+  {
+    "emoji": "🍥",
+    "description": "fish cake with swirl",
+    "category": "Food & Drink",
+    "aliases": [
+      "fish_cake"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥮",
+    "description": "moon cake",
+    "category": "Food & Drink",
+    "aliases": [
+      "moon_cake"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍡",
+    "description": "dango",
+    "category": "Food & Drink",
+    "aliases": [
+      "dango"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥟",
+    "description": "dumpling",
+    "category": "Food & Drink",
+    "aliases": [
+      "dumpling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥠",
+    "description": "fortune cookie",
+    "category": "Food & Drink",
+    "aliases": [
+      "fortune_cookie"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥡",
+    "description": "takeout box",
+    "category": "Food & Drink",
+    "aliases": [
+      "takeout_box"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦀",
+    "description": "crab",
+    "category": "Food & Drink",
+    "aliases": [
+      "crab"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦞",
+    "description": "lobster",
+    "category": "Food & Drink",
+    "aliases": [
+      "lobster"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦐",
+    "description": "shrimp",
+    "category": "Food & Drink",
+    "aliases": [
+      "shrimp"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦑",
+    "description": "squid",
+    "category": "Food & Drink",
+    "aliases": [
+      "squid"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦪",
+    "description": "oyster",
+    "category": "Food & Drink",
+    "aliases": [
+      "oyster"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍦",
+    "description": "soft ice cream",
+    "category": "Food & Drink",
+    "aliases": [
+      "icecream"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍧",
+    "description": "shaved ice",
+    "category": "Food & Drink",
+    "aliases": [
+      "shaved_ice"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍨",
+    "description": "ice cream",
+    "category": "Food & Drink",
+    "aliases": [
+      "ice_cream"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍩",
+    "description": "doughnut",
+    "category": "Food & Drink",
+    "aliases": [
+      "doughnut"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍪",
+    "description": "cookie",
+    "category": "Food & Drink",
+    "aliases": [
+      "cookie"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎂",
+    "description": "birthday cake",
+    "category": "Food & Drink",
+    "aliases": [
+      "birthday"
+    ],
+    "tags": [
+      "party"
+    ]
+  },
+  {
+    "emoji": "🍰",
+    "description": "shortcake",
+    "category": "Food & Drink",
+    "aliases": [
+      "cake"
+    ],
+    "tags": [
+      "dessert"
+    ]
+  },
+  {
+    "emoji": "🧁",
+    "description": "cupcake",
+    "category": "Food & Drink",
+    "aliases": [
+      "cupcake"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥧",
+    "description": "pie",
+    "category": "Food & Drink",
+    "aliases": [
+      "pie"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍫",
+    "description": "chocolate bar",
+    "category": "Food & Drink",
+    "aliases": [
+      "chocolate_bar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍬",
+    "description": "candy",
+    "category": "Food & Drink",
+    "aliases": [
+      "candy"
+    ],
+    "tags": [
+      "sweet"
+    ]
+  },
+  {
+    "emoji": "🍭",
+    "description": "lollipop",
+    "category": "Food & Drink",
+    "aliases": [
+      "lollipop"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍮",
+    "description": "custard",
+    "category": "Food & Drink",
+    "aliases": [
+      "custard"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍯",
+    "description": "honey pot",
+    "category": "Food & Drink",
+    "aliases": [
+      "honey_pot"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍼",
+    "description": "baby bottle",
+    "category": "Food & Drink",
+    "aliases": [
+      "baby_bottle"
+    ],
+    "tags": [
+      "milk"
+    ]
+  },
+  {
+    "emoji": "🥛",
+    "description": "glass of milk",
+    "category": "Food & Drink",
+    "aliases": [
+      "milk_glass"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☕",
+    "description": "hot beverage",
+    "category": "Food & Drink",
+    "aliases": [
+      "coffee"
+    ],
+    "tags": [
+      "cafe",
+      "espresso"
+    ]
+  },
+  {
+    "emoji": "🫖",
+    "description": "teapot",
+    "category": "Food & Drink",
+    "aliases": [
+      "teapot"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍵",
+    "description": "teacup without handle",
+    "category": "Food & Drink",
+    "aliases": [
+      "tea"
+    ],
+    "tags": [
+      "green",
+      "breakfast"
+    ]
+  },
+  {
+    "emoji": "🍶",
+    "description": "sake",
+    "category": "Food & Drink",
+    "aliases": [
+      "sake"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍾",
+    "description": "bottle with popping cork",
+    "category": "Food & Drink",
+    "aliases": [
+      "champagne"
+    ],
+    "tags": [
+      "bottle",
+      "bubbly",
+      "celebration"
+    ]
+  },
+  {
+    "emoji": "🍷",
+    "description": "wine glass",
+    "category": "Food & Drink",
+    "aliases": [
+      "wine_glass"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍸",
+    "description": "cocktail glass",
+    "category": "Food & Drink",
+    "aliases": [
+      "cocktail"
+    ],
+    "tags": [
+      "drink"
+    ]
+  },
+  {
+    "emoji": "🍹",
+    "description": "tropical drink",
+    "category": "Food & Drink",
+    "aliases": [
+      "tropical_drink"
+    ],
+    "tags": [
+      "summer",
+      "vacation"
+    ]
+  },
+  {
+    "emoji": "🍺",
+    "description": "beer mug",
+    "category": "Food & Drink",
+    "aliases": [
+      "beer"
+    ],
+    "tags": [
+      "drink"
+    ]
+  },
+  {
+    "emoji": "🍻",
+    "description": "clinking beer mugs",
+    "category": "Food & Drink",
+    "aliases": [
+      "beers"
+    ],
+    "tags": [
+      "drinks"
+    ]
+  },
+  {
+    "emoji": "🥂",
+    "description": "clinking glasses",
+    "category": "Food & Drink",
+    "aliases": [
+      "clinking_glasses"
+    ],
+    "tags": [
+      "cheers",
+      "toast"
+    ]
+  },
+  {
+    "emoji": "🥃",
+    "description": "tumbler glass",
+    "category": "Food & Drink",
+    "aliases": [
+      "tumbler_glass"
+    ],
+    "tags": [
+      "whisky"
+    ]
+  },
+  {
+    "emoji": "🥤",
+    "description": "cup with straw",
+    "category": "Food & Drink",
+    "aliases": [
+      "cup_with_straw"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧋",
+    "description": "bubble tea",
+    "category": "Food & Drink",
+    "aliases": [
+      "bubble_tea"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧃",
+    "description": "beverage box",
+    "category": "Food & Drink",
+    "aliases": [
+      "beverage_box"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧉",
+    "description": "mate",
+    "category": "Food & Drink",
+    "aliases": [
+      "mate"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧊",
+    "description": "ice",
+    "category": "Food & Drink",
+    "aliases": [
+      "ice_cube"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥢",
+    "description": "chopsticks",
+    "category": "Food & Drink",
+    "aliases": [
+      "chopsticks"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍽️",
+    "description": "fork and knife with plate",
+    "category": "Food & Drink",
+    "aliases": [
+      "plate_with_cutlery"
+    ],
+    "tags": [
+      "dining",
+      "dinner"
+    ]
+  },
+  {
+    "emoji": "🍴",
+    "description": "fork and knife",
+    "category": "Food & Drink",
+    "aliases": [
+      "fork_and_knife"
+    ],
+    "tags": [
+      "cutlery"
+    ]
+  },
+  {
+    "emoji": "🥄",
+    "description": "spoon",
+    "category": "Food & Drink",
+    "aliases": [
+      "spoon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔪",
+    "description": "kitchen knife",
+    "category": "Food & Drink",
+    "aliases": [
+      "hocho",
+      "knife"
+    ],
+    "tags": [
+      "cut",
+      "chop"
+    ]
+  },
+  {
+    "emoji": "🏺",
+    "description": "amphora",
+    "category": "Food & Drink",
+    "aliases": [
+      "amphora"
+    ],
+    "tags": []
+  }
+]

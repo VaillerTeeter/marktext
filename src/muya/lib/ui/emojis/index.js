@@ -1,6 +1,26 @@
 import { filter } from 'fuzzaldrin'
-import emojis from './emojisJson'
+import activities from './categories/activities.json'
+import animalsAndNature from './categories/animals-and-nature.json'
+import flags from './categories/flags.json'
+import foodAndDrink from './categories/food-and-drink.json'
+import objects from './categories/objects.json'
+import peopleAndBody from './categories/people-and-body.json'
+import smileysAndEmotion from './categories/smileys-and-emotion.json'
+import symbols from './categories/symbols.json'
+import travelAndPlaces from './categories/travel-and-places.json'
 import { CLASS_OR_ID } from '../../config'
+
+const emojis = [
+  ...smileysAndEmotion,
+  ...peopleAndBody,
+  ...animalsAndNature,
+  ...foodAndDrink,
+  ...travelAndPlaces,
+  ...activities,
+  ...objects,
+  ...symbols,
+  ...flags
+]
 
 const emojisForSearch = {}
 

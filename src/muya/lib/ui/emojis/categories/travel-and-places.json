@@ -1,0 +1,2044 @@
+[
+  {
+    "emoji": "🌍",
+    "description": "globe showing Europe-Africa",
+    "category": "Travel & Places",
+    "aliases": [
+      "earth_africa"
+    ],
+    "tags": [
+      "globe",
+      "world",
+      "international"
+    ]
+  },
+  {
+    "emoji": "🌎",
+    "description": "globe showing Americas",
+    "category": "Travel & Places",
+    "aliases": [
+      "earth_americas"
+    ],
+    "tags": [
+      "globe",
+      "world",
+      "international"
+    ]
+  },
+  {
+    "emoji": "🌏",
+    "description": "globe showing Asia-Australia",
+    "category": "Travel & Places",
+    "aliases": [
+      "earth_asia"
+    ],
+    "tags": [
+      "globe",
+      "world",
+      "international"
+    ]
+  },
+  {
+    "emoji": "🌐",
+    "description": "globe with meridians",
+    "category": "Travel & Places",
+    "aliases": [
+      "globe_with_meridians"
+    ],
+    "tags": [
+      "world",
+      "global",
+      "international"
+    ]
+  },
+  {
+    "emoji": "🗺️",
+    "description": "world map",
+    "category": "Travel & Places",
+    "aliases": [
+      "world_map"
+    ],
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "emoji": "🗾",
+    "description": "map of Japan",
+    "category": "Travel & Places",
+    "aliases": [
+      "japan"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧭",
+    "description": "compass",
+    "category": "Travel & Places",
+    "aliases": [
+      "compass"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏔️",
+    "description": "snow-capped mountain",
+    "category": "Travel & Places",
+    "aliases": [
+      "mountain_snow"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛰️",
+    "description": "mountain",
+    "category": "Travel & Places",
+    "aliases": [
+      "mountain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌋",
+    "description": "volcano",
+    "category": "Travel & Places",
+    "aliases": [
+      "volcano"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗻",
+    "description": "mount fuji",
+    "category": "Travel & Places",
+    "aliases": [
+      "mount_fuji"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏕️",
+    "description": "camping",
+    "category": "Travel & Places",
+    "aliases": [
+      "camping"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏖️",
+    "description": "beach with umbrella",
+    "category": "Travel & Places",
+    "aliases": [
+      "beach_umbrella"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏜️",
+    "description": "desert",
+    "category": "Travel & Places",
+    "aliases": [
+      "desert"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏝️",
+    "description": "desert island",
+    "category": "Travel & Places",
+    "aliases": [
+      "desert_island"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏞️",
+    "description": "national park",
+    "category": "Travel & Places",
+    "aliases": [
+      "national_park"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏟️",
+    "description": "stadium",
+    "category": "Travel & Places",
+    "aliases": [
+      "stadium"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏛️",
+    "description": "classical building",
+    "category": "Travel & Places",
+    "aliases": [
+      "classical_building"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏗️",
+    "description": "building construction",
+    "category": "Travel & Places",
+    "aliases": [
+      "building_construction"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧱",
+    "description": "brick",
+    "category": "Travel & Places",
+    "aliases": [
+      "bricks"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪨",
+    "description": "rock",
+    "category": "Travel & Places",
+    "aliases": [
+      "rock"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪵",
+    "description": "wood",
+    "category": "Travel & Places",
+    "aliases": [
+      "wood"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛖",
+    "description": "hut",
+    "category": "Travel & Places",
+    "aliases": [
+      "hut"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏘️",
+    "description": "houses",
+    "category": "Travel & Places",
+    "aliases": [
+      "houses"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏚️",
+    "description": "derelict house",
+    "category": "Travel & Places",
+    "aliases": [
+      "derelict_house"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏠",
+    "description": "house",
+    "category": "Travel & Places",
+    "aliases": [
+      "house"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏡",
+    "description": "house with garden",
+    "category": "Travel & Places",
+    "aliases": [
+      "house_with_garden"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏢",
+    "description": "office building",
+    "category": "Travel & Places",
+    "aliases": [
+      "office"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏣",
+    "description": "Japanese post office",
+    "category": "Travel & Places",
+    "aliases": [
+      "post_office"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏤",
+    "description": "post office",
+    "category": "Travel & Places",
+    "aliases": [
+      "european_post_office"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏥",
+    "description": "hospital",
+    "category": "Travel & Places",
+    "aliases": [
+      "hospital"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏦",
+    "description": "bank",
+    "category": "Travel & Places",
+    "aliases": [
+      "bank"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏨",
+    "description": "hotel",
+    "category": "Travel & Places",
+    "aliases": [
+      "hotel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏩",
+    "description": "love hotel",
+    "category": "Travel & Places",
+    "aliases": [
+      "love_hotel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏪",
+    "description": "convenience store",
+    "category": "Travel & Places",
+    "aliases": [
+      "convenience_store"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏫",
+    "description": "school",
+    "category": "Travel & Places",
+    "aliases": [
+      "school"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏬",
+    "description": "department store",
+    "category": "Travel & Places",
+    "aliases": [
+      "department_store"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏭",
+    "description": "factory",
+    "category": "Travel & Places",
+    "aliases": [
+      "factory"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏯",
+    "description": "Japanese castle",
+    "category": "Travel & Places",
+    "aliases": [
+      "japanese_castle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏰",
+    "description": "castle",
+    "category": "Travel & Places",
+    "aliases": [
+      "european_castle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💒",
+    "description": "wedding",
+    "category": "Travel & Places",
+    "aliases": [
+      "wedding"
+    ],
+    "tags": [
+      "marriage"
+    ]
+  },
+  {
+    "emoji": "🗼",
+    "description": "Tokyo tower",
+    "category": "Travel & Places",
+    "aliases": [
+      "tokyo_tower"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗽",
+    "description": "Statue of Liberty",
+    "category": "Travel & Places",
+    "aliases": [
+      "statue_of_liberty"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛪",
+    "description": "church",
+    "category": "Travel & Places",
+    "aliases": [
+      "church"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕌",
+    "description": "mosque",
+    "category": "Travel & Places",
+    "aliases": [
+      "mosque"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛕",
+    "description": "hindu temple",
+    "category": "Travel & Places",
+    "aliases": [
+      "hindu_temple"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕍",
+    "description": "synagogue",
+    "category": "Travel & Places",
+    "aliases": [
+      "synagogue"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛩️",
+    "description": "shinto shrine",
+    "category": "Travel & Places",
+    "aliases": [
+      "shinto_shrine"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕋",
+    "description": "kaaba",
+    "category": "Travel & Places",
+    "aliases": [
+      "kaaba"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛲",
+    "description": "fountain",
+    "category": "Travel & Places",
+    "aliases": [
+      "fountain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛺",
+    "description": "tent",
+    "category": "Travel & Places",
+    "aliases": [
+      "tent"
+    ],
+    "tags": [
+      "camping"
+    ]
+  },
+  {
+    "emoji": "🌁",
+    "description": "foggy",
+    "category": "Travel & Places",
+    "aliases": [
+      "foggy"
+    ],
+    "tags": [
+      "karl"
+    ]
+  },
+  {
+    "emoji": "🌃",
+    "description": "night with stars",
+    "category": "Travel & Places",
+    "aliases": [
+      "night_with_stars"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏙️",
+    "description": "cityscape",
+    "category": "Travel & Places",
+    "aliases": [
+      "cityscape"
+    ],
+    "tags": [
+      "skyline"
+    ]
+  },
+  {
+    "emoji": "🌄",
+    "description": "sunrise over mountains",
+    "category": "Travel & Places",
+    "aliases": [
+      "sunrise_over_mountains"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌅",
+    "description": "sunrise",
+    "category": "Travel & Places",
+    "aliases": [
+      "sunrise"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌆",
+    "description": "cityscape at dusk",
+    "category": "Travel & Places",
+    "aliases": [
+      "city_sunset"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌇",
+    "description": "sunset",
+    "category": "Travel & Places",
+    "aliases": [
+      "city_sunrise"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌉",
+    "description": "bridge at night",
+    "category": "Travel & Places",
+    "aliases": [
+      "bridge_at_night"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "♨️",
+    "description": "hot springs",
+    "category": "Travel & Places",
+    "aliases": [
+      "hotsprings"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎠",
+    "description": "carousel horse",
+    "category": "Travel & Places",
+    "aliases": [
+      "carousel_horse"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎡",
+    "description": "ferris wheel",
+    "category": "Travel & Places",
+    "aliases": [
+      "ferris_wheel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎢",
+    "description": "roller coaster",
+    "category": "Travel & Places",
+    "aliases": [
+      "roller_coaster"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💈",
+    "description": "barber pole",
+    "category": "Travel & Places",
+    "aliases": [
+      "barber"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎪",
+    "description": "circus tent",
+    "category": "Travel & Places",
+    "aliases": [
+      "circus_tent"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚂",
+    "description": "locomotive",
+    "category": "Travel & Places",
+    "aliases": [
+      "steam_locomotive"
+    ],
+    "tags": [
+      "train"
+    ]
+  },
+  {
+    "emoji": "🚃",
+    "description": "railway car",
+    "category": "Travel & Places",
+    "aliases": [
+      "railway_car"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚄",
+    "description": "high-speed train",
+    "category": "Travel & Places",
+    "aliases": [
+      "bullettrain_side"
+    ],
+    "tags": [
+      "train"
+    ]
+  },
+  {
+    "emoji": "🚅",
+    "description": "bullet train",
+    "category": "Travel & Places",
+    "aliases": [
+      "bullettrain_front"
+    ],
+    "tags": [
+      "train"
+    ]
+  },
+  {
+    "emoji": "🚆",
+    "description": "train",
+    "category": "Travel & Places",
+    "aliases": [
+      "train2"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚇",
+    "description": "metro",
+    "category": "Travel & Places",
+    "aliases": [
+      "metro"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚈",
+    "description": "light rail",
+    "category": "Travel & Places",
+    "aliases": [
+      "light_rail"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚉",
+    "description": "station",
+    "category": "Travel & Places",
+    "aliases": [
+      "station"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚊",
+    "description": "tram",
+    "category": "Travel & Places",
+    "aliases": [
+      "tram"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚝",
+    "description": "monorail",
+    "category": "Travel & Places",
+    "aliases": [
+      "monorail"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚞",
+    "description": "mountain railway",
+    "category": "Travel & Places",
+    "aliases": [
+      "mountain_railway"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚋",
+    "description": "tram car",
+    "category": "Travel & Places",
+    "aliases": [
+      "train"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚌",
+    "description": "bus",
+    "category": "Travel & Places",
+    "aliases": [
+      "bus"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚍",
+    "description": "oncoming bus",
+    "category": "Travel & Places",
+    "aliases": [
+      "oncoming_bus"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚎",
+    "description": "trolleybus",
+    "category": "Travel & Places",
+    "aliases": [
+      "trolleybus"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚐",
+    "description": "minibus",
+    "category": "Travel & Places",
+    "aliases": [
+      "minibus"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚑",
+    "description": "ambulance",
+    "category": "Travel & Places",
+    "aliases": [
+      "ambulance"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚒",
+    "description": "fire engine",
+    "category": "Travel & Places",
+    "aliases": [
+      "fire_engine"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚓",
+    "description": "police car",
+    "category": "Travel & Places",
+    "aliases": [
+      "police_car"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚔",
+    "description": "oncoming police car",
+    "category": "Travel & Places",
+    "aliases": [
+      "oncoming_police_car"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚕",
+    "description": "taxi",
+    "category": "Travel & Places",
+    "aliases": [
+      "taxi"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚖",
+    "description": "oncoming taxi",
+    "category": "Travel & Places",
+    "aliases": [
+      "oncoming_taxi"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚗",
+    "description": "automobile",
+    "category": "Travel & Places",
+    "aliases": [
+      "car",
+      "red_car"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚘",
+    "description": "oncoming automobile",
+    "category": "Travel & Places",
+    "aliases": [
+      "oncoming_automobile"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚙",
+    "description": "sport utility vehicle",
+    "category": "Travel & Places",
+    "aliases": [
+      "blue_car"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛻",
+    "description": "pickup truck",
+    "category": "Travel & Places",
+    "aliases": [
+      "pickup_truck"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚚",
+    "description": "delivery truck",
+    "category": "Travel & Places",
+    "aliases": [
+      "truck"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚛",
+    "description": "articulated lorry",
+    "category": "Travel & Places",
+    "aliases": [
+      "articulated_lorry"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚜",
+    "description": "tractor",
+    "category": "Travel & Places",
+    "aliases": [
+      "tractor"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏎️",
+    "description": "racing car",
+    "category": "Travel & Places",
+    "aliases": [
+      "racing_car"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏍️",
+    "description": "motorcycle",
+    "category": "Travel & Places",
+    "aliases": [
+      "motorcycle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛵",
+    "description": "motor scooter",
+    "category": "Travel & Places",
+    "aliases": [
+      "motor_scooter"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦽",
+    "description": "manual wheelchair",
+    "category": "Travel & Places",
+    "aliases": [
+      "manual_wheelchair"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦼",
+    "description": "motorized wheelchair",
+    "category": "Travel & Places",
+    "aliases": [
+      "motorized_wheelchair"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛺",
+    "description": "auto rickshaw",
+    "category": "Travel & Places",
+    "aliases": [
+      "auto_rickshaw"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚲",
+    "description": "bicycle",
+    "category": "Travel & Places",
+    "aliases": [
+      "bike"
+    ],
+    "tags": [
+      "bicycle"
+    ]
+  },
+  {
+    "emoji": "🛴",
+    "description": "kick scooter",
+    "category": "Travel & Places",
+    "aliases": [
+      "kick_scooter"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛹",
+    "description": "skateboard",
+    "category": "Travel & Places",
+    "aliases": [
+      "skateboard"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛼",
+    "description": "roller skate",
+    "category": "Travel & Places",
+    "aliases": [
+      "roller_skate"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚏",
+    "description": "bus stop",
+    "category": "Travel & Places",
+    "aliases": [
+      "busstop"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛣️",
+    "description": "motorway",
+    "category": "Travel & Places",
+    "aliases": [
+      "motorway"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛤️",
+    "description": "railway track",
+    "category": "Travel & Places",
+    "aliases": [
+      "railway_track"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛢️",
+    "description": "oil drum",
+    "category": "Travel & Places",
+    "aliases": [
+      "oil_drum"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛽",
+    "description": "fuel pump",
+    "category": "Travel & Places",
+    "aliases": [
+      "fuelpump"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚨",
+    "description": "police car light",
+    "category": "Travel & Places",
+    "aliases": [
+      "rotating_light"
+    ],
+    "tags": [
+      "911",
+      "emergency"
+    ]
+  },
+  {
+    "emoji": "🚥",
+    "description": "horizontal traffic light",
+    "category": "Travel & Places",
+    "aliases": [
+      "traffic_light"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚦",
+    "description": "vertical traffic light",
+    "category": "Travel & Places",
+    "aliases": [
+      "vertical_traffic_light"
+    ],
+    "tags": [
+      "semaphore"
+    ]
+  },
+  {
+    "emoji": "🛑",
+    "description": "stop sign",
+    "category": "Travel & Places",
+    "aliases": [
+      "stop_sign"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚧",
+    "description": "construction",
+    "category": "Travel & Places",
+    "aliases": [
+      "construction"
+    ],
+    "tags": [
+      "wip"
+    ]
+  },
+  {
+    "emoji": "⚓",
+    "description": "anchor",
+    "category": "Travel & Places",
+    "aliases": [
+      "anchor"
+    ],
+    "tags": [
+      "ship"
+    ]
+  },
+  {
+    "emoji": "⛵",
+    "description": "sailboat",
+    "category": "Travel & Places",
+    "aliases": [
+      "boat",
+      "sailboat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛶",
+    "description": "canoe",
+    "category": "Travel & Places",
+    "aliases": [
+      "canoe"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚤",
+    "description": "speedboat",
+    "category": "Travel & Places",
+    "aliases": [
+      "speedboat"
+    ],
+    "tags": [
+      "ship"
+    ]
+  },
+  {
+    "emoji": "🛳️",
+    "description": "passenger ship",
+    "category": "Travel & Places",
+    "aliases": [
+      "passenger_ship"
+    ],
+    "tags": [
+      "cruise"
+    ]
+  },
+  {
+    "emoji": "⛴️",
+    "description": "ferry",
+    "category": "Travel & Places",
+    "aliases": [
+      "ferry"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛥️",
+    "description": "motor boat",
+    "category": "Travel & Places",
+    "aliases": [
+      "motor_boat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚢",
+    "description": "ship",
+    "category": "Travel & Places",
+    "aliases": [
+      "ship"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✈️",
+    "description": "airplane",
+    "category": "Travel & Places",
+    "aliases": [
+      "airplane"
+    ],
+    "tags": [
+      "flight"
+    ]
+  },
+  {
+    "emoji": "🛩️",
+    "description": "small airplane",
+    "category": "Travel & Places",
+    "aliases": [
+      "small_airplane"
+    ],
+    "tags": [
+      "flight"
+    ]
+  },
+  {
+    "emoji": "🛫",
+    "description": "airplane departure",
+    "category": "Travel & Places",
+    "aliases": [
+      "flight_departure"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛬",
+    "description": "airplane arrival",
+    "category": "Travel & Places",
+    "aliases": [
+      "flight_arrival"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪂",
+    "description": "parachute",
+    "category": "Travel & Places",
+    "aliases": [
+      "parachute"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💺",
+    "description": "seat",
+    "category": "Travel & Places",
+    "aliases": [
+      "seat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚁",
+    "description": "helicopter",
+    "category": "Travel & Places",
+    "aliases": [
+      "helicopter"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚟",
+    "description": "suspension railway",
+    "category": "Travel & Places",
+    "aliases": [
+      "suspension_railway"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚠",
+    "description": "mountain cableway",
+    "category": "Travel & Places",
+    "aliases": [
+      "mountain_cableway"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚡",
+    "description": "aerial tramway",
+    "category": "Travel & Places",
+    "aliases": [
+      "aerial_tramway"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛰️",
+    "description": "satellite",
+    "category": "Travel & Places",
+    "aliases": [
+      "artificial_satellite"
+    ],
+    "tags": [
+      "orbit",
+      "space"
+    ]
+  },
+  {
+    "emoji": "🚀",
+    "description": "rocket",
+    "category": "Travel & Places",
+    "aliases": [
+      "rocket"
+    ],
+    "tags": [
+      "ship",
+      "launch"
+    ]
+  },
+  {
+    "emoji": "🛸",
+    "description": "flying saucer",
+    "category": "Travel & Places",
+    "aliases": [
+      "flying_saucer"
+    ],
+    "tags": [
+      "ufo"
+    ]
+  },
+  {
+    "emoji": "🛎️",
+    "description": "bellhop bell",
+    "category": "Travel & Places",
+    "aliases": [
+      "bellhop_bell"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧳",
+    "description": "luggage",
+    "category": "Travel & Places",
+    "aliases": [
+      "luggage"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⌛",
+    "description": "hourglass done",
+    "category": "Travel & Places",
+    "aliases": [
+      "hourglass"
+    ],
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "emoji": "⏳",
+    "description": "hourglass not done",
+    "category": "Travel & Places",
+    "aliases": [
+      "hourglass_flowing_sand"
+    ],
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "emoji": "⌚",
+    "description": "watch",
+    "category": "Travel & Places",
+    "aliases": [
+      "watch"
+    ],
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "emoji": "⏰",
+    "description": "alarm clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "alarm_clock"
+    ],
+    "tags": [
+      "morning"
+    ]
+  },
+  {
+    "emoji": "⏱️",
+    "description": "stopwatch",
+    "category": "Travel & Places",
+    "aliases": [
+      "stopwatch"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏲️",
+    "description": "timer clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "timer_clock"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕰️",
+    "description": "mantelpiece clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "mantelpiece_clock"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕛",
+    "description": "twelve o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock12"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕧",
+    "description": "twelve-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock1230"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕐",
+    "description": "one o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock1"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕜",
+    "description": "one-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock130"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕑",
+    "description": "two o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock2"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕝",
+    "description": "two-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock230"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕒",
+    "description": "three o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock3"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕞",
+    "description": "three-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock330"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕓",
+    "description": "four o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock4"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕟",
+    "description": "four-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock430"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕔",
+    "description": "five o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock5"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕠",
+    "description": "five-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock530"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕕",
+    "description": "six o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock6"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕡",
+    "description": "six-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock630"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕖",
+    "description": "seven o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock7"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕢",
+    "description": "seven-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock730"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕗",
+    "description": "eight o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock8"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕣",
+    "description": "eight-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock830"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕘",
+    "description": "nine o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock9"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕤",
+    "description": "nine-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock930"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕙",
+    "description": "ten o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock10"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕥",
+    "description": "ten-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock1030"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕚",
+    "description": "eleven o’clock",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock11"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕦",
+    "description": "eleven-thirty",
+    "category": "Travel & Places",
+    "aliases": [
+      "clock1130"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌑",
+    "description": "new moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "new_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌒",
+    "description": "waxing crescent moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "waxing_crescent_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌓",
+    "description": "first quarter moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "first_quarter_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌔",
+    "description": "waxing gibbous moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "moon",
+      "waxing_gibbous_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌕",
+    "description": "full moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "full_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌖",
+    "description": "waning gibbous moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "waning_gibbous_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌗",
+    "description": "last quarter moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "last_quarter_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌘",
+    "description": "waning crescent moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "waning_crescent_moon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌙",
+    "description": "crescent moon",
+    "category": "Travel & Places",
+    "aliases": [
+      "crescent_moon"
+    ],
+    "tags": [
+      "night"
+    ]
+  },
+  {
+    "emoji": "🌚",
+    "description": "new moon face",
+    "category": "Travel & Places",
+    "aliases": [
+      "new_moon_with_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌛",
+    "description": "first quarter moon face",
+    "category": "Travel & Places",
+    "aliases": [
+      "first_quarter_moon_with_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌜",
+    "description": "last quarter moon face",
+    "category": "Travel & Places",
+    "aliases": [
+      "last_quarter_moon_with_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌡️",
+    "description": "thermometer",
+    "category": "Travel & Places",
+    "aliases": [
+      "thermometer"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☀️",
+    "description": "sun",
+    "category": "Travel & Places",
+    "aliases": [
+      "sunny"
+    ],
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "emoji": "🌝",
+    "description": "full moon face",
+    "category": "Travel & Places",
+    "aliases": [
+      "full_moon_with_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌞",
+    "description": "sun with face",
+    "category": "Travel & Places",
+    "aliases": [
+      "sun_with_face"
+    ],
+    "tags": [
+      "summer"
+    ]
+  },
+  {
+    "emoji": "🪐",
+    "description": "ringed planet",
+    "category": "Travel & Places",
+    "aliases": [
+      "ringed_planet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⭐",
+    "description": "star",
+    "category": "Travel & Places",
+    "aliases": [
+      "star"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌟",
+    "description": "glowing star",
+    "category": "Travel & Places",
+    "aliases": [
+      "star2"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌠",
+    "description": "shooting star",
+    "category": "Travel & Places",
+    "aliases": [
+      "stars"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌌",
+    "description": "milky way",
+    "category": "Travel & Places",
+    "aliases": [
+      "milky_way"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☁️",
+    "description": "cloud",
+    "category": "Travel & Places",
+    "aliases": [
+      "cloud"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛅",
+    "description": "sun behind cloud",
+    "category": "Travel & Places",
+    "aliases": [
+      "partly_sunny"
+    ],
+    "tags": [
+      "weather",
+      "cloud"
+    ]
+  },
+  {
+    "emoji": "⛈️",
+    "description": "cloud with lightning and rain",
+    "category": "Travel & Places",
+    "aliases": [
+      "cloud_with_lightning_and_rain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌤️",
+    "description": "sun behind small cloud",
+    "category": "Travel & Places",
+    "aliases": [
+      "sun_behind_small_cloud"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌥️",
+    "description": "sun behind large cloud",
+    "category": "Travel & Places",
+    "aliases": [
+      "sun_behind_large_cloud"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌦️",
+    "description": "sun behind rain cloud",
+    "category": "Travel & Places",
+    "aliases": [
+      "sun_behind_rain_cloud"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌧️",
+    "description": "cloud with rain",
+    "category": "Travel & Places",
+    "aliases": [
+      "cloud_with_rain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌨️",
+    "description": "cloud with snow",
+    "category": "Travel & Places",
+    "aliases": [
+      "cloud_with_snow"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌩️",
+    "description": "cloud with lightning",
+    "category": "Travel & Places",
+    "aliases": [
+      "cloud_with_lightning"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌪️",
+    "description": "tornado",
+    "category": "Travel & Places",
+    "aliases": [
+      "tornado"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌫️",
+    "description": "fog",
+    "category": "Travel & Places",
+    "aliases": [
+      "fog"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌬️",
+    "description": "wind face",
+    "category": "Travel & Places",
+    "aliases": [
+      "wind_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌀",
+    "description": "cyclone",
+    "category": "Travel & Places",
+    "aliases": [
+      "cyclone"
+    ],
+    "tags": [
+      "swirl"
+    ]
+  },
+  {
+    "emoji": "🌈",
+    "description": "rainbow",
+    "category": "Travel & Places",
+    "aliases": [
+      "rainbow"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌂",
+    "description": "closed umbrella",
+    "category": "Travel & Places",
+    "aliases": [
+      "closed_umbrella"
+    ],
+    "tags": [
+      "weather",
+      "rain"
+    ]
+  },
+  {
+    "emoji": "☂️",
+    "description": "umbrella",
+    "category": "Travel & Places",
+    "aliases": [
+      "open_umbrella"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☔",
+    "description": "umbrella with rain drops",
+    "category": "Travel & Places",
+    "aliases": [
+      "umbrella"
+    ],
+    "tags": [
+      "rain",
+      "weather"
+    ]
+  },
+  {
+    "emoji": "⛱️",
+    "description": "umbrella on ground",
+    "category": "Travel & Places",
+    "aliases": [
+      "parasol_on_ground"
+    ],
+    "tags": [
+      "beach_umbrella"
+    ]
+  },
+  {
+    "emoji": "⚡",
+    "description": "high voltage",
+    "category": "Travel & Places",
+    "aliases": [
+      "zap"
+    ],
+    "tags": [
+      "lightning",
+      "thunder"
+    ]
+  },
+  {
+    "emoji": "❄️",
+    "description": "snowflake",
+    "category": "Travel & Places",
+    "aliases": [
+      "snowflake"
+    ],
+    "tags": [
+      "winter",
+      "cold",
+      "weather"
+    ]
+  },
+  {
+    "emoji": "☃️",
+    "description": "snowman",
+    "category": "Travel & Places",
+    "aliases": [
+      "snowman_with_snow"
+    ],
+    "tags": [
+      "winter",
+      "christmas"
+    ]
+  },
+  {
+    "emoji": "⛄",
+    "description": "snowman without snow",
+    "category": "Travel & Places",
+    "aliases": [
+      "snowman"
+    ],
+    "tags": [
+      "winter"
+    ]
+  },
+  {
+    "emoji": "☄️",
+    "description": "comet",
+    "category": "Travel & Places",
+    "aliases": [
+      "comet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔥",
+    "description": "fire",
+    "category": "Travel & Places",
+    "aliases": [
+      "fire"
+    ],
+    "tags": [
+      "burn"
+    ]
+  },
+  {
+    "emoji": "💧",
+    "description": "droplet",
+    "category": "Travel & Places",
+    "aliases": [
+      "droplet"
+    ],
+    "tags": [
+      "water"
+    ]
+  },
+  {
+    "emoji": "🌊",
+    "description": "water wave",
+    "category": "Travel & Places",
+    "aliases": [
+      "ocean"
+    ],
+    "tags": [
+      "sea"
+    ]
+  }
+]

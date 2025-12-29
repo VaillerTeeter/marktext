@@ -1,0 +1,2462 @@
+[
+  {
+    "emoji": "👓",
+    "description": "glasses",
+    "category": "Objects",
+    "aliases": [
+      "eyeglasses"
+    ],
+    "tags": [
+      "glasses"
+    ]
+  },
+  {
+    "emoji": "🕶️",
+    "description": "sunglasses",
+    "category": "Objects",
+    "aliases": [
+      "dark_sunglasses"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥽",
+    "description": "goggles",
+    "category": "Objects",
+    "aliases": [
+      "goggles"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥼",
+    "description": "lab coat",
+    "category": "Objects",
+    "aliases": [
+      "lab_coat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦺",
+    "description": "safety vest",
+    "category": "Objects",
+    "aliases": [
+      "safety_vest"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👔",
+    "description": "necktie",
+    "category": "Objects",
+    "aliases": [
+      "necktie"
+    ],
+    "tags": [
+      "shirt",
+      "formal"
+    ]
+  },
+  {
+    "emoji": "👕",
+    "description": "t-shirt",
+    "category": "Objects",
+    "aliases": [
+      "shirt",
+      "tshirt"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👖",
+    "description": "jeans",
+    "category": "Objects",
+    "aliases": [
+      "jeans"
+    ],
+    "tags": [
+      "pants"
+    ]
+  },
+  {
+    "emoji": "🧣",
+    "description": "scarf",
+    "category": "Objects",
+    "aliases": [
+      "scarf"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧤",
+    "description": "gloves",
+    "category": "Objects",
+    "aliases": [
+      "gloves"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧥",
+    "description": "coat",
+    "category": "Objects",
+    "aliases": [
+      "coat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧦",
+    "description": "socks",
+    "category": "Objects",
+    "aliases": [
+      "socks"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👗",
+    "description": "dress",
+    "category": "Objects",
+    "aliases": [
+      "dress"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👘",
+    "description": "kimono",
+    "category": "Objects",
+    "aliases": [
+      "kimono"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥻",
+    "description": "sari",
+    "category": "Objects",
+    "aliases": [
+      "sari"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🩱",
+    "description": "one-piece swimsuit",
+    "category": "Objects",
+    "aliases": [
+      "one_piece_swimsuit"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🩲",
+    "description": "briefs",
+    "category": "Objects",
+    "aliases": [
+      "swim_brief"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🩳",
+    "description": "shorts",
+    "category": "Objects",
+    "aliases": [
+      "shorts"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👙",
+    "description": "bikini",
+    "category": "Objects",
+    "aliases": [
+      "bikini"
+    ],
+    "tags": [
+      "beach"
+    ]
+  },
+  {
+    "emoji": "👚",
+    "description": "woman’s clothes",
+    "category": "Objects",
+    "aliases": [
+      "womans_clothes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👛",
+    "description": "purse",
+    "category": "Objects",
+    "aliases": [
+      "purse"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👜",
+    "description": "handbag",
+    "category": "Objects",
+    "aliases": [
+      "handbag"
+    ],
+    "tags": [
+      "bag"
+    ]
+  },
+  {
+    "emoji": "👝",
+    "description": "clutch bag",
+    "category": "Objects",
+    "aliases": [
+      "pouch"
+    ],
+    "tags": [
+      "bag"
+    ]
+  },
+  {
+    "emoji": "🛍️",
+    "description": "shopping bags",
+    "category": "Objects",
+    "aliases": [
+      "shopping"
+    ],
+    "tags": [
+      "bags"
+    ]
+  },
+  {
+    "emoji": "🎒",
+    "description": "backpack",
+    "category": "Objects",
+    "aliases": [
+      "school_satchel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🩴",
+    "description": "thong sandal",
+    "category": "Objects",
+    "aliases": [
+      "thong_sandal"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👞",
+    "description": "man’s shoe",
+    "category": "Objects",
+    "aliases": [
+      "mans_shoe",
+      "shoe"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👟",
+    "description": "running shoe",
+    "category": "Objects",
+    "aliases": [
+      "athletic_shoe"
+    ],
+    "tags": [
+      "sneaker",
+      "sport",
+      "running"
+    ]
+  },
+  {
+    "emoji": "🥾",
+    "description": "hiking boot",
+    "category": "Objects",
+    "aliases": [
+      "hiking_boot"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥿",
+    "description": "flat shoe",
+    "category": "Objects",
+    "aliases": [
+      "flat_shoe"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👠",
+    "description": "high-heeled shoe",
+    "category": "Objects",
+    "aliases": [
+      "high_heel"
+    ],
+    "tags": [
+      "shoe"
+    ]
+  },
+  {
+    "emoji": "👡",
+    "description": "woman’s sandal",
+    "category": "Objects",
+    "aliases": [
+      "sandal"
+    ],
+    "tags": [
+      "shoe"
+    ]
+  },
+  {
+    "emoji": "🩰",
+    "description": "ballet shoes",
+    "category": "Objects",
+    "aliases": [
+      "ballet_shoes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👢",
+    "description": "woman’s boot",
+    "category": "Objects",
+    "aliases": [
+      "boot"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👑",
+    "description": "crown",
+    "category": "Objects",
+    "aliases": [
+      "crown"
+    ],
+    "tags": [
+      "king",
+      "queen",
+      "royal"
+    ]
+  },
+  {
+    "emoji": "👒",
+    "description": "woman’s hat",
+    "category": "Objects",
+    "aliases": [
+      "womans_hat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎩",
+    "description": "top hat",
+    "category": "Objects",
+    "aliases": [
+      "tophat"
+    ],
+    "tags": [
+      "hat",
+      "classy"
+    ]
+  },
+  {
+    "emoji": "🎓",
+    "description": "graduation cap",
+    "category": "Objects",
+    "aliases": [
+      "mortar_board"
+    ],
+    "tags": [
+      "education",
+      "college",
+      "university",
+      "graduation"
+    ]
+  },
+  {
+    "emoji": "🧢",
+    "description": "billed cap",
+    "category": "Objects",
+    "aliases": [
+      "billed_cap"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪖",
+    "description": "military helmet",
+    "category": "Objects",
+    "aliases": [
+      "military_helmet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛑️",
+    "description": "rescue worker’s helmet",
+    "category": "Objects",
+    "aliases": [
+      "rescue_worker_helmet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📿",
+    "description": "prayer beads",
+    "category": "Objects",
+    "aliases": [
+      "prayer_beads"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💄",
+    "description": "lipstick",
+    "category": "Objects",
+    "aliases": [
+      "lipstick"
+    ],
+    "tags": [
+      "makeup"
+    ]
+  },
+  {
+    "emoji": "💍",
+    "description": "ring",
+    "category": "Objects",
+    "aliases": [
+      "ring"
+    ],
+    "tags": [
+      "wedding",
+      "marriage",
+      "engaged"
+    ]
+  },
+  {
+    "emoji": "💎",
+    "description": "gem stone",
+    "category": "Objects",
+    "aliases": [
+      "gem"
+    ],
+    "tags": [
+      "diamond"
+    ]
+  },
+  {
+    "emoji": "🔇",
+    "description": "muted speaker",
+    "category": "Objects",
+    "aliases": [
+      "mute"
+    ],
+    "tags": [
+      "sound",
+      "volume"
+    ]
+  },
+  {
+    "emoji": "🔈",
+    "description": "speaker low volume",
+    "category": "Objects",
+    "aliases": [
+      "speaker"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔉",
+    "description": "speaker medium volume",
+    "category": "Objects",
+    "aliases": [
+      "sound"
+    ],
+    "tags": [
+      "volume"
+    ]
+  },
+  {
+    "emoji": "🔊",
+    "description": "speaker high volume",
+    "category": "Objects",
+    "aliases": [
+      "loud_sound"
+    ],
+    "tags": [
+      "volume"
+    ]
+  },
+  {
+    "emoji": "📢",
+    "description": "loudspeaker",
+    "category": "Objects",
+    "aliases": [
+      "loudspeaker"
+    ],
+    "tags": [
+      "announcement"
+    ]
+  },
+  {
+    "emoji": "📣",
+    "description": "megaphone",
+    "category": "Objects",
+    "aliases": [
+      "mega"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📯",
+    "description": "postal horn",
+    "category": "Objects",
+    "aliases": [
+      "postal_horn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔔",
+    "description": "bell",
+    "category": "Objects",
+    "aliases": [
+      "bell"
+    ],
+    "tags": [
+      "sound",
+      "notification"
+    ]
+  },
+  {
+    "emoji": "🔕",
+    "description": "bell with slash",
+    "category": "Objects",
+    "aliases": [
+      "no_bell"
+    ],
+    "tags": [
+      "volume",
+      "off"
+    ]
+  },
+  {
+    "emoji": "🎼",
+    "description": "musical score",
+    "category": "Objects",
+    "aliases": [
+      "musical_score"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎵",
+    "description": "musical note",
+    "category": "Objects",
+    "aliases": [
+      "musical_note"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎶",
+    "description": "musical notes",
+    "category": "Objects",
+    "aliases": [
+      "notes"
+    ],
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "emoji": "🎙️",
+    "description": "studio microphone",
+    "category": "Objects",
+    "aliases": [
+      "studio_microphone"
+    ],
+    "tags": [
+      "podcast"
+    ]
+  },
+  {
+    "emoji": "🎚️",
+    "description": "level slider",
+    "category": "Objects",
+    "aliases": [
+      "level_slider"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎛️",
+    "description": "control knobs",
+    "category": "Objects",
+    "aliases": [
+      "control_knobs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎤",
+    "description": "microphone",
+    "category": "Objects",
+    "aliases": [
+      "microphone"
+    ],
+    "tags": [
+      "sing"
+    ]
+  },
+  {
+    "emoji": "🎧",
+    "description": "headphone",
+    "category": "Objects",
+    "aliases": [
+      "headphones"
+    ],
+    "tags": [
+      "music",
+      "earphones"
+    ]
+  },
+  {
+    "emoji": "📻",
+    "description": "radio",
+    "category": "Objects",
+    "aliases": [
+      "radio"
+    ],
+    "tags": [
+      "podcast"
+    ]
+  },
+  {
+    "emoji": "🎷",
+    "description": "saxophone",
+    "category": "Objects",
+    "aliases": [
+      "saxophone"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪗",
+    "description": "accordion",
+    "category": "Objects",
+    "aliases": [
+      "accordion"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎸",
+    "description": "guitar",
+    "category": "Objects",
+    "aliases": [
+      "guitar"
+    ],
+    "tags": [
+      "rock"
+    ]
+  },
+  {
+    "emoji": "🎹",
+    "description": "musical keyboard",
+    "category": "Objects",
+    "aliases": [
+      "musical_keyboard"
+    ],
+    "tags": [
+      "piano"
+    ]
+  },
+  {
+    "emoji": "🎺",
+    "description": "trumpet",
+    "category": "Objects",
+    "aliases": [
+      "trumpet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎻",
+    "description": "violin",
+    "category": "Objects",
+    "aliases": [
+      "violin"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪕",
+    "description": "banjo",
+    "category": "Objects",
+    "aliases": [
+      "banjo"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🥁",
+    "description": "drum",
+    "category": "Objects",
+    "aliases": [
+      "drum"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪘",
+    "description": "long drum",
+    "category": "Objects",
+    "aliases": [
+      "long_drum"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📱",
+    "description": "mobile phone",
+    "category": "Objects",
+    "aliases": [
+      "iphone"
+    ],
+    "tags": [
+      "smartphone",
+      "mobile"
+    ]
+  },
+  {
+    "emoji": "📲",
+    "description": "mobile phone with arrow",
+    "category": "Objects",
+    "aliases": [
+      "calling"
+    ],
+    "tags": [
+      "call",
+      "incoming"
+    ]
+  },
+  {
+    "emoji": "☎️",
+    "description": "telephone",
+    "category": "Objects",
+    "aliases": [
+      "phone",
+      "telephone"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📞",
+    "description": "telephone receiver",
+    "category": "Objects",
+    "aliases": [
+      "telephone_receiver"
+    ],
+    "tags": [
+      "phone",
+      "call"
+    ]
+  },
+  {
+    "emoji": "📟",
+    "description": "pager",
+    "category": "Objects",
+    "aliases": [
+      "pager"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📠",
+    "description": "fax machine",
+    "category": "Objects",
+    "aliases": [
+      "fax"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔋",
+    "description": "battery",
+    "category": "Objects",
+    "aliases": [
+      "battery"
+    ],
+    "tags": [
+      "power"
+    ]
+  },
+  {
+    "emoji": "🔌",
+    "description": "electric plug",
+    "category": "Objects",
+    "aliases": [
+      "electric_plug"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💻",
+    "description": "laptop",
+    "category": "Objects",
+    "aliases": [
+      "computer"
+    ],
+    "tags": [
+      "desktop",
+      "screen"
+    ]
+  },
+  {
+    "emoji": "🖥️",
+    "description": "desktop computer",
+    "category": "Objects",
+    "aliases": [
+      "desktop_computer"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖨️",
+    "description": "printer",
+    "category": "Objects",
+    "aliases": [
+      "printer"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⌨️",
+    "description": "keyboard",
+    "category": "Objects",
+    "aliases": [
+      "keyboard"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖱️",
+    "description": "computer mouse",
+    "category": "Objects",
+    "aliases": [
+      "computer_mouse"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖲️",
+    "description": "trackball",
+    "category": "Objects",
+    "aliases": [
+      "trackball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💽",
+    "description": "computer disk",
+    "category": "Objects",
+    "aliases": [
+      "minidisc"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💾",
+    "description": "floppy disk",
+    "category": "Objects",
+    "aliases": [
+      "floppy_disk"
+    ],
+    "tags": [
+      "save"
+    ]
+  },
+  {
+    "emoji": "💿",
+    "description": "optical disk",
+    "category": "Objects",
+    "aliases": [
+      "cd"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📀",
+    "description": "dvd",
+    "category": "Objects",
+    "aliases": [
+      "dvd"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧮",
+    "description": "abacus",
+    "category": "Objects",
+    "aliases": [
+      "abacus"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎥",
+    "description": "movie camera",
+    "category": "Objects",
+    "aliases": [
+      "movie_camera"
+    ],
+    "tags": [
+      "film",
+      "video"
+    ]
+  },
+  {
+    "emoji": "🎞️",
+    "description": "film frames",
+    "category": "Objects",
+    "aliases": [
+      "film_strip"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📽️",
+    "description": "film projector",
+    "category": "Objects",
+    "aliases": [
+      "film_projector"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎬",
+    "description": "clapper board",
+    "category": "Objects",
+    "aliases": [
+      "clapper"
+    ],
+    "tags": [
+      "film"
+    ]
+  },
+  {
+    "emoji": "📺",
+    "description": "television",
+    "category": "Objects",
+    "aliases": [
+      "tv"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📷",
+    "description": "camera",
+    "category": "Objects",
+    "aliases": [
+      "camera"
+    ],
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "emoji": "📸",
+    "description": "camera with flash",
+    "category": "Objects",
+    "aliases": [
+      "camera_flash"
+    ],
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "emoji": "📹",
+    "description": "video camera",
+    "category": "Objects",
+    "aliases": [
+      "video_camera"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📼",
+    "description": "videocassette",
+    "category": "Objects",
+    "aliases": [
+      "vhs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔍",
+    "description": "magnifying glass tilted left",
+    "category": "Objects",
+    "aliases": [
+      "mag"
+    ],
+    "tags": [
+      "search",
+      "zoom"
+    ]
+  },
+  {
+    "emoji": "🔎",
+    "description": "magnifying glass tilted right",
+    "category": "Objects",
+    "aliases": [
+      "mag_right"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕯️",
+    "description": "candle",
+    "category": "Objects",
+    "aliases": [
+      "candle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💡",
+    "description": "light bulb",
+    "category": "Objects",
+    "aliases": [
+      "bulb"
+    ],
+    "tags": [
+      "idea",
+      "light"
+    ]
+  },
+  {
+    "emoji": "🔦",
+    "description": "flashlight",
+    "category": "Objects",
+    "aliases": [
+      "flashlight"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏮",
+    "description": "red paper lantern",
+    "category": "Objects",
+    "aliases": [
+      "izakaya_lantern",
+      "lantern"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪔",
+    "description": "diya lamp",
+    "category": "Objects",
+    "aliases": [
+      "diya_lamp"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📔",
+    "description": "notebook with decorative cover",
+    "category": "Objects",
+    "aliases": [
+      "notebook_with_decorative_cover"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📕",
+    "description": "closed book",
+    "category": "Objects",
+    "aliases": [
+      "closed_book"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📖",
+    "description": "open book",
+    "category": "Objects",
+    "aliases": [
+      "book",
+      "open_book"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📗",
+    "description": "green book",
+    "category": "Objects",
+    "aliases": [
+      "green_book"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📘",
+    "description": "blue book",
+    "category": "Objects",
+    "aliases": [
+      "blue_book"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📙",
+    "description": "orange book",
+    "category": "Objects",
+    "aliases": [
+      "orange_book"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📚",
+    "description": "books",
+    "category": "Objects",
+    "aliases": [
+      "books"
+    ],
+    "tags": [
+      "library"
+    ]
+  },
+  {
+    "emoji": "📓",
+    "description": "notebook",
+    "category": "Objects",
+    "aliases": [
+      "notebook"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📒",
+    "description": "ledger",
+    "category": "Objects",
+    "aliases": [
+      "ledger"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📃",
+    "description": "page with curl",
+    "category": "Objects",
+    "aliases": [
+      "page_with_curl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📜",
+    "description": "scroll",
+    "category": "Objects",
+    "aliases": [
+      "scroll"
+    ],
+    "tags": [
+      "document"
+    ]
+  },
+  {
+    "emoji": "📄",
+    "description": "page facing up",
+    "category": "Objects",
+    "aliases": [
+      "page_facing_up"
+    ],
+    "tags": [
+      "document"
+    ]
+  },
+  {
+    "emoji": "📰",
+    "description": "newspaper",
+    "category": "Objects",
+    "aliases": [
+      "newspaper"
+    ],
+    "tags": [
+      "press"
+    ]
+  },
+  {
+    "emoji": "🗞️",
+    "description": "rolled-up newspaper",
+    "category": "Objects",
+    "aliases": [
+      "newspaper_roll"
+    ],
+    "tags": [
+      "press"
+    ]
+  },
+  {
+    "emoji": "📑",
+    "description": "bookmark tabs",
+    "category": "Objects",
+    "aliases": [
+      "bookmark_tabs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔖",
+    "description": "bookmark",
+    "category": "Objects",
+    "aliases": [
+      "bookmark"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏷️",
+    "description": "label",
+    "category": "Objects",
+    "aliases": [
+      "label"
+    ],
+    "tags": [
+      "tag"
+    ]
+  },
+  {
+    "emoji": "💰",
+    "description": "money bag",
+    "category": "Objects",
+    "aliases": [
+      "moneybag"
+    ],
+    "tags": [
+      "dollar",
+      "cream"
+    ]
+  },
+  {
+    "emoji": "🪙",
+    "description": "coin",
+    "category": "Objects",
+    "aliases": [
+      "coin"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💴",
+    "description": "yen banknote",
+    "category": "Objects",
+    "aliases": [
+      "yen"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💵",
+    "description": "dollar banknote",
+    "category": "Objects",
+    "aliases": [
+      "dollar"
+    ],
+    "tags": [
+      "money"
+    ]
+  },
+  {
+    "emoji": "💶",
+    "description": "euro banknote",
+    "category": "Objects",
+    "aliases": [
+      "euro"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💷",
+    "description": "pound banknote",
+    "category": "Objects",
+    "aliases": [
+      "pound"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💸",
+    "description": "money with wings",
+    "category": "Objects",
+    "aliases": [
+      "money_with_wings"
+    ],
+    "tags": [
+      "dollar"
+    ]
+  },
+  {
+    "emoji": "💳",
+    "description": "credit card",
+    "category": "Objects",
+    "aliases": [
+      "credit_card"
+    ],
+    "tags": [
+      "subscription"
+    ]
+  },
+  {
+    "emoji": "🧾",
+    "description": "receipt",
+    "category": "Objects",
+    "aliases": [
+      "receipt"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💹",
+    "description": "chart increasing with yen",
+    "category": "Objects",
+    "aliases": [
+      "chart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✉️",
+    "description": "envelope",
+    "category": "Objects",
+    "aliases": [
+      "envelope"
+    ],
+    "tags": [
+      "letter",
+      "email"
+    ]
+  },
+  {
+    "emoji": "📧",
+    "description": "e-mail",
+    "category": "Objects",
+    "aliases": [
+      "email",
+      "e-mail"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📨",
+    "description": "incoming envelope",
+    "category": "Objects",
+    "aliases": [
+      "incoming_envelope"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📩",
+    "description": "envelope with arrow",
+    "category": "Objects",
+    "aliases": [
+      "envelope_with_arrow"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📤",
+    "description": "outbox tray",
+    "category": "Objects",
+    "aliases": [
+      "outbox_tray"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📥",
+    "description": "inbox tray",
+    "category": "Objects",
+    "aliases": [
+      "inbox_tray"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📦",
+    "description": "package",
+    "category": "Objects",
+    "aliases": [
+      "package"
+    ],
+    "tags": [
+      "shipping"
+    ]
+  },
+  {
+    "emoji": "📫",
+    "description": "closed mailbox with raised flag",
+    "category": "Objects",
+    "aliases": [
+      "mailbox"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📪",
+    "description": "closed mailbox with lowered flag",
+    "category": "Objects",
+    "aliases": [
+      "mailbox_closed"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📬",
+    "description": "open mailbox with raised flag",
+    "category": "Objects",
+    "aliases": [
+      "mailbox_with_mail"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📭",
+    "description": "open mailbox with lowered flag",
+    "category": "Objects",
+    "aliases": [
+      "mailbox_with_no_mail"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📮",
+    "description": "postbox",
+    "category": "Objects",
+    "aliases": [
+      "postbox"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗳️",
+    "description": "ballot box with ballot",
+    "category": "Objects",
+    "aliases": [
+      "ballot_box"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✏️",
+    "description": "pencil",
+    "category": "Objects",
+    "aliases": [
+      "pencil2"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✒️",
+    "description": "black nib",
+    "category": "Objects",
+    "aliases": [
+      "black_nib"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖋️",
+    "description": "fountain pen",
+    "category": "Objects",
+    "aliases": [
+      "fountain_pen"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖊️",
+    "description": "pen",
+    "category": "Objects",
+    "aliases": [
+      "pen"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖌️",
+    "description": "paintbrush",
+    "category": "Objects",
+    "aliases": [
+      "paintbrush"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖍️",
+    "description": "crayon",
+    "category": "Objects",
+    "aliases": [
+      "crayon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📝",
+    "description": "memo",
+    "category": "Objects",
+    "aliases": [
+      "memo",
+      "pencil"
+    ],
+    "tags": [
+      "document",
+      "note"
+    ]
+  },
+  {
+    "emoji": "💼",
+    "description": "briefcase",
+    "category": "Objects",
+    "aliases": [
+      "briefcase"
+    ],
+    "tags": [
+      "business"
+    ]
+  },
+  {
+    "emoji": "📁",
+    "description": "file folder",
+    "category": "Objects",
+    "aliases": [
+      "file_folder"
+    ],
+    "tags": [
+      "directory"
+    ]
+  },
+  {
+    "emoji": "📂",
+    "description": "open file folder",
+    "category": "Objects",
+    "aliases": [
+      "open_file_folder"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗂️",
+    "description": "card index dividers",
+    "category": "Objects",
+    "aliases": [
+      "card_index_dividers"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📅",
+    "description": "calendar",
+    "category": "Objects",
+    "aliases": [
+      "date"
+    ],
+    "tags": [
+      "calendar",
+      "schedule"
+    ]
+  },
+  {
+    "emoji": "📆",
+    "description": "tear-off calendar",
+    "category": "Objects",
+    "aliases": [
+      "calendar"
+    ],
+    "tags": [
+      "schedule"
+    ]
+  },
+  {
+    "emoji": "🗒️",
+    "description": "spiral notepad",
+    "category": "Objects",
+    "aliases": [
+      "spiral_notepad"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗓️",
+    "description": "spiral calendar",
+    "category": "Objects",
+    "aliases": [
+      "spiral_calendar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📇",
+    "description": "card index",
+    "category": "Objects",
+    "aliases": [
+      "card_index"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📈",
+    "description": "chart increasing",
+    "category": "Objects",
+    "aliases": [
+      "chart_with_upwards_trend"
+    ],
+    "tags": [
+      "graph",
+      "metrics"
+    ]
+  },
+  {
+    "emoji": "📉",
+    "description": "chart decreasing",
+    "category": "Objects",
+    "aliases": [
+      "chart_with_downwards_trend"
+    ],
+    "tags": [
+      "graph",
+      "metrics"
+    ]
+  },
+  {
+    "emoji": "📊",
+    "description": "bar chart",
+    "category": "Objects",
+    "aliases": [
+      "bar_chart"
+    ],
+    "tags": [
+      "stats",
+      "metrics"
+    ]
+  },
+  {
+    "emoji": "📋",
+    "description": "clipboard",
+    "category": "Objects",
+    "aliases": [
+      "clipboard"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📌",
+    "description": "pushpin",
+    "category": "Objects",
+    "aliases": [
+      "pushpin"
+    ],
+    "tags": [
+      "location"
+    ]
+  },
+  {
+    "emoji": "📍",
+    "description": "round pushpin",
+    "category": "Objects",
+    "aliases": [
+      "round_pushpin"
+    ],
+    "tags": [
+      "location"
+    ]
+  },
+  {
+    "emoji": "📎",
+    "description": "paperclip",
+    "category": "Objects",
+    "aliases": [
+      "paperclip"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖇️",
+    "description": "linked paperclips",
+    "category": "Objects",
+    "aliases": [
+      "paperclips"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📏",
+    "description": "straight ruler",
+    "category": "Objects",
+    "aliases": [
+      "straight_ruler"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📐",
+    "description": "triangular ruler",
+    "category": "Objects",
+    "aliases": [
+      "triangular_ruler"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✂️",
+    "description": "scissors",
+    "category": "Objects",
+    "aliases": [
+      "scissors"
+    ],
+    "tags": [
+      "cut"
+    ]
+  },
+  {
+    "emoji": "🗃️",
+    "description": "card file box",
+    "category": "Objects",
+    "aliases": [
+      "card_file_box"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗄️",
+    "description": "file cabinet",
+    "category": "Objects",
+    "aliases": [
+      "file_cabinet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗑️",
+    "description": "wastebasket",
+    "category": "Objects",
+    "aliases": [
+      "wastebasket"
+    ],
+    "tags": [
+      "trash"
+    ]
+  },
+  {
+    "emoji": "🔒",
+    "description": "locked",
+    "category": "Objects",
+    "aliases": [
+      "lock"
+    ],
+    "tags": [
+      "security",
+      "private"
+    ]
+  },
+  {
+    "emoji": "🔓",
+    "description": "unlocked",
+    "category": "Objects",
+    "aliases": [
+      "unlock"
+    ],
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "emoji": "🔏",
+    "description": "locked with pen",
+    "category": "Objects",
+    "aliases": [
+      "lock_with_ink_pen"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔐",
+    "description": "locked with key",
+    "category": "Objects",
+    "aliases": [
+      "closed_lock_with_key"
+    ],
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "emoji": "🔑",
+    "description": "key",
+    "category": "Objects",
+    "aliases": [
+      "key"
+    ],
+    "tags": [
+      "lock",
+      "password"
+    ]
+  },
+  {
+    "emoji": "🗝️",
+    "description": "old key",
+    "category": "Objects",
+    "aliases": [
+      "old_key"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔨",
+    "description": "hammer",
+    "category": "Objects",
+    "aliases": [
+      "hammer"
+    ],
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "emoji": "🪓",
+    "description": "axe",
+    "category": "Objects",
+    "aliases": [
+      "axe"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛏️",
+    "description": "pick",
+    "category": "Objects",
+    "aliases": [
+      "pick"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚒️",
+    "description": "hammer and pick",
+    "category": "Objects",
+    "aliases": [
+      "hammer_and_pick"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛠️",
+    "description": "hammer and wrench",
+    "category": "Objects",
+    "aliases": [
+      "hammer_and_wrench"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗡️",
+    "description": "dagger",
+    "category": "Objects",
+    "aliases": [
+      "dagger"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚔️",
+    "description": "crossed swords",
+    "category": "Objects",
+    "aliases": [
+      "crossed_swords"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔫",
+    "description": "water pistol",
+    "category": "Objects",
+    "aliases": [
+      "gun"
+    ],
+    "tags": [
+      "shoot",
+      "weapon"
+    ]
+  },
+  {
+    "emoji": "🪃",
+    "description": "boomerang",
+    "category": "Objects",
+    "aliases": [
+      "boomerang"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏹",
+    "description": "bow and arrow",
+    "category": "Objects",
+    "aliases": [
+      "bow_and_arrow"
+    ],
+    "tags": [
+      "archery"
+    ]
+  },
+  {
+    "emoji": "🛡️",
+    "description": "shield",
+    "category": "Objects",
+    "aliases": [
+      "shield"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪚",
+    "description": "carpentry saw",
+    "category": "Objects",
+    "aliases": [
+      "carpentry_saw"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔧",
+    "description": "wrench",
+    "category": "Objects",
+    "aliases": [
+      "wrench"
+    ],
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "emoji": "🪛",
+    "description": "screwdriver",
+    "category": "Objects",
+    "aliases": [
+      "screwdriver"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔩",
+    "description": "nut and bolt",
+    "category": "Objects",
+    "aliases": [
+      "nut_and_bolt"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚙️",
+    "description": "gear",
+    "category": "Objects",
+    "aliases": [
+      "gear"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗜️",
+    "description": "clamp",
+    "category": "Objects",
+    "aliases": [
+      "clamp"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚖️",
+    "description": "balance scale",
+    "category": "Objects",
+    "aliases": [
+      "balance_scale"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦯",
+    "description": "white cane",
+    "category": "Objects",
+    "aliases": [
+      "probing_cane"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔗",
+    "description": "link",
+    "category": "Objects",
+    "aliases": [
+      "link"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛓️",
+    "description": "chains",
+    "category": "Objects",
+    "aliases": [
+      "chains"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪝",
+    "description": "hook",
+    "category": "Objects",
+    "aliases": [
+      "hook"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧰",
+    "description": "toolbox",
+    "category": "Objects",
+    "aliases": [
+      "toolbox"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧲",
+    "description": "magnet",
+    "category": "Objects",
+    "aliases": [
+      "magnet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪜",
+    "description": "ladder",
+    "category": "Objects",
+    "aliases": [
+      "ladder"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚗️",
+    "description": "alembic",
+    "category": "Objects",
+    "aliases": [
+      "alembic"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧪",
+    "description": "test tube",
+    "category": "Objects",
+    "aliases": [
+      "test_tube"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧫",
+    "description": "petri dish",
+    "category": "Objects",
+    "aliases": [
+      "petri_dish"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧬",
+    "description": "dna",
+    "category": "Objects",
+    "aliases": [
+      "dna"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🔬",
+    "description": "microscope",
+    "category": "Objects",
+    "aliases": [
+      "microscope"
+    ],
+    "tags": [
+      "science",
+      "laboratory",
+      "investigate"
+    ]
+  },
+  {
+    "emoji": "🔭",
+    "description": "telescope",
+    "category": "Objects",
+    "aliases": [
+      "telescope"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📡",
+    "description": "satellite antenna",
+    "category": "Objects",
+    "aliases": [
+      "satellite"
+    ],
+    "tags": [
+      "signal"
+    ]
+  },
+  {
+    "emoji": "💉",
+    "description": "syringe",
+    "category": "Objects",
+    "aliases": [
+      "syringe"
+    ],
+    "tags": [
+      "health",
+      "hospital",
+      "needle"
+    ]
+  },
+  {
+    "emoji": "🩸",
+    "description": "drop of blood",
+    "category": "Objects",
+    "aliases": [
+      "drop_of_blood"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💊",
+    "description": "pill",
+    "category": "Objects",
+    "aliases": [
+      "pill"
+    ],
+    "tags": [
+      "health",
+      "medicine"
+    ]
+  },
+  {
+    "emoji": "🩹",
+    "description": "adhesive bandage",
+    "category": "Objects",
+    "aliases": [
+      "adhesive_bandage"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🩺",
+    "description": "stethoscope",
+    "category": "Objects",
+    "aliases": [
+      "stethoscope"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚪",
+    "description": "door",
+    "category": "Objects",
+    "aliases": [
+      "door"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛗",
+    "description": "elevator",
+    "category": "Objects",
+    "aliases": [
+      "elevator"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪞",
+    "description": "mirror",
+    "category": "Objects",
+    "aliases": [
+      "mirror"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪟",
+    "description": "window",
+    "category": "Objects",
+    "aliases": [
+      "window"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛏️",
+    "description": "bed",
+    "category": "Objects",
+    "aliases": [
+      "bed"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛋️",
+    "description": "couch and lamp",
+    "category": "Objects",
+    "aliases": [
+      "couch_and_lamp"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪑",
+    "description": "chair",
+    "category": "Objects",
+    "aliases": [
+      "chair"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚽",
+    "description": "toilet",
+    "category": "Objects",
+    "aliases": [
+      "toilet"
+    ],
+    "tags": [
+      "wc"
+    ]
+  },
+  {
+    "emoji": "🪠",
+    "description": "plunger",
+    "category": "Objects",
+    "aliases": [
+      "plunger"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚿",
+    "description": "shower",
+    "category": "Objects",
+    "aliases": [
+      "shower"
+    ],
+    "tags": [
+      "bath"
+    ]
+  },
+  {
+    "emoji": "🛁",
+    "description": "bathtub",
+    "category": "Objects",
+    "aliases": [
+      "bathtub"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪤",
+    "description": "mouse trap",
+    "category": "Objects",
+    "aliases": [
+      "mouse_trap"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪒",
+    "description": "razor",
+    "category": "Objects",
+    "aliases": [
+      "razor"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧴",
+    "description": "lotion bottle",
+    "category": "Objects",
+    "aliases": [
+      "lotion_bottle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧷",
+    "description": "safety pin",
+    "category": "Objects",
+    "aliases": [
+      "safety_pin"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧹",
+    "description": "broom",
+    "category": "Objects",
+    "aliases": [
+      "broom"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧺",
+    "description": "basket",
+    "category": "Objects",
+    "aliases": [
+      "basket"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧻",
+    "description": "roll of paper",
+    "category": "Objects",
+    "aliases": [
+      "roll_of_paper"
+    ],
+    "tags": [
+      "toilet"
+    ]
+  },
+  {
+    "emoji": "🪣",
+    "description": "bucket",
+    "category": "Objects",
+    "aliases": [
+      "bucket"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧼",
+    "description": "soap",
+    "category": "Objects",
+    "aliases": [
+      "soap"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🪥",
+    "description": "toothbrush",
+    "category": "Objects",
+    "aliases": [
+      "toothbrush"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧽",
+    "description": "sponge",
+    "category": "Objects",
+    "aliases": [
+      "sponge"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧯",
+    "description": "fire extinguisher",
+    "category": "Objects",
+    "aliases": [
+      "fire_extinguisher"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛒",
+    "description": "shopping cart",
+    "category": "Objects",
+    "aliases": [
+      "shopping_cart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🚬",
+    "description": "cigarette",
+    "category": "Objects",
+    "aliases": [
+      "smoking"
+    ],
+    "tags": [
+      "cigarette"
+    ]
+  },
+  {
+    "emoji": "⚰️",
+    "description": "coffin",
+    "category": "Objects",
+    "aliases": [
+      "coffin"
+    ],
+    "tags": [
+      "funeral"
+    ]
+  },
+  {
+    "emoji": "🪦",
+    "description": "headstone",
+    "category": "Objects",
+    "aliases": [
+      "headstone"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚱️",
+    "description": "funeral urn",
+    "category": "Objects",
+    "aliases": [
+      "funeral_urn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗿",
+    "description": "moai",
+    "category": "Objects",
+    "aliases": [
+      "moyai"
+    ],
+    "tags": [
+      "stone"
+    ]
+  },
+  {
+    "emoji": "🪧",
+    "description": "placard",
+    "category": "Objects",
+    "aliases": [
+      "placard"
+    ],
+    "tags": []
+  }
+]

@@ -1,0 +1,3729 @@
+[
+  {
+    "emoji": "👋",
+    "description": "waving hand",
+    "category": "People & Body",
+    "aliases": [
+      "wave"
+    ],
+    "tags": [
+      "goodbye"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤚",
+    "description": "raised back of hand",
+    "category": "People & Body",
+    "aliases": [
+      "raised_back_of_hand"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🖐️",
+    "description": "hand with fingers splayed",
+    "category": "People & Body",
+    "aliases": [
+      "raised_hand_with_fingers_splayed"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "✋",
+    "description": "raised hand",
+    "category": "People & Body",
+    "aliases": [
+      "hand",
+      "raised_hand"
+    ],
+    "tags": [
+      "highfive",
+      "stop"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🖖",
+    "description": "vulcan salute",
+    "category": "People & Body",
+    "aliases": [
+      "vulcan_salute"
+    ],
+    "tags": [
+      "prosper",
+      "spock"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👌",
+    "description": "OK hand",
+    "category": "People & Body",
+    "aliases": [
+      "ok_hand"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤌",
+    "description": "pinched fingers",
+    "category": "People & Body",
+    "aliases": [
+      "pinched_fingers"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤏",
+    "description": "pinching hand",
+    "category": "People & Body",
+    "aliases": [
+      "pinching_hand"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "✌️",
+    "description": "victory hand",
+    "category": "People & Body",
+    "aliases": [
+      "v"
+    ],
+    "tags": [
+      "victory",
+      "peace"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤞",
+    "description": "crossed fingers",
+    "category": "People & Body",
+    "aliases": [
+      "crossed_fingers"
+    ],
+    "tags": [
+      "luck",
+      "hopeful"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤟",
+    "description": "love-you gesture",
+    "category": "People & Body",
+    "aliases": [
+      "love_you_gesture"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤘",
+    "description": "sign of the horns",
+    "category": "People & Body",
+    "aliases": [
+      "metal"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤙",
+    "description": "call me hand",
+    "category": "People & Body",
+    "aliases": [
+      "call_me_hand"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👈",
+    "description": "backhand index pointing left",
+    "category": "People & Body",
+    "aliases": [
+      "point_left"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👉",
+    "description": "backhand index pointing right",
+    "category": "People & Body",
+    "aliases": [
+      "point_right"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👆",
+    "description": "backhand index pointing up",
+    "category": "People & Body",
+    "aliases": [
+      "point_up_2"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🖕",
+    "description": "middle finger",
+    "category": "People & Body",
+    "aliases": [
+      "middle_finger",
+      "fu"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👇",
+    "description": "backhand index pointing down",
+    "category": "People & Body",
+    "aliases": [
+      "point_down"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "☝️",
+    "description": "index pointing up",
+    "category": "People & Body",
+    "aliases": [
+      "point_up"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👍",
+    "description": "thumbs up",
+    "category": "People & Body",
+    "aliases": [
+      "+1",
+      "thumbsup"
+    ],
+    "tags": [
+      "approve",
+      "ok"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👎",
+    "description": "thumbs down",
+    "category": "People & Body",
+    "aliases": [
+      "-1",
+      "thumbsdown"
+    ],
+    "tags": [
+      "disapprove",
+      "bury"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "✊",
+    "description": "raised fist",
+    "category": "People & Body",
+    "aliases": [
+      "fist_raised",
+      "fist"
+    ],
+    "tags": [
+      "power"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👊",
+    "description": "oncoming fist",
+    "category": "People & Body",
+    "aliases": [
+      "fist_oncoming",
+      "facepunch",
+      "punch"
+    ],
+    "tags": [
+      "attack"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤛",
+    "description": "left-facing fist",
+    "category": "People & Body",
+    "aliases": [
+      "fist_left"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤜",
+    "description": "right-facing fist",
+    "category": "People & Body",
+    "aliases": [
+      "fist_right"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👏",
+    "description": "clapping hands",
+    "category": "People & Body",
+    "aliases": [
+      "clap"
+    ],
+    "tags": [
+      "praise",
+      "applause"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙌",
+    "description": "raising hands",
+    "category": "People & Body",
+    "aliases": [
+      "raised_hands"
+    ],
+    "tags": [
+      "hooray"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👐",
+    "description": "open hands",
+    "category": "People & Body",
+    "aliases": [
+      "open_hands"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤲",
+    "description": "palms up together",
+    "category": "People & Body",
+    "aliases": [
+      "palms_up_together"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤝",
+    "description": "handshake",
+    "category": "People & Body",
+    "aliases": [
+      "handshake"
+    ],
+    "tags": [
+      "deal"
+    ]
+  },
+  {
+    "emoji": "🙏",
+    "description": "folded hands",
+    "category": "People & Body",
+    "aliases": [
+      "pray"
+    ],
+    "tags": [
+      "please",
+      "hope",
+      "wish"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "✍️",
+    "description": "writing hand",
+    "category": "People & Body",
+    "aliases": [
+      "writing_hand"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💅",
+    "description": "nail polish",
+    "category": "People & Body",
+    "aliases": [
+      "nail_care"
+    ],
+    "tags": [
+      "beauty",
+      "manicure"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤳",
+    "description": "selfie",
+    "category": "People & Body",
+    "aliases": [
+      "selfie"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💪",
+    "description": "flexed biceps",
+    "category": "People & Body",
+    "aliases": [
+      "muscle"
+    ],
+    "tags": [
+      "flex",
+      "bicep",
+      "strong",
+      "workout"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦾",
+    "description": "mechanical arm",
+    "category": "People & Body",
+    "aliases": [
+      "mechanical_arm"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦿",
+    "description": "mechanical leg",
+    "category": "People & Body",
+    "aliases": [
+      "mechanical_leg"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦵",
+    "description": "leg",
+    "category": "People & Body",
+    "aliases": [
+      "leg"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦶",
+    "description": "foot",
+    "category": "People & Body",
+    "aliases": [
+      "foot"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👂",
+    "description": "ear",
+    "category": "People & Body",
+    "aliases": [
+      "ear"
+    ],
+    "tags": [
+      "hear",
+      "sound",
+      "listen"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦻",
+    "description": "ear with hearing aid",
+    "category": "People & Body",
+    "aliases": [
+      "ear_with_hearing_aid"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👃",
+    "description": "nose",
+    "category": "People & Body",
+    "aliases": [
+      "nose"
+    ],
+    "tags": [
+      "smell"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧠",
+    "description": "brain",
+    "category": "People & Body",
+    "aliases": [
+      "brain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🫀",
+    "description": "anatomical heart",
+    "category": "People & Body",
+    "aliases": [
+      "anatomical_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🫁",
+    "description": "lungs",
+    "category": "People & Body",
+    "aliases": [
+      "lungs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦷",
+    "description": "tooth",
+    "category": "People & Body",
+    "aliases": [
+      "tooth"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦴",
+    "description": "bone",
+    "category": "People & Body",
+    "aliases": [
+      "bone"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👀",
+    "description": "eyes",
+    "category": "People & Body",
+    "aliases": [
+      "eyes"
+    ],
+    "tags": [
+      "look",
+      "see",
+      "watch"
+    ]
+  },
+  {
+    "emoji": "👁️",
+    "description": "eye",
+    "category": "People & Body",
+    "aliases": [
+      "eye"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👅",
+    "description": "tongue",
+    "category": "People & Body",
+    "aliases": [
+      "tongue"
+    ],
+    "tags": [
+      "taste"
+    ]
+  },
+  {
+    "emoji": "👄",
+    "description": "mouth",
+    "category": "People & Body",
+    "aliases": [
+      "lips"
+    ],
+    "tags": [
+      "kiss"
+    ]
+  },
+  {
+    "emoji": "👶",
+    "description": "baby",
+    "category": "People & Body",
+    "aliases": [
+      "baby"
+    ],
+    "tags": [
+      "child",
+      "newborn"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧒",
+    "description": "child",
+    "category": "People & Body",
+    "aliases": [
+      "child"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👦",
+    "description": "boy",
+    "category": "People & Body",
+    "aliases": [
+      "boy"
+    ],
+    "tags": [
+      "child"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👧",
+    "description": "girl",
+    "category": "People & Body",
+    "aliases": [
+      "girl"
+    ],
+    "tags": [
+      "child"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑",
+    "description": "person",
+    "category": "People & Body",
+    "aliases": [
+      "adult"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👱",
+    "description": "person: blond hair",
+    "category": "People & Body",
+    "aliases": [
+      "blond_haired_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨",
+    "description": "man",
+    "category": "People & Body",
+    "aliases": [
+      "man"
+    ],
+    "tags": [
+      "mustache",
+      "father",
+      "dad"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧔",
+    "description": "person: beard",
+    "category": "People & Body",
+    "aliases": [
+      "bearded_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧔‍♂️",
+    "description": "man: beard",
+    "category": "People & Body",
+    "aliases": [
+      "man_beard"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧔‍♀️",
+    "description": "woman: beard",
+    "category": "People & Body",
+    "aliases": [
+      "woman_beard"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦰",
+    "description": "man: red hair",
+    "category": "People & Body",
+    "aliases": [
+      "red_haired_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦱",
+    "description": "man: curly hair",
+    "category": "People & Body",
+    "aliases": [
+      "curly_haired_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦳",
+    "description": "man: white hair",
+    "category": "People & Body",
+    "aliases": [
+      "white_haired_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦲",
+    "description": "man: bald",
+    "category": "People & Body",
+    "aliases": [
+      "bald_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩",
+    "description": "woman",
+    "category": "People & Body",
+    "aliases": [
+      "woman"
+    ],
+    "tags": [
+      "girls"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦰",
+    "description": "woman: red hair",
+    "category": "People & Body",
+    "aliases": [
+      "red_haired_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦰",
+    "description": "person: red hair",
+    "category": "People & Body",
+    "aliases": [
+      "person_red_hair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦱",
+    "description": "woman: curly hair",
+    "category": "People & Body",
+    "aliases": [
+      "curly_haired_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦱",
+    "description": "person: curly hair",
+    "category": "People & Body",
+    "aliases": [
+      "person_curly_hair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦳",
+    "description": "woman: white hair",
+    "category": "People & Body",
+    "aliases": [
+      "white_haired_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦳",
+    "description": "person: white hair",
+    "category": "People & Body",
+    "aliases": [
+      "person_white_hair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦲",
+    "description": "woman: bald",
+    "category": "People & Body",
+    "aliases": [
+      "bald_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦲",
+    "description": "person: bald",
+    "category": "People & Body",
+    "aliases": [
+      "person_bald"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👱‍♀️",
+    "description": "woman: blond hair",
+    "category": "People & Body",
+    "aliases": [
+      "blond_haired_woman",
+      "blonde_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👱‍♂️",
+    "description": "man: blond hair",
+    "category": "People & Body",
+    "aliases": [
+      "blond_haired_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧓",
+    "description": "older person",
+    "category": "People & Body",
+    "aliases": [
+      "older_adult"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👴",
+    "description": "old man",
+    "category": "People & Body",
+    "aliases": [
+      "older_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👵",
+    "description": "old woman",
+    "category": "People & Body",
+    "aliases": [
+      "older_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙍",
+    "description": "person frowning",
+    "category": "People & Body",
+    "aliases": [
+      "frowning_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙍‍♂️",
+    "description": "man frowning",
+    "category": "People & Body",
+    "aliases": [
+      "frowning_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙍‍♀️",
+    "description": "woman frowning",
+    "category": "People & Body",
+    "aliases": [
+      "frowning_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙎",
+    "description": "person pouting",
+    "category": "People & Body",
+    "aliases": [
+      "pouting_face"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙎‍♂️",
+    "description": "man pouting",
+    "category": "People & Body",
+    "aliases": [
+      "pouting_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙎‍♀️",
+    "description": "woman pouting",
+    "category": "People & Body",
+    "aliases": [
+      "pouting_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙅",
+    "description": "person gesturing NO",
+    "category": "People & Body",
+    "aliases": [
+      "no_good"
+    ],
+    "tags": [
+      "stop",
+      "halt",
+      "denied"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙅‍♂️",
+    "description": "man gesturing NO",
+    "category": "People & Body",
+    "aliases": [
+      "no_good_man",
+      "ng_man"
+    ],
+    "tags": [
+      "stop",
+      "halt",
+      "denied"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙅‍♀️",
+    "description": "woman gesturing NO",
+    "category": "People & Body",
+    "aliases": [
+      "no_good_woman",
+      "ng_woman"
+    ],
+    "tags": [
+      "stop",
+      "halt",
+      "denied"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙆",
+    "description": "person gesturing OK",
+    "category": "People & Body",
+    "aliases": [
+      "ok_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙆‍♂️",
+    "description": "man gesturing OK",
+    "category": "People & Body",
+    "aliases": [
+      "ok_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙆‍♀️",
+    "description": "woman gesturing OK",
+    "category": "People & Body",
+    "aliases": [
+      "ok_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💁",
+    "description": "person tipping hand",
+    "category": "People & Body",
+    "aliases": [
+      "tipping_hand_person",
+      "information_desk_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💁‍♂️",
+    "description": "man tipping hand",
+    "category": "People & Body",
+    "aliases": [
+      "tipping_hand_man",
+      "sassy_man"
+    ],
+    "tags": [
+      "information"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💁‍♀️",
+    "description": "woman tipping hand",
+    "category": "People & Body",
+    "aliases": [
+      "tipping_hand_woman",
+      "sassy_woman"
+    ],
+    "tags": [
+      "information"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙋",
+    "description": "person raising hand",
+    "category": "People & Body",
+    "aliases": [
+      "raising_hand"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙋‍♂️",
+    "description": "man raising hand",
+    "category": "People & Body",
+    "aliases": [
+      "raising_hand_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙋‍♀️",
+    "description": "woman raising hand",
+    "category": "People & Body",
+    "aliases": [
+      "raising_hand_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧏",
+    "description": "deaf person",
+    "category": "People & Body",
+    "aliases": [
+      "deaf_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧏‍♂️",
+    "description": "deaf man",
+    "category": "People & Body",
+    "aliases": [
+      "deaf_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧏‍♀️",
+    "description": "deaf woman",
+    "category": "People & Body",
+    "aliases": [
+      "deaf_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙇",
+    "description": "person bowing",
+    "category": "People & Body",
+    "aliases": [
+      "bow"
+    ],
+    "tags": [
+      "respect",
+      "thanks"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙇‍♂️",
+    "description": "man bowing",
+    "category": "People & Body",
+    "aliases": [
+      "bowing_man"
+    ],
+    "tags": [
+      "respect",
+      "thanks"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🙇‍♀️",
+    "description": "woman bowing",
+    "category": "People & Body",
+    "aliases": [
+      "bowing_woman"
+    ],
+    "tags": [
+      "respect",
+      "thanks"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤦",
+    "description": "person facepalming",
+    "category": "People & Body",
+    "aliases": [
+      "facepalm"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤦‍♂️",
+    "description": "man facepalming",
+    "category": "People & Body",
+    "aliases": [
+      "man_facepalming"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤦‍♀️",
+    "description": "woman facepalming",
+    "category": "People & Body",
+    "aliases": [
+      "woman_facepalming"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤷",
+    "description": "person shrugging",
+    "category": "People & Body",
+    "aliases": [
+      "shrug"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤷‍♂️",
+    "description": "man shrugging",
+    "category": "People & Body",
+    "aliases": [
+      "man_shrugging"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤷‍♀️",
+    "description": "woman shrugging",
+    "category": "People & Body",
+    "aliases": [
+      "woman_shrugging"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍⚕️",
+    "description": "health worker",
+    "category": "People & Body",
+    "aliases": [
+      "health_worker"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍⚕️",
+    "description": "man health worker",
+    "category": "People & Body",
+    "aliases": [
+      "man_health_worker"
+    ],
+    "tags": [
+      "doctor",
+      "nurse"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍⚕️",
+    "description": "woman health worker",
+    "category": "People & Body",
+    "aliases": [
+      "woman_health_worker"
+    ],
+    "tags": [
+      "doctor",
+      "nurse"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🎓",
+    "description": "student",
+    "category": "People & Body",
+    "aliases": [
+      "student"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🎓",
+    "description": "man student",
+    "category": "People & Body",
+    "aliases": [
+      "man_student"
+    ],
+    "tags": [
+      "graduation"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🎓",
+    "description": "woman student",
+    "category": "People & Body",
+    "aliases": [
+      "woman_student"
+    ],
+    "tags": [
+      "graduation"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🏫",
+    "description": "teacher",
+    "category": "People & Body",
+    "aliases": [
+      "teacher"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🏫",
+    "description": "man teacher",
+    "category": "People & Body",
+    "aliases": [
+      "man_teacher"
+    ],
+    "tags": [
+      "school",
+      "professor"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🏫",
+    "description": "woman teacher",
+    "category": "People & Body",
+    "aliases": [
+      "woman_teacher"
+    ],
+    "tags": [
+      "school",
+      "professor"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍⚖️",
+    "description": "judge",
+    "category": "People & Body",
+    "aliases": [
+      "judge"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍⚖️",
+    "description": "man judge",
+    "category": "People & Body",
+    "aliases": [
+      "man_judge"
+    ],
+    "tags": [
+      "justice"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍⚖️",
+    "description": "woman judge",
+    "category": "People & Body",
+    "aliases": [
+      "woman_judge"
+    ],
+    "tags": [
+      "justice"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🌾",
+    "description": "farmer",
+    "category": "People & Body",
+    "aliases": [
+      "farmer"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🌾",
+    "description": "man farmer",
+    "category": "People & Body",
+    "aliases": [
+      "man_farmer"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🌾",
+    "description": "woman farmer",
+    "category": "People & Body",
+    "aliases": [
+      "woman_farmer"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🍳",
+    "description": "cook",
+    "category": "People & Body",
+    "aliases": [
+      "cook"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🍳",
+    "description": "man cook",
+    "category": "People & Body",
+    "aliases": [
+      "man_cook"
+    ],
+    "tags": [
+      "chef"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🍳",
+    "description": "woman cook",
+    "category": "People & Body",
+    "aliases": [
+      "woman_cook"
+    ],
+    "tags": [
+      "chef"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🔧",
+    "description": "mechanic",
+    "category": "People & Body",
+    "aliases": [
+      "mechanic"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🔧",
+    "description": "man mechanic",
+    "category": "People & Body",
+    "aliases": [
+      "man_mechanic"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🔧",
+    "description": "woman mechanic",
+    "category": "People & Body",
+    "aliases": [
+      "woman_mechanic"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🏭",
+    "description": "factory worker",
+    "category": "People & Body",
+    "aliases": [
+      "factory_worker"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🏭",
+    "description": "man factory worker",
+    "category": "People & Body",
+    "aliases": [
+      "man_factory_worker"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🏭",
+    "description": "woman factory worker",
+    "category": "People & Body",
+    "aliases": [
+      "woman_factory_worker"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍💼",
+    "description": "office worker",
+    "category": "People & Body",
+    "aliases": [
+      "office_worker"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍💼",
+    "description": "man office worker",
+    "category": "People & Body",
+    "aliases": [
+      "man_office_worker"
+    ],
+    "tags": [
+      "business"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍💼",
+    "description": "woman office worker",
+    "category": "People & Body",
+    "aliases": [
+      "woman_office_worker"
+    ],
+    "tags": [
+      "business"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🔬",
+    "description": "scientist",
+    "category": "People & Body",
+    "aliases": [
+      "scientist"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🔬",
+    "description": "man scientist",
+    "category": "People & Body",
+    "aliases": [
+      "man_scientist"
+    ],
+    "tags": [
+      "research"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🔬",
+    "description": "woman scientist",
+    "category": "People & Body",
+    "aliases": [
+      "woman_scientist"
+    ],
+    "tags": [
+      "research"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍💻",
+    "description": "technologist",
+    "category": "People & Body",
+    "aliases": [
+      "technologist"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍💻",
+    "description": "man technologist",
+    "category": "People & Body",
+    "aliases": [
+      "man_technologist"
+    ],
+    "tags": [
+      "coder"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍💻",
+    "description": "woman technologist",
+    "category": "People & Body",
+    "aliases": [
+      "woman_technologist"
+    ],
+    "tags": [
+      "coder"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🎤",
+    "description": "singer",
+    "category": "People & Body",
+    "aliases": [
+      "singer"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🎤",
+    "description": "man singer",
+    "category": "People & Body",
+    "aliases": [
+      "man_singer"
+    ],
+    "tags": [
+      "rockstar"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🎤",
+    "description": "woman singer",
+    "category": "People & Body",
+    "aliases": [
+      "woman_singer"
+    ],
+    "tags": [
+      "rockstar"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🎨",
+    "description": "artist",
+    "category": "People & Body",
+    "aliases": [
+      "artist"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🎨",
+    "description": "man artist",
+    "category": "People & Body",
+    "aliases": [
+      "man_artist"
+    ],
+    "tags": [
+      "painter"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🎨",
+    "description": "woman artist",
+    "category": "People & Body",
+    "aliases": [
+      "woman_artist"
+    ],
+    "tags": [
+      "painter"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍✈️",
+    "description": "pilot",
+    "category": "People & Body",
+    "aliases": [
+      "pilot"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍✈️",
+    "description": "man pilot",
+    "category": "People & Body",
+    "aliases": [
+      "man_pilot"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍✈️",
+    "description": "woman pilot",
+    "category": "People & Body",
+    "aliases": [
+      "woman_pilot"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🚀",
+    "description": "astronaut",
+    "category": "People & Body",
+    "aliases": [
+      "astronaut"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🚀",
+    "description": "man astronaut",
+    "category": "People & Body",
+    "aliases": [
+      "man_astronaut"
+    ],
+    "tags": [
+      "space"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🚀",
+    "description": "woman astronaut",
+    "category": "People & Body",
+    "aliases": [
+      "woman_astronaut"
+    ],
+    "tags": [
+      "space"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🚒",
+    "description": "firefighter",
+    "category": "People & Body",
+    "aliases": [
+      "firefighter"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🚒",
+    "description": "man firefighter",
+    "category": "People & Body",
+    "aliases": [
+      "man_firefighter"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🚒",
+    "description": "woman firefighter",
+    "category": "People & Body",
+    "aliases": [
+      "woman_firefighter"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👮",
+    "description": "police officer",
+    "category": "People & Body",
+    "aliases": [
+      "police_officer",
+      "cop"
+    ],
+    "tags": [
+      "law"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👮‍♂️",
+    "description": "man police officer",
+    "category": "People & Body",
+    "aliases": [
+      "policeman"
+    ],
+    "tags": [
+      "law",
+      "cop"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👮‍♀️",
+    "description": "woman police officer",
+    "category": "People & Body",
+    "aliases": [
+      "policewoman"
+    ],
+    "tags": [
+      "law",
+      "cop"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🕵️",
+    "description": "detective",
+    "category": "People & Body",
+    "aliases": [
+      "detective"
+    ],
+    "tags": [
+      "sleuth"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🕵️‍♂️",
+    "description": "man detective",
+    "category": "People & Body",
+    "aliases": [
+      "male_detective"
+    ],
+    "tags": [
+      "sleuth"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🕵️‍♀️",
+    "description": "woman detective",
+    "category": "People & Body",
+    "aliases": [
+      "female_detective"
+    ],
+    "tags": [
+      "sleuth"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💂",
+    "description": "guard",
+    "category": "People & Body",
+    "aliases": [
+      "guard"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💂‍♂️",
+    "description": "man guard",
+    "category": "People & Body",
+    "aliases": [
+      "guardsman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💂‍♀️",
+    "description": "woman guard",
+    "category": "People & Body",
+    "aliases": [
+      "guardswoman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🥷",
+    "description": "ninja",
+    "category": "People & Body",
+    "aliases": [
+      "ninja"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👷",
+    "description": "construction worker",
+    "category": "People & Body",
+    "aliases": [
+      "construction_worker"
+    ],
+    "tags": [
+      "helmet"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👷‍♂️",
+    "description": "man construction worker",
+    "category": "People & Body",
+    "aliases": [
+      "construction_worker_man"
+    ],
+    "tags": [
+      "helmet"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👷‍♀️",
+    "description": "woman construction worker",
+    "category": "People & Body",
+    "aliases": [
+      "construction_worker_woman"
+    ],
+    "tags": [
+      "helmet"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤴",
+    "description": "prince",
+    "category": "People & Body",
+    "aliases": [
+      "prince"
+    ],
+    "tags": [
+      "crown",
+      "royal"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👸",
+    "description": "princess",
+    "category": "People & Body",
+    "aliases": [
+      "princess"
+    ],
+    "tags": [
+      "crown",
+      "royal"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👳",
+    "description": "person wearing turban",
+    "category": "People & Body",
+    "aliases": [
+      "person_with_turban"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👳‍♂️",
+    "description": "man wearing turban",
+    "category": "People & Body",
+    "aliases": [
+      "man_with_turban"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👳‍♀️",
+    "description": "woman wearing turban",
+    "category": "People & Body",
+    "aliases": [
+      "woman_with_turban"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👲",
+    "description": "person with skullcap",
+    "category": "People & Body",
+    "aliases": [
+      "man_with_gua_pi_mao"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧕",
+    "description": "woman with headscarf",
+    "category": "People & Body",
+    "aliases": [
+      "woman_with_headscarf"
+    ],
+    "tags": [
+      "hijab"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤵",
+    "description": "person in tuxedo",
+    "category": "People & Body",
+    "aliases": [
+      "person_in_tuxedo"
+    ],
+    "tags": [
+      "groom",
+      "marriage",
+      "wedding"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤵‍♂️",
+    "description": "man in tuxedo",
+    "category": "People & Body",
+    "aliases": [
+      "man_in_tuxedo"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤵‍♀️",
+    "description": "woman in tuxedo",
+    "category": "People & Body",
+    "aliases": [
+      "woman_in_tuxedo"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👰",
+    "description": "person with veil",
+    "category": "People & Body",
+    "aliases": [
+      "person_with_veil"
+    ],
+    "tags": [
+      "marriage",
+      "wedding"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👰‍♂️",
+    "description": "man with veil",
+    "category": "People & Body",
+    "aliases": [
+      "man_with_veil"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👰‍♀️",
+    "description": "woman with veil",
+    "category": "People & Body",
+    "aliases": [
+      "woman_with_veil",
+      "bride_with_veil"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤰",
+    "description": "pregnant woman",
+    "category": "People & Body",
+    "aliases": [
+      "pregnant_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤱",
+    "description": "breast-feeding",
+    "category": "People & Body",
+    "aliases": [
+      "breast_feeding"
+    ],
+    "tags": [
+      "nursing"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🍼",
+    "description": "woman feeding baby",
+    "category": "People & Body",
+    "aliases": [
+      "woman_feeding_baby"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🍼",
+    "description": "man feeding baby",
+    "category": "People & Body",
+    "aliases": [
+      "man_feeding_baby"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🍼",
+    "description": "person feeding baby",
+    "category": "People & Body",
+    "aliases": [
+      "person_feeding_baby"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👼",
+    "description": "baby angel",
+    "category": "People & Body",
+    "aliases": [
+      "angel"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🎅",
+    "description": "Santa Claus",
+    "category": "People & Body",
+    "aliases": [
+      "santa"
+    ],
+    "tags": [
+      "christmas"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤶",
+    "description": "Mrs. Claus",
+    "category": "People & Body",
+    "aliases": [
+      "mrs_claus"
+    ],
+    "tags": [
+      "santa"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🎄",
+    "description": "mx claus",
+    "category": "People & Body",
+    "aliases": [
+      "mx_claus"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦸",
+    "description": "superhero",
+    "category": "People & Body",
+    "aliases": [
+      "superhero"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦸‍♂️",
+    "description": "man superhero",
+    "category": "People & Body",
+    "aliases": [
+      "superhero_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦸‍♀️",
+    "description": "woman superhero",
+    "category": "People & Body",
+    "aliases": [
+      "superhero_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦹",
+    "description": "supervillain",
+    "category": "People & Body",
+    "aliases": [
+      "supervillain"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦹‍♂️",
+    "description": "man supervillain",
+    "category": "People & Body",
+    "aliases": [
+      "supervillain_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🦹‍♀️",
+    "description": "woman supervillain",
+    "category": "People & Body",
+    "aliases": [
+      "supervillain_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧙",
+    "description": "mage",
+    "category": "People & Body",
+    "aliases": [
+      "mage"
+    ],
+    "tags": [
+      "wizard"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧙‍♂️",
+    "description": "man mage",
+    "category": "People & Body",
+    "aliases": [
+      "mage_man"
+    ],
+    "tags": [
+      "wizard"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧙‍♀️",
+    "description": "woman mage",
+    "category": "People & Body",
+    "aliases": [
+      "mage_woman"
+    ],
+    "tags": [
+      "wizard"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧚",
+    "description": "fairy",
+    "category": "People & Body",
+    "aliases": [
+      "fairy"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧚‍♂️",
+    "description": "man fairy",
+    "category": "People & Body",
+    "aliases": [
+      "fairy_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧚‍♀️",
+    "description": "woman fairy",
+    "category": "People & Body",
+    "aliases": [
+      "fairy_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧛",
+    "description": "vampire",
+    "category": "People & Body",
+    "aliases": [
+      "vampire"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧛‍♂️",
+    "description": "man vampire",
+    "category": "People & Body",
+    "aliases": [
+      "vampire_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧛‍♀️",
+    "description": "woman vampire",
+    "category": "People & Body",
+    "aliases": [
+      "vampire_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧜",
+    "description": "merperson",
+    "category": "People & Body",
+    "aliases": [
+      "merperson"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧜‍♂️",
+    "description": "merman",
+    "category": "People & Body",
+    "aliases": [
+      "merman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧜‍♀️",
+    "description": "mermaid",
+    "category": "People & Body",
+    "aliases": [
+      "mermaid"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧝",
+    "description": "elf",
+    "category": "People & Body",
+    "aliases": [
+      "elf"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧝‍♂️",
+    "description": "man elf",
+    "category": "People & Body",
+    "aliases": [
+      "elf_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧝‍♀️",
+    "description": "woman elf",
+    "category": "People & Body",
+    "aliases": [
+      "elf_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧞",
+    "description": "genie",
+    "category": "People & Body",
+    "aliases": [
+      "genie"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧞‍♂️",
+    "description": "man genie",
+    "category": "People & Body",
+    "aliases": [
+      "genie_man"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧞‍♀️",
+    "description": "woman genie",
+    "category": "People & Body",
+    "aliases": [
+      "genie_woman"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧟",
+    "description": "zombie",
+    "category": "People & Body",
+    "aliases": [
+      "zombie"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧟‍♂️",
+    "description": "man zombie",
+    "category": "People & Body",
+    "aliases": [
+      "zombie_man"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧟‍♀️",
+    "description": "woman zombie",
+    "category": "People & Body",
+    "aliases": [
+      "zombie_woman"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "💆",
+    "description": "person getting massage",
+    "category": "People & Body",
+    "aliases": [
+      "massage"
+    ],
+    "tags": [
+      "spa"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💆‍♂️",
+    "description": "man getting massage",
+    "category": "People & Body",
+    "aliases": [
+      "massage_man"
+    ],
+    "tags": [
+      "spa"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💆‍♀️",
+    "description": "woman getting massage",
+    "category": "People & Body",
+    "aliases": [
+      "massage_woman"
+    ],
+    "tags": [
+      "spa"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💇",
+    "description": "person getting haircut",
+    "category": "People & Body",
+    "aliases": [
+      "haircut"
+    ],
+    "tags": [
+      "beauty"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💇‍♂️",
+    "description": "man getting haircut",
+    "category": "People & Body",
+    "aliases": [
+      "haircut_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💇‍♀️",
+    "description": "woman getting haircut",
+    "category": "People & Body",
+    "aliases": [
+      "haircut_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚶",
+    "description": "person walking",
+    "category": "People & Body",
+    "aliases": [
+      "walking"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚶‍♂️",
+    "description": "man walking",
+    "category": "People & Body",
+    "aliases": [
+      "walking_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚶‍♀️",
+    "description": "woman walking",
+    "category": "People & Body",
+    "aliases": [
+      "walking_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧍",
+    "description": "person standing",
+    "category": "People & Body",
+    "aliases": [
+      "standing_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧍‍♂️",
+    "description": "man standing",
+    "category": "People & Body",
+    "aliases": [
+      "standing_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧍‍♀️",
+    "description": "woman standing",
+    "category": "People & Body",
+    "aliases": [
+      "standing_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧎",
+    "description": "person kneeling",
+    "category": "People & Body",
+    "aliases": [
+      "kneeling_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧎‍♂️",
+    "description": "man kneeling",
+    "category": "People & Body",
+    "aliases": [
+      "kneeling_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧎‍♀️",
+    "description": "woman kneeling",
+    "category": "People & Body",
+    "aliases": [
+      "kneeling_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦯",
+    "description": "person with white cane",
+    "category": "People & Body",
+    "aliases": [
+      "person_with_probing_cane"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦯",
+    "description": "man with white cane",
+    "category": "People & Body",
+    "aliases": [
+      "man_with_probing_cane"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦯",
+    "description": "woman with white cane",
+    "category": "People & Body",
+    "aliases": [
+      "woman_with_probing_cane"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦼",
+    "description": "person in motorized wheelchair",
+    "category": "People & Body",
+    "aliases": [
+      "person_in_motorized_wheelchair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦼",
+    "description": "man in motorized wheelchair",
+    "category": "People & Body",
+    "aliases": [
+      "man_in_motorized_wheelchair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦼",
+    "description": "woman in motorized wheelchair",
+    "category": "People & Body",
+    "aliases": [
+      "woman_in_motorized_wheelchair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🦽",
+    "description": "person in manual wheelchair",
+    "category": "People & Body",
+    "aliases": [
+      "person_in_manual_wheelchair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍🦽",
+    "description": "man in manual wheelchair",
+    "category": "People & Body",
+    "aliases": [
+      "man_in_manual_wheelchair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍🦽",
+    "description": "woman in manual wheelchair",
+    "category": "People & Body",
+    "aliases": [
+      "woman_in_manual_wheelchair"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏃",
+    "description": "person running",
+    "category": "People & Body",
+    "aliases": [
+      "runner",
+      "running"
+    ],
+    "tags": [
+      "exercise",
+      "workout",
+      "marathon"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏃‍♂️",
+    "description": "man running",
+    "category": "People & Body",
+    "aliases": [
+      "running_man"
+    ],
+    "tags": [
+      "exercise",
+      "workout",
+      "marathon"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏃‍♀️",
+    "description": "woman running",
+    "category": "People & Body",
+    "aliases": [
+      "running_woman"
+    ],
+    "tags": [
+      "exercise",
+      "workout",
+      "marathon"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💃",
+    "description": "woman dancing",
+    "category": "People & Body",
+    "aliases": [
+      "woman_dancing",
+      "dancer"
+    ],
+    "tags": [
+      "dress"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🕺",
+    "description": "man dancing",
+    "category": "People & Body",
+    "aliases": [
+      "man_dancing"
+    ],
+    "tags": [
+      "dancer"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🕴️",
+    "description": "person in suit levitating",
+    "category": "People & Body",
+    "aliases": [
+      "business_suit_levitating"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👯",
+    "description": "people with bunny ears",
+    "category": "People & Body",
+    "aliases": [
+      "dancers"
+    ],
+    "tags": [
+      "bunny"
+    ]
+  },
+  {
+    "emoji": "👯‍♂️",
+    "description": "men with bunny ears",
+    "category": "People & Body",
+    "aliases": [
+      "dancing_men"
+    ],
+    "tags": [
+      "bunny"
+    ]
+  },
+  {
+    "emoji": "👯‍♀️",
+    "description": "women with bunny ears",
+    "category": "People & Body",
+    "aliases": [
+      "dancing_women"
+    ],
+    "tags": [
+      "bunny"
+    ]
+  },
+  {
+    "emoji": "🧖",
+    "description": "person in steamy room",
+    "category": "People & Body",
+    "aliases": [
+      "sauna_person"
+    ],
+    "tags": [
+      "steamy"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧖‍♂️",
+    "description": "man in steamy room",
+    "category": "People & Body",
+    "aliases": [
+      "sauna_man"
+    ],
+    "tags": [
+      "steamy"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧖‍♀️",
+    "description": "woman in steamy room",
+    "category": "People & Body",
+    "aliases": [
+      "sauna_woman"
+    ],
+    "tags": [
+      "steamy"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧗",
+    "description": "person climbing",
+    "category": "People & Body",
+    "aliases": [
+      "climbing"
+    ],
+    "tags": [
+      "bouldering"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧗‍♂️",
+    "description": "man climbing",
+    "category": "People & Body",
+    "aliases": [
+      "climbing_man"
+    ],
+    "tags": [
+      "bouldering"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧗‍♀️",
+    "description": "woman climbing",
+    "category": "People & Body",
+    "aliases": [
+      "climbing_woman"
+    ],
+    "tags": [
+      "bouldering"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤺",
+    "description": "person fencing",
+    "category": "People & Body",
+    "aliases": [
+      "person_fencing"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏇",
+    "description": "horse racing",
+    "category": "People & Body",
+    "aliases": [
+      "horse_racing"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "⛷️",
+    "description": "skier",
+    "category": "People & Body",
+    "aliases": [
+      "skier"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏂",
+    "description": "snowboarder",
+    "category": "People & Body",
+    "aliases": [
+      "snowboarder"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏌️",
+    "description": "person golfing",
+    "category": "People & Body",
+    "aliases": [
+      "golfing"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏌️‍♂️",
+    "description": "man golfing",
+    "category": "People & Body",
+    "aliases": [
+      "golfing_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏌️‍♀️",
+    "description": "woman golfing",
+    "category": "People & Body",
+    "aliases": [
+      "golfing_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏄",
+    "description": "person surfing",
+    "category": "People & Body",
+    "aliases": [
+      "surfer"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏄‍♂️",
+    "description": "man surfing",
+    "category": "People & Body",
+    "aliases": [
+      "surfing_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏄‍♀️",
+    "description": "woman surfing",
+    "category": "People & Body",
+    "aliases": [
+      "surfing_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚣",
+    "description": "person rowing boat",
+    "category": "People & Body",
+    "aliases": [
+      "rowboat"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚣‍♂️",
+    "description": "man rowing boat",
+    "category": "People & Body",
+    "aliases": [
+      "rowing_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚣‍♀️",
+    "description": "woman rowing boat",
+    "category": "People & Body",
+    "aliases": [
+      "rowing_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏊",
+    "description": "person swimming",
+    "category": "People & Body",
+    "aliases": [
+      "swimmer"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏊‍♂️",
+    "description": "man swimming",
+    "category": "People & Body",
+    "aliases": [
+      "swimming_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏊‍♀️",
+    "description": "woman swimming",
+    "category": "People & Body",
+    "aliases": [
+      "swimming_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "⛹️",
+    "description": "person bouncing ball",
+    "category": "People & Body",
+    "aliases": [
+      "bouncing_ball_person"
+    ],
+    "tags": [
+      "basketball"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "⛹️‍♂️",
+    "description": "man bouncing ball",
+    "category": "People & Body",
+    "aliases": [
+      "bouncing_ball_man",
+      "basketball_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "⛹️‍♀️",
+    "description": "woman bouncing ball",
+    "category": "People & Body",
+    "aliases": [
+      "bouncing_ball_woman",
+      "basketball_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏋️",
+    "description": "person lifting weights",
+    "category": "People & Body",
+    "aliases": [
+      "weight_lifting"
+    ],
+    "tags": [
+      "gym",
+      "workout"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏋️‍♂️",
+    "description": "man lifting weights",
+    "category": "People & Body",
+    "aliases": [
+      "weight_lifting_man"
+    ],
+    "tags": [
+      "gym",
+      "workout"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🏋️‍♀️",
+    "description": "woman lifting weights",
+    "category": "People & Body",
+    "aliases": [
+      "weight_lifting_woman"
+    ],
+    "tags": [
+      "gym",
+      "workout"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚴",
+    "description": "person biking",
+    "category": "People & Body",
+    "aliases": [
+      "bicyclist"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚴‍♂️",
+    "description": "man biking",
+    "category": "People & Body",
+    "aliases": [
+      "biking_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚴‍♀️",
+    "description": "woman biking",
+    "category": "People & Body",
+    "aliases": [
+      "biking_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚵",
+    "description": "person mountain biking",
+    "category": "People & Body",
+    "aliases": [
+      "mountain_bicyclist"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚵‍♂️",
+    "description": "man mountain biking",
+    "category": "People & Body",
+    "aliases": [
+      "mountain_biking_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🚵‍♀️",
+    "description": "woman mountain biking",
+    "category": "People & Body",
+    "aliases": [
+      "mountain_biking_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤸",
+    "description": "person cartwheeling",
+    "category": "People & Body",
+    "aliases": [
+      "cartwheeling"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤸‍♂️",
+    "description": "man cartwheeling",
+    "category": "People & Body",
+    "aliases": [
+      "man_cartwheeling"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤸‍♀️",
+    "description": "woman cartwheeling",
+    "category": "People & Body",
+    "aliases": [
+      "woman_cartwheeling"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤼",
+    "description": "people wrestling",
+    "category": "People & Body",
+    "aliases": [
+      "wrestling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤼‍♂️",
+    "description": "men wrestling",
+    "category": "People & Body",
+    "aliases": [
+      "men_wrestling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤼‍♀️",
+    "description": "women wrestling",
+    "category": "People & Body",
+    "aliases": [
+      "women_wrestling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤽",
+    "description": "person playing water polo",
+    "category": "People & Body",
+    "aliases": [
+      "water_polo"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤽‍♂️",
+    "description": "man playing water polo",
+    "category": "People & Body",
+    "aliases": [
+      "man_playing_water_polo"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤽‍♀️",
+    "description": "woman playing water polo",
+    "category": "People & Body",
+    "aliases": [
+      "woman_playing_water_polo"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤾",
+    "description": "person playing handball",
+    "category": "People & Body",
+    "aliases": [
+      "handball_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤾‍♂️",
+    "description": "man playing handball",
+    "category": "People & Body",
+    "aliases": [
+      "man_playing_handball"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤾‍♀️",
+    "description": "woman playing handball",
+    "category": "People & Body",
+    "aliases": [
+      "woman_playing_handball"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤹",
+    "description": "person juggling",
+    "category": "People & Body",
+    "aliases": [
+      "juggling_person"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤹‍♂️",
+    "description": "man juggling",
+    "category": "People & Body",
+    "aliases": [
+      "man_juggling"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🤹‍♀️",
+    "description": "woman juggling",
+    "category": "People & Body",
+    "aliases": [
+      "woman_juggling"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧘",
+    "description": "person in lotus position",
+    "category": "People & Body",
+    "aliases": [
+      "lotus_position"
+    ],
+    "tags": [
+      "meditation"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧘‍♂️",
+    "description": "man in lotus position",
+    "category": "People & Body",
+    "aliases": [
+      "lotus_position_man"
+    ],
+    "tags": [
+      "meditation"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧘‍♀️",
+    "description": "woman in lotus position",
+    "category": "People & Body",
+    "aliases": [
+      "lotus_position_woman"
+    ],
+    "tags": [
+      "meditation"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🛀",
+    "description": "person taking bath",
+    "category": "People & Body",
+    "aliases": [
+      "bath"
+    ],
+    "tags": [
+      "shower"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🛌",
+    "description": "person in bed",
+    "category": "People & Body",
+    "aliases": [
+      "sleeping_bed"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "🧑‍🤝‍🧑",
+    "description": "people holding hands",
+    "category": "People & Body",
+    "aliases": [
+      "people_holding_hands"
+    ],
+    "tags": [
+      "couple",
+      "date"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👭",
+    "description": "women holding hands",
+    "category": "People & Body",
+    "aliases": [
+      "two_women_holding_hands"
+    ],
+    "tags": [
+      "couple",
+      "date"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👫",
+    "description": "woman and man holding hands",
+    "category": "People & Body",
+    "aliases": [
+      "couple"
+    ],
+    "tags": [
+      "date"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👬",
+    "description": "men holding hands",
+    "category": "People & Body",
+    "aliases": [
+      "two_men_holding_hands"
+    ],
+    "tags": [
+      "couple",
+      "date"
+    ],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💏",
+    "description": "kiss",
+    "category": "People & Body",
+    "aliases": [
+      "couplekiss"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍❤️‍💋‍👨",
+    "description": "kiss: woman, man",
+    "category": "People & Body",
+    "aliases": [
+      "couplekiss_man_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍❤️‍💋‍👨",
+    "description": "kiss: man, man",
+    "category": "People & Body",
+    "aliases": [
+      "couplekiss_man_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍❤️‍💋‍👩",
+    "description": "kiss: woman, woman",
+    "category": "People & Body",
+    "aliases": [
+      "couplekiss_woman_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "💑",
+    "description": "couple with heart",
+    "category": "People & Body",
+    "aliases": [
+      "couple_with_heart"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍❤️‍👨",
+    "description": "couple with heart: woman, man",
+    "category": "People & Body",
+    "aliases": [
+      "couple_with_heart_woman_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👨‍❤️‍👨",
+    "description": "couple with heart: man, man",
+    "category": "People & Body",
+    "aliases": [
+      "couple_with_heart_man_man"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👩‍❤️‍👩",
+    "description": "couple with heart: woman, woman",
+    "category": "People & Body",
+    "aliases": [
+      "couple_with_heart_woman_woman"
+    ],
+    "tags": [],
+    "skin_tones": true
+  },
+  {
+    "emoji": "👪",
+    "description": "family",
+    "category": "People & Body",
+    "aliases": [
+      "family"
+    ],
+    "tags": [
+      "home",
+      "parents",
+      "child"
+    ]
+  },
+  {
+    "emoji": "👨‍👩‍👦",
+    "description": "family: man, woman, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_woman_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👩‍👧",
+    "description": "family: man, woman, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_woman_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👩‍👧‍👦",
+    "description": "family: man, woman, girl, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_woman_girl_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👩‍👦‍👦",
+    "description": "family: man, woman, boy, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_woman_boy_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👩‍👧‍👧",
+    "description": "family: man, woman, girl, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_woman_girl_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👨‍👦",
+    "description": "family: man, man, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_man_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👨‍👧",
+    "description": "family: man, man, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_man_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👨‍👧‍👦",
+    "description": "family: man, man, girl, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_man_girl_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👨‍👦‍👦",
+    "description": "family: man, man, boy, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_man_boy_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👨‍👧‍👧",
+    "description": "family: man, man, girl, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_man_girl_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👩‍👦",
+    "description": "family: woman, woman, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_woman_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👩‍👧",
+    "description": "family: woman, woman, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_woman_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👩‍👧‍👦",
+    "description": "family: woman, woman, girl, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_woman_girl_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👩‍👦‍👦",
+    "description": "family: woman, woman, boy, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_woman_boy_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👩‍👧‍👧",
+    "description": "family: woman, woman, girl, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_woman_girl_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👦",
+    "description": "family: man, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👦‍👦",
+    "description": "family: man, boy, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_boy_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👧",
+    "description": "family: man, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👧‍👦",
+    "description": "family: man, girl, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_girl_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👨‍👧‍👧",
+    "description": "family: man, girl, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_man_girl_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👦",
+    "description": "family: woman, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👦‍👦",
+    "description": "family: woman, boy, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_boy_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👧",
+    "description": "family: woman, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👧‍👦",
+    "description": "family: woman, girl, boy",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_girl_boy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👩‍👧‍👧",
+    "description": "family: woman, girl, girl",
+    "category": "People & Body",
+    "aliases": [
+      "family_woman_girl_girl"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗣️",
+    "description": "speaking head",
+    "category": "People & Body",
+    "aliases": [
+      "speaking_head"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👤",
+    "description": "bust in silhouette",
+    "category": "People & Body",
+    "aliases": [
+      "bust_in_silhouette"
+    ],
+    "tags": [
+      "user"
+    ]
+  },
+  {
+    "emoji": "👥",
+    "description": "busts in silhouette",
+    "category": "People & Body",
+    "aliases": [
+      "busts_in_silhouette"
+    ],
+    "tags": [
+      "users",
+      "group",
+      "team"
+    ]
+  },
+  {
+    "emoji": "🫂",
+    "description": "people hugging",
+    "category": "People & Body",
+    "aliases": [
+      "people_hugging"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👣",
+    "description": "footprints",
+    "category": "People & Body",
+    "aliases": [
+      "footprints"
+    ],
+    "tags": [
+      "feet",
+      "tracks"
+    ]
+  }
+]
