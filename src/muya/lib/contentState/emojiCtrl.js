@@ -23,8 +23,10 @@ const emojiCtrl = ContentState => {
     }
 
     const token = findEmojiToken(tokens, offset)
+    const emojiText = item.aliases[0]
+
+    // Replace an existing emoji token under the cursor.
     if (token && token.type === 'emoji') {
-      const emojiText = item.aliases[0]
       offset += delta + emojiText.length - token.content.length
       token.content = emojiText
       token.raw = `:${emojiText}:`
@@ -35,6 +37,18 @@ const emojiCtrl = ContentState => {
       }
       return this.partialRender()
     }
+
+    // If there is no emoji token (e.g. triggered from a lone ':'), insert one at cursor.
+    const insertText = `:${emojiText}:`
+    const hasLeadingColon = offset > 0 && text[offset - 1] === ':'
+    const insertPos = hasLeadingColon ? offset - 1 : offset
+    startBlock.text = text.slice(0, insertPos) + insertText + text.slice(offset)
+    const newOffset = insertPos + insertText.length
+    this.cursor = {
+      start: { key, offset: newOffset },
+      end: { key, offset: newOffset }
+    }
+    return this.partialRender()
   }
 }
 

@@ -38,21 +38,25 @@ class EmojiPicker extends BaseScrollFloat {
   listen () {
     super.listen()
     const { eventCenter } = this.muya
-    eventCenter.subscribe('muya-emoji-picker', ({ reference, emojiNode }) => {
-      if (!emojiNode) return this.hide()
-      const text = emojiNode.textContent.trim()
-      if (text) {
-        const renderObj = this.emoji.search(text)
-        this.renderObj = renderObj
-        const cb = item => {
-          this.muya.contentState.setEmoji(item)
-        }
-        if (this.renderArray.length) {
-          this.show(reference, cb)
-          this.render()
-        } else {
-          this.hide()
-        }
+    eventCenter.subscribe('muya-emoji-picker', ({ reference, emojiNode, text: explicitText }) => {
+      if (!reference) return this.hide()
+
+      // Priority: explicit text from dispatcher, otherwise fallback to the emoji node content.
+      const text = typeof explicitText === 'string'
+        ? explicitText.trim()
+        : (emojiNode ? emojiNode.textContent.trim() : '')
+
+      const renderObj = this.emoji.search(text)
+      this.renderObj = renderObj
+      const cb = item => {
+        this.muya.contentState.setEmoji(item)
+      }
+
+      if (this.renderArray.length) {
+        this.show(reference, cb)
+        this.render()
+      } else {
+        this.hide()
       }
     })
   }

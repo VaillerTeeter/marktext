@@ -40,6 +40,11 @@ class Emoji {
 
   search (text) {
     const { cache } = this
+    // When no query is provided, return all emojis grouped by category for full browsing.
+    if (text === '' || text === undefined || text === null) {
+      cache.set('', emojisForSearch)
+      return emojisForSearch
+    }
     if (cache.has(text)) return cache.get(text)
     const result = {}
 

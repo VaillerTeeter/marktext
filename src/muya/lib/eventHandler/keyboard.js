@@ -4,6 +4,22 @@ import { findNearestParagraph } from '../selection/dom'
 import { getParagraphReference, getImageInfo } from '../utils'
 import { checkEditEmoji } from '../ui/emojis'
 
+const getCursorReference = paragraph => {
+  const sel = window.getSelection()
+  if (!sel || sel.rangeCount === 0) return null
+  const range = sel.getRangeAt(0)
+  const rect = range.getBoundingClientRect()
+
+  return {
+    getBoundingClientRect () {
+      return rect
+    },
+    clientWidth: rect.width,
+    clientHeight: rect.height,
+    id: paragraph ? paragraph.id : undefined
+  }
+}
+
 class Keyboard {
   constructor (muya) {
     this.muya = muya
@@ -231,24 +247,43 @@ class Keyboard {
       const paragraph = findNearestParagraph(node)
       const emojiNode = checkEditEmoji(node)
       contentState.selectedImage = null
-      if (
-        paragraph &&
-        emojiNode &&
-        event.key !== EVENT_KEYS.Enter &&
-        event.key !== EVENT_KEYS.ArrowDown &&
-        event.key !== EVENT_KEYS.ArrowUp &&
-        event.key !== EVENT_KEYS.Tab &&
-        event.key !== EVENT_KEYS.Escape
-      ) {
+      const shouldIgnoreEmojiTrigger =
+        event.key === EVENT_KEYS.Enter ||
+        event.key === EVENT_KEYS.ArrowDown ||
+        event.key === EVENT_KEYS.ArrowUp ||
+        event.key === EVENT_KEYS.Tab ||
+        event.key === EVENT_KEYS.Escape
+
+      let emojiPickerDispatched = false
+
+      if (paragraph && emojiNode && !shouldIgnoreEmojiTrigger) {
         const reference = getParagraphReference(emojiNode, paragraph.id)
         eventCenter.dispatch('muya-emoji-picker', {
           reference,
           emojiNode
         })
+        emojiPickerDispatched = true
+      } else if (paragraph && event.key === ':' && !shouldIgnoreEmojiTrigger) {
+        const reference = getCursorReference(paragraph)
+        if (reference) {
+          eventCenter.dispatch('muya-emoji-picker', {
+            reference,
+            emojiNode: null,
+            text: ''
+          })
+          emojiPickerDispatched = true
+        }
       }
-      if (!emojiNode) {
+
+      // Do not hide picker on modifier key releases (e.g., releasing Shift after typing ':').
+      const isModifierKey = event.key === 'Shift' || event.key === 'Control' || event.key === 'Alt' || event.key === 'Meta'
+      if (isModifierKey) {
+        return
+      }
+
+      if (!emojiPickerDispatched) {
         eventCenter.dispatch('muya-emoji-picker', {
-          emojiNode
+          emojiNode: null
         })
       }
 

@@ -98,6 +98,8 @@ MarkText 提供图片查看器与图片选择/标注浮层。你可以用鼠标�
 
 无需长时间搜索即可插入 Emoji。在你输入时，候选列表会自动刷新
 
+- 直接输入单个 `:` 会打开全量列表，可滚动浏览所有 Emoji；继续输入关键字会即时过滤
+
 ![](assets/marktext-emoji-picker.png)
 
 ### 7.6 专注模式（Focus mode）
