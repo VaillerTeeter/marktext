@@ -67,14 +67,14 @@ fileAssociations:
   role: "Editor"
   icon: "../resources/icons/md.icns"
 mac:
-  artifactName: "marktext-${arch}-${env.ARTIFACT_SUFFIX}-mac.${ext}"
+  artifactName: "marktext-${arch}-mac.${ext}"
   icon: "resources/icons/icon.icns"
   darkModeSupport: true
   target:
     - target: dmg
       arch: [arm64]
 dmg:
-  artifactName: "marktext-${arch}-${env.ARTIFACT_SUFFIX}.${ext}"
+  artifactName: "marktext-${arch}.${ext}"
   contents:
   - x: 410
     y: 240
@@ -84,20 +84,20 @@ dmg:
     y: 240
     type: "file"
 win:
-  artifactName: "marktext-${arch}-${env.ARTIFACT_SUFFIX}-win.${ext}"
+  artifactName: "marktext-${arch}-win.${ext}"
   icon: "resources/icons/icon.ico"
   target:
   - target: "nsis"
     arch: [x64]
   requestedExecutionLevel: "asInvoker"
 nsis:
-  artifactName: "marktext-setup-${env.ARTIFACT_SUFFIX}.${ext}"
+  artifactName: "marktext-setup.${ext}"
   perMachine: false
   oneClick: false
   allowToChangeInstallationDirectory: true
   include: "resources/windows/installer.nsh"
 linux:
-  artifactName: "marktext-${arch}-${env.ARTIFACT_SUFFIX}.${ext}"
+  artifactName: "marktext-${arch}.${ext}"
   executableName: "marktext"
   description: "A simple and elegant open-source markdown editor that focused on speed and usability."
   maintainer: "MarkText Contributors"
