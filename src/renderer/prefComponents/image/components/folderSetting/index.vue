@@ -1,27 +1,27 @@
 <template>
   <section class="image-folder">
-    <h5>Global or relative image folder</h5>
-    <text-box description="Global image folder" :input="imageFolderPath"
+    <h5>{{ $t('pref.image.folder.title') }}</h5>
+    <text-box :description="$t('pref.image.folder.global')" :input="imageFolderPath"
       :regexValidator="/^(?:$|([a-zA-Z]:)?[\/\\].*$)/" :defaultValue="folderPathPlaceholder"
       :onChange="value => modifyImageFolderPath(value)"></text-box>
     <div>
-      <el-button size="mini" @click="modifyImageFolderPath(undefined)">Open...</el-button>
-      <el-button size="mini" @click="openImageFolder">Show in Folder</el-button>
+      <el-button size="mini" @click="modifyImageFolderPath(undefined)">{{ $t('pref.image.folder.open') }}</el-button>
+      <el-button size="mini" @click="openImageFolder">{{ $t('pref.image.folder.show') }}</el-button>
     </div>
     <compound>
       <template #head>
-        <bool description="Prefer relative assets folder"
+        <bool :description="$t('pref.image.folder.preferRelative')"
           more="https://github.com/marktext/marktext/blob/develop/docs/IMAGES.md"
           :bool="imagePreferRelativeDirectory"
           :onChange="value => onSelectChange('imagePreferRelativeDirectory', value)"></bool>
       </template>
       <template #children>
-        <text-box description="Relative image folder name" :input="imageRelativeDirectoryName"
+        <text-box :description="$t('pref.image.folder.relativeName')" :input="imageRelativeDirectoryName"
           :regexValidator="/^(?:$|(?![a-zA-Z]:)[^\/\\].*$)/"
           :defaultValue="relativeDirectoryNamePlaceholder"
           :onChange="value => onSelectChange('imageRelativeDirectoryName', value)"></text-box>
         <div class="footnote">
-          Include <code>${filename}</code> in the text-box above to automatically insert the document file name.
+          {{ $t('pref.image.folder.footnote') }}
         </div>
       </template>
     </compound>

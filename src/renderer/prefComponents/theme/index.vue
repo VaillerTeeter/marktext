@@ -1,6 +1,6 @@
 <template>
   <div class="pref-theme">
-    <h4>Theme</h4>
+    <h4>{{ $t('pref.theme.title') }}</h4>
     <section class="offcial-themes">
       <div v-for="t of themes" :key="t.name" class="theme"
         :class="[t.name, { 'active': t.name === theme }]"
@@ -11,7 +11,7 @@
     </section>
     <separator></separator>
     <cur-select
-      description="Automatically adjust application theme according to system settings"
+      :description="$t('pref.theme.autoSwitch')"
       :value="autoSwitchTheme"
       :options="autoSwitchThemeOptions"
       :onChange="value => onSelectChange('autoSwitchTheme', value)"
@@ -19,13 +19,13 @@
     <separator v-show="false"></separator>
     <section v-show="false" class="import-themes ag-underdevelop">
       <div>
-        <span>Open the themes folder</span>
-        <el-button size="small">Open Folder</el-button>
+        <span>{{ $t('pref.theme.import.openFolder') }}</span>
+        <el-button size="small">{{ $t('pref.theme.import.openFolder') }}</el-button>
       </div>
 
       <div>
-        <span>Import custom themes</span>
-        <el-button size="small">Import Theme</el-button>
+        <span>{{ $t('pref.theme.import.importTheme') }}</span>
+        <el-button size="small">{{ $t('pref.theme.import.importTheme') }}</el-button>
       </div>
     </section>
   </div>
@@ -45,7 +45,6 @@ export default {
     Separator
   },
   data () {
-    this.autoSwitchThemeOptions = autoSwitchThemeOptions
     return {
       themes: []
     }
@@ -54,7 +53,17 @@ export default {
     ...mapState({
       autoSwitchTheme: state => state.preferences.autoSwitchTheme,
       theme: state => state.preferences.theme
-    })
+    }),
+    autoSwitchThemeOptions () {
+      const valueToKey = {
+        0: 'always',
+        2: 'never'
+      }
+      return autoSwitchThemeOptions.map(option => ({
+        ...option,
+        label: this.$t(`pref.theme.options.${valueToKey[option.value]}`)
+      }))
+    }
   },
   created () {
     this.$nextTick(async () => {

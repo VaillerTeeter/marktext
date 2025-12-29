@@ -1,49 +1,28 @@
 <template>
   <div class="pref-sidebar">
-    <h3 class="title">Preferences</h3>
-    <section class="search-wrapper">
-      <el-autocomplete
-        popper-class="pref-autocomplete"
-        v-model="state"
-        :fetch-suggestions="querySearch"
-        placeholder="Search preferences"
-        :trigger-on-focus="false"
-        @select="handleSelect">
-        <i
-          class="el-icon-search el-input__icon"
-          slot="suffix"
-        >
-        </i>
-        <template slot-scope="{ item }">
-          <div class="name">{{ item.category }}</div>
-          <span class="addr">{{ item.preference }}</span>
-        </template>
-      </el-autocomplete>
-    </section>
+    <h3 class="title">{{ $t('pref.sidebar.title') }}</h3>
     <section class="category">
-      <div v-for="c of category" :key="c.name" class="item"
+      <div v-for="c of localizedCategory" :key="c.label" class="item"
         @click="handleCategoryItemClick(c)"
         :class="{active: c.label === currentCategory}"
       >
         <svg :viewBox="c.icon.viewBox">
           <use :xlink:href="c.icon.url"></use>
         </svg>
-        <span>{{c.name}}</span>
+        <span>{{ c.displayName }}</span>
       </div>
     </section>
   </div>
 </template>
 <script>
 import { ipcRenderer } from 'electron'
-import { category, searchContent } from './config'
+import { category } from './config'
 
 export default {
   data () {
     this.category = category
     return {
-      currentCategory: 'general',
-      restaurants: [],
-      state: ''
+      currentCategory: 'general'
     }
   },
   watch: {
@@ -53,26 +32,19 @@ export default {
       }
     }
   },
+  computed: {
+    localizedCategory () {
+      return this.category.map(c => ({
+        ...c,
+        displayName: this.localizedCategoryName(c.label)
+      }))
+    }
+  },
   methods: {
-    querySearch (queryString, cb) {
-      const restaurants = this.restaurants
-      const results = queryString ? restaurants.filter(this.createFilter(queryString)) : restaurants
-      // call callback return this results
-      cb(results)
-    },
-    createFilter (queryString) {
-      return (restaurant) => {
-        return (restaurant.preference.toLowerCase().indexOf(queryString.toLowerCase()) >= 0) ||
-            (restaurant.category.toLowerCase().indexOf(queryString.toLowerCase()) >= 0)
-      }
-    },
-    loadAll () {
-      return searchContent
-    },
-    handleSelect (item) {
-      this.$router.push({
-        path: `/preference/${item.category.toLowerCase()}`
-      })
+    localizedCategoryName (categoryName) {
+      const key = categoryName && categoryName.toLowerCase().replace(/\s+/g, '')
+      const translated = key ? this.$t(`pref.sidebar.categories.${key}`) : categoryName
+      return translated || categoryName
     },
     handleCategoryItemClick (item) {
       const { currentCategory } = this
@@ -93,7 +65,6 @@ export default {
   },
 
   mounted () {
-    this.restaurants = this.loadAll()
     if (this.$route && this.$route.name) {
       this.currentCategory = this.$route.name
     }
@@ -120,48 +91,6 @@ export default {
       font-weight: normal;
       text-align: center;
       color: var(--sideBarColor);
-    }
-  }
-  .search-wrapper {
-    -webkit-app-region: no-drag;
-    padding: 0 20px;
-    margin: 30px 0;
-  }
-  .el-autocomplete {
-    width: 100%;
-    & .el-input__inner {
-      background: transparent;
-      height: 35px;
-      line-height: 35px;
-    }
-  }
-  .pref-autocomplete.el-autocomplete-suggestion {
-    background: var(--floatBgColor);
-    border-color: var(--floatBorderColor);
-    & .el-autocomplete-suggestion__wrap li:hover {
-      background: var(--floatHoverColor);
-    }
-    & .popper__arrow {
-      display: none;
-    }
-    & li {
-      line-height: normal;
-      padding: 7px;
-      opacity: .8;
-
-      & .name {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        color: var(--editorColor80);
-      }
-      & .addr {
-        font-size: 12px;
-        color: var(--editorColor);
-      }
-
-      & .highlighted .addr {
-        color: var(--editorColor);
-      }
     }
   }
   .category {

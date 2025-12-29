@@ -3,11 +3,10 @@ import VueElectron from 'vue-electron'
 import sourceMapSupport from 'source-map-support'
 import bootstrapRenderer from './bootstrap'
 import VueRouter from 'vue-router'
-import lang from 'element-ui/lib/locale/lang/en'
-import locale from 'element-ui/lib/locale'
 import axios from './axios'
 import store from './store'
 import './assets/symbolIcon'
+import i18n, { setLocale } from './i18n'
 import {
   Dialog,
   Form,
@@ -59,7 +58,13 @@ addElementStyle()
 // Be careful when changing code before this line!
 
 // Configure Vue
-locale.use(lang)
+const initialLocale = store.state.preferences.language || 'en'
+setLocale(initialLocale)
+
+store.watch(
+  state => state.preferences.language,
+  value => setLocale(value)
+)
 
 Vue.use(Dialog)
 Vue.use(Form)
@@ -103,5 +108,6 @@ const router = new VueRouter({
 new Vue({
   store,
   router,
+  i18n,
   template: '<router-view class="view"></router-view>'
 }).$mount('#app')

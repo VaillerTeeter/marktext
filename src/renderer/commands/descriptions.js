@@ -1,3 +1,5 @@
+import i18n from '@/i18n'
+
 const commandDescriptions = Object.freeze({
   // ============================================
   // # Key binding descriptions
@@ -121,5 +123,10 @@ const commandDescriptions = Object.freeze({
 })
 
 export default id => {
-  return commandDescriptions[id]
+  const localeKey = `commands.${id.replace(/[.-]/g, '_')}`
+  const localized = i18n.t(localeKey)
+  if (localized && localized !== localeKey) {
+    return localized
+  }
+  return commandDescriptions[id] || id
 }

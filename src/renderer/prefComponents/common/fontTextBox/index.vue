@@ -9,7 +9,7 @@
       popper-class="font-autocomplete-popper"
       v-model="selectValue"
       :fetch-suggestions="querySearch"
-      placeholder="Select font..."
+      :placeholder="placeholder || 'Select font...'"
       @select="handleSelect"
     >
       <i class="el-icon-arrow-down el-input__icon" slot="suffix"></i>
@@ -65,6 +65,10 @@ export default {
     onlyMonospace: {
       type: Boolean,
       default: false
+    },
+    placeholder: {
+      type: String,
+      default: ''
     }
   },
 
