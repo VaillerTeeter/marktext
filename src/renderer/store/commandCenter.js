@@ -2,6 +2,7 @@ import { ipcRenderer } from 'electron'
 import log from 'electron-log/renderer'
 import bus from '../bus'
 import staticCommands, { RootCommand } from '../commands'
+import getCommandDescriptionById from '@/commands/descriptions'
 
 const state = {
   rootCommand: new RootCommand(staticCommands)
@@ -15,6 +16,18 @@ const mutations = {
   },
   SORT_COMMANDS (state) {
     state.rootCommand.subcommands.sort((a, b) => a.description.localeCompare(b.description))
+  }
+}
+
+// Refresh all command descriptions according to current i18n locale
+mutations.REFRESH_DESCRIPTIONS = function (state) {
+  const { subcommands } = state.rootCommand
+  for (const cmd of subcommands) {
+    try {
+      cmd.description = getCommandDescriptionById(cmd.id)
+    } catch (_) {
+      // ignore
+    }
   }
 }
 

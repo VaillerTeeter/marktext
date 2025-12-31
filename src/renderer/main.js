@@ -61,9 +61,19 @@ addElementStyle()
 const initialLocale = store.state.preferences.language || 'en'
 setLocale(initialLocale)
 
+// Ensure command descriptions are refreshed after locale is set
+try {
+  store.commit('REFRESH_DESCRIPTIONS')
+} catch (_) {}
+
 store.watch(
   state => state.preferences.language,
-  value => setLocale(value)
+  value => {
+    setLocale(value)
+    try {
+      store.commit('REFRESH_DESCRIPTIONS')
+    } catch (_) {}
+  }
 )
 
 Vue.use(Dialog)

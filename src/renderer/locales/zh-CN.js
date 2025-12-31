@@ -444,6 +444,7 @@ export default {
     view: {
       label: '视图',
       commandPalette: '命令面板...',
+      commandPalettePlaceholder: '在此输入要执行的命令',
       sourceCodeMode: '源码模式',
       typewriterMode: '打字机模式',
       focusMode: '专注模式',

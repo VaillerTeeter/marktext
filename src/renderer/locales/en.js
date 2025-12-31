@@ -444,6 +444,7 @@ export default {
     view: {
       label: '&View',
       commandPalette: 'Command Palette...',
+      commandPalettePlaceholder: 'Type a command to execute',
       sourceCodeMode: 'Source Code Mode',
       typewriterMode: 'Typewriter Mode',
       focusMode: 'Focus Mode',

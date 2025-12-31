@@ -65,7 +65,7 @@ export default {
   },
   data () {
     this.currentCommand = null
-    this.defaultPlaceholderText = 'Type a command to execute'
+    this.defaultPlaceholderText = ''
     return {
       showCommandPalette: false,
       placeholderText: this.defaultPlaceholderText,
@@ -76,6 +76,8 @@ export default {
     }
   },
   created () {
+    // Initialize default placeholder from i18n and register event
+    this.defaultPlaceholderText = this.$t('menu.view.commandPalettePlaceholder', 'Type a command to execute')
     this.$nextTick(() => {
       bus.$on('show-command-palette', this.handleShow)
     })
