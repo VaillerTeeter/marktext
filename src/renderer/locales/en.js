@@ -1,6 +1,7 @@
 export default {
   common: {
-    appName: 'MarkText'
+    appName: 'MarkText',
+    currentSuffix: ' - current'
   },
   export: {
     title: 'Export Options',
@@ -517,6 +518,14 @@ export default {
     file_rename_file: 'File: Rename...',
     file_quick_open: 'File: Show quick open dialog',
     file_print: 'File: Print current Tab',
+    file_change_encoding: 'File: Change Encoding',
+    file_line_ending: 'File: Change Line Ending',
+    file_line_ending_crlf: 'Carriage return and line feed (CRLF)',
+    file_line_ending_lf: 'Line feed (LF)',
+    file_trailing_newline: 'File: Trailing Newline',
+    file_trailing_newline_trim: 'Trim all trailing newlines',
+    file_trailing_newline_single: 'Ensure single newline',
+    file_trailing_newline_disabled: 'Disabled',
     file_preferences: 'MarkText: Preferences',
     file_close_tab: 'File: Close current Tab',
     file_close_window: 'File: Close Window',
@@ -609,7 +618,9 @@ export default {
     window_change_theme: 'Theme: Change Theme...',
     view_text_direction: 'View: Set Text Direction',
     docs_user_guide: 'MarkText: End User Guide',
-    docs_markdown_syntax: 'MarkText: Markdown Syntax Guide'
+    docs_markdown_syntax: 'MarkText: Markdown Syntax Guide',
+    spellchecker_switch_language: 'Spelling: Switch language',
+    spellchecker_switch_placeholder: 'Select a language to switch to'
   },
   notification: {
     pandoc: {

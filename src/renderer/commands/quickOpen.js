@@ -4,6 +4,7 @@ import { isChildOfDirectory, hasMarkdownExtension, MARKDOWN_INCLUSIONS } from '.
 import bus from '../bus'
 import { delay } from '@/util'
 import FileSearcher from '@/node/fileSearcher'
+import getCommandDescriptionById from './descriptions'
 
 const SPECIAL_CHARS = /[\[\]\\^$.\|\?\*\+\(\)\/]{1}/g // eslint-disable-line no-useless-escape
 
@@ -11,7 +12,7 @@ const SPECIAL_CHARS = /[\[\]\\^$.\|\?\*\+\(\)\/]{1}/g // eslint-disable-line no-
 class QuickOpenCommand {
   constructor (rootState) {
     this.id = 'file.quick-open'
-    this.description = 'File: Quick Open'
+    this.description = getCommandDescriptionById('file.quick-open')
     this.placeholder = 'Search file to open'
     this.shortcut = null
 

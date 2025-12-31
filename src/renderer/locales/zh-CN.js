@@ -1,6 +1,7 @@
 export default {
   common: {
-    appName: 'MarkText'
+    appName: 'MarkText',
+    currentSuffix: ' - 当前'
   },
   export: {
     title: '导出选项',
@@ -517,6 +518,14 @@ export default {
     file_rename_file: '文件：重命名…',
     file_quick_open: '文件：打开快速打开对话框',
     file_print: '文件：打印当前标签页',
+    file_change_encoding: '文件：更改编码',
+    file_line_ending: '文件：更改换行符',
+    file_line_ending_crlf: '回车+换行 (CRLF)',
+    file_line_ending_lf: '换行 (LF)',
+    file_trailing_newline: '文件：结尾换行处理',
+    file_trailing_newline_trim: '移除所有末尾换行',
+    file_trailing_newline_single: '确保只保留一个末尾换行',
+    file_trailing_newline_disabled: '不处理尾部换行',
     file_preferences: 'MarkText：偏好设置',
     file_close_tab: '文件：关闭当前标签页',
     file_close_window: '文件：关闭窗口',
@@ -609,7 +618,9 @@ export default {
     window_change_theme: '主题：更换主题…',
     view_text_direction: '视图：设置文字方向',
     docs_user_guide: 'MarkText：用户指南',
-    docs_markdown_syntax: 'MarkText：Markdown 语法指南'
+    docs_markdown_syntax: 'MarkText：Markdown 语法指南',
+    spellchecker_switch_language: '拼写：切换语言',
+    spellchecker_switch_placeholder: '选择要切换到的语言'
   },
   notification: {
     pandoc: {

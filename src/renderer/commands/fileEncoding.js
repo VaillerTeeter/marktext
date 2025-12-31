@@ -2,11 +2,13 @@ import { ipcRenderer } from 'electron'
 import { ENCODING_NAME_MAP, getEncodingName } from 'common/encoding'
 import { delay } from '@/util'
 import bus from '../bus'
+import i18n from '@/i18n'
+import getCommandDescriptionById from './descriptions'
 
 class FileEncodingCommand {
   constructor (editorState) {
     this.id = 'file.change-encoding'
-    this.description = 'File: Change Encoding'
+    this.description = getCommandDescriptionById('file.change-encoding')
     this.placeholder = 'Select an option'
 
     this.subcommands = []
@@ -25,11 +27,12 @@ class FileEncodingCommand {
     const { encoding, isBom } = encodingObj
 
     // NOTE: We support UTF-BOM encodings but don't allow to set them.
+    const suffix = i18n.t('common.currentSuffix') || ' - current'
     if (isBom) {
       this.subcommandSelectedIndex = 0
       this.subcommands.push({
         id: `${encoding}-bom`,
-        description: `${getEncodingName(encodingObj)} - current`
+        description: `${getEncodingName(encodingObj)}${suffix}`
       })
     }
 
@@ -38,7 +41,7 @@ class FileEncodingCommand {
       const isTabEncoding = !isBom && key === encoding
       const item = {
         id: key,
-        description: isTabEncoding ? `${value} - current` : value
+        description: isTabEncoding ? `${value}${suffix}` : value
       }
       if (isTabEncoding) {
         // Highlight current encoding and set it as first entry.

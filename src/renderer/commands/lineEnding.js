@@ -1,14 +1,16 @@
 import { ipcRenderer } from 'electron'
 import { delay } from '@/util'
 import bus from '../bus'
+import getCommandDescriptionById from './descriptions'
+import i18n from '@/i18n'
 
-const crlfDescription = 'Carriage return and line feed (CRLF)'
-const lfDescription = 'Line feed (LF)'
+const crlfDescription = getCommandDescriptionById('file.line-ending-crlf') || 'Carriage return and line feed (CRLF)'
+const lfDescription = getCommandDescriptionById('file.line-ending-lf') || 'Line feed (LF)'
 
 class LineEndingCommand {
   constructor (editorState) {
     this.id = 'file.line-ending'
-    this.description = 'File: Change Line Ending'
+    this.description = getCommandDescriptionById('file.line-ending')
     this.placeholder = 'Select an option'
 
     this.subcommands = [{
@@ -28,14 +30,15 @@ class LineEndingCommand {
 
   run = async () => {
     const { lineEnding } = this._editorState.currentFile
+    const suffix = i18n.t('common.currentSuffix') || ' - current'
     if (lineEnding === 'crlf') {
       this.subcommandSelectedIndex = 0
-      this.subcommands[0].description = `${crlfDescription} - current`
+      this.subcommands[0].description = `${crlfDescription}${suffix}`
       this.subcommands[1].description = lfDescription
     } else {
       this.subcommandSelectedIndex = 1
       this.subcommands[0].description = crlfDescription
-      this.subcommands[1].description = `${lfDescription} - current`
+      this.subcommands[1].description = `${lfDescription}${suffix}`
     }
   }
 

@@ -77,10 +77,16 @@ export default {
   },
   created () {
     // Initialize default placeholder from i18n and register event
-    this.defaultPlaceholderText = this.$t('menu.view.commandPalettePlaceholder', 'Type a command to execute')
+    this.defaultPlaceholderText = this.$t('menu.view.commandPalettePlaceholder')
     this.$nextTick(() => {
       bus.$on('show-command-palette', this.handleShow)
     })
+  },
+
+  watch: {
+    '$i18n.locale' () {
+      this.defaultPlaceholderText = this.$t('menu.view.commandPalettePlaceholder')
+    }
   },
   beforeDestroy () {
     bus.$off('show-command-palette', this.handleShow)

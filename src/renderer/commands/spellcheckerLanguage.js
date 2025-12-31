@@ -3,13 +3,14 @@ import notice from '@/services/notification'
 import { delay } from '@/util'
 import { SpellChecker } from '@/spellchecker'
 import { getLanguageName } from '@/spellchecker/languageMap'
+import i18n from '@/i18n'
 
 // Command to switch the spellchecker language
 class SpellcheckerLanguageCommand {
   constructor (spellchecker) {
     this.id = 'spellchecker.switch-language'
-    this.description = 'Spelling: Switch language'
-    this.placeholder = 'Select a language to switch to'
+    this.description = i18n.t('commands.spellchecker_switch_language')
+    this.placeholder = i18n.t('commands.spellchecker_switch_placeholder')
     this.shortcut = null
 
     this.spellchecker = spellchecker
