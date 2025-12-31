@@ -360,6 +360,30 @@ export default {
       closeTab: 'Close Tab',
       closeWindow: 'Close Window',
       quit: 'Quit'
+    },
+    edit: {
+      label: '&Edit',
+      undo: 'Undo',
+      redo: 'Redo',
+      cut: 'Cut',
+      copy: 'Copy',
+      paste: 'Paste',
+      copyAsMarkdown: 'Copy as Markdown',
+      copyAsHtml: 'Copy as HTML',
+      pasteAsPlainText: 'Paste as Plain Text',
+      selectAll: 'Select All',
+      duplicate: 'Duplicate',
+      createParagraph: 'Create Paragraph',
+      deleteParagraph: 'Delete Paragraph',
+      find: 'Find',
+      findNext: 'Find Next',
+      findPrevious: 'Find Previous',
+      replace: 'Replace',
+      findInFolder: 'Find in Folder',
+      screenshot: 'Screenshot',
+      lineEnding: 'Line Ending',
+      crlf: 'Carriage return and line feed (CRLF)',
+      lf: 'Line feed (LF)'
     }
   },
   commands: {

@@ -360,6 +360,30 @@ export default {
       closeTab: '关闭标签页',
       closeWindow: '关闭窗口',
       quit: '退出'
+    },
+    edit: {
+      label: '编辑',
+      undo: '撤销',
+      redo: '重做',
+      cut: '剪切',
+      copy: '复制',
+      paste: '粘贴',
+      copyAsMarkdown: '复制为 Markdown',
+      copyAsHtml: '复制为 HTML',
+      pasteAsPlainText: '粘贴为纯文本',
+      selectAll: '全选',
+      duplicate: '复制一行',
+      createParagraph: '创建段落',
+      deleteParagraph: '删除段落',
+      find: '查找',
+      findNext: '查找下一个',
+      findPrevious: '查找上一个',
+      replace: '替换',
+      findInFolder: '在文件夹中查找',
+      screenshot: '截图',
+      lineEnding: '换行符',
+      crlf: '回车换行 (CRLF)',
+      lf: '换行 (LF)'
     }
   },
   commands: {
