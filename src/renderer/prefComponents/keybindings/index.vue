@@ -11,7 +11,7 @@
       >
         <el-table-column prop="description" :label="$t('pref.keybindings.table.description')">
         </el-table-column>
-        <el-table-column prop="accelerator" :label="$t('pref.keybindings.table.accelerator')" width="220">
+        <el-table-column prop="acceleratorDisplay" :label="$t('pref.keybindings.table.accelerator')" width="220">
         </el-table-column>
         <el-table-column fixed="right" :label="$t('pref.keybindings.table.options')" width="90">
           <template slot-scope="scope">

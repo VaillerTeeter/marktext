@@ -49,6 +49,31 @@ export default {
       titleLabel: '标题'
     }
   },
+  sidebar: {
+    openedFiles: '打开的文件',
+    saveAll: '全部保存',
+    closeAll: '全部关闭',
+    emptyProject: '工程为空',
+    createFile: '创建文件',
+    openFolder: '打开文件夹',
+    searchPlaceholder: '在当前文件夹中搜索...',
+    caseSensitive: '区分大小写',
+    selectWholeWord: '整词匹配',
+    useRegex: '把查询作为正则表达式',
+    noFolderOpen: '未打开任何文件夹',
+    noResultsFound: '未找到结果。',
+    cancel: '取消',
+    tocTitle: '目录',
+    showMoreMatches: '显示更多匹配项',
+    newFile: '新建文件',
+    newDirectory: '新建目录',
+    copy: '复制',
+    cut: '剪切',
+    paste: '粘贴',
+    rename: '重命名',
+    moveToTrash: '移动到回收站',
+    showInFolder: '在文件夹中显示'
+  },
   pref: {
     sidebar: {
       title: '偏好设置',

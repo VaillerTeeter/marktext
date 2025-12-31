@@ -49,6 +49,31 @@ export default {
       titleLabel: 'Title'
     }
   },
+  sidebar: {
+    openedFiles: 'Opened files',
+    saveAll: 'Save All',
+    closeAll: 'Close All',
+    emptyProject: 'Empty project',
+    createFile: 'Create File',
+    openFolder: 'Open Folder',
+    searchPlaceholder: 'Search in folder...',
+    caseSensitive: 'Case Sensitive',
+    selectWholeWord: 'Select whole word',
+    useRegex: 'Use query as RegEx',
+    noFolderOpen: 'No folder open',
+    noResultsFound: 'No results found.',
+    cancel: 'Cancel',
+    tocTitle: 'Table Of Contents',
+    showMoreMatches: 'Show more matches',
+    newFile: 'New File',
+    newDirectory: 'New Directory',
+    copy: 'Copy',
+    cut: 'Cut',
+    paste: 'Paste',
+    rename: 'Rename',
+    moveToTrash: 'Move To Trash',
+    showInFolder: 'Show In Folder'
+  },
   pref: {
     sidebar: {
       title: 'Preferences',

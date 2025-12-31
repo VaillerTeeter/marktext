@@ -53,7 +53,21 @@ export default class KeybindingConfigurator {
     } else {
       accelerator = defaultKeybindings.get(id)
     }
-    return { id, description, accelerator, type }
+    const acceleratorDisplay = this._normalizeAcceleratorForDisplay(accelerator)
+    return { id, description, accelerator, acceleratorDisplay, type }
+  }
+
+  _normalizeAcceleratorForDisplay (accelerator) {
+    if (!accelerator && accelerator !== '') return accelerator
+    // Normalize fullwidth comma and localized comma words to ASCII comma
+    let s = accelerator || ''
+    // Replace fullwidth comma
+    s = s.replace(/，/g, ',')
+    // Replace Chinese word for comma
+    s = s.replace(/逗号/g, ',')
+    // Replace English word 'Comma' (case-insensitive)
+    s = s.replace(/Comma/gi, ',')
+    return s
   }
 
   getKeybindings () {
@@ -96,6 +110,7 @@ export default class KeybindingConfigurator {
     }
 
     entry.accelerator = accelerator
+    entry.acceleratorDisplay = this._normalizeAcceleratorForDisplay(accelerator)
     entry.type = this._isDefaultBinding(id, accelerator)
       ? SHORTCUT_TYPE_DEFAULT
       : SHORTCUT_TYPE_USER
@@ -121,8 +136,10 @@ export default class KeybindingConfigurator {
       const defaultAccelerator = defaultKeybindings.get(entry.id)
       if (defaultAccelerator) {
         entry.accelerator = defaultAccelerator
+        entry.acceleratorDisplay = this._normalizeAcceleratorForDisplay(defaultAccelerator)
       } else {
         entry.accelerator = ''
+        entry.acceleratorDisplay = ''
       }
       entry.type = SHORTCUT_TYPE_DEFAULT
     }
