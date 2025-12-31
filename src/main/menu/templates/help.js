@@ -36,6 +36,11 @@ export default function (userPreference) {
     return typeof value === 'string' ? value : fallback
   }
   const t = (key, fallback) => translate(`menu.help.${key}`, language, fallback)
+  const getLink = (key) => {
+    const bundle = locales[language] || locales.en
+    const link = bundle && bundle.menu && bundle.menu.help && bundle.menu.help.links && bundle.menu.help.links[key]
+    return link && link.url ? link.url : null
+  }
 
   const helpMenu = {
     label: t('label', '&Help'),
@@ -43,63 +48,56 @@ export default function (userPreference) {
     submenu: [{
       label: t('quickStart', 'Quick Start...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext/blob/master/docs/README.md')
+        const url = getLink('quickStart')
+        if (url) shell.openExternal(url)
       }
     }, {
       label: t('markdownReference', 'Markdown Reference...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext/blob/master/docs/MARKDOWN_SYNTAX.md')
+        const url = getLink('markdownReference')
+        if (url) shell.openExternal(url)
       }
     }, {
       label: t('changelog', 'Changelog...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext/blob/master/.github/CHANGELOG.md')
+        const url = getLink('changelog')
+        if (url) shell.openExternal(url)
       }
     }, {
       type: 'separator'
     }, {
-      label: t('donate', 'Donate via Open Collective...'),
-      click (item, win) {
-        shell.openExternal('https://opencollective.com/marktext')
-      }
-    }, {
-      label: t('feedbackTwitter', 'Feedback via Twitter...'),
-      click (item, win) {
-        actions.showTweetDialog(win, 'twitter')
-      }
-    }, {
       label: t('reportIssue', 'Report Issue or Request Feature...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext/issues')
+        const url = getLink('reportIssue')
+        if (url) shell.openExternal(url)
       }
     }, {
       type: 'separator'
     }, {
       label: t('website', 'Website...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext')
+        const url = getLink('website')
+        if (url) shell.openExternal(url)
       }
     }, {
       label: t('watchOnGithub', 'Watch on GitHub...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext')
+        const url = getLink('watchOnGithub')
+        if (url) shell.openExternal(url)
       }
     }, {
       label: t('followOnGithub', 'Follow us on Github...'),
       click () {
-        shell.openExternal('https://github.com/Jocs')
-      }
-    }, {
-      label: t('followOnTwitter', 'Follow us on Twitter...'),
-      click () {
-        shell.openExternal('https://twitter.com/marktextapp')
+        const url = getLink('followOnGithub')
+        if (url) shell.openExternal(url)
       }
     }, {
       type: 'separator'
     }, {
       label: t('license', 'License...'),
       click () {
-        shell.openExternal('https://github.com/marktext/marktext/blob/master/LICENSE')
+        const url = getLink('license')
+        if (url) shell.openExternal(url)
       }
     }]
   }

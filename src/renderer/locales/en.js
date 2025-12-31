@@ -485,16 +485,23 @@ export default {
       quickStart: 'Quick Start...',
       markdownReference: 'Markdown Reference...',
       changelog: 'Changelog...',
-      donate: 'Donate via Open Collective...',
-      feedbackTwitter: 'Feedback via Twitter...',
       reportIssue: 'Report Issue or Request Feature...',
       website: 'Website...',
       watchOnGithub: 'Watch on GitHub...',
       followOnGithub: 'Follow us on Github...',
-      followOnTwitter: 'Follow us on Twitter...',
       license: 'License...',
       checkUpdates: 'Check for updates...',
-      about: 'About MarkText...'
+      about: 'About MarkText...',
+      links: {
+        quickStart: { label: 'Quick Start...', url: 'https://github.com/VaillerTeeter/marktext-maintained/blob/develop/docs/user/README.md' },
+        markdownReference: { label: 'Markdown Reference...', url: 'https://github.com/VaillerTeeter/marktext-maintained/blob/develop/docs/user/MARKDOWN_SYNTAX.md' },
+        changelog: { label: 'Changelog...', url: 'https://github.com/VaillerTeeter/marktext-maintained/blob/develop/.github/CHANGELOG.md' },
+        reportIssue: { label: 'Report Issue or Request Feature...', url: 'https://github.com/VaillerTeeter/marktext-maintained/issues' },
+        website: { label: 'Website...', url: 'https://github.com/VaillerTeeter/marktext-maintained' },
+        watchOnGithub: { label: 'Watch on GitHub...', url: 'https://github.com/VaillerTeeter/marktext-maintained' },
+        followOnGithub: { label: 'Follow us on Github...', url: 'https://github.com/VaillerTeeter' },
+        license: { label: 'License...', url: 'https://github.com/VaillerTeeter/marktext-maintained/blob/develop/LICENSE' }
+      }
     }
   },
   commands: {
