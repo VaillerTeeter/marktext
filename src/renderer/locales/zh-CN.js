@@ -384,6 +384,29 @@ export default {
       lineEnding: '换行符',
       crlf: '回车换行 (CRLF)',
       lf: '换行 (LF)'
+    },
+    paragraph: {
+      label: '段落',
+      heading1: '标题 1',
+      heading2: '标题 2',
+      heading3: '标题 3',
+      heading4: '标题 4',
+      heading5: '标题 5',
+      heading6: '标题 6',
+      promote: '提升标题',
+      demote: '降低标题',
+      table: '表格',
+      codeFence: '代码块',
+      quoteBlock: '引用块',
+      mathBlock: '数学公式',
+      htmlBlock: 'HTML 块',
+      orderedList: '有序列表',
+      bulletList: '无序列表',
+      taskList: '任务列表',
+      looseListItem: '松散列表项',
+      paragraph: '段落',
+      horizontalRule: '水平分割线',
+      frontMatter: 'Front Matter'
     }
   },
   commands: {

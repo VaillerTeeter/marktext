@@ -384,6 +384,29 @@ export default {
       lineEnding: 'Line Ending',
       crlf: 'Carriage return and line feed (CRLF)',
       lf: 'Line feed (LF)'
+    },
+    paragraph: {
+      label: '&Paragraph',
+      heading1: 'Heading 1',
+      heading2: 'Heading 2',
+      heading3: 'Heading 3',
+      heading4: 'Heading 4',
+      heading5: 'Heading 5',
+      heading6: 'Heading 6',
+      promote: 'Promote Heading',
+      demote: 'Demote Heading',
+      table: 'Table',
+      codeFence: 'Code Fences',
+      quoteBlock: 'Quote Block',
+      mathBlock: 'Math Block',
+      htmlBlock: 'Html Block',
+      orderedList: 'Ordered List',
+      bulletList: 'Bullet List',
+      taskList: 'Task List',
+      looseListItem: 'Loose List Item',
+      paragraph: 'Paragraph',
+      horizontalRule: 'Horizontal Rule',
+      frontMatter: 'Front Matter'
     }
   },
   commands: {
