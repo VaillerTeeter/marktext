@@ -422,6 +422,53 @@ export default {
       hyperlink: '超链接',
       image: '图片',
       clearFormatting: '清除格式'
+    },
+    window: {
+      label: '窗口',
+      minimize: '最小化',
+      alwaysOnTop: '置顶窗口',
+      zoomIn: '放大',
+      zoomOut: '缩小',
+      fullScreen: '切换全屏',
+      bringAllToFront: '全部置顶'
+    },
+    theme: {
+      label: '主题',
+      cadmiumLight: 'Cadmium Light',
+      dark: 'Dark',
+      graphiteLight: 'Graphite Light',
+      materialDark: 'Material Dark',
+      oneDark: 'One Dark',
+      ulyssesLight: 'Ulysses Light'
+    },
+    view: {
+      label: '视图',
+      commandPalette: '命令面板...',
+      sourceCodeMode: '源码模式',
+      typewriterMode: '打字机模式',
+      focusMode: '专注模式',
+      showSidebar: '显示侧边栏',
+      showTabBar: '显示标签栏',
+      toggleToc: '切换目录',
+      reloadImages: '重新加载图片',
+      showDevTools: '打开开发者工具',
+      reloadWindow: '重新加载窗口'
+    },
+    help: {
+      label: '帮助',
+      quickStart: '快速开始...',
+      markdownReference: 'Markdown 参考...',
+      changelog: '更新日志...',
+      donate: '捐助(Open Collective)...',
+      feedbackTwitter: '通过 Twitter 反馈...',
+      reportIssue: '报告问题或请求功能...',
+      website: '网站...',
+      watchOnGithub: '在 GitHub 上关注...',
+      followOnGithub: '在 Github 关注我们...',
+      followOnTwitter: '在 Twitter 关注我们...',
+      license: '许可证...',
+      checkUpdates: '检查更新...',
+      about: '关于 MarkText...'
     }
   },
   commands: {

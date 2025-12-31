@@ -27,68 +27,77 @@ const isUpdatable = () => {
   return false
 }
 
-export default function () {
+export default function (userPreference) {
+  const { language = 'en' } = (userPreference && userPreference.getAll()) || {}
+  const locales = { en: require('../../../renderer/locales/en').default, 'zh-CN': require('../../../renderer/locales/zh-CN').default }
+  const translate = (key, locale, fallback) => {
+    const bundle = locales[locale] || locales.en
+    const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+    return typeof value === 'string' ? value : fallback
+  }
+  const t = (key, fallback) => translate(`menu.help.${key}`, language, fallback)
+
   const helpMenu = {
-    label: '&Help',
+    label: t('label', '&Help'),
     role: 'help',
     submenu: [{
-      label: 'Quick Start...',
+      label: t('quickStart', 'Quick Start...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext/blob/master/docs/README.md')
       }
     }, {
-      label: 'Markdown Reference...',
+      label: t('markdownReference', 'Markdown Reference...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext/blob/master/docs/MARKDOWN_SYNTAX.md')
       }
     }, {
-      label: 'Changelog...',
+      label: t('changelog', 'Changelog...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext/blob/master/.github/CHANGELOG.md')
       }
     }, {
       type: 'separator'
     }, {
-      label: 'Donate via Open Collective...',
+      label: t('donate', 'Donate via Open Collective...'),
       click (item, win) {
         shell.openExternal('https://opencollective.com/marktext')
       }
     }, {
-      label: 'Feedback via Twitter...',
+      label: t('feedbackTwitter', 'Feedback via Twitter...'),
       click (item, win) {
         actions.showTweetDialog(win, 'twitter')
       }
     }, {
-      label: 'Report Issue or Request Feature...',
+      label: t('reportIssue', 'Report Issue or Request Feature...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext/issues')
       }
     }, {
       type: 'separator'
     }, {
-      label: 'Website...',
+      label: t('website', 'Website...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext')
       }
     }, {
-      label: 'Watch on GitHub...',
+      label: t('watchOnGithub', 'Watch on GitHub...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext')
       }
     }, {
-      label: 'Follow us on Github...',
+      label: t('followOnGithub', 'Follow us on Github...'),
       click () {
         shell.openExternal('https://github.com/Jocs')
       }
     }, {
-      label: 'Follow us on Twitter...',
+      label: t('followOnTwitter', 'Follow us on Twitter...'),
       click () {
         shell.openExternal('https://twitter.com/marktextapp')
       }
     }, {
       type: 'separator'
     }, {
-      label: 'License...',
+      label: t('license', 'License...'),
       click () {
         shell.openExternal('https://github.com/marktext/marktext/blob/master/LICENSE')
       }
@@ -99,7 +108,7 @@ export default function () {
     helpMenu.submenu.push({
       type: 'separator'
     }, {
-      label: 'Check for updates...',
+      label: t('checkUpdates', 'Check for updates...'),
       click (menuItem, browserWindow) {
         checkUpdates(browserWindow)
       }
@@ -110,7 +119,7 @@ export default function () {
     helpMenu.submenu.push({
       type: 'separator'
     }, {
-      label: 'About MarkText...',
+      label: t('about', 'About MarkText...'),
       click (menuItem, browserWindow) {
         actions.showAboutDialog(browserWindow)
       }

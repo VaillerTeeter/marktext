@@ -422,6 +422,53 @@ export default {
       hyperlink: 'Hyperlink',
       image: 'Image',
       clearFormatting: 'Clear Formatting'
+    },
+    window: {
+      label: '&Window',
+      minimize: 'Minimize',
+      alwaysOnTop: 'Always on Top',
+      zoomIn: 'Zoom In',
+      zoomOut: 'Zoom Out',
+      fullScreen: 'Show in Full Screen',
+      bringAllToFront: 'Bring All to Front'
+    },
+    theme: {
+      label: '&Theme',
+      cadmiumLight: 'Cadmium Light',
+      dark: 'Dark',
+      graphiteLight: 'Graphite Light',
+      materialDark: 'Material Dark',
+      oneDark: 'One Dark',
+      ulyssesLight: 'Ulysses Light'
+    },
+    view: {
+      label: '&View',
+      commandPalette: 'Command Palette...',
+      sourceCodeMode: 'Source Code Mode',
+      typewriterMode: 'Typewriter Mode',
+      focusMode: 'Focus Mode',
+      showSidebar: 'Show Sidebar',
+      showTabBar: 'Show Tab Bar',
+      toggleToc: 'Toggle Table of Contents',
+      reloadImages: 'Reload Images',
+      showDevTools: 'Show Developer Tools',
+      reloadWindow: 'Reload window'
+    },
+    help: {
+      label: '&Help',
+      quickStart: 'Quick Start...',
+      markdownReference: 'Markdown Reference...',
+      changelog: 'Changelog...',
+      donate: 'Donate via Open Collective...',
+      feedbackTwitter: 'Feedback via Twitter...',
+      reportIssue: 'Report Issue or Request Feature...',
+      website: 'Website...',
+      watchOnGithub: 'Watch on GitHub...',
+      followOnGithub: 'Follow us on Github...',
+      followOnTwitter: 'Follow us on Twitter...',
+      license: 'License...',
+      checkUpdates: 'Check for updates...',
+      about: 'About MarkText...'
     }
   },
   commands: {

@@ -38,9 +38,9 @@ export default function (keybindings, preferences, recentlyUsedFiles) {
     edit(keybindings, preferences),
     paragraph(keybindings, preferences),
     format(keybindings, preferences),
-    window(keybindings),
+    window(keybindings, preferences),
     theme(preferences),
-    view(keybindings),
-    help()
+    view(keybindings, preferences),
+    help(preferences)
   ]
 }
