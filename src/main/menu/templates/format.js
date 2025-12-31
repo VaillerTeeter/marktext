@@ -1,12 +1,24 @@
 import * as actions from '../actions/format'
+import en from '../../../renderer/locales/en'
+import zhCN from '../../../renderer/locales/zh-CN'
 
-export default function (keybindings) {
+const locales = { en, 'zh-CN': zhCN }
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+export default function (keybindings, userPreference) {
+  const { language = 'en' } = (userPreference && userPreference.getAll()) || {}
+  const t = (key, fallback) => translate(`menu.format.${key}`, language, fallback)
   return {
     id: 'formatMenuItem',
-    label: 'F&ormat',
+    label: t('label', 'F&ormat'),
     submenu: [{
       id: 'strongMenuItem',
-      label: 'Bold',
+      label: t('bold', 'Bold'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.strong'),
       click (menuItem, focusedWindow) {
@@ -14,7 +26,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'emphasisMenuItem',
-      label: 'Italic',
+      label: t('italic', 'Italic'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.emphasis'),
       click (menuItem, focusedWindow) {
@@ -22,7 +34,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'underlineMenuItem',
-      label: 'Underline',
+      label: t('underline', 'Underline'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.underline'),
       click (menuItem, focusedWindow) {
@@ -32,7 +44,7 @@ export default function (keybindings) {
       type: 'separator'
     }, {
       id: 'superscriptMenuItem',
-      label: 'Superscript',
+      label: t('superscript', 'Superscript'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.superscript'),
       click (menuItem, focusedWindow) {
@@ -40,7 +52,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'subscriptMenuItem',
-      label: 'Subscript',
+      label: t('subscript', 'Subscript'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.subscript'),
       click (menuItem, focusedWindow) {
@@ -48,7 +60,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'highlightMenuItem',
-      label: 'Highlight',
+      label: t('highlight', 'Highlight'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.highlight'),
       click (menuItem, focusedWindow) {
@@ -58,7 +70,7 @@ export default function (keybindings) {
       type: 'separator'
     }, {
       id: 'inlineCodeMenuItem',
-      label: 'Inline Code',
+      label: t('inlineCode', 'Inline Code'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.inline-code'),
       click (menuItem, focusedWindow) {
@@ -66,7 +78,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'inlineMathMenuItem',
-      label: 'Inline Math',
+      label: t('inlineMath', 'Inline Math'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.inline-math'),
       click (menuItem, focusedWindow) {
@@ -76,7 +88,7 @@ export default function (keybindings) {
       type: 'separator'
     }, {
       id: 'strikeMenuItem',
-      label: 'Strikethrough',
+      label: t('strikethrough', 'Strikethrough'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.strike'),
       click (menuItem, focusedWindow) {
@@ -84,7 +96,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'hyperlinkMenuItem',
-      label: 'Hyperlink',
+      label: t('hyperlink', 'Hyperlink'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.hyperlink'),
       click (menuItem, focusedWindow) {
@@ -92,7 +104,7 @@ export default function (keybindings) {
       }
     }, {
       id: 'imageMenuItem',
-      label: 'Image',
+      label: t('image', 'Image'),
       type: 'checkbox',
       accelerator: keybindings.getAccelerator('format.image'),
       click (menuItem, focusedWindow) {
@@ -101,7 +113,7 @@ export default function (keybindings) {
     }, {
       type: 'separator'
     }, {
-      label: 'Clear Formatting',
+      label: t('clearFormatting', 'Clear Formatting'),
       accelerator: keybindings.getAccelerator('format.clear-format'),
       click (menuItem, focusedWindow) {
         actions.clearFormat(focusedWindow)

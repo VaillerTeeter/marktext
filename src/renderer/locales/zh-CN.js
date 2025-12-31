@@ -407,6 +407,21 @@ export default {
       paragraph: '段落',
       horizontalRule: '水平分割线',
       frontMatter: 'Front Matter'
+    },
+    format: {
+      label: '格式',
+      bold: '加粗',
+      italic: '斜体',
+      underline: '下划线',
+      superscript: '上标',
+      subscript: '下标',
+      highlight: '高亮',
+      inlineCode: '行内代码',
+      inlineMath: '行内数学',
+      strikethrough: '删除线',
+      hyperlink: '超链接',
+      image: '图片',
+      clearFormatting: '清除格式'
     }
   },
   commands: {

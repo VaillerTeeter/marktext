@@ -407,6 +407,21 @@ export default {
       paragraph: 'Paragraph',
       horizontalRule: 'Horizontal Rule',
       frontMatter: 'Front Matter'
+    },
+    format: {
+      label: '&Format',
+      bold: 'Bold',
+      italic: 'Italic',
+      underline: 'Underline',
+      superscript: 'Superscript',
+      subscript: 'Subscript',
+      highlight: 'Highlight',
+      inlineCode: 'Inline Code',
+      inlineMath: 'Inline Math',
+      strikethrough: 'Strikethrough',
+      hyperlink: 'Hyperlink',
+      image: 'Image',
+      clearFormatting: 'Clear Formatting'
     }
   },
   commands: {
