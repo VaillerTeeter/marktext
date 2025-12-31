@@ -615,6 +615,16 @@ export default {
     pandoc: {
       title: '导入提示',
       message: '导入前请先安装 pandoc。'
+    },
+    update: {
+      errorTitle: '更新',
+      errorMessage: '检查更新时发生错误：{msg}',
+      notAvailableTitle: '未发现更新',
+      notAvailableMessage: '当前版本为最新。',
+      downloadedTitle: '已下载更新',
+      downloadedMessage: '更新已下载，应用将退出以安装更新...',
+      availableTitle: '发现更新',
+      availableMessage: '发现可用更新，是否现在下载并安装？'
     }
   }
 }

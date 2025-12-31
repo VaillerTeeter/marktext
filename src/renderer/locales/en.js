@@ -615,6 +615,16 @@ export default {
     pandoc: {
       title: 'Import Warning',
       message: 'Install pandoc before you import files.'
+    },
+    update: {
+      errorTitle: 'Update',
+      errorMessage: 'An error occurred while checking for updates: {msg}',
+      notAvailableTitle: 'Update not Available',
+      notAvailableMessage: 'Current version is up-to-date.',
+      downloadedTitle: 'Update Downloaded',
+      downloadedMessage: 'Update downloaded, application will be quit for update...',
+      availableTitle: 'Update Available',
+      availableMessage: 'Found an update, do you want to download and install now?'
     }
   }
 }

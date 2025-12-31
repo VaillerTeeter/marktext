@@ -64,7 +64,9 @@ setLocale(initialLocale)
 // Ensure command descriptions are refreshed after locale is set
 try {
   store.commit('REFRESH_DESCRIPTIONS')
-} catch (_) {}
+} catch (_) {
+  // no-op: ignore if store/commit is not available during early init
+}
 
 store.watch(
   state => state.preferences.language,
@@ -72,7 +74,9 @@ store.watch(
     setLocale(value)
     try {
       store.commit('REFRESH_DESCRIPTIONS')
-    } catch (_) {}
+    } catch (_) {
+      // no-op: ignore failures when refreshing descriptions
+    }
   }
 )
 
