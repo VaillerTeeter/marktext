@@ -21,6 +21,7 @@ import plantumlIcon from '../../assets/pngicon/plantuml/2.png'
 import mermaidIcon from '../../assets/pngicon/mermaid/2.png'
 import vegaIcon from '../../assets/pngicon/chart/2.png'
 import { isOsx } from '../../config'
+import i18n from '@/i18n'
 
 const COMMAND_KEY = isOsx ? '⌘' : 'Ctrl'
 const OPTION_KEY = isOsx ? '⌥' : 'Alt'
@@ -167,3 +168,27 @@ export const quickInsertObj = {
     icon: mermaidIcon
   }]
 }
+
+// Translate titles and subtitles when i18n is available. Use label to generate keys.
+const normalize = s => s.replace(/\s+/g, '_').replace(/-/g, '_')
+Object.keys(quickInsertObj).forEach(section => {
+  quickInsertObj[section].forEach(item => {
+    const key = `quickInsert.${normalize(item.label)}`
+    try {
+      const tTitle = i18n.t(`${key}.title`)
+      if (tTitle && tTitle !== `${key}.title`) {
+        item.title = tTitle
+      }
+    } catch (e) {
+      // ignore
+    }
+    try {
+      const tSub = i18n.t(`${key}.subtitle`)
+      if (tSub && tSub !== `${key}.subtitle`) {
+        item.subTitle = tSub
+      }
+    } catch (e) {
+      // ignore
+    }
+  })
+})

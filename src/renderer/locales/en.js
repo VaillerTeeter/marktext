@@ -622,6 +622,37 @@ export default {
     spellchecker_switch_language: 'Spelling: Switch language',
     spellchecker_switch_placeholder: 'Select a language to switch to'
   },
+  quickInsert: {
+    section: {
+      basic_block: 'BASIC BLOCK',
+      header: 'HEADER',
+      advanced_block: 'ADVANCED BLOCK',
+      list_block: 'LIST BLOCK',
+      diagram: 'DIAGRAM'
+    },
+    paragraph: { title: 'Paragraph', subtitle: 'Lorem Ipsum is simply dummy text' },
+    hr: { title: 'Horizontal Line', subtitle: '---' },
+    front_matter: { title: 'Front Matter', subtitle: '--- Lorem Ipsum ---' },
+    heading_1: { title: 'Header 1', subtitle: '# Lorem Ipsum is simply ...' },
+    heading_2: { title: 'Header 2', subtitle: '## Lorem Ipsum is simply ...' },
+    heading_3: { title: 'Header 3', subtitle: '### Lorem Ipsum is simply ...' },
+    heading_4: { title: 'Header 4', subtitle: '#### Lorem Ipsum is simply ...' },
+    heading_5: { title: 'Header 5', subtitle: '##### Lorem Ipsum is simply ...' },
+    heading_6: { title: 'Header 6', subtitle: '###### Lorem Ipsum is simply ...' },
+    table: { title: 'Table Block', subtitle: '|Lorem | Ipsum is simply |' },
+    mathblock: { title: 'Display Math', subtitle: '$$ Lorem Ipsum is simply $$' },
+    html: { title: 'HTML Block', subtitle: '<div> Lorem Ipsum is simply </div>' },
+    pre: { title: 'Code Block', subtitle: '```java Lorem Ipsum is simply ```' },
+    blockquote: { title: 'Quote Block', subtitle: '>Lorem Ipsum is simply ...' },
+    ol_order: { title: 'Order List', subtitle: '1. Lorem Ipsum is simply ...' },
+    ul_bullet: { title: 'Bullet List', subtitle: '- Lorem Ipsum is simply ...' },
+    ul_task: { title: 'To-do List', subtitle: '- [x] Lorem Ipsum is simply ...' },
+    'vega_lite': { title: 'Vega Chart', subtitle: 'Render flow chart by vega-lite.js.' },
+    flowchart: { title: 'Flow Chart', subtitle: 'Render flow chart by flowchart.js.' },
+    sequence: { title: 'Sequence Diagram', subtitle: 'Render sequence diagram by js-sequence.' },
+    plantuml: { title: 'PlantUML Diagram', subtitle: 'Render PlantUML diagrams' },
+    mermaid: { title: 'Mermaid', subtitle: 'Render Diagram by mermaid.' }
+  },
   notification: {
     pandoc: {
       title: 'Import Warning',

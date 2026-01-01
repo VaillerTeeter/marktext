@@ -3,6 +3,7 @@ import { patch, h } from '../../parser/render/snabbdom'
 import { deepCopy } from '../../utils'
 import BaseScrollFloat from '../baseScrollFloat'
 import { quickInsertObj } from './config'
+import i18n from '@/i18n'
 import './index.css'
 
 class QuickInsert extends BaseScrollFloat {
@@ -46,10 +47,23 @@ class QuickInsert extends BaseScrollFloat {
       return _renderObj[key].length !== 0
     })
       .map(key => {
-        const titleVnode = h('div.title', key.toUpperCase())
+        // Translate section header if translation available
+        const sectionKey = `quickInsert.section.${key.replace(/\s+/g, '_').replace(/-/g, '_')}`
+        const sectionTitle = (i18n && i18n.t(sectionKey) && i18n.t(sectionKey) !== sectionKey)
+          ? i18n.t(sectionKey)
+          : key.toUpperCase()
+        const titleVnode = h('div.title', sectionTitle)
         const items = []
         for (const item of _renderObj[key]) {
           const { title, subTitle, label, icon, shortCut } = item
+          const normalizeKey = s => s.replace(/\s+/g, '_').replace(/-/g, '_').replace(/\./g, '_').toLowerCase()
+          const itemKey = `quickInsert.${normalizeKey(label)}`
+          const titleText = (i18n && i18n.t(itemKey + '.title') && i18n.t(itemKey + '.title') !== (itemKey + '.title'))
+            ? i18n.t(itemKey + '.title')
+            : title
+          const subTitleText = (i18n && i18n.t(itemKey + '.subtitle') && i18n.t(itemKey + '.subtitle') !== (itemKey + '.subtitle'))
+            ? i18n.t(itemKey + '.subtitle')
+            : subTitle
           const iconVnode = h('div.icon-container', h('i.icon', h(`i.icon-${label.replace(/\s/g, '-')}`, {
             style: {
               background: `url(${icon}) no-repeat`,
@@ -58,8 +72,8 @@ class QuickInsert extends BaseScrollFloat {
           }, '')))
 
           const description = h('div.description', [
-            h('div.big-title', title),
-            h('div.sub-title', subTitle)
+            h('div.big-title', titleText),
+            h('div.sub-title', subTitleText)
           ])
           const shortCutVnode = h('div.short-cut', [
             h('span', shortCut)

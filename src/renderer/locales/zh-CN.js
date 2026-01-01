@@ -622,6 +622,37 @@ export default {
     spellchecker_switch_language: '拼写：切换语言',
     spellchecker_switch_placeholder: '选择要切换到的语言'
   },
+  quickInsert: {
+    section: {
+      basic_block: '基础模块',
+      header: '标题',
+      advanced_block: '高级模块',
+      list_block: '列表模块',
+      diagram: '图表'
+    },
+    paragraph: { title: '段落', subtitle: '示例段落文本' },
+    hr: { title: '水平分割线', subtitle: '---' },
+    front_matter: { title: 'Front Matter', subtitle: '--- 示例 Front Matter ---' },
+    heading_1: { title: '标题 1', subtitle: '# 示例 标题 ...' },
+    heading_2: { title: '标题 2', subtitle: '## 示例 标题 ...' },
+    heading_3: { title: '标题 3', subtitle: '### 示例 标题 ...' },
+    heading_4: { title: '标题 4', subtitle: '#### 示例 标题 ...' },
+    heading_5: { title: '标题 5', subtitle: '##### 示例 标题 ...' },
+    heading_6: { title: '标题 6', subtitle: '###### 示例 标题 ...' },
+    table: { title: '表格块', subtitle: '|示例 | 内容 |' },
+    mathblock: { title: '数学公式块', subtitle: '$$ 示例 $$' },
+    html: { title: 'HTML 块', subtitle: '<div> 示例 </div>' },
+    pre: { title: '代码块', subtitle: '```java 示例 ```' },
+    blockquote: { title: '引用块', subtitle: '> 示例 引用 ...' },
+    ol_order: { title: '有序列表', subtitle: '1. 示例 ...' },
+    ul_bullet: { title: '无序列表', subtitle: '- 示例 ...' },
+    ul_task: { title: '任务列表', subtitle: '- [x] 示例 ...' },
+    'vega_lite': { title: 'Vega 图表', subtitle: '使用 vega-lite.js 渲染图表。' },
+    flowchart: { title: '流程图', subtitle: '使用 flowchart.js 渲染流程图。' },
+    sequence: { title: '时序图', subtitle: '使用 js-sequence 渲染时序图。' },
+    plantuml: { title: 'PlantUML 图', subtitle: '渲染 PlantUML 图表' },
+    mermaid: { title: 'Mermaid', subtitle: '使用 mermaid 渲染图表。' }
+  },
   notification: {
     pandoc: {
       title: '导入提示',
