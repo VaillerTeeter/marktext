@@ -16,10 +16,17 @@
           <div class="text">{{ appVersion }}</div>
         </el-col>
         <el-col :span="24">
-          <div class="text" style="min-height: auto">{{ copyright }}</div>
+          <div class="text" style="min-height: auto">{{ $t('about.maintenanceNote') }}</div>
         </el-col>
         <el-col :span="24">
-          <div class="text">{{ copyrightContributors }}</div>
+          <div class="text">{{ $t('about.forkNote') }}</div>
+        </el-col>
+        <el-col :span="24">
+          <div class="text" style="min-height: auto">{{ $t('about.copyrightOriginal') }}</div>
+        </el-col>
+        <el-col :span="24">
+          <div class="text">{{ $t('about.copyrightContributors1', { year: currentYear }) }}</div>
+          <div class="text">{{ $t('about.copyrightContributors2', { year: currentYear }) }}</div>
         </el-col>
       </el-row>
     </el-dialog>
@@ -34,8 +41,6 @@ import MarkTextLogo from '../../assets/images/logo.png'
 export default {
   data () {
     this.name = 'MarkText'
-    this.copyright = `Copyright © 2017-${new Date().getFullYear()} Luo Ran`
-    this.copyrightContributors = `Copyright © 2018-${new Date().getFullYear()} MarkText Contributors`
     this.logo = MarkTextLogo
     return {
       showAboutDialog: false
@@ -44,7 +49,10 @@ export default {
   computed: {
     ...mapState({
       appVersion: state => state.appVersion
-    })
+    }),
+    currentYear () {
+      return new Date().getFullYear()
+    }
   },
   created () {
     bus.$on('aboutDialog', this.showDialog)

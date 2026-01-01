@@ -668,5 +668,12 @@ export default {
       availableTitle: 'Update Available',
       availableMessage: 'Found an update, do you want to download and install now?'
     }
+  },
+  about: {
+    maintenanceNote: 'Upstream maintenance ended in 2022.',
+    forkNote: 'Forked (Dec 2025) as marktext-maintained — updated deps and fixed bugs.',
+    copyrightOriginal: 'Copyright © 2017-2022 Luo Ran',
+    copyrightContributors1: 'Copyright © 2018-{year} MarkText Contributors',
+    copyrightContributors2: 'Copyright © 2025-{year} Vaciller'
   }
 }

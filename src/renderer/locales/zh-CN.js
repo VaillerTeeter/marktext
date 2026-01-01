@@ -668,5 +668,12 @@ export default {
       availableTitle: '发现更新',
       availableMessage: '发现可用更新，是否现在下载并安装？'
     }
+  },
+  about: {
+    maintenanceNote: '上游项目在 2022 年停止维护。',
+    forkNote: '于 2025 年 12 月由 Vaciller 分叉为 marktext-maintained，更新依赖并修复问题。',
+    copyrightOriginal: '版权所有 © 2017-2022 Luo Ran',
+    copyrightContributors1: '版权所有 © 2018-{year} MarkText 贡献者',
+    copyrightContributors2: '版权所有 © 2025-{year} Vaciller'
   }
 }
