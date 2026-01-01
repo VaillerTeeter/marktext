@@ -473,6 +473,15 @@ function getContainer (originContainer, options) {
     container.classList.add('ag-show-quick-insert-hint')
   }
 
+  // Set default quick insert hint CSS variable; can be overridden by options.quickInsertHint
+  try {
+    const hint = options && options.quickInsertHint ? options.quickInsertHint : 'Type @ to insert'
+    // include quotes so CSS content displays correctly
+    container.style.setProperty('--mu-quick-insert-hint', '"' + hint + '"')
+  } catch (e) {
+    // ignore
+  }
+
   container.setAttribute('contenteditable', true)
   container.setAttribute('autocorrect', false)
   container.setAttribute('autocomplete', 'off')

@@ -200,6 +200,15 @@ export default {
         this.scrollToCursor()
       }
     },
+    '$i18n.locale': function () {
+      // Update Muya quick-insert hint when locale changes
+      if (this.editor && this.editor.container && this.$t) {
+        try {
+          const hint = this.$t('quickInsert.hint')
+          this.editor.container.style.setProperty('--mu-quick-insert-hint', '"' + hint + '"')
+        } catch (e) { void 0 }
+      }
+    },
 
     focus: function (value) {
       this.editor.setFocusMode(value)
@@ -550,6 +559,13 @@ export default {
       }
 
       const { container } = this.editor = new Muya(ele, options)
+      // Provide localized quick-insert hint to Muya
+      if (this.$t) {
+        const hint = this.$t('quickInsert.hint')
+        if (hint) {
+          try { this.editor.container.style.setProperty('--mu-quick-insert-hint', '"' + hint + '"') } catch (e) { void 0 }
+        }
+      }
 
       // Create spell check wrapper and enable spell checking if preferred.
       this.spellchecker = new SpellChecker(spellcheckerEnabled, spellcheckerLanguage)

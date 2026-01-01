@@ -481,6 +481,11 @@ export default {
       showDevTools: '打开开发者工具',
       reloadWindow: '重新加载窗口'
     },
+    titlebar: {
+      words: '单词：',
+      characters: '字符：',
+      paragraphs: '段落：'
+    },
     help: {
       label: '帮助',
       quickStart: '快速开始...',
@@ -623,6 +628,7 @@ export default {
     spellchecker_switch_placeholder: '选择要切换到的语言'
   },
   quickInsert: {
+    hint: '输入 @ 可插入',
     section: {
       basic_block: '基础模块',
       header: '标题',

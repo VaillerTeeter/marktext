@@ -41,27 +41,21 @@
         <el-tooltip
           v-if="wordCount"
           class="item"
-          :content="`${wordCount[show]} ${HASH[show].full + (wordCount[show] > 1 ? 's' : '')}`"
+          :content="tooltipShort"
           placement="bottom-end"
         >
-          <div slot="content">
-            <div class="title-item">
-              <span class="front">Words:</span><span class="text">{{wordCount['word']}}</span>
-            </div>
-            <div class="title-item">
-              <span class="front">Characters:</span><span class="text">{{wordCount['character']}}</span>
-            </div>
-            <div class="title-item">
-              <span class="front">Paragraphs:</span><span class="text">{{wordCount['paragraph']}}</span>
-            </div>
-          </div>
+          <template slot="content">
+            <div class="title-item"><span class="front">{{ $t('menu.titlebar.words') }}</span><span class="text">{{ wordCount['word'] }}</span></div>
+            <div class="title-item"><span class="front">{{ $t('menu.titlebar.characters') }}</span><span class="text">{{ wordCount['character'] }}</span></div>
+            <div class="title-item"><span class="front">{{ $t('menu.titlebar.paragraphs') }}</span><span class="text">{{ wordCount['paragraph'] }}</span></div>
+          </template>
           <div
             v-if="wordCount"
             class="word-count"
             :class="[{ 'title-no-drag': platform !== 'darwin' }]"
             @click.stop="handleWordClick"
           >
-            <span class="text-center-vertical">{{ `${HASH[show].short} ${wordCount[show]}` }}</span>
+              <span class="text-center-vertical">{{ `${HASH[show].short} ${wordCount[show]}` }}</span>
           </div>
         </el-tooltip>
       </div>
@@ -156,6 +150,10 @@ export default {
       titleBarStyle: state => state.preferences.titleBarStyle,
       showTabBar: state => state.layout.showTabBar
     }),
+    tooltipShort () {
+      if (!this.wordCount) return ''
+      return `${this.HASH[this.show].short} ${this.wordCount[this.show]}`
+    },
     paths () {
       if (!this.pathname) return []
       const pathnameToken = this.pathname.split(PATH_SEPARATOR).filter(i => i)

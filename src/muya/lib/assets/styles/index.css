@@ -64,7 +64,7 @@ mark::after {
 }
 
 div.ag-show-quick-insert-hint p.ag-paragraph.ag-active > span.ag-paragraph-content:first-of-type:empty::after {
-  content: 'Type @ to insert';
+  content: var(--mu-quick-insert-hint);
   color: var(--editorColor10);
 }
 

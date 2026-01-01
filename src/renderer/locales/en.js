@@ -481,6 +481,11 @@ export default {
       showDevTools: 'Show Developer Tools',
       reloadWindow: 'Reload window'
     },
+    titlebar: {
+      words: 'Words:',
+      characters: 'Characters:',
+      paragraphs: 'Paragraphs:'
+    },
     help: {
       label: '&Help',
       quickStart: 'Quick Start...',
@@ -623,6 +628,7 @@ export default {
     spellchecker_switch_placeholder: 'Select a language to switch to'
   },
   quickInsert: {
+    hint: 'Type @ to insert',
     section: {
       basic_block: 'BASIC BLOCK',
       header: 'HEADER',
