@@ -1,6 +1,10 @@
 import path from 'path'
 
-// Set `__static` path to static files in production.
-if (process.env.NODE_ENV !== 'development') {
-  global.__static = path.join(__dirname, '/static').replace(/\\/g, '\\\\')
+export const applyGlobalStaticPath = (env = process.env.NODE_ENV) => {
+  if (env !== 'development' && !global.__static) {
+    global.__static = path.join(__dirname, '/static').replace(/\\/g, '\\\\')
+  }
 }
+
+// Set `__static` path to static files in production.
+applyGlobalStaticPath()

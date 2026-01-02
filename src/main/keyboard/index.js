@@ -36,7 +36,7 @@ class KeyboardLayoutMonitor extends EventEmitter {
   }
 
   removeListener (callback) {
-    this.removeListener(KEYBOARD_LAYOUT_MONITOR_CHANNEL_ID, callback)
+    super.removeListener(KEYBOARD_LAYOUT_MONITOR_CHANNEL_ID, callback)
   }
 
   _ensureNativeListener () {

@@ -62,8 +62,14 @@ export const switchLanguage = (win, lang) => {
  * @returns {string[]} List of available spellchecker languages or an empty array on macOS.
  */
 export const getAvailableDictionaries = win => {
+  const isTestEnv = (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 'test') ||
+    (typeof globalThis !== 'undefined' && !!globalThis.__karma__)
+
   if (!win.webContents.session.isSpellCheckerEnabled) {
-    console.warn('Spell Checker not available but dictionaries requested.')
+    // Avoid noisy logs during tests where the spellchecker stub lacks this API.
+    if (!isTestEnv) {
+      console.warn('Spell Checker not available but dictionaries requested.')
+    }
     return []
   } else if (isOsx) {
     // NB: On macOS the OS spellchecker is used and will detect the language automatically.

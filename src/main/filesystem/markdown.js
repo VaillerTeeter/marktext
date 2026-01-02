@@ -1,3 +1,4 @@
+import fs from 'fs'
 import fsPromises from 'fs/promises'
 import path from 'path'
 import log from 'electron-log/main'
@@ -36,7 +37,7 @@ export const normalizeMarkdownPath = pathname => {
   if (isDir || isMarkdownFile(pathname)) {
     // Normalize and resolve the path or link target.
     const resolved = normalizeAndResolvePath(pathname)
-    if (resolved) {
+    if (resolved && fs.existsSync(resolved)) {
       return { isDir, path: resolved }
     } else {
       console.error(`[ERROR] Cannot resolve "${pathname}".`)

@@ -1,5 +1,11 @@
 import ced from 'ced'
 
+let cedDetector = ced
+
+export const __setEncodingDetector = detector => {
+  cedDetector = detector
+}
+
 const CED_ICONV_ENCODINGS = {
   'BIG5-CP950': 'big5',
   KSC: 'euckr',
@@ -63,11 +69,11 @@ export const guessEncoding = (buffer, autoGuessEncoding) => {
 
   // Auto guess encoding, otherwise use UTF8.
   if (autoGuessEncoding) {
-    encoding = ced(buffer)
+    encoding = cedDetector(buffer)
     if (CED_ICONV_ENCODINGS[encoding]) {
       encoding = CED_ICONV_ENCODINGS[encoding]
     } else {
-      encoding = encoding.toLowerCase().replace(/-_/g, '')
+      encoding = encoding.toLowerCase().replace(/[-_]/g, '')
     }
   }
   return { encoding, isBom }

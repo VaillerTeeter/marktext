@@ -128,5 +128,5 @@ export default id => {
   if (localized && localized !== localeKey) {
     return localized
   }
-  return commandDescriptions[id] || id
+  return commandDescriptions[id]
 }

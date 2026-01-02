@@ -1,5 +1,4 @@
-import htmlTags from 'html-tags'
-const voidHtmlTags = htmlTags.voidTags
+import htmlTags, { voidHtmlTags } from 'html-tags'
 import { generateKeyHash, genUpper2LowerKeyHash } from '../utils/hash'
 import { getLongUniqueId } from '../utils/random'
 
@@ -8,7 +7,8 @@ import { getLongUniqueId } from '../utils/random'
 export const DEVICE_MEMORY = navigator.deviceMemory || 4 // Get the device memory number(Chrome >= 63)
 export const UNDO_DEPTH = DEVICE_MEMORY >= 4 ? 100 : 50
 export const HAS_TEXT_BLOCK_REG = /^span$/i
-export const VOID_HTML_TAGS = Object.freeze(voidHtmlTags)
+const normalizedVoidTags = voidHtmlTags || []
+export const VOID_HTML_TAGS = Object.freeze(normalizedVoidTags)
 export const HTML_TAGS = Object.freeze(htmlTags)
 // TYPE1 ~ TYPE7 according to https://github.github.com/gfm/#html-blocks
 export const BLOCK_TYPE1 = Object.freeze([

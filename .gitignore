@@ -12,6 +12,7 @@ test/unit/coverage/*.info
 .eslintcache
 build
 dist
+coverage
 static/themes/fonts/*_LICENSE
 static/themes/fonts/*.ttf
 static/themes/fonts/*.txt

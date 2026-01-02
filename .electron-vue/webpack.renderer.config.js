@@ -2,6 +2,12 @@
 
 process.env.BABEL_ENV = 'renderer'
 
+// Ensure structuredClone exists for ESLint/webpack tooling on older runtimes.
+const { structuredClone: nodeStructuredClone } = require('node:util')
+if (typeof globalThis.structuredClone !== 'function' && typeof nodeStructuredClone === 'function') {
+  globalThis.structuredClone = nodeStructuredClone
+}
+
 const path = require('path')
 const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')

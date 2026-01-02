@@ -39,9 +39,14 @@ const emojiCtrl = ContentState => {
     }
 
     // If there is no emoji token (e.g. triggered from a lone ':'), insert one at cursor.
-    const insertText = `:${emojiText}:`
+    // Only insert if there's a leading colon
     const hasLeadingColon = offset > 0 && text[offset - 1] === ':'
-    const insertPos = hasLeadingColon ? offset - 1 : offset
+    if (!hasLeadingColon) {
+      return
+    }
+    
+    const insertText = `:${emojiText}:`
+    const insertPos = offset - 1
     startBlock.text = text.slice(0, insertPos) + insertText + text.slice(offset)
     const newOffset = insertPos + insertText.length
     this.cursor = {

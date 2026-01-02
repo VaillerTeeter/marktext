@@ -162,7 +162,9 @@ const enterCtrl = ContentState => {
       event.stopPropagation()
       const { imageId, ...imageInfo } = selectedImage
       const imageWrapper = document.querySelector(`#${imageId}`)
-      const rect = imageWrapper.getBoundingClientRect()
+      const rect = imageWrapper && imageWrapper.getBoundingClientRect
+        ? imageWrapper.getBoundingClientRect()
+        : { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0 }
       const reference = {
         getBoundingClientRect () {
           rect.height = 0 // Put image selector below the top border of image.
