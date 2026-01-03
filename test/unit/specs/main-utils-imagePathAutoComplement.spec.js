@@ -60,14 +60,17 @@ describe('main utils imagePathAutoComplement', () => {
     }
     log.error = () => { logged = true }
 
-    await searchFilesAndDir(tmpDir, '')
-    watchCallback('rename')
-    expect(logged).to.equal(true)
-
-    fsModule.watch = originalWatch
-    fsModule.readdir = originalReaddir
-    log.error = originalLog
-    cleanup(tmpDir)
+    try {
+      await searchFilesAndDir(tmpDir, '')
+      watchCallback('rename')
+      await new Promise(resolve => setImmediate(resolve))
+      expect(logged).to.equal(true)
+    } finally {
+      fsModule.watch = originalWatch
+      fsModule.readdir = originalReaddir
+      log.error = originalLog
+      cleanup(tmpDir)
+    }
   })
 
   it('rebuilds watcher cache on rename events', async () => {
@@ -81,15 +84,17 @@ describe('main utils imagePathAutoComplement', () => {
     fsModule.watch = (dir, cb) => { watchCallback = cb; return { close: () => {} } }
     fsModule.readdir = (dir, cb) => { rebuilt += 1; cb(null, ['image.jpg']) }
 
-    await searchFilesAndDir(tmpDir, '')
-    watchCallback('rename')
-    watchCallback('change')
-
-    expect(rebuilt).to.be.greaterThan(1)
-
-    fsModule.watch = originalWatch
-    fsModule.readdir = originalReaddir
-    cleanup(tmpDir)
+    try {
+      await searchFilesAndDir(tmpDir, '')
+      watchCallback('rename')
+      watchCallback('change')
+      await new Promise(resolve => setImmediate(resolve))
+      expect(rebuilt).to.be.greaterThan(1)
+    } finally {
+      fsModule.watch = originalWatch
+      fsModule.readdir = originalReaddir
+      cleanup(tmpDir)
+    }
   })
 
   it('rejects when directory listing fails', async () => {
@@ -109,13 +114,16 @@ describe('main utils imagePathAutoComplement', () => {
     // Pretend the directory is already being watched to exercise the guard branch.
     watchers.set(tmpDir, { close: () => {} })
 
-    const result = await searchFilesAndDir(tmpDir)
-    expect(result).to.equal(undefined)
-    expect(watchers.has(tmpDir)).to.equal(true)
+    try {
+      const result = await searchFilesAndDir(tmpDir)
+      expect(result).to.equal(undefined)
+      expect(watchers.has(tmpDir)).to.equal(true)
 
-    const cached = await searchFilesAndDir(tmpDir, 'foo')
-    expect(cached[0].file).to.equal('foo.jpg')
-    cleanup(tmpDir)
+      const cached = await searchFilesAndDir(tmpDir, 'foo')
+      expect(cached[0].file).to.equal('foo.jpg')
+    } finally {
+      cleanup(tmpDir)
+    }
   })
 
   it('filters blacklisted entries when building cache', async () => {
@@ -123,10 +131,13 @@ describe('main utils imagePathAutoComplement', () => {
     fs.writeFileSync(path.join(tmpDir, '$RECYCLE.BIN'), 'data')
     fs.writeFileSync(path.join(tmpDir, 'pic.png'), 'data')
 
-    const results = await searchFilesAndDir(tmpDir, '')
-    const names = results.map(r => r.file)
-    expect(names).to.include('pic.png')
-    expect(names).to.not.include('.DS_Store')
-    cleanup(tmpDir)
+    try {
+      const results = await searchFilesAndDir(tmpDir, '')
+      const names = results.map(r => r.file)
+      expect(names).to.include('pic.png')
+      expect(names).to.not.include('.DS_Store')
+    } finally {
+      cleanup(tmpDir)
+    }
   })
 })

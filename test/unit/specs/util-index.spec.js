@@ -78,9 +78,9 @@ describe('renderer util helpers', () => {
   })
 
   it('exposes platform flags based on runtime', () => {
-    expect(isLinux).to.equal(true)
-    expect(isWindows).to.equal(false)
-    expect(isOsx).to.equal(false)
+    expect(isLinux).to.equal(process.platform === 'linux')
+    expect(isWindows).to.equal(process.platform === 'win32')
+    expect(isOsx).to.equal(process.platform === 'darwin')
   })
 
   it('supports cancelling delay promises', async () => {

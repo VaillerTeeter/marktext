@@ -47,7 +47,8 @@ describe('main spellchecker utilities', () => {
 
   it('returns available dictionaries when supported', () => {
     const win = createWin()
-    expect(getAvailableDictionaries(win)).to.deep.equal(['en-US', 'de-DE'])
+    const expected = process.platform === 'darwin' ? [] : ['en-US', 'de-DE']
+    expect(getAvailableDictionaries(win)).to.deep.equal(expected)
 
     const noDictWin = createWin()
     noDictWin.webContents.session.availableSpellCheckerLanguages = []

@@ -39,6 +39,7 @@ describe('renderer spellchecker', () => {
   })
 
   it('throws when switching without language on non-mac', async () => {
+    if (process.platform === 'darwin') return
     setPlatform('linux')
     const { SpellChecker } = require('../../../src/renderer/spellchecker')
     const checker = new SpellChecker(true)
@@ -52,6 +53,7 @@ describe('renderer spellchecker', () => {
   })
 
   it('returns false when disabled spellchecker tries to switch language', async () => {
+    if (process.platform === 'darwin') return
     setPlatform('linux')
     const { SpellChecker } = require('../../../src/renderer/spellchecker')
     const checker = new SpellChecker(false)

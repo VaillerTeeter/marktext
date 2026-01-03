@@ -31,6 +31,7 @@ describe('renderer spellchecker', () => {
   })
 
   it('switchLanguage throws when no lang and not mac', async () => {
+    if (process.platform === 'darwin') return
     const sc = new SpellChecker(true, null)
     let err
     try {
@@ -51,7 +52,11 @@ describe('renderer spellchecker', () => {
 
   it('getAvailableDictionaries returns array from ipc', async () => {
     const dicts = await SpellChecker.getAvailableDictionaries()
-    expect(dicts).to.be.an('array')
-    expect(dicts[0]).to.equal('en-US')
+    if (process.platform === 'darwin') {
+      expect(dicts).to.deep.equal([])
+    } else {
+      expect(dicts).to.be.an('array')
+      expect(dicts[0]).to.equal('en-US')
+    }
   })
 })

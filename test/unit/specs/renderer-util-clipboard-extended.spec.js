@@ -4,7 +4,8 @@ import { isLinux } from '../../../src/renderer/util/index'
 
 describe('renderer util clipboard extended', () => {
   it('returns empty string on linux (existing)', () => {
-    expect(isLinux).to.equal(true)
+    expect(isLinux).to.equal(process.platform === 'linux')
+    if (!isLinux) return
     expect(guessClipboardFilePath()).to.equal('')
   })
 

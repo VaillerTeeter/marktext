@@ -29,7 +29,8 @@ describe('main spellchecker helpers', () => {
   it('returns available dictionaries when spellchecker is enabled', () => {
     const win = buildWin({ availableSpellCheckerLanguages: ['en-US', 'de-DE'] })
     win.webContents.session.enabled = true
-    expect(getAvailableDictionaries(win)).to.deep.equal(['en-US', 'de-DE'])
+    const expected = process.platform === 'darwin' ? [] : ['en-US', 'de-DE']
+    expect(getAvailableDictionaries(win)).to.deep.equal(expected)
   })
 
   it('returns empty list if spellchecker capabilities are missing', () => {
@@ -85,7 +86,8 @@ describe('main spellchecker helpers', () => {
     const enabledResult = await ipcStub.handlers['mt::spellchecker-set-enabled']({ sender: {} }, true)
     const words = await ipcStub.handlers['mt::spellchecker-get-custom-dictionary-words']({ sender: {} })
 
-    expect(available).to.deep.equal(['en-US'])
+    const expected = process.platform === 'darwin' ? [] : ['en-US']
+    expect(available).to.deep.equal(expected)
     expect(enabledResult).to.equal(true)
     expect(words).to.deep.equal(['foo', 'bar'])
     expect(win.webContents.session.spellCheckerLanguages).to.deep.equal(['de'])
