@@ -83,7 +83,8 @@ export default {
       title: '导入或打开',
       dropHint: '将您的文件拖放到这里以导入到 MarkText'
     }
-  },  contextMenu: {
+  },
+  contextMenu: {
     editor: {
       cut: '剪切',
       copy: '复制',
@@ -100,7 +101,8 @@ export default {
       addToDictionary: '添加到字典',
       editDictionary: '编辑字典...'
     }
-  },  titlebar: {
+  },
+  titlebar: {
     defaultTitle: 'MarkText'
   },
   search: {
