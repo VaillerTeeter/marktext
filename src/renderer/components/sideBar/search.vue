@@ -158,7 +158,9 @@ export default {
         return acc + item.matches.length
       }, 0)
 
-      return `${matchCount} ${matchCount > 1 ? 'matches' : 'match'} in ${fileCount} ${fileCount > 1 ? 'files' : 'file'}`
+      const matchType = matchCount > 1 ? this.$t('search.matches', 'matches') : this.$t('search.match', 'match')
+      const fileType = fileCount > 1 ? this.$t('search.files', 'files') : this.$t('search.file', 'file')
+      return `${matchCount} ${matchType} in ${fileCount} ${fileType}`
     },
     showNoFolderOpenedMessage () {
       return !this.projectTree || !this.projectTree.pathname

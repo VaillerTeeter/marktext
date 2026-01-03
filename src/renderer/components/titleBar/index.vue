@@ -9,7 +9,7 @@
       :class="[{ 'active': active }, { 'tabs-visible': showTabBar }, { 'frameless': titleBarStyle === 'custom' }, { 'isOsx': isOsx }]"
     >
       <div class="title" @dblclick.stop="toggleMaxmizeOnMacOS">
-        <span v-if="!filename">MarkText</span>
+        <span v-if="!filename">{{ $t('titlebar.defaultTitle', 'MarkText') }}</span>
         <span v-else>
           <span
             v-for="(path, index) of paths"
@@ -167,11 +167,12 @@ export default {
     filename: function (value) {
       // Set filename when hover on dock
       const hasOpenFolder = this.project && this.project.name
+      const defaultTitle = this.$t('titlebar.defaultTitle', 'MarkText')
       let title = ''
       if (value) {
-        title = hasOpenFolder ? `${value} - ${this.project.name}` : `${value} - MarkText`
+        title = hasOpenFolder ? `${value} - ${this.project.name}` : `${value} - ${defaultTitle}`
       } else {
-        title = hasOpenFolder ? this.project.name : 'MarkText'
+        title = hasOpenFolder ? this.project.name : defaultTitle
       }
 
       document.title = title

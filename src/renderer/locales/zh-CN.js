@@ -3,6 +3,97 @@ export default {
     appName: 'MarkText',
     currentSuffix: ' - 当前'
   },
+  dialogs: {
+    buttons: {
+      save: '保存',
+      cancel: '取消',
+      dontSave: '不保存',
+      ok: '确定',
+      copyError: '复制错误',
+      report: '报告...',
+      close: '关闭',
+      reload: '重新加载',
+      keepItOpen: '保持打开',
+      replace: '替换'
+    },
+    unsavedFiles: {
+      title: '未保存的更改',
+      message: '要保存对 {count} 个{itemType}所做的更改吗？',
+      detail: '如果不保存，您的更改将会丢失。',
+      file: '文件',
+      files: '文件'
+    },
+    fileExists: {
+      title: '文件已存在',
+      message: '文件 "{filename}" 已存在。要替换它吗？'
+    },
+    savingFailed: {
+      title: '保存失败',
+      message: '保存文件时发生错误。'
+    },
+    exportFailed: {
+      title: '导出失败',
+      message: '导出 {filename} 时发生错误'
+    },
+    importWarning: {
+      title: '导入警告',
+      message: '导入文件前，请先安装 pandoc。'
+    },
+    crashed: {
+      title: 'MarkText 已崩溃',
+      message: '发生意外错误。是否要重新加载窗口？'
+    },
+    unexpectedError: {
+      title: '意外错误',
+      message: '{error}'
+    },
+    cannotOpenTab: {
+      title: '无法打开标签页',
+      message: '无法打开该文件或目录。'
+    },
+    watcherIoError: {
+      title: '文件监听器 I/O 错误',
+      message: '{error}'
+    },
+    inotifyLimitReached: {
+      title: 'inotify 限制已达',
+      message: '由于打开的文件描述符过多，无法监听所有文件和文件改动。'
+    },
+    exportError: {
+      title: '导出错误',
+      message: '导出时出现问题。'
+    },
+    exportHtmlError: {
+      title: '导出错误',
+      message: '导出 {type} 时出现问题。'
+    },
+    printError: {
+      title: '打印错误',
+      message: '打印 {type} 时出现问题。'
+    },
+    languageSwitchFailed: {
+      title: '语言切换失败',
+      message: '无法切换到语言"{language}"。请求的语言字典丢失。'
+    },
+    languageSwitchError: {
+      title: '语言切换错误',
+      message: '切换到"{language}"时出错：{error}'
+    },
+    import: {
+      title: '导入或打开',
+      dropHint: '将您的文件拖放到这里以导入到 MarkText'
+    }
+  },
+  titlebar: {
+    defaultTitle: 'MarkText'
+  },
+  search: {
+    matchCountFormat: '{count} {type} \u4f4d\u4e8e {fileCount} {fileType}',
+    match: '\u5339\u914d',
+    matches: '\u5339\u914d',
+    file: '\u6587\u4ef6',
+    files: '\u6587\u4ef6'
+  },
   export: {
     title: '导出选项',
     tabs: {

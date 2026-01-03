@@ -7,8 +7,26 @@ import { hasMarkdownExtension } from 'common/filesystem/paths'
 import { getUniqueId } from '../utils'
 import { loadMarkdownFile } from '../filesystem/markdown'
 import { isLinux, isOsx } from '../config'
+import { userSetting } from '../menu/actions/marktext'
+import en from '../../renderer/locales/en'
+import zhCN from '../../renderer/locales/zh-CN'
 
 // TODO(refactor): Please see GH#1035.
+
+const locales = { en, 'zh-CN': zhCN }
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const getLocale = () => {
+  const prefs = userSetting.getAll()
+  return prefs.language || 'en'
+}
+
+const t = (key, fallback) => translate(`dialogs.${key}`, getLocale(), fallback)
 
 export const WATCHER_STABILITY_THRESHOLD = 1000
 export const WATCHER_STABILITY_POLL_INTERVAL = 150
@@ -44,7 +62,7 @@ const add = async (win, pathname, type, endOfLine, autoGuessEncoding, trimTraili
       // Only notify user about opened files.
       if (type === 'file') {
         win.webContents.send('mt::show-notification', {
-          title: 'Watcher I/O error',
+          title: t('watcherIoError.title', 'Watcher I/O error'),
           type: 'error',
           message: err.message
         })
@@ -93,7 +111,7 @@ const change = async (win, pathname, type, endOfLine, autoGuessEncoding, trimTra
       // Only notify user about opened files.
       if (type === 'file') {
         win.webContents.send('mt::show-notification', {
-          title: 'Watcher I/O error',
+          title: t('watcherIoError.title', 'Watcher I/O error'),
           type: 'error',
           message: err.message
         })
@@ -240,9 +258,9 @@ class Watcher {
             log.warn('inotify limit reached: Too many file descriptors are opened.')
 
             win.webContents.send('mt::show-notification', {
-              title: 'inotify limit reached',
+              title: t('inotifyLimitReached.title', 'inotify limit reached'),
               type: 'warning',
-              message: 'Cannot watch all files and file changes because too many file descriptors are opened.'
+              message: t('inotifyLimitReached.message', 'Cannot watch all files and file changes because too many file descriptors are opened.')
             })
           }
         } else {
