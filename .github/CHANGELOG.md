@@ -15,7 +15,12 @@
   - 阶段二十：菜单模版（MarkText 菜单 - about 等、Dock 菜单 - Open/Clear Recent）
   - 阶段二十一：主进程（New Window title）
   - 阶段二十二：删除所有推特相关
-- 帮助 -- 关于，这个界面的更新E
+  - 阶段二十三：导出/打印表单标签（Rows, Columns）
+  - 阶段二十四：搜索组件 UI（Search, Replacement, Case Sensitive等）
+  - 阶段二十五：字体选择器占位符
+  - 阶段二十六：命令面板占位符
+  - 阶段二十七：侧边栏搜索结果（Show more matches）
+- 帮助 -- 关于，这个界面的更新
 
 ## 26.1.1
 

@@ -110,10 +110,19 @@ export default {
     match: 'match',
     matches: 'matches',
     file: 'file',
-    files: 'files'
+    files: 'files',
+    placeholder: 'Search',
+    replacementPlaceholder: 'Replacement',
+    caseSensitive: 'Case Sensitive',
+    selectWholeWord: 'Select whole word',
+    useRegex: 'Use query as RegEx'
   },
   export: {
     title: 'Export Options',
+    form: {
+      rows: 'Rows',
+      columns: 'Columns'
+    },
     tabs: {
       info: 'Info',
       page: 'Page',
@@ -197,6 +206,9 @@ export default {
         image: 'Image',
         keybindings: 'Key Bindings'
       }
+    },
+    common: {
+      fontPlaceholder: 'Select font...'
     },
     general: {
       title: 'General',

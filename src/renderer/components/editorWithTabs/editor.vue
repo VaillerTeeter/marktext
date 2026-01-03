@@ -37,7 +37,7 @@
         Insert Table
       </div>
       <el-form :model="tableChecker" :inline="true">
-        <el-form-item label="Rows">
+        <el-form-item :label="$t('export.form.rows')">
           <el-input-number
             ref="rowInput"
             size="mini"
@@ -47,7 +47,7 @@
             :max="30"
           ></el-input-number>
         </el-form-item>
-        <el-form-item label="Columns">
+        <el-form-item :label="$t('export.form.columns')">
           <el-input-number
             size="mini"
             v-model="tableChecker.columns"

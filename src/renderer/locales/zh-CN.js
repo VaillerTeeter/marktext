@@ -110,10 +110,19 @@ export default {
     match: '\u5339\u914d',
     matches: '\u5339\u914d',
     file: '\u6587\u4ef6',
-    files: '\u6587\u4ef6'
+    files: '\u6587\u4ef6',
+    placeholder: '搜索',
+    replacementPlaceholder: '替换文本',
+    caseSensitive: '区分大小写',
+    selectWholeWord: '全词匹配',
+    useRegex: '使用正则表达式'
   },
   export: {
     title: '导出选项',
+    form: {
+      rows: '行数',
+      columns: '列数'
+    },
     tabs: {
       info: '信息',
       page: '页面',
@@ -197,6 +206,9 @@ export default {
         image: '图片',
         keybindings: '快捷键'
       }
+    },
+    common: {
+      fontPlaceholder: '选择字体…'
     },
     general: {
       title: '通用',
