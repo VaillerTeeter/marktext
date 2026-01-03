@@ -3,8 +3,126 @@ export default {
     appName: 'MarkText',
     currentSuffix: ' - current'
   },
+  dialogs: {
+    buttons: {
+      save: 'Save',
+      cancel: 'Cancel',
+      dontSave: "Don't save",
+      ok: 'OK',
+      copyError: 'Copy Error',
+      report: 'Report...',
+      close: 'Close',
+      reload: 'Reload',
+      keepItOpen: 'Keep It Open',
+      replace: 'Replace'
+    },
+    unsavedFiles: {
+      title: 'Unsaved Changes',
+      message: 'Do you want to save the changes you made to {count} {itemType}?',
+      detail: 'Your changes will be lost if you don\'t save them.',
+      file: 'file',
+      files: 'files'
+    },
+    fileExists: {
+      title: 'File Exists',
+      message: 'The file "{filename}" already exists. Do you want to replace it?'
+    },
+    savingFailed: {
+      title: 'Failure while saving files',
+      message: 'An error occurred while saving the file.'
+    },
+    exportFailed: {
+      title: 'Export failure',
+      message: 'Error happened when export {filename}'
+    },
+    importWarning: {
+      title: 'Import Warning',
+      message: 'Install pandoc before you want to import files.'
+    },
+    crashed: {
+      title: 'MarkText has crashed',
+      message: 'An unexpected error occurred. Do you want to reload the window?'
+    },
+    unexpectedError: {
+      title: 'Unexpected error',
+      message: '{error}'
+    },
+    cannotOpenTab: {
+      title: 'Cannot open tab',
+      message: 'Failed to open the file or directory.'
+    },
+    watcherIoError: {
+      title: 'Watcher I/O error',
+      message: '{error}'
+    },
+    inotifyLimitReached: {
+      title: 'inotify limit reached',
+      message: 'Cannot watch all files and file changes because too many file descriptors are opened.'
+    },
+    exportError: {
+      title: 'Export error',
+      message: 'There is something wrong when exporting.'
+    },
+    exportHtmlError: {
+      title: 'Export error',
+      message: 'There is something wrong when export {type}.'
+    },
+    printError: {
+      title: 'Print error',
+      message: 'There is something wrong when print {type}.'
+    },
+    languageSwitchFailed: {
+      title: 'Language switch failed',
+      message: 'Unable to switch to language "{language}". Requested language dictionary is missing.'
+    },
+    languageSwitchError: {
+      title: 'Language switch error',
+      message: 'Error while switching to "{language}": {error}'
+    },
+    import: {
+      title: 'Import or Open',
+      dropHint: 'Drop here to get you stuff into MarkText'
+    }
+  },
+  contextMenu: {
+    editor: {
+      cut: 'Cut',
+      copy: 'Copy',
+      paste: 'Paste',
+      copyAsMarkdown: 'Copy As Markdown',
+      copyAsHtml: 'Copy As Html',
+      pasteAsPlainText: 'Paste as Plain Text',
+      insertParagraphBefore: 'Insert Paragraph Before',
+      insertParagraphAfter: 'Insert Paragraph After'
+    },
+    spelling: {
+      spelling: 'Spelling...',
+      changeLanguage: 'Change Language...',
+      addToDictionary: 'Add to Dictionary',
+      editDictionary: 'Edit Dictionary...'
+    }
+  },
+  titlebar: {
+    defaultTitle: 'MarkText'
+  },
+  search: {
+    matchCountFormat: '{count} {type} in {fileCount} {fileType}',
+    match: 'match',
+    matches: 'matches',
+    file: 'file',
+    files: 'files',
+    placeholder: 'Search',
+    replacementPlaceholder: 'Replacement',
+    caseSensitive: 'Case Sensitive',
+    selectWholeWord: 'Select whole word',
+    useRegex: 'Use query as RegEx'
+  },
   export: {
     title: 'Export Options',
+    form: {
+      rows: 'Rows',
+      columns: 'Columns'
+    },
     tabs: {
       info: 'Info',
       page: 'Page',
@@ -75,6 +193,15 @@ export default {
     moveToTrash: 'Move To Trash',
     showInFolder: 'Show In Folder'
   },
+  tabs: {
+    close: 'Close',
+    closeOthers: 'Close others',
+    closeSaved: 'Close saved tabs',
+    closeAll: 'Close all tabs',
+    rename: 'Rename',
+    copyPath: 'Copy path',
+    showInFolder: 'Show in folder'
+  },
   pref: {
     sidebar: {
       title: 'Preferences',
@@ -88,6 +215,9 @@ export default {
         image: 'Image',
         keybindings: 'Key Bindings'
       }
+    },
+    common: {
+      fontPlaceholder: 'Select font...'
     },
     general: {
       title: 'General',
@@ -116,6 +246,7 @@ export default {
       },
       startup: {
         title: 'Action on startup:',
+        restoreLastSession: 'Restore last editor session',
         openDefaultDir: 'Open the default directory',
         selectFolder: 'Select Folder',
         openBlank: 'Open a blank page'
@@ -334,6 +465,11 @@ export default {
     keybindings: {
       title: 'Key Bindings',
       description: 'Customize MarkText shortcuts and click on the save button below to apply all changes (requires a restart). All available and default key bindings can be found ',
+      dialog: {
+        placeholder: 'Press a key combination',
+        instructions: 'Press Enter to continue or ESC to exit.',
+        invalidKeybinding: 'Current key combination cannot be bound!'
+      },
       table: {
         description: 'Description',
         accelerator: 'Key Combination',
@@ -364,6 +500,21 @@ export default {
     }
   },
   menu: {
+    marktext: {
+      label: 'MarkText',
+      about: 'About MarkText',
+      checkUpdates: 'Check for updates...',
+      preferences: 'Preferences',
+      services: 'Services',
+      hide: 'Hide MarkText',
+      hideOthers: 'Hide Others',
+      showAll: 'Show All',
+      quit: 'Quit MarkText'
+    },
+    dock: {
+      open: 'Open...',
+      clearRecent: 'Clear Recent'
+    },
     file: {
       label: '&File',
       newTab: 'New Tab',
@@ -410,6 +561,13 @@ export default {
       lineEnding: 'Line Ending',
       crlf: 'Carriage return and line feed (CRLF)',
       lf: 'Line feed (LF)'
+    },
+    prefEdit: {
+      label: 'Edit',
+      cut: 'Cut',
+      copy: 'Copy',
+      paste: 'Paste',
+      selectAll: 'Select All'
     },
     paragraph: {
       label: '&Paragraph',
@@ -673,6 +831,10 @@ export default {
       downloadedMessage: 'Update downloaded, application will be quit for update...',
       availableTitle: 'Update Available',
       availableMessage: 'Found an update, do you want to download and install now?'
+    },
+    spellchecker: {
+      title: 'Spelling',
+      disabledMessage: 'Cannot change language because spellchecker is disabled.'
     }
   },
   about: {

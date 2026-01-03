@@ -37,7 +37,7 @@
         Insert Table
       </div>
       <el-form :model="tableChecker" :inline="true">
-        <el-form-item label="Rows">
+        <el-form-item :label="$t('export.form.rows')">
           <el-input-number
             ref="rowInput"
             size="mini"
@@ -47,7 +47,7 @@
             :max="30"
           ></el-input-number>
         </el-form-item>
-        <el-form-item label="Columns">
+        <el-form-item :label="$t('export.form.columns')">
           <el-input-number
             size="mini"
             v-model="tableChecker.columns"
@@ -815,9 +815,9 @@ export default {
           if (!langCode) {
             // Unable to switch language due to missing dictionary. The spell checker is now in an invalid state.
             notice.notify({
-              title: 'Spelling',
+              title: this.$t('dialogs.languageSwitchFailed.title', 'Spelling'),
               type: 'warning',
-              message: `Unable to switch to language "${languageCode}". Requested language dictionary is missing.`
+              message: this.$t('dialogs.languageSwitchFailed.message', `Unable to switch to language "${languageCode}". Requested language dictionary is missing.`).replace('{language}', languageCode)
             })
           }
         })
@@ -826,9 +826,9 @@ export default {
           log.error(error)
 
           notice.notify({
-            title: 'Spelling',
+            title: this.$t('dialogs.languageSwitchError.title', 'Spelling'),
             type: 'error',
-            message: `Error while switching to "${languageCode}": ${error.message}`
+            message: this.$t('dialogs.languageSwitchError.message', `Error while switching to "${languageCode}": ${error.message}`).replace('{language}', languageCode).replace('{error}', error.message)
           })
         })
     },
@@ -972,7 +972,7 @@ export default {
             notice.notify({
               title: `Printing/Exporting ${htmlTitle || 'html'} failed`,
               type: 'error',
-              message: err.message || 'There is something wrong when exporting.'
+              message: err.message || this.$t('dialogs.exportError.message', 'There is something wrong when exporting.')
             })
           }
           break
@@ -1001,7 +1001,7 @@ export default {
             notice.notify({
               title: 'Printing/Exporting failed',
               type: 'error',
-              message: `There is something wrong when export ${htmlTitle || 'PDF'}.`
+              message: this.$t('dialogs.exportHtmlError.message', `There is something wrong when export ${htmlTitle || 'PDF'}.`).replace('{type}', htmlTitle || 'PDF')
             })
             this.handlePrintServiceClearup()
           }
@@ -1026,7 +1026,7 @@ export default {
             notice.notify({
               title: 'Printing/Exporting failed',
               type: 'error',
-              message: `There is something wrong when print ${htmlTitle || ''}.`
+              message: this.$t('dialogs.printError.message', `There is something wrong when print ${htmlTitle || ''}.`).replace('{type}', htmlTitle || 'PDF')
             })
             this.handlePrintServiceClearup()
           }

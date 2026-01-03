@@ -55,13 +55,26 @@ const handleError = async (title, error, type) => {
 
   // show error dialog
   if (app.isReady()) {
+    // Import translation utilities
+    const en = require('../renderer/locales/en').default
+    const zhCN = require('../renderer/locales/zh-CN').default
+    const locales = { en, 'zh-CN': zhCN }
+    const translate = (key, locale, fallback) => {
+      const bundle = locales[locale] || locales.en
+      const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+      return typeof value === 'string' ? value : fallback
+    }
+    const userPrefs = require('./menu/actions/marktext').userSetting
+    const locale = (userPrefs && userPrefs.getAll && userPrefs.getAll().language) || 'en'
+    const t = (key, fallback) => translate(`dialogs.${key}`, locale, fallback)
+
     // Blocking message box
     const { response } = await dialog.showMessageBox({
       type: 'error',
       buttons: [
-        'OK',
-        'Copy Error',
-        'Report...'
+        t('buttons.ok', 'OK'),
+        t('buttons.copyError', 'Copy Error'),
+        t('buttons.report', 'Report...')
       ],
       defaultId: 0,
       noLink: true,

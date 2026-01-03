@@ -348,7 +348,7 @@ class AppMenu {
 
   _buildSettingMenu () {
     if (isOsx) {
-      const menuTemplate = configSettingMenu(this._keybindings)
+      const menuTemplate = configSettingMenu(this._keybindings, this._preferences)
       const menu = Menu.buildFromTemplate(menuTemplate)
       return { menu, type: MenuType.SETTINGS }
     }

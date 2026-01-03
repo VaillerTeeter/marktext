@@ -1,24 +1,41 @@
 import { app } from 'electron'
 import { showAboutDialog } from '../actions/help'
 import * as actions from '../actions/marktext'
+import { userSetting } from '../actions/marktext'
+import en from '../../../renderer/locales/en'
+import zhCN from '../../../renderer/locales/zh-CN'
+
+const locales = {
+  en,
+  'zh-CN': zhCN
+}
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
 
 // macOS only menu.
 
-export default function (keybindings) {
+export default function (keybindings, preferences) {
+  const { language = 'en' } = (preferences && preferences.getAll()) || {}
+  const t = (key, fallback) => translate(`menu.marktext.${key}`, language, fallback)
+  
   return {
-    label: 'MarkText',
+    label: t('label', 'MarkText'),
     submenu: [{
-      label: 'About MarkText',
+      label: t('about', 'About MarkText'),
       click (menuItem, focusedWindow) {
         showAboutDialog(focusedWindow)
       }
     }, {
-      label: 'Check for updates...',
+      label: t('checkUpdates', 'Check for updates...'),
       click (menuItem, focusedWindow) {
         actions.checkUpdates(focusedWindow)
       }
     }, {
-      label: 'Preferences',
+      label: t('preferences', 'Preferences'),
       accelerator: keybindings.getAccelerator('file.preferences'),
       click () {
         actions.userSetting()
@@ -26,32 +43,32 @@ export default function (keybindings) {
     }, {
       type: 'separator'
     }, {
-      label: 'Services',
+      label: t('services', 'Services'),
       role: 'services',
       submenu: []
     }, {
       type: 'separator'
     }, {
-      label: 'Hide MarkText',
+      label: t('hide', 'Hide MarkText'),
       accelerator: keybindings.getAccelerator('mt.hide'),
       click () {
         actions.osxHide()
       }
     }, {
-      label: 'Hide Others',
+      label: t('hideOthers', 'Hide Others'),
       accelerator: keybindings.getAccelerator('mt.hide-others'),
       click () {
         actions.osxHideAll()
       }
     }, {
-      label: 'Show All',
+      label: t('showAll', 'Show All'),
       click () {
         actions.osxShowAll()
       }
     }, {
       type: 'separator'
     }, {
-      label: 'Quit MarkText',
+      label: t('quit', 'Quit MarkText'),
       accelerator: keybindings.getAccelerator('file.quit'),
       click: app.quit
     }]

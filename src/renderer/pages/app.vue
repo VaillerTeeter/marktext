@@ -30,7 +30,6 @@
       <about-dialog></about-dialog>
       <export-setting-dialog></export-setting-dialog>
       <rename></rename>
-      <tweet></tweet>
       <import-modal></import-modal>
     </div>
   </div>
@@ -46,7 +45,6 @@ import AboutDialog from '@/components/about'
 import CommandPalette from '@/components/commandPalette'
 import ExportSettingDialog from '@/components/exportSettings'
 import Rename from '@/components/rename'
-import Tweet from '@/components/tweet'
 import ImportModal from '@/components/import'
 import { loadingPageMixins } from '@/mixins'
 import { mapState } from 'vuex'
@@ -64,7 +62,6 @@ export default {
     AboutDialog,
     ExportSettingDialog,
     Rename,
-    Tweet,
     ImportModal,
     CommandPalette
   },
@@ -121,8 +118,6 @@ export default {
     dispatch('LINTEN_WIN_STATUS')
     // module: command center
     dispatch('LISTEN_COMMAND_CENTER_BUS')
-    // module: tweet
-    dispatch('LISTEN_FOR_TWEET')
     // module: layout
     dispatch('LISTEN_FOR_LAYOUT')
     // module: listenForMain

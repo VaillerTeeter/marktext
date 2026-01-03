@@ -91,7 +91,7 @@
           <el-radio-group v-model="startUpAction">
             <!--
               Hide "lastState" for now (#2064).
-            <el-radio class="ag-underdevelop" label="lastState">Restore last editor session</el-radio>
+            <el-radio class="ag-underdevelop" label="lastState">{{ $t('pref.general.startup.restoreLastSession') }}</el-radio>
             -->
             <el-radio label="folder" style="margin-bottom: 10px;">{{ $t('pref.general.startup.openDefaultDir') }}<span>: {{defaultDirectoryToOpen}}</span></el-radio>
             <el-button size="small" @click="selectDefaultDirectoryToOpen">{{ $t('pref.general.startup.selectFolder') }}</el-button>

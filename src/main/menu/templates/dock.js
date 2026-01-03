@@ -1,20 +1,40 @@
 import { app, Menu } from 'electron'
 import * as actions from '../actions/file'
+import { userSetting } from '../actions/marktext'
+import en from '../../../renderer/locales/en'
+import zhCN from '../../../renderer/locales/zh-CN'
 
-const dockMenu = Menu.buildFromTemplate([{
-  label: 'Open...',
-  click (menuItem, browserWindow) {
-    if (browserWindow) {
-      actions.openFile(browserWindow)
-    } else {
-      actions.newEditorWindow()
+const locales = {
+  en,
+  'zh-CN': zhCN
+}
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const createDockMenu = (preferences) => {
+  const { language = 'en' } = (preferences && preferences.getAll()) || {}
+  const t = (key, fallback) => translate(`menu.dock.${key}`, language, fallback)
+
+  return Menu.buildFromTemplate([{
+    label: t('open', 'Open...'),
+    click (menuItem, browserWindow) {
+      if (browserWindow) {
+        actions.openFile(browserWindow)
+      } else {
+        actions.newEditorWindow()
+      }
     }
-  }
-}, {
-  label: 'Clear Recent',
-  click () {
-    app.clearRecentDocuments()
-  }
-}])
+  }, {
+    label: t('clearRecent', 'Clear Recent'),
+    click () {
+      app.clearRecentDocuments()
+    }
+  }])
+}
 
-export default dockMenu
+export { createDockMenu }
+export default createDockMenu

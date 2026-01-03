@@ -12,6 +12,23 @@ import { normalizeAndResolvePath, writeFile } from '../../filesystem'
 import { writeMarkdownFile } from '../../filesystem/markdown'
 import { getPath, getRecommendTitleFromMarkdownString } from '../../utils'
 import pandoc from '../../utils/pandoc'
+import en from '../../../renderer/locales/en'
+import zhCN from '../../../renderer/locales/zh-CN'
+
+const locales = { en, 'zh-CN': zhCN }
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const getLocale = () => {
+  const prefs = userSetting.getAll()
+  return prefs.language || 'en'
+}
+
+const t = (key, fallback) => translate(`dialogs.${key}`, getLocale(), fallback)
 
 // TODO(refactor): "save" and "save as" should be moved to the editor window (editor.js) and
 // the renderer should communicate only with the editor window for file relevant stuff.
@@ -84,9 +101,9 @@ const handleResponseForExport = async (e, { type, content, pathname, title, page
       win.webContents.send('mt::export-success', { type, filePath })
     } catch (err) {
       log.error('Error while exporting:', err)
-      const ERROR_MSG = err.message || `Error happened when export ${filePath}`
+      const ERROR_MSG = err.message || t('exportFailed.message', `Error happened when export ${filePath}`).replace('{filename}', filePath)
       win.webContents.send('mt::show-notification', {
-        title: 'Export failure',
+        title: t('exportFailed.title', 'Export failure'),
         type: 'error',
         message: ERROR_MSG
       })
@@ -159,12 +176,16 @@ const handleResponseForSave = async (e, { id, filename, markdown, pathname, opti
 }
 
 const showUnsavedFilesMessage = async (win, files) => {
+  const fileCount = files.length
+  const itemType = fileCount === 1 ? t('unsavedFiles.file', 'file') : t('unsavedFiles.files', 'files')
+  const fileList = files.map(f => f.filename).join('\n')
+  
   const { response } = await dialog.showMessageBox(win, {
     type: 'warning',
-    buttons: ['Save', 'Cancel', 'Don\'t save'],
+    buttons: [t('buttons.save', 'Save'), t('buttons.cancel', 'Cancel'), t('buttons.dontSave', "Don't save")],
     defaultId: 0,
-    message: `Do you want to save the changes you made to ${files.length} ${files.length === 1 ? 'file' : 'files'}?\n\n${files.map(f => f.filename).join('\n')}`,
-    detail: 'Your changes will be lost if you don\'t save them.',
+    message: `${t('unsavedFiles.message', `Do you want to save the changes you made to ${fileCount} ${itemType}?`).replace('{count}', fileCount).replace('{itemType}', itemType)}\n\n${fileList}`,
+    detail: t('unsavedFiles.detail', 'Your changes will be lost if you don\'t save them.'),
     cancelId: 1,
     noLink: true
   })
@@ -185,9 +206,9 @@ const showUnsavedFilesMessage = async (win, files) => {
 
 const noticePandocNotFound = win => {
   return win.webContents.send('mt::pandoc-not-exists', {
-    title: 'Import Warning',
+    title: t('importWarning.title', 'Import Warning'),
     type: 'warning',
-    message: 'Install pandoc before you want to import files.',
+    message: t('importWarning.message', 'Install pandoc before you want to import files.'),
     time: 10000
   })
 }
@@ -300,8 +321,8 @@ ipcMain.on('mt::close-window-confirm', async (e, unsavedFiles) => {
         // Notify user about the problem.
         dialog.showMessageBox(win, {
           type: 'error',
-          buttons: ['Close', 'Keep It Open'],
-          message: 'Failure while saving files',
+          buttons: [t('buttons.close', 'Close'), t('buttons.keepItOpen', 'Keep It Open')],
+          message: t('savingFailed.title', 'Failure while saving files'),
           detail: err.message
         })
           .then(({ response }) => {
@@ -367,9 +388,9 @@ ipcMain.on('mt::rename', async (e, { id, pathname, newPathname }) => {
   } else {
     const { response } = await dialog.showMessageBox(win, {
       type: 'warning',
-      buttons: ['Replace', 'Cancel'],
+      buttons: [t('buttons.replace', 'Replace'), t('buttons.cancel', 'Cancel')],
       defaultId: 1,
-      message: `The file "${path.basename(newPathname)}" already exists. Do you want to replace it?`,
+      message: t('fileExists.message', 'The file "{filename}" already exists. Do you want to replace it?').replace('{filename}', path.basename(newPathname)),
       cancelId: 1,
       noLink: true
     })

@@ -8,6 +8,24 @@ import BaseWindow, { WindowLifecycle, WindowType } from './base'
 import { ensureWindowPosition, zoomIn, zoomOut } from './utils'
 import { TITLE_BAR_HEIGHT, editorWinOptions, isLinux, isOsx } from '../config'
 import { showEditorContextMenu } from '../contextMenu/editor'
+import { userSetting } from '../menu/actions/marktext'
+import en from '../../renderer/locales/en'
+import zhCN from '../../renderer/locales/zh-CN'
+
+const locales = { en, 'zh-CN': zhCN }
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const getLocale = () => {
+  const prefs = userSetting.getAll()
+  return prefs.language || 'en'
+}
+
+const t = (key, fallback) => translate(`dialogs.${key}`, getLocale(), fallback)
 import { loadMarkdownFile } from '../filesystem/markdown'
 import { switchLanguage } from '../spellchecker'
 
@@ -145,8 +163,8 @@ class EditorWindow extends BaseWindow {
 
       const { response } = await dialog.showMessageBox(win, {
         type: 'warning',
-        buttons: ['Close', 'Reload', 'Keep It Open'],
-        message: 'MarkText has crashed',
+        buttons: [t('buttons.close', 'Close'), t('buttons.reload', 'Reload'), t('buttons.keepItOpen', 'Keep It Open')],
+        message: t('crashed.title', 'MarkText has crashed'),
         detail: msg
       })
 
@@ -269,7 +287,7 @@ class EditorWindow extends BaseWindow {
         const { message, stack } = err
         log.error(`[ERROR] Cannot open file or directory: ${message}\n\n${stack}`)
         browserWindow.webContents.send('mt::show-notification', {
-          title: 'Cannot open tab',
+          title: t('cannotOpenTab.title', 'Cannot open tab'),
           type: 'error',
           message: err.message
         })

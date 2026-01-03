@@ -26,12 +26,12 @@
             v-model="searchValue"
             @keyup="search($event)"
             ref="search"
-            placeholder="Search"
+            :placeholder="$t('search.placeholder')"
           >
           <div class="controls">
             <span class="search-result">{{`${highlightIndex + 1} / ${highlightCount}`}}</span>
             <span
-              title="Case Sensitive"
+              :title="$t('search.caseSensitive')"
               class="is-case-sensitive"
               :class="{'active': isCaseSensitive}"
               @click.stop="toggleCtrl('isCaseSensitive')"
@@ -41,7 +41,7 @@
               </svg>
             </span>
             <span
-              title="Select whole word"
+              :title="$t('search.selectWholeWord')"
               class="is-whole-word"
               :class="{'active': isWholeWord}"
               @click.stop="toggleCtrl('isWholeWord')"
@@ -51,7 +51,7 @@
               </svg>
             </span>
             <span
-              title="Use query as RegEx"
+              :title="$t('search.useRegex')"
               class="is-regex"
               :class="{'active': isRegexp}"
               @click.stop="toggleCtrl('isRegexp')"
@@ -80,7 +80,7 @@
       </section>
       <section class="replace" v-if="type === 'replace'">
         <div class="input-wrapper replace-input">
-          <input type="text" v-model="replaceValue" placeholder="Replacement">
+          <input type="text" v-model="replaceValue" :placeholder="$t('search.replacementPlaceholder')">
         </div>
         <div class="button-group">
           <el-tooltip class="item"
