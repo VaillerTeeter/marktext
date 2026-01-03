@@ -121,8 +121,8 @@ describe('muya contentState: integration table + backspace', function () {
       cs.editTable({ target: 'column', action: 'remove', location: 'current' })
     } catch (err) {
       threw = true
-      // record but continue to exercise backspace
-      console.error('editTable(remove column) error', err && err.message)
+      // record but continue to exercise backspace (error expected in this test scenario)
+      // Silenced to avoid cluttering test output: console.error('editTable(remove column) error', err && err.message)
     }
 
     // simulate a backspace key press

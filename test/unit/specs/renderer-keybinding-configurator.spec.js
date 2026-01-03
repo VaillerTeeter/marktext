@@ -42,7 +42,34 @@ const loadConfigurator = platform => {
 }
 
 describe('renderer KeybindingConfigurator', () => {
+  let originalI18nT
+
+  beforeEach(() => {
+    // Mock i18n.t to avoid warnings for test command IDs
+    try {
+      const i18n = require('../../../src/renderer/i18n').default || require('../../../src/renderer/i18n')
+      originalI18nT = i18n.t
+      i18n.t = (key) => {
+        // Return the key itself for test keys to avoid warnings
+        if (key.startsWith('commands.cmd_') || key.startsWith('commands.custom_')) {
+          return key
+        }
+        return originalI18nT.call(i18n, key)
+      }
+    } catch (e) {
+      // i18n not available in test context, skip
+    }
+  })
+
   afterEach(() => {
+    if (originalI18nT) {
+      try {
+        const i18n = require('../../../src/renderer/i18n').default || require('../../../src/renderer/i18n')
+        i18n.t = originalI18nT
+      } catch (e) {
+        // ignore
+      }
+    }
     ipcRenderer.invoke = originalInvoke
     restorePlatform()
   })

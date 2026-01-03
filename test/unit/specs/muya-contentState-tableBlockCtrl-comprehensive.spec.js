@@ -246,31 +246,36 @@ describe('muya contentState: tableBlockCtrl comprehensive', function() {
     try {
       cs.editTable({ target: 'column', action: 'insert', location: 'right' })
     } catch (err) {
-      // debug info to help locate missing structure
-      console.error('editTable(insert column) failed', {
-        tableKey: t && t.key,
-        theadKey: th2 && th2.key,
-        tbodyKey: tb2 && tb2.key,
-        tableChildrenLen: t && t.children && t.children.length,
-        theadChildrenLen: th2 && th2.children && th2.children.length,
-        tbodyChildrenLen: tb2 && tb2.children && tb2.children.length,
-        currentRowKey: brw && brw.key,
-        b1ChildrenLen: b1 && b1.children && b1.children.length,
-        b2ChildrenLen: b2 && b2.children && b2.children.length,
-        err: err && err.message
-      })
+      // debug info to help locate missing structure (silenced to avoid cluttering output)
+      // In case of failure, log detailed info for debugging (but only in verbose mode)
+      if (process.env.VERBOSE_TESTS) {
+        console.error('editTable(insert column) failed', {
+          tableKey: t && t.key,
+          theadKey: th2 && th2.key,
+          tbodyKey: tb2 && tb2.key,
+          tableChildrenLen: t && t.children && t.children.length,
+          theadChildrenLen: th2 && th2.children && th2.children.length,
+          tbodyChildrenLen: tb2 && tb2.children && tb2.children.length,
+          currentRowKey: brw && brw.key,
+          b1ChildrenLen: b1 && b1.children && b1.children.length,
+          b2ChildrenLen: b2 && b2.children && b2.children.length,
+          err: err && err.message
+        })
+      }
       throw err
     }
     // remove a column (should succeed as >2)
     try {
       cs.editTable({ target: 'column', action: 'remove', location: 'current' })
     } catch (err) {
-      console.error('editTable(remove column) failed', {
-        tableKey: t && t.key,
-        theadKey: th2 && th2.key,
-        tbodyKey: tb2 && tb2.key,
-        err: err && err.message
-      })
+      if (process.env.VERBOSE_TESTS) {
+        console.error('editTable(remove column) failed', {
+          tableKey: t && t.key,
+          theadKey: th2 && th2.key,
+          tbodyKey: tb2 && tb2.key,
+          err: err && err.message
+        })
+      }
       throw err
     }
 
@@ -278,20 +283,22 @@ describe('muya contentState: tableBlockCtrl comprehensive', function() {
     try {
       cs.editTable({ target: 'row', action: 'insert', location: 'current' })
     } catch (err) {
-      console.error('editTable(insert row) failed', {
-        tableKey: t && t.key,
-        tableChildrenLen: t && t.children && t.children.length,
-        theadKey: th2 && th2.key,
-        theadChildrenLen: th2 && th2.children && th2.children.length,
-        tbodyKey: tb2 && tb2.key,
-        tbodyChildrenLen: tb2 && tb2.children && tb2.children.length,
-        currentRowKey: brw && brw.key,
-        currentRowChildrenLen: brw && brw.children && brw.children.length,
-        columnIndex: brw && brw.children ? brw.children.indexOf(b1) : -1,
-        b1ChildrenLen: b1 && b1.children && b1.children.length,
-        b2ChildrenLen: b2 && b2.children && b2.children.length,
-        err: err && err.message
-      })
+      if (process.env.VERBOSE_TESTS) {
+        console.error('editTable(insert row) failed', {
+          tableKey: t && t.key,
+          tableChildrenLen: t && t.children && t.children.length,
+          theadKey: th2 && th2.key,
+          theadChildrenLen: th2 && th2.children && th2.children.length,
+          tbodyKey: tb2 && tb2.key,
+          tbodyChildrenLen: tb2 && tb2.children && tb2.children.length,
+          currentRowKey: brw && brw.key,
+          currentRowChildrenLen: brw && brw.children && brw.children.length,
+          columnIndex: brw && brw.children ? brw.children.indexOf(b1) : -1,
+          b1ChildrenLen: b1 && b1.children && b1.children.length,
+          b2ChildrenLen: b2 && b2.children && b2.children.length,
+          err: err && err.message
+        })
+      }
       // tolerate failures here to let comprehensive coverage continue;
       // focused specs cover the precise editTable behaviors.
     }
@@ -299,12 +306,14 @@ describe('muya contentState: tableBlockCtrl comprehensive', function() {
     try {
       cs.editTable({ target: 'row', action: 'remove', location: 'current' })
     } catch (err) {
-      console.error('editTable(remove row) failed', {
-        tableKey: t && t.key,
-        theadKey: th2 && th2.key,
-        tbodyKey: tb2 && tb2.key,
-        err: err && err.message
-      })
+      if (process.env.VERBOSE_TESTS) {
+        console.error('editTable(remove row) failed', {
+          tableKey: t && t.key,
+          theadKey: th2 && th2.key,
+          tbodyKey: tb2 && tb2.key,
+          err: err && err.message
+        })
+      }
       // tolerate failures here as well
     }
 
