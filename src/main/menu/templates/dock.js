@@ -15,23 +15,26 @@ const translate = (key, locale, fallback) => {
   return typeof value === 'string' ? value : fallback
 }
 
-const { language = 'en' } = userSetting.getAll()
-const t = (key, fallback) => translate(`menu.dock.${key}`, language, fallback)
+const createDockMenu = (preferences) => {
+  const { language = 'en' } = (preferences && preferences.getAll()) || {}
+  const t = (key, fallback) => translate(`menu.dock.${key}`, language, fallback)
 
-const dockMenu = Menu.buildFromTemplate([{
-  label: t('open', 'Open...'),
-  click (menuItem, browserWindow) {
-    if (browserWindow) {
-      actions.openFile(browserWindow)
-    } else {
-      actions.newEditorWindow()
+  return Menu.buildFromTemplate([{
+    label: t('open', 'Open...'),
+    click (menuItem, browserWindow) {
+      if (browserWindow) {
+        actions.openFile(browserWindow)
+      } else {
+        actions.newEditorWindow()
+      }
     }
-  }
-}, {
-  label: t('clearRecent', 'Clear Recent'),
-  click () {
-    app.clearRecentDocuments()
-  }
-}])
+  }, {
+    label: t('clearRecent', 'Clear Recent'),
+    click () {
+      app.clearRecentDocuments()
+    }
+  }])
+}
 
-export default dockMenu
+export { createDockMenu }
+export default createDockMenu

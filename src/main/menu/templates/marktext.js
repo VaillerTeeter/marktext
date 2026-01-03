@@ -18,8 +18,8 @@ const translate = (key, locale, fallback) => {
 
 // macOS only menu.
 
-export default function (keybindings) {
-  const { language = 'en' } = userSetting.getAll()
+export default function (keybindings, preferences) {
+  const { language = 'en' } = (preferences && preferences.getAll()) || {}
   const t = (key, fallback) => translate(`menu.marktext.${key}`, language, fallback)
   
   return {

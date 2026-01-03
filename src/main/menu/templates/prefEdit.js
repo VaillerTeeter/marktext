@@ -13,8 +13,8 @@ const translate = (key, locale, fallback) => {
   return typeof value === 'string' ? value : fallback
 }
 
-export default function (keybindings) {
-  const { language = 'en' } = userSetting.getAll()
+export default function (keybindings, preferences) {
+  const { language = 'en' } = (preferences && preferences.getAll()) || {}
   const t = (key, fallback) => translate(`menu.prefEdit.${key}`, language, fallback)
   
   return {

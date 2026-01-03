@@ -64,7 +64,7 @@ const handleError = async (title, error, type) => {
       const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
       return typeof value === 'string' ? value : fallback
     }
-    const userPrefs = require('./actions/marktext').userSetting
+    const userPrefs = require('./menu/actions/marktext').userSetting
     const locale = (userPrefs && userPrefs.getAll && userPrefs.getAll().language) || 'en'
     const t = (key, fallback) => translate(`dialogs.${key}`, locale, fallback)
 

@@ -27,7 +27,7 @@ const translate = (key, locale, fallback) => {
 
 const getLocale = () => {
   try {
-    const { userSetting } = require('../actions/marktext')
+    const { userSetting } = require('../../menu/actions/marktext')
     const prefs = userSetting.getAll()
     return prefs.language || 'en'
   } catch (e) {
