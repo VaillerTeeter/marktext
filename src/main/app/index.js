@@ -17,6 +17,31 @@ import { watchers } from '../utils/imagePathAutoComplement'
 import { WindowType } from '../windows/base'
 import EditorWindow from '../windows/editor'
 import SettingWindow from '../windows/setting'
+import { userSetting } from '../menu/actions/marktext'
+import en from '../../renderer/locales/en'
+import zhCN from '../../renderer/locales/zh-CN'
+
+const locales = {
+  en,
+  'zh-CN': zhCN
+}
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const getLocale = () => {
+  try {
+    const prefs = userSetting.getAll()
+    return prefs.language || 'en'
+  } catch (e) {
+    return 'en'
+  }
+}
+
+const t = (key, fallback) => translate(`menu.file.${key}`, getLocale(), fallback)
 
 class App {
   /**
@@ -185,7 +210,7 @@ class App {
         type: 'tasks',
         items: [{
           type: 'task',
-          title: 'New Window',
+          title: t('newWindow', 'New Window'),
           description: 'Opens a new window',
           program: process.execPath,
           args: '--new-window',

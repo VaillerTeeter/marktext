@@ -83,8 +83,24 @@ export default {
       title: '导入或打开',
       dropHint: '将您的文件拖放到这里以导入到 MarkText'
     }
-  },
-  titlebar: {
+  },  contextMenu: {
+    editor: {
+      cut: '剪切',
+      copy: '复制',
+      paste: '粘贴',
+      copyAsMarkdown: '复制为 Markdown',
+      copyAsHtml: '复制为 Html',
+      pasteAsPlainText: '粘贴为纯文本',
+      insertParagraphBefore: '在前面插入段落',
+      insertParagraphAfter: '在后面插入段落'
+    },
+    spelling: {
+      spelling: '拼写检查...',
+      changeLanguage: '更改语言...',
+      addToDictionary: '添加到字典',
+      editDictionary: '编辑字典...'
+    }
+  },  titlebar: {
     defaultTitle: 'MarkText'
   },
   search: {
@@ -207,6 +223,7 @@ export default {
       },
       startup: {
         title: '启动时动作：',
+        restoreLastSession: '恢复上一次的编辑会话',
         openDefaultDir: '打开默认目录',
         selectFolder: '选择文件夹',
         openBlank: '打开空白页'
@@ -425,6 +442,11 @@ export default {
     keybindings: {
       title: '快捷键',
       description: '自定义 MarkText 快捷键，点击下方保存以应用全部更改（需要重启）。所有可用及默认快捷键可在此',
+      dialog: {
+        placeholder: '按下组合键',
+        instructions: '按 Enter 继续或 ESC 退出。',
+        invalidKeybinding: '当前按键组合无法绑定！'
+      },
       table: {
         description: '描述',
         accelerator: '按键组合',
@@ -455,6 +477,21 @@ export default {
     }
   },
   menu: {
+    marktext: {
+      label: 'MarkText',
+      about: '关于 MarkText',
+      checkUpdates: '检查更新...',
+      preferences: '偏好设置',
+      services: '服务',
+      hide: '隐藏 MarkText',
+      hideOthers: '隐藏其他',
+      showAll: '显示全部',
+      quit: '退出 MarkText'
+    },
+    dock: {
+      open: '打开...',
+      clearRecent: '清空最近使用'
+    },
     file: {
       label: '文件(&F)',
       newTab: '新建标签页',

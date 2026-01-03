@@ -84,6 +84,24 @@ export default {
       dropHint: 'Drop here to get you stuff into MarkText'
     }
   },
+  contextMenu: {
+    editor: {
+      cut: 'Cut',
+      copy: 'Copy',
+      paste: 'Paste',
+      copyAsMarkdown: 'Copy As Markdown',
+      copyAsHtml: 'Copy As Html',
+      pasteAsPlainText: 'Paste as Plain Text',
+      insertParagraphBefore: 'Insert Paragraph Before',
+      insertParagraphAfter: 'Insert Paragraph After'
+    },
+    spelling: {
+      spelling: 'Spelling...',
+      changeLanguage: 'Change Language...',
+      addToDictionary: 'Add to Dictionary',
+      editDictionary: 'Edit Dictionary...'
+    }
+  },
   titlebar: {
     defaultTitle: 'MarkText'
   },
@@ -207,6 +225,7 @@ export default {
       },
       startup: {
         title: 'Action on startup:',
+        restoreLastSession: 'Restore last editor session',
         openDefaultDir: 'Open the default directory',
         selectFolder: 'Select Folder',
         openBlank: 'Open a blank page'
@@ -425,6 +444,11 @@ export default {
     keybindings: {
       title: 'Key Bindings',
       description: 'Customize MarkText shortcuts and click on the save button below to apply all changes (requires a restart). All available and default key bindings can be found ',
+      dialog: {
+        placeholder: 'Press a key combination',
+        instructions: 'Press Enter to continue or ESC to exit.',
+        invalidKeybinding: 'Current key combination cannot be bound!'
+      },
       table: {
         description: 'Description',
         accelerator: 'Key Combination',
@@ -455,6 +479,21 @@ export default {
     }
   },
   menu: {
+    marktext: {
+      label: 'MarkText',
+      about: 'About MarkText',
+      checkUpdates: 'Check for updates...',
+      preferences: 'Preferences',
+      services: 'Services',
+      hide: 'Hide MarkText',
+      hideOthers: 'Hide Others',
+      showAll: 'Show All',
+      quit: 'Quit MarkText'
+    },
+    dock: {
+      open: 'Open...',
+      clearRecent: 'Clear Recent'
+    },
     file: {
       label: '&File',
       newTab: 'New Tab',

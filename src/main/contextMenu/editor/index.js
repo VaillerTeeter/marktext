@@ -11,6 +11,31 @@ import {
   INSERT_AFTER
 } from './menuItems'
 import spellcheckMenuBuilder from './spellcheck'
+import en from '../../../renderer/locales/en'
+import zhCN from '../../../renderer/locales/zh-CN'
+
+const locales = {
+  en,
+  'zh-CN': zhCN
+}
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const getLocale = () => {
+  try {
+    const { userSetting } = require('../actions/marktext')
+    const prefs = userSetting.getAll()
+    return prefs.language || 'en'
+  } catch (e) {
+    return 'en'
+  }
+}
+
+const t = (key, fallback) => translate(`contextMenu.spelling.${key}`, getLocale(), fallback)
 
 const CONTEXT_ITEMS = [INSERT_BEFORE, INSERT_AFTER, SEPARATOR, CUT, COPY, PASTE, SEPARATOR, COPY_AS_MARKDOWN, COPY_AS_HTML, PASTE_AS_PLAIN_TEXT]
 
@@ -37,7 +62,7 @@ export const showEditorContextMenu = (win, event, params, isSpellcheckerEnabled)
     if (isSpellcheckerEnabled) {
       const spellingSubmenu = spellcheckMenuBuilder(isMisspelled, misspelledWord, dictionarySuggestions)
       menu.append(new MenuItem({
-        label: 'Spelling...',
+        label: t('spelling', 'Spelling...'),
         submenu: spellingSubmenu
       }))
       menu.append(new MenuItem(SEPARATOR))

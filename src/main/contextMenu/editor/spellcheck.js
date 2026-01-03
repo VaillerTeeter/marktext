@@ -3,6 +3,31 @@ import log from 'electron-log/main'
 import { isOsx } from '../../config'
 import { addToDictionary } from '../../spellchecker'
 import { SEPARATOR } from './menuItems'
+import en from '../../../renderer/locales/en'
+import zhCN from '../../../renderer/locales/zh-CN'
+
+const locales = {
+  en,
+  'zh-CN': zhCN
+}
+
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
+
+const getLocale = () => {
+  try {
+    const { userSetting } = require('../actions/marktext')
+    const prefs = userSetting.getAll()
+    return prefs.language || 'en'
+  } catch (e) {
+    return 'en'
+  }
+}
+
+const t = (key, fallback) => translate(`contextMenu.spelling.${key}`, getLocale(), fallback)
 
 /**
  * Build the spell checker menu depending on input.
@@ -16,7 +41,7 @@ export default (isMisspelled, misspelledWord, wordSuggestions) => {
   const spellingSubmenu = []
 
   spellingSubmenu.push(new MenuItem({
-    label: 'Change Language...',
+    label: t('changeLanguage', 'Change Language...'),
     // NB: On macOS the OS spell checker is used and will detect the language automatically.
     visible: !isOsx,
     click (menuItem, targetWindow) {
@@ -27,7 +52,7 @@ export default (isMisspelled, misspelledWord, wordSuggestions) => {
   // Handle misspelled word if wordSuggestions is set, otherwise word is correct.
   if (isMisspelled && misspelledWord && wordSuggestions) {
     spellingSubmenu.push({
-      label: 'Add to Dictionary',
+      label: t('addToDictionary', 'Add to Dictionary'),
       click (menuItem, targetWindow) {
         if (!addToDictionary(targetWindow, misspelledWord)) {
           log.error(`Error while adding "${misspelledWord}" to dictionary.`)
@@ -54,7 +79,7 @@ export default (isMisspelled, misspelledWord, wordSuggestions) => {
     }
   } else {
     spellingSubmenu.push({
-      label: 'Edit Dictionary...',
+      label: t('editDictionary', 'Edit Dictionary...'),
       click (menuItem, targetWindow) {
         ipcMain.emit('app-create-settings-window', 'spelling')
       }

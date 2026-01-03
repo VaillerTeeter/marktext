@@ -8,6 +8,12 @@
   - 阶段十三：UI 组件文本（import 对话框、Title Bar、搜索结果计数）
   - 阶段十四：通知消息（编辑器相关）
   - 阶段十五：命令描述（Command Palette）
+  - 阶段十六：编辑器右键菜单（Cut/Copy/Paste 等）
+  - 阶段十七：右键菜单（拼写检查相关）
+  - 阶段十八：偏好设置（常规 - Restore last editor session）
+  - 阶段十九：编辑器通知（按钮文本）
+  - 阶段二十：菜单模版（MarkText 菜单 - about 等、Dock 菜单 - Open/Clear Recent）
+  - 阶段二十一：主进程（New Window title）
 - 帮助 -- 关于，这个界面的更新
 
 ## 26.1.1
