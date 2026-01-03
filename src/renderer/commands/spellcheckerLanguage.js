@@ -44,9 +44,9 @@ class SpellcheckerLanguageCommand {
       bus.$emit('switch-spellchecker-language', command.value)
     } else {
       notice.notify({
-        title: 'Spelling',
+        title: i18n.t('notification.spellchecker.title'),
         type: 'warning',
-        message: 'Cannot change language because spellchecker is disabled.'
+        message: i18n.t('notification.spellchecker.disabledMessage')
       })
     }
   }

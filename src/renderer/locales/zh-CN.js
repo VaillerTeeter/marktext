@@ -193,6 +193,15 @@ export default {
     moveToTrash: '移动到回收站',
     showInFolder: '在文件夹中显示'
   },
+  tabs: {
+    close: '关闭',
+    closeOthers: '关闭其他',
+    closeSaved: '关闭已保存标签',
+    closeAll: '关闭所有标签',
+    rename: '重命名',
+    copyPath: '复制路径',
+    showInFolder: '在文件夹中显示'
+  },
   pref: {
     sidebar: {
       title: '偏好设置',
@@ -553,6 +562,13 @@ export default {
       crlf: '回车换行 (CRLF)',
       lf: '换行 (LF)'
     },
+    prefEdit: {
+      label: '编辑',
+      cut: '剪切',
+      copy: '复制',
+      paste: '粘贴',
+      selectAll: '全选'
+    },
     paragraph: {
       label: '段落',
       heading1: '标题 1',
@@ -815,6 +831,10 @@ export default {
       downloadedMessage: '更新已下载，应用将退出以安装更新...',
       availableTitle: '发现更新',
       availableMessage: '发现可用更新，是否现在下载并安装？'
+    },
+    spellchecker: {
+      title: '拼写检查',
+      disabledMessage: '无法更改语言，因为拼写检查器已禁用。'
     }
   },
   about: {

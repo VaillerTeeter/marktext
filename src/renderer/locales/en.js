@@ -193,6 +193,15 @@ export default {
     moveToTrash: 'Move To Trash',
     showInFolder: 'Show In Folder'
   },
+  tabs: {
+    close: 'Close',
+    closeOthers: 'Close others',
+    closeSaved: 'Close saved tabs',
+    closeAll: 'Close all tabs',
+    rename: 'Rename',
+    copyPath: 'Copy path',
+    showInFolder: 'Show in folder'
+  },
   pref: {
     sidebar: {
       title: 'Preferences',
@@ -553,6 +562,13 @@ export default {
       crlf: 'Carriage return and line feed (CRLF)',
       lf: 'Line feed (LF)'
     },
+    prefEdit: {
+      label: 'Edit',
+      cut: 'Cut',
+      copy: 'Copy',
+      paste: 'Paste',
+      selectAll: 'Select All'
+    },
     paragraph: {
       label: '&Paragraph',
       heading1: 'Heading 1',
@@ -815,6 +831,10 @@ export default {
       downloadedMessage: 'Update downloaded, application will be quit for update...',
       availableTitle: 'Update Available',
       availableMessage: 'Found an update, do you want to download and install now?'
+    },
+    spellchecker: {
+      title: 'Spelling',
+      disabledMessage: 'Cannot change language because spellchecker is disabled.'
     }
   },
   about: {
