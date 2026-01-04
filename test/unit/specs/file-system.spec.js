@@ -57,7 +57,13 @@ describe('renderer util fileSystem', () => {
     expect(result).to.equal('doc.txt')
   })
 
-  it('detects executable files by permission bits', async () => {
+  it('detects executable files by permission bits', async function() {
+    // Skip on Windows which doesn't support Unix permission bits
+    if (process.platform === 'win32') {
+      this.skip()
+      return
+    }
+    
     const filePath = path.join(tempDir, 'script.sh')
     await fs.outputFile(filePath, '#!/bin/sh\necho ok')
 

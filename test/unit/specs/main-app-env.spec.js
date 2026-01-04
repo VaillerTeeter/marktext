@@ -60,7 +60,13 @@ describe('main app env', () => {
     expect(b.id).to.be.greaterThan(a.id)
   })
 
-  it('patches PATH on darwin without duplicate delimiter', () => {
+  it('patches PATH on darwin without duplicate delimiter', function() {
+    // Only test on macOS
+    if (process.platform !== 'darwin') {
+      this.skip()
+      return
+    }
+    
     Object.defineProperty(process, 'platform', { value: 'darwin' })
     process.env.PATH = '/tmp/bin'
 
@@ -69,7 +75,13 @@ describe('main app env', () => {
     expect(process.env.PATH.endsWith('/tmp/bin:/Library/TeX/texbin')).to.equal(true)
   })
 
-  it('appends TeX bin when PATH already ends with delimiter', () => {
+  it('appends TeX bin when PATH already ends with delimiter', function() {
+    // Only test on macOS
+    if (process.platform !== 'darwin') {
+      this.skip()
+      return
+    }
+    
     Object.defineProperty(process, 'platform', { value: 'darwin' })
     process.env.PATH = '/tmp/bin:'
 

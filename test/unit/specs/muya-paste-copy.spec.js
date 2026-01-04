@@ -3,6 +3,8 @@ import pasteCtrl from '../../../src/muya/lib/contentState/pasteCtrl'
 import copyCutCtrl from '../../../src/muya/lib/contentState/copyCutCtrl'
 import ExportMarkdown from '../../../src/muya/lib/utils/exportMarkdown'
 import selection from '../../../src/muya/lib/selection'
+import os from 'os'
+import path from 'path'
 
 class DummyContentState {}
 pasteCtrl(DummyContentState)
@@ -185,10 +187,11 @@ describe('pasteCtrl utilities', () => {
     wrapper.appendChild(container)
     state.muya.container.appendChild(wrapper)
     state.selectedImage = { id: 'img' }
-    state.muya.options.clipboardFilePath = () => '/tmp/img.png'
+    const testImagePath = path.join(os.tmpdir(), 'img.png')
+    state.muya.options.clipboardFilePath = () => testImagePath
     const replaced = await state.pasteImage(createEvent())
-    expect(replaced).to.equal('/tmp/img.png')
-    expect(state.replacedImage.payload.src).to.equal('/tmp/img.png')
+    expect(replaced).to.equal(testImagePath)
+    expect(state.replacedImage.payload.src).to.equal(testImagePath)
 
     // error branch
     state.muya.options.imageAction = async () => { throw new Error('fail') }

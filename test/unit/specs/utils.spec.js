@@ -236,9 +236,15 @@ describe('utils core helpers', () => {
   })
 
   it('resolves image paths with base directory', () => {
-    const info = resolveImageInfo('img.png', '/tmp')
+    const os = require('os')
+    const path = require('path')
+    const baseUrl = path.join(os.tmpdir())
+    const info = resolveImageInfo('img.png', baseUrl)
     expect(info.isUnknownType).to.be.false
-    expect(info.src.startsWith('file:///')).to.be.true
+    // The src should be a file:// URL pointing to a resolved absolute path
+    expect(info.src.startsWith('file://')).to.be.true
+    // On Windows, it becomes file://C:\..., on Unix it becomes file:///...
+    // Both are valid file URLs
   })
 })
 

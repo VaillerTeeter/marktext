@@ -7,7 +7,13 @@ describe('main utils pandoc command invocation', () => {
     process.env.MARKTEXT_PANDOC = originalEnv
   })
 
-  it('prefers MARKTEXT_PANDOC and builds argv correctly', async () => {
+  it('prefers MARKTEXT_PANDOC and builds argv correctly', async function() {
+    // Skip on Windows where /bin/echo doesn't exist
+    if (process.platform === 'win32') {
+      this.skip()
+      return
+    }
+    
     process.env.MARKTEXT_PANDOC = '/bin/echo'
     const convert = pandoc('markdown', 'html', '--hello')
     const output = await convert()

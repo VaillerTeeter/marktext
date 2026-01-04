@@ -63,14 +63,22 @@ describe('muya imageSelector', () => {
     const payloads = []
     muya.eventCenter.subscribe('muya-image-picker', data => payloads.push(data))
 
+    // Use temp directory that exists on all platforms
+    const tmpDir = require('os').tmpdir()
+    const testPath = `file://${tmpDir}/old.png`
+    const expectedPath = tmpDir + '/old.png'
+    
     muya.eventCenter.dispatch('muya-image-selector', {
       reference,
       cb: createSpy(),
-      imageInfo: { token: { attrs: { alt: 'old', src: 'file:///tmp/old.png', title: 't' } } }
+      imageInfo: { token: { attrs: { alt: 'old', src: testPath, title: 't' } } }
     })
 
     expect(muya.contentState.selectedImage).to.equal(null)
-    expect(selector.state.src).to.equal('/tmp/old.png')
+    // Normalize path separators for Windows compatibility
+    const normalizedSrc = selector.state.src.replace(/\\/g, '/')
+    const normalizedExpected = expectedPath.replace(/\\/g, '/')
+    expect(normalizedSrc).to.equal(normalizedExpected)
 
     const root = selector.oldVnode.elm
     const embed = root.querySelector('button.muya-button.role-button.link')

@@ -180,7 +180,9 @@ describe('store project actions', () => {
   it('creates file/directory with proper extension and caches filename', async () => {
     const fs = require('fs-extra')
     const path = require('path')
-    const tmpDir = fs.mkdtempSync(path.join(fs.realpathSync('/tmp'), 'marktext-'))
+    const os = require('os')
+    // Use platform-agnostic temp directory
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'marktext-'))
     const commits = []
     const state = { createCache: { dirname: tmpDir, type: 'file' }, newFileNameCache: '' }
     const commit = (type, payload) => {
@@ -193,7 +195,10 @@ describe('store project actions', () => {
     await new Promise(resolve => setTimeout(resolve, 0))
     const createdPath = path.join(tmpDir, 'note.md')
     expect(fs.pathExistsSync(createdPath)).to.equal(true)
-    expect(state.newFileNameCache).to.equal(createdPath)
+    // Normalize paths for comparison - actions uses / separator, path.join uses platform separator
+    const normalizedCached = state.newFileNameCache.replace(/\\/g, '/')
+    const normalizedExpected = createdPath.replace(/\\/g, '/')
+    expect(normalizedCached).to.equal(normalizedExpected)
     expect(state.createCache.dirname).to.equal(undefined)
     fs.removeSync(tmpDir)
   })
@@ -201,7 +206,9 @@ describe('store project actions', () => {
   it('renames items via util and updates tabs', async () => {
     const fs = require('fs-extra')
     const path = require('path')
-    const tmpDir = fs.mkdtempSync(path.join(fs.realpathSync('/tmp'), 'marktext-'))
+    const os = require('os')
+    // Use platform-agnostic temp directory
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'marktext-'))
     const src = path.join(tmpDir, 'old.md')
     fs.writeFileSync(src, 'hello')
     let renamed
