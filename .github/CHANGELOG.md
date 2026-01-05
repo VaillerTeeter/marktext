@@ -32,6 +32,7 @@
 - 帮助 -- 关于，这个界面的更新
 - 修复 Windows 安装包中的 UAC 图标问题
 - 增加 FIX_BUG、i18n、E2E_UNIT 分支的 github workflow
+- 帮助 -- 检查更新，这个功能的修复
 
 ## 26.1.1
 
