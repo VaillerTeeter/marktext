@@ -1,49 +1,53 @@
-import { autoUpdater } from 'electron-updater'
-import { ipcMain, BrowserWindow, Menu } from 'electron'
+import axios from 'axios'
+import { ipcMain, BrowserWindow, Menu, app, shell } from 'electron'
 import { COMMANDS } from '../../commands'
 import { isOsx } from '../../config'
+
+const UPDATE_REPO = process.env.MT_UPDATE_REPO || 'VaillerTeeter/marktext-maintained'
+const RELEASE_API = `https://api.github.com/repos/${UPDATE_REPO}/releases/latest`
+const RELEASE_PAGE = `https://github.com/${UPDATE_REPO}/releases`
 
 let runningUpdate = false
 let win = null
 
-autoUpdater.autoDownload = false
+const normalizeVersion = version => (version || '').replace(/^v/i, '').trim()
 
-autoUpdater.on('error', error => {
-  if (win) {
-    const msg = error === null ? { key: 'notification.update.errorMessage', params: { msg: '' } } : { key: 'notification.update.errorMessage', params: { msg: (error.message || error).toString() } }
-    win.webContents.send('mt::UPDATE_ERROR', msg)
-  }
-})
+const isNewerVersion = (candidate, current) => {
+  const toParts = value => normalizeVersion(value).split('.').map(num => parseInt(num, 10) || 0)
+  const a = toParts(candidate)
+  const b = toParts(current)
+  const len = Math.max(a.length, b.length)
 
-autoUpdater.on('update-available', () => {
-  if (win) {
-    win.webContents.send('mt::UPDATE_AVAILABLE', { key: 'notification.update.availableMessage', params: {} })
+  for (let i = 0; i < len; i++) {
+    const ai = a[i] || 0
+    const bi = b[i] || 0
+    if (ai > bi) return true
+    if (ai < bi) return false
   }
+  return false
+}
+
+const fetchLatestRelease = async () => {
+  const { data } = await axios.get(RELEASE_API, {
+    headers: {
+      'User-Agent': `marktext/${app.getVersion()}`,
+      Accept: 'application/vnd.github+json'
+    },
+    timeout: 10000
+  })
+
+  const tag = normalizeVersion(data.tag_name || data.name)
+  const url = data.html_url || `${RELEASE_PAGE}/tag/${data.tag_name || data.name || ''}`
+
+  return { latestVersion: tag, url }
+}
+
+ipcMain.on('mt::NEED_UPDATE', (e, { needUpdate, url }) => {
   runningUpdate = false
-})
 
-autoUpdater.on('update-not-available', () => {
-  if (win) {
-    win.webContents.send('mt::UPDATE_NOT_AVAILABLE', { key: 'notification.update.notAvailableMessage', params: {} })
-  }
-  runningUpdate = false
-})
-
-autoUpdater.on('update-downloaded', () => {
-  // TODO: We should ask the user, so that the user can save all documents and
-  // not just force close the application.
-
-  if (win) {
-    win.webContents.send('mt::UPDATE_DOWNLOADED', { key: 'notification.update.downloadedMessage', params: {} })
-  }
-  setImmediate(() => autoUpdater.quitAndInstall())
-})
-
-ipcMain.on('mt::NEED_UPDATE', (e, { needUpdate }) => {
   if (needUpdate) {
-    autoUpdater.downloadUpdate()
-  } else {
-    runningUpdate = false
+    const target = url || RELEASE_PAGE
+    shell.openExternal(target).catch(() => {})
   }
 })
 
@@ -58,11 +62,39 @@ export const userSetting = () => {
   ipcMain.emit('app-create-settings-window')
 }
 
-export const checkUpdates = browserWindow => {
-  if (!runningUpdate) {
-    runningUpdate = true
-    win = browserWindow
-    autoUpdater.checkForUpdates()
+export const checkUpdates = async browserWindow => {
+  if (runningUpdate) return
+
+  runningUpdate = true
+  win = browserWindow
+  const currentVersion = normalizeVersion(app.getVersion())
+
+  try {
+    const { latestVersion, url } = await fetchLatestRelease()
+
+    if (latestVersion && isNewerVersion(latestVersion, currentVersion)) {
+      win && win.webContents.send('mt::UPDATE_AVAILABLE', {
+        key: 'notification.update.availableMessage',
+        params: { latestVersion, currentVersion },
+        url
+      })
+    } else {
+      win && win.webContents.send('mt::UPDATE_NOT_AVAILABLE', {
+        key: 'notification.update.notAvailableMessage',
+        params: { currentVersion }
+      })
+    }
+  } catch (error) {
+    const msg = error && error.response && error.response.status
+      ? `${error.response.status} ${error.response.statusText}`
+      : (error && error.message) || error || 'Unknown error'
+
+    win && win.webContents.send('mt::UPDATE_ERROR', {
+      key: 'notification.update.errorMessage',
+      params: { msg }
+    })
+  } finally {
+    runningUpdate = false
   }
 }
 

@@ -40,17 +40,17 @@ const actions = {
       notice.notify({ title, type: 'info', message: msg })
     })
 
-    ipcRenderer.on('mt::UPDATE_AVAILABLE', (e, payload) => {
+    ipcRenderer.on('mt::UPDATE_AVAILABLE', (e, payload = {}) => {
       const title = i18n.t('notification.update.availableTitle')
       const msg = resolveMessage(payload, 'notification.update.availableMessage')
+      const updateUrl = payload.url
+
       notice.notify({ title, type: 'primary', message: msg, showConfirm: true })
         .then(() => {
-          const needUpdate = true
-          ipcRenderer.send('mt::NEED_UPDATE', { needUpdate })
+          ipcRenderer.send('mt::NEED_UPDATE', { needUpdate: true, url: updateUrl })
         })
         .catch(() => {
-          const needUpdate = false
-          ipcRenderer.send('mt::NEED_UPDATE', { needUpdate })
+          ipcRenderer.send('mt::NEED_UPDATE', { needUpdate: false })
         })
     })
   }
