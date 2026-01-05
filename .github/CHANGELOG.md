@@ -30,6 +30,9 @@
   - 阶段三十五：偏好设置侧边栏分类名称
   - 阶段三十六：首选项 Edit 菜单 (Cut/Copy/Paste/Select All)
 - 帮助 -- 关于，这个界面的更新
+- 修复 Windows 安装包中的 UAC 图标问题
+- 增加 FIX_BUG、i18n、E2E_UNIT 分支的 github workflow
+- 帮助 -- 检查更新，这个功能的修复
 
 ## 26.1.1
 

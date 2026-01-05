@@ -826,11 +826,11 @@ export default {
       errorTitle: '更新',
       errorMessage: '检查更新时发生错误：{msg}',
       notAvailableTitle: '未发现更新',
-      notAvailableMessage: '当前版本为最新。',
+      notAvailableMessage: '当前版本 {currentVersion} 已是最新（GitHub 最新为 {latestVersion}）。',
       downloadedTitle: '已下载更新',
       downloadedMessage: '更新已下载，应用将退出以安装更新...',
       availableTitle: '发现更新',
-      availableMessage: '发现可用更新，是否现在下载并安装？'
+      availableMessage: '发现可用更新：最新 {latestVersion}，当前 {currentVersion}。是否打开发布页？'
     },
     spellchecker: {
       title: '拼写检查',
