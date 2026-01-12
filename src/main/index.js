@@ -121,6 +121,10 @@ if (!process.mas && process.env.NODE_ENV !== 'development') {
 let accessor = null
 try {
   accessor = new Accessor(appEnvironment)
+
+  // Expose shared instances for modules that cannot import the accessor directly.
+  global.MARKTEXT_PREFERENCES = accessor.preferences
+  global.MARKTEXT_APP_PATHS = appEnvironment.paths
 } catch (err) {
   // Catch errors that may come from invalid configuration files like settings.
   const msgHint = err.message.includes('Config schema violation')

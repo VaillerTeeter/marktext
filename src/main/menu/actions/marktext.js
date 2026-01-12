@@ -1,5 +1,7 @@
 import axios from 'axios'
 import { ipcMain, BrowserWindow, Menu, app, shell } from 'electron'
+import Preference from '../../preferences'
+import AppPaths from '../../app/paths'
 import { COMMANDS } from '../../commands'
 import { isOsx } from '../../config'
 
@@ -9,6 +11,7 @@ const RELEASE_PAGE = `https://github.com/${UPDATE_REPO}/releases`
 
 let runningUpdate = false
 let win = null
+let cachedPreferences = null
 
 const normalizeVersion = version => (version || '').replace(/^v/i, '').trim()
 
@@ -50,6 +53,26 @@ const fetchLatestRelease = async () => {
   return { latestVersion, url }
 }
 
+const getPreferences = () => {
+  if (cachedPreferences && typeof cachedPreferences.getAll === 'function') {
+    return cachedPreferences
+  }
+
+  if (global.MARKTEXT_PREFERENCES && typeof global.MARKTEXT_PREFERENCES.getAll === 'function') {
+    cachedPreferences = global.MARKTEXT_PREFERENCES
+    return cachedPreferences
+  }
+
+  try {
+    // Fallback for very early calls before the accessor is initialized.
+    cachedPreferences = new Preference(global.MARKTEXT_APP_PATHS || new AppPaths())
+    return cachedPreferences
+  } catch (err) {
+    // Keep the app running even if preferences cannot be loaded.
+    return { getAll: () => ({}) }
+  }
+}
+
 ipcMain.on('mt::NEED_UPDATE', (e, { needUpdate, url }) => {
   runningUpdate = false
 
@@ -66,9 +89,16 @@ ipcMain.on('mt::check-for-update', e => {
 
 // --------------------------------------------------------
 
-export const userSetting = () => {
-  ipcMain.emit('app-create-settings-window')
+const openSettingsWindow = category => {
+  ipcMain.emit('app-create-settings-window', category)
 }
+
+export const userSetting = Object.assign(openSettingsWindow, {
+  getAll: () => {
+    const prefs = getPreferences()
+    return typeof prefs.getAll === 'function' ? prefs.getAll() : {}
+  }
+})
 
 export const checkUpdates = async browserWindow => {
   if (runningUpdate) return
