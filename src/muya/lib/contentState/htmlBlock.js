@@ -50,12 +50,20 @@ const htmlBlock = ContentState => {
   }
 
   ContentState.prototype.updateHtmlBlock = function (block) {
+    // Defensive: block may be removed or incomplete when invoked from enterHandler during UI cleanup.
+    if (!block || !block.children || !block.children.length || !block.children[0]) return false
+
     const { type } = block
     if (type !== 'li' && type !== 'p') return false
+
     const { text } = block.children[0]
     const match = HTML_BLOCK_REG.exec(text)
     const tagName = match && match[1] && HTML_TAGS.find(t => t === match[1])
-    return VOID_HTML_TAGS.indexOf(tagName) === -1 && tagName ? this.initHtmlBlock(block) : false
+
+    // If tagName is undefined or a void tag, keep the paragraph as-is.
+    return (tagName && VOID_HTML_TAGS.indexOf(tagName) === -1)
+      ? this.initHtmlBlock(block)
+      : false
   }
 }
 

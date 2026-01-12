@@ -173,11 +173,16 @@ class Keyboard {
             break
           }
         }
+
         if (needPreventDefault) {
-          event.preventDefault()
+          // Hide floating toolbars and allow Enter to continue to contentState so list items can advance normally.
+          if (event.key === EVENT_KEYS.Enter) {
+            this.hideAllFloatTools()
+          } else {
+            event.preventDefault()
+            return
+          }
         }
-        // event.stopPropagation()
-        return
       }
       switch (event.key) {
         case EVENT_KEYS.Backspace:
