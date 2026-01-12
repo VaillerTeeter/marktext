@@ -1194,6 +1194,7 @@ const actions = {
   },
 
   LISTEN_WINDOW_ZOOM ({ dispatch, rootState }) {
+    let zoomNoticeTimer = null
     ipcRenderer.on('mt::window-zoom', (e, zoomFactor) => {
       zoomFactor = Number.parseFloat(zoomFactor.toFixed(3)) // prevent float rounding errors
       const { zoom } = rootState.preferences
@@ -1201,6 +1202,22 @@ const actions = {
         dispatch('SET_SINGLE_PREFERENCE', { type: 'zoom', value: zoomFactor })
       }
       webFrame.setZoomFactor(zoomFactor)
+
+      // Show a short zoom indicator to clarify the current scale.
+      const percent = Math.round(zoomFactor * 100)
+      if (zoomNoticeTimer) {
+        clearTimeout(zoomNoticeTimer)
+        notice.clear()
+      }
+      notice.notify({
+        title: 'Zoom',
+        message: `${percent}%`,
+        type: 'info',
+        time: 1200
+      })
+      zoomNoticeTimer = setTimeout(() => {
+        notice.clear()
+      }, 1200)
     })
   },
 
