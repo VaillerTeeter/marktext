@@ -32,7 +32,7 @@ yarn run lint
 yarn run validate-licenses
 # 执行完整单元测试(UNIT) + 集成测试(E2E)，失败即退出
 # 本地环境
-yarn run test
+ELECTRON_DISABLE_SANDBOX=1 yarn run test
 # ssh 的远程环境
 ELECTRON_DISABLE_SANDBOX=1 xvfb-run -a yarn run test
 # 生成 Linux 通用发行包（AppImage、tar.gz、deb、rpm）（当前只有 deb），英文版

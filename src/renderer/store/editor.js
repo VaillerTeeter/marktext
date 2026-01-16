@@ -7,6 +7,8 @@ import { hasKeys, getUniqueId } from '../util'
 import listToTree from '../util/listToTree'
 import { createDocumentState, getOptionsFromState, getSingleFileState, getBlankFileState } from './help'
 import notice from '../services/notification'
+import en from '../locales/en'
+import zhCN from '../locales/zh-CN'
 import {
   FileEncodingCommand,
   LineEndingCommand,
@@ -15,6 +17,13 @@ import {
 } from '../commands'
 
 const autoSaveTimers = new Map()
+
+const locales = { en, 'zh-CN': zhCN }
+const translate = (key, locale, fallback) => {
+  const bundle = locales[locale] || locales.en
+  const value = key.split('.').reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), bundle)
+  return typeof value === 'string' ? value : fallback
+}
 
 const state = {
   currentFile: {},
@@ -403,12 +412,39 @@ const actions = {
     }
   },
 
-  CLOSE_UNSAVED_TAB ({ commit, state }, file) {
+  CLOSE_UNSAVED_TAB ({ commit, state, rootState }, file) {
     const { id, pathname, filename, markdown } = file
     const options = getOptionsFromState(file)
 
-    // Save the file content via main process and send a close tab response.
-    ipcRenderer.send('mt::save-and-close-tabs', [{ id, pathname, filename, markdown, options }])
+    // Show renderer-side confirmation to avoid OS dialog race on Linux.
+    const language = (rootState && rootState.preferences && rootState.preferences.language) || 'en'
+    const t = (key, fallback) => translate(`dialogs.${key}`, language, fallback)
+    const title = t('unsavedFiles.title', 'Unsaved changes')
+    const msgTmpl = t('unsavedFiles.message', 'Do you want to save the changes you made to {count} {itemType}?')
+    const itemType = t('unsavedFiles.file', 'file')
+    const message = `${msgTmpl.replace('{count}', 1).replace('{itemType}', itemType)}\n\n${filename}`
+
+    notice
+      .notify({
+        title,
+        message,
+        type: 'warning',
+        showConfirm: true,
+        showSecondary: true,
+        time: 0
+      })
+      .then(action => {
+        if (action === 'confirm') {
+          // Save current file then close the tab only.
+          ipcRenderer.send('mt::save-and-close-tab-direct', [{ id, pathname, filename, markdown, options }])
+        } else if (action === 'secondary') {
+          // Close without saving.
+          commit('CLOSE_TABS', [id])
+        }
+      })
+      .catch(() => {
+        // Cancel: do nothing
+      })
   },
 
   // need pass some data to main process when `save` menu item clicked
@@ -499,7 +535,7 @@ const actions = {
     })
   },
 
-  LISTEN_FOR_CLOSE ({ state }) {
+  LISTEN_FOR_CLOSE ({ state, rootState }) {
     ipcRenderer.on('mt::ask-for-close', e => {
       const unsavedFiles = state.tabs
         .filter(file => !file.isSaved)
@@ -510,7 +546,33 @@ const actions = {
         })
 
       if (unsavedFiles.length) {
-        ipcRenderer.send('mt::close-window-confirm', unsavedFiles)
+        const fileCount = unsavedFiles.length
+        const listText = unsavedFiles.map(f => f.filename).join('\n')
+        const language = (rootState && rootState.preferences && rootState.preferences.language) || 'en'
+        const t = (key, fallback) => translate(`dialogs.${key}`, language, fallback)
+        const itemType = fileCount === 1 ? t('unsavedFiles.file', 'file') : t('unsavedFiles.files', 'files')
+        const title = t('unsavedFiles.title', 'Unsaved changes')
+        const msgTmpl = t('unsavedFiles.message', 'Do you want to save the changes you made to {count} {itemType}?')
+        const message = `${msgTmpl.replace('{count}', fileCount).replace('{itemType}', itemType)}\n\n${listText}`
+        notice
+          .notify({
+            title,
+            message,
+            type: 'warning',
+            showConfirm: true,
+            showSecondary: true,
+            time: 0
+          })
+          .then(action => {
+            if (action === 'confirm') {
+              ipcRenderer.send('mt::save-and-close-tabs-direct', unsavedFiles)
+            } else if (action === 'secondary') {
+              ipcRenderer.send('mt::close-window')
+            }
+          })
+          .catch(() => {
+            // Cancel: do nothing, keep window open
+          })
       } else {
         ipcRenderer.send('mt::close-window')
       }

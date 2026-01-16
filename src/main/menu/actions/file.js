@@ -258,6 +258,34 @@ ipcMain.on('mt::save-and-close-tabs', async (e, unsavedFiles) => {
   }
 })
 
+// Directly save all provided unsaved files and then close tabs, without prompting.
+ipcMain.on('mt::save-and-close-tabs-direct', async (e, unsavedFiles) => {
+  const win = BrowserWindow.fromWebContents(e.sender)
+  try {
+    const arr = await Promise.all(unsavedFiles.map(file => handleResponseForSave(e, file)))
+    const tabIds = arr.filter(id => id != null)
+    win.webContents.send('mt::force-close-tabs-by-id', tabIds)
+    // After saving all from a window-close flow, close the window as well.
+    ipcMain.emit('window-close-by-id', win.id)
+  } catch (err) {
+    log.error('Error while save all (direct):', err)
+  }
+})
+
+// Directly save provided unsaved files and close tabs only (do not close window).
+ipcMain.on('mt::save-and-close-tab-direct', async (e, unsavedFiles) => {
+  const win = BrowserWindow.fromWebContents(e.sender)
+  try {
+    const arr = await Promise.all(unsavedFiles.map(file => handleResponseForSave(e, file)))
+    const tabIds = arr.filter(id => id != null)
+    if (tabIds.length) {
+      win.webContents.send('mt::force-close-tabs-by-id', tabIds)
+    }
+  } catch (err) {
+    log.error('Error while save (tab direct):', err)
+  }
+})
+
 ipcMain.on('mt::response-file-save-as', async (e, { id, filename, markdown, pathname, options, defaultPath }) => {
   const win = BrowserWindow.fromWebContents(e.sender)
   let recommendFilename = getRecommendTitleFromMarkdownString(markdown)

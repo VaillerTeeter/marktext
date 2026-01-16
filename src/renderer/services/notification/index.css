@@ -78,6 +78,13 @@
         cursor: pointer;
 
       }
+      & .secondary {
+        display: none;
+        margin-left: 7px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
     }
   }
 
@@ -147,6 +154,16 @@
     width: calc(100% - 45px);
   }
   & .confirm {
+    display: flex;
+  }
+}
+
+.mt-notification.mt-confirm-two .content .body {
+  & .left-text {
+    width: calc(100% - 90px);
+  }
+  & .confirm,
+  & .secondary {
     display: flex;
   }
 }

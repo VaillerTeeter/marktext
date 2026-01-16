@@ -36,7 +36,8 @@ const notification = {
     title = '',
     message = '',
     type = 'primary', // primary, error, warning or info
-    showConfirm = false
+    showConfirm = false,
+    showSecondary = false
   }) {
     let rs
     let rj
@@ -52,11 +53,16 @@ const notification = {
     const fluent = noticeContainer.querySelector('.fluent')
     const close = noticeContainer.querySelector('.close')
     const { offsetHeight } = noticeContainer
-    let target = noticeContainer
+    let confirmTarget = noticeContainer
+    let secondaryTarget = null
 
     if (showConfirm) {
       noticeContainer.classList.add('mt-confirm')
-      target = noticeContainer.querySelector('.confirm')
+      confirmTarget = noticeContainer.querySelector('.confirm')
+      if (showSecondary) {
+        noticeContainer.classList.add('mt-confirm-two')
+        secondaryTarget = noticeContainer.querySelector('.secondary')
+      }
     }
 
     noticeContainer.classList.add(TYPE_HASH[type])
@@ -100,7 +106,14 @@ const notification = {
       event.preventDefault()
       event.stopPropagation()
       remove()
-      rs && rs()
+      rs && rs('confirm')
+    }
+
+    const secondaryHandler = event => {
+      event.preventDefault()
+      event.stopPropagation()
+      remove()
+      rs && rs('secondary')
     }
 
     const closeHandler = event => {
@@ -134,7 +147,8 @@ const notification = {
       setTimeout(() => {
         noticeContainer.removeEventListener('mousemove', mousemoveHandler)
         noticeContainer.removeEventListener('mouseleave', mouseleaveHandler)
-        target.removeEventListener('click', clickHandler)
+        confirmTarget.removeEventListener('click', clickHandler)
+        if (secondaryTarget) secondaryTarget.removeEventListener('click', secondaryHandler)
         close.removeEventListener('click', closeHandler)
         noticeContainer.remove()
         rePositionNotices()
@@ -148,7 +162,8 @@ const notification = {
 
     noticeContainer.addEventListener('mousemove', mousemoveHandler)
     noticeContainer.addEventListener('mouseleave', mouseleaveHandler)
-    target.addEventListener('click', clickHandler)
+    confirmTarget.addEventListener('click', clickHandler)
+    if (secondaryTarget) secondaryTarget.addEventListener('click', secondaryHandler)
     close.addEventListener('click', closeHandler)
 
     setTimeout(() => {
