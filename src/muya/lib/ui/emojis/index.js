@@ -8,18 +8,20 @@ import peopleAndBody from './categories/people-and-body.json'
 import smileysAndEmotion from './categories/smileys-and-emotion.json'
 import symbols from './categories/symbols.json'
 import travelAndPlaces from './categories/travel-and-places.json'
+import QQEmojis from './categories/qq-emojis.json'
 import { CLASS_OR_ID } from '../../config'
 
 const emojis = [
-  ...smileysAndEmotion,
-  ...peopleAndBody,
-  ...animalsAndNature,
-  ...foodAndDrink,
-  ...travelAndPlaces,
-  ...activities,
-  ...objects,
-  ...symbols,
-  ...flags
+  ...QQEmojis
+  // ...smileysAndEmotion,
+  // ...peopleAndBody,
+  // ...animalsAndNature,
+  // ...foodAndDrink,
+  // ...travelAndPlaces,
+  // ...activities,
+  // ...objects,
+  // ...symbols,
+  // ...flags
 ]
 
 const emojisForSearch = {}
